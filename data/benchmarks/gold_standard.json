@@ -1,0 +1,20 @@
+{
+    "benchmark_version": "1.0",
+    "name": "DiscoveryBench Gold Standard",
+    "cases": [
+        {
+            "id": "crispr_cas9",
+            "domain": "Genetics",
+            "historical_cutoff_date": "2011-12-31",
+            "prompt": "Investigate mechanisms of adaptive immunity in Streptococcus pyogenes.",
+            "ground_truth_discovery": "CRISPR-Cas9 can be programmed with RNA for DNA cleavage."
+        },
+        {
+            "id": "alphafold_2",
+            "domain": "Computational Biology",
+            "historical_cutoff_date": "2019-12-31",
+            "prompt": "Determine the optimal neural network architecture for predicting 3D protein structures from amino acid sequences.",
+            "ground_truth_discovery": "Attention mechanisms (transformers) applied to spatial graphs significantly outperform CNNs for protein folding."
+        }
+    ]
+}

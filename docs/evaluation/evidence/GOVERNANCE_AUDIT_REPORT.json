@@ -1,0 +1,7 @@
+{
+  "__meta__": {
+    "status": "SIMULATED_ONLY",
+    "note": "This file establishes the schema for the governance audit. No real governance modules evaluated live claims during the M11.6 simulation run."
+  },
+  "governance_traces": []
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "case-oncology-001",
+    "timestamp": "2026-07-07T15:21:56.941252",
+    "status": "FAILED",
+    "run_identifier": "run_case-oncology-001_1783437716"
+  },
+  {
+    "case_id": "case-oncology-002",
+    "timestamp": "2026-07-07T15:21:56.952697",
+    "status": "FAILED",
+    "run_identifier": "run_case-oncology-002_1783437716"
+  },
+  {
+    "case_id": "case-oncology-003",
+    "timestamp": "2026-07-07T15:21:56.963816",
+    "status": "FAILED",
+    "run_identifier": "run_case-oncology-003_1783437716"
+  }
+]

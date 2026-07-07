@@ -1,0 +1,7 @@
+{
+  "__meta__": {
+    "status": "SIMULATED_ONLY",
+    "note": "This file establishes the schema for retrieval evidence. No live papers were retrieved or indexed during the M11.6 simulation run."
+  },
+  "retrieval_records": []
+}

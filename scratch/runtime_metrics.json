@@ -1,0 +1,24 @@
+{
+  "total_cost_usd": 0.06,
+  "total_api_calls": 3,
+  "traces": [
+    {
+      "provider": "PubMed",
+      "cost": 0.0,
+      "latency": 0.5,
+      "success": true
+    },
+    {
+      "provider": "OpenAI",
+      "cost": 0.015,
+      "latency": 2.1,
+      "success": true
+    },
+    {
+      "provider": "Anthropic",
+      "cost": 0.045,
+      "latency": 4.2,
+      "success": true
+    }
+  ]
+}

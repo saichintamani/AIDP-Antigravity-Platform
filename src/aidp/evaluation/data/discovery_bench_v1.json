@@ -1,0 +1,356 @@
+[
+  {
+    "id": "case-oncology-001",
+    "domain": "Oncology",
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "historical_cutoff_date": "2022-01-01",
+    "expected_findings": [
+      "KRAS G12C inhibitors trap the mutant protein in its inactive GDP-bound state.",
+      "Sotorasib binds to the P2 pocket and forms an irreversible covalent bond with the mutated cysteine."
+    ],
+    "known_contradictions": [
+      "Resistance mechanisms involving secondary KRAS mutations versus alternative pathway activation."
+    ],
+    "required_evidence_sources": [
+      "PMID:24167304",
+      "PMID:33611320"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-oncology-002",
+    "domain": "Oncology",
+    "query": "How does Imatinib function at a molecular level in treating Chronic Myeloid Leukemia?",
+    "historical_cutoff_date": "2010-01-01",
+    "expected_findings": [
+      "Imatinib is a tyrosine kinase inhibitor.",
+      "It specifically targets the BCR-ABL fusion protein created by the Philadelphia chromosome."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:11290642"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-oncology-003",
+    "domain": "Oncology",
+    "query": "What is the mechanism of action of Pembrolizumab in solid tumors?",
+    "historical_cutoff_date": "2018-01-01",
+    "expected_findings": [
+      "Pembrolizumab is a humanized monoclonal antibody.",
+      "It blocks the PD-1 receptor on T-cells, preventing interaction with PD-L1/PD-L2 and releasing anti-tumor immunity."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:23075249"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-oncology-004",
+    "domain": "Oncology",
+    "query": "How does CD19-directed CAR-T cell therapy eradicate B-cell acute lymphoblastic leukemia?",
+    "historical_cutoff_date": "2020-01-01",
+    "expected_findings": [
+      "T-cells are engineered to express a chimeric antigen receptor (CAR).",
+      "The CAR specifically recognizes CD19, triggering T-cell activation, proliferation, and lysis of CD19+ B-cells."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:23527958"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-genetics-001",
+    "domain": "Genetics",
+    "query": "How can the CRISPR-Cas9 system be utilized for targeted eukaryotic genome editing?",
+    "historical_cutoff_date": "2014-01-01",
+    "expected_findings": [
+      "Cas9 endonuclease creates double-strand breaks at specific loci.",
+      "Targeting is directed by a synthetic single guide RNA (sgRNA).",
+      "Breaks are repaired by NHEJ or HDR."
+    ],
+    "known_contradictions": [
+      "Off-target effects vs specific targeted editing."
+    ],
+    "required_evidence_sources": [
+      "PMID:22745249",
+      "PMID:23287718"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-genetics-002",
+    "domain": "Genetics",
+    "query": "What is the role of BRCA1 and BRCA2 mutations in breast cancer susceptibility?",
+    "historical_cutoff_date": "2005-01-01",
+    "expected_findings": [
+      "BRCA1 and BRCA2 are tumor suppressor genes.",
+      "They are involved in homologous recombination repair of double-strand DNA breaks."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:7545954"
+    ],
+    "metadata": {
+      "difficulty": "low"
+    }
+  },
+  {
+    "id": "case-genetics-003",
+    "domain": "Genetics",
+    "query": "What is the consequence of FOXP2 mutations on human neurodevelopment?",
+    "historical_cutoff_date": "2015-01-01",
+    "expected_findings": [
+      "Mutations in FOXP2 cause a severe speech and language disorder.",
+      "It acts as a transcription factor regulating networks involved in brain development and neural plasticity."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:11586359"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-genetics-004",
+    "domain": "Genetics",
+    "query": "How does the lin-4 gene regulate developmental timing in C. elegans?",
+    "historical_cutoff_date": "2000-01-01",
+    "expected_findings": [
+      "lin-4 does not encode a protein, but rather a small regulatory RNA (microRNA).",
+      "It controls development by binding to the 3' UTR of lin-14 mRNA, inhibiting its translation."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:8252621"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-neuroscience-001",
+    "domain": "Neuroscience",
+    "query": "How does Channelrhodopsin-2 enable millisecond-timescale control of neural activity?",
+    "historical_cutoff_date": "2012-01-01",
+    "expected_findings": [
+      "ChR2 is a light-gated cation channel from green algae.",
+      "When expressed in neurons and exposed to blue light, it rapidly depolarizes the membrane to trigger action potentials."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:16116447"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-neuroscience-002",
+    "domain": "Neuroscience",
+    "query": "What is the default mode network (DMN) in the human brain?",
+    "historical_cutoff_date": "2010-01-01",
+    "expected_findings": [
+      "A network of interacting brain regions that is active when a person is not focused on the outside world.",
+      "It is highly active during wakeful rest, daydreaming, and mind-wandering."
+    ],
+    "known_contradictions": [
+      "Task-positive network anti-correlation is sometimes questioned under specific cognitive tasks."
+    ],
+    "required_evidence_sources": [
+      "PMID:11283316"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-neuroscience-003",
+    "domain": "Neuroscience",
+    "query": "What are grid cells and what is their role in spatial navigation?",
+    "historical_cutoff_date": "2014-01-01",
+    "expected_findings": [
+      "Grid cells are neurons in the entorhinal cortex.",
+      "They fire in a periodic, hexagonal grid pattern across the environment, providing a coordinate system for spatial navigation."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:16109809"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-neuroscience-004",
+    "domain": "Neuroscience",
+    "query": "What is the primary neurochemical deficit underlying narcolepsy type 1?",
+    "historical_cutoff_date": "2015-01-01",
+    "expected_findings": [
+      "Narcolepsy type 1 is caused by a selective loss of orexin (hypocretin) producing neurons in the lateral hypothalamus."
+    ],
+    "known_contradictions": [
+      "Autoimmune origin vs other environmental triggers is still researched, but the neuropeptide deficit is clear."
+    ],
+    "required_evidence_sources": [
+      "PMID:10993076"
+    ],
+    "metadata": {
+      "difficulty": "low"
+    }
+  },
+  {
+    "id": "case-immunology-001",
+    "domain": "Immunology",
+    "query": "What is the function of Toll-like Receptor 4 (TLR4) in innate immunity?",
+    "historical_cutoff_date": "2008-01-01",
+    "expected_findings": [
+      "TLR4 detects lipopolysaccharide (LPS) from Gram-negative bacteria.",
+      "It initiates intracellular signaling cascades leading to the production of inflammatory cytokines."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:9722325"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-immunology-002",
+    "domain": "Immunology",
+    "query": "What is the role of FOXP3 in regulatory T cells (Tregs)?",
+    "historical_cutoff_date": "2010-01-01",
+    "expected_findings": [
+      "FOXP3 is the master transcription factor for the development and function of Tregs.",
+      "It is required for suppressing autoimmune responses and maintaining immune homeostasis."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:12576428"
+    ],
+    "metadata": {
+      "difficulty": "low"
+    }
+  },
+  {
+    "id": "case-immunology-003",
+    "domain": "Immunology",
+    "query": "How is antigen receptor diversity generated in developing B and T cells?",
+    "historical_cutoff_date": "2005-01-01",
+    "expected_findings": [
+      "V(D)J recombination mediated by RAG1 and RAG2 recombinases.",
+      "It involves somatic rearrangement of Variable, Diversity, and Joining gene segments."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:1568285"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-immunology-004",
+    "domain": "Immunology",
+    "query": "How does the NLRP3 inflammasome contribute to innate immune responses?",
+    "historical_cutoff_date": "2018-01-01",
+    "expected_findings": [
+      "NLRP3 assembles into a multimeric protein complex in response to cellular stress or DAMPs.",
+      "It activates caspase-1, leading to the maturation and secretion of IL-1beta and IL-18."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:11821900",
+      "PMID:16407132"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-materials-001",
+    "domain": "Materials Science",
+    "query": "What are the structural properties that give graphene its exceptional electronic and mechanical characteristics?",
+    "historical_cutoff_date": "2015-01-01",
+    "expected_findings": [
+      "Graphene is a single layer of carbon atoms arranged in a two-dimensional honeycomb lattice.",
+      "Its electrons behave as massless Dirac fermions, leading to ultra-high carrier mobility."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "PMID:24756314",
+      "DOI:10.1126/science.1102896"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  },
+  {
+    "id": "case-materials-002",
+    "domain": "Materials Science",
+    "query": "What is the mechanism of high-temperature superconductivity in cuprates like YBCO?",
+    "historical_cutoff_date": "2020-01-01",
+    "expected_findings": [
+      "It is strongly correlated electron system where superconductivity emerges upon doping a Mott insulator.",
+      "Cooper pairing occurs in the copper-oxide planes with d-wave symmetry."
+    ],
+    "known_contradictions": [
+      "The exact microscopic pairing mechanism (e.g. spin fluctuations vs other bosons) remains debated."
+    ],
+    "required_evidence_sources": [
+      "DOI:10.1103/PhysRevLett.58.908"
+    ],
+    "metadata": {
+      "difficulty": "high"
+    }
+  },
+  {
+    "id": "case-climate-001",
+    "domain": "Climate Science",
+    "query": "What does the Keeling Curve represent regarding Earth's atmosphere?",
+    "historical_cutoff_date": "2010-01-01",
+    "expected_findings": [
+      "It is a graph showing the accumulation of carbon dioxide in the Earth's atmosphere based on measurements taken at Mauna Loa.",
+      "It provides definitive evidence of rapidly increasing atmospheric CO2 driven by fossil fuel combustion."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "DOI:10.1034/j.1600-0889.1995.t01-1-00003.x"
+    ],
+    "metadata": {
+      "difficulty": "low"
+    }
+  },
+  {
+    "id": "case-climate-002",
+    "domain": "Climate Science",
+    "query": "What is the causal mechanism for the depletion of stratospheric ozone over Antarctica?",
+    "historical_cutoff_date": "2000-01-01",
+    "expected_findings": [
+      "Chlorofluorocarbons (CFCs) are photodissociated in the stratosphere, releasing chlorine atoms.",
+      "Chlorine catalyzes the destruction of ozone molecules, exacerbated by polar stratospheric clouds."
+    ],
+    "known_contradictions": [],
+    "required_evidence_sources": [
+      "DOI:10.1038/315207a0"
+    ],
+    "metadata": {
+      "difficulty": "medium"
+    }
+  }
+]

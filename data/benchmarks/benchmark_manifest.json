@@ -1,0 +1,13 @@
+{
+    "benchmark_name": "AIDP-Discovery-Eval",
+    "version": "1.0",
+    "description": "Public benchmark for evaluating Autonomous Scientific Agents using masked historical PubMed data.",
+    "datasets": [
+        {
+            "id": "oncology_2020_2023",
+            "historical_cutoff": "2022-12-31",
+            "evaluation_window": ["2023-01-01", "2025-12-31"],
+            "target_discoveries": 45
+        }
+    ]
+}

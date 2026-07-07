@@ -1,0 +1,20 @@
+{
+  "providers": {
+    "OpenAI": {
+      "status": "skipped",
+      "reason": "Missing API Key"
+    },
+    "Anthropic": {
+      "status": "skipped",
+      "reason": "Missing API Key"
+    },
+    "PubMed": {
+      "status": "skipped",
+      "reason": "Missing API Key"
+    },
+    "SemanticScholar": {
+      "status": "skipped",
+      "reason": "Missing API Key"
+    }
+  }
+}
