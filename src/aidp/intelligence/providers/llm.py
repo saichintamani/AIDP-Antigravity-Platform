@@ -40,10 +40,27 @@ class LLMProvider(BaseProvider):
         """
         Executes a prompt against the production LLM for structured discovery (M9+).
         """
-        return self._simulate_llm_text(prompt, schema_hint)
+        import litellm
+        
+        try:
+            kwargs = {
+                "model": self.model_name,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.3,
+                "num_ctx": 4096,
+            }
+            if schema_hint:
+                kwargs["response_format"] = {"type": "json_object"}
+                
+            response = litellm.completion(**kwargs)
+            return response.choices[0].message.content
+        except Exception as e:
+            if self.is_mock_fallback:
+                return self._simulate_llm_text(prompt, schema_hint)
+            raise RuntimeError(f"litellm provider query failed: {e}")
 
     def _simulate_llm_text(self, prompt: str, schema_hint: Optional[dict[str, Any]]) -> str:
-        """Simulates raw string output from an LLM."""
+        """Simulates raw string output from an LLM when in mock mode and failing."""
         if schema_hint:
             payload: dict[str, Any]
             if "hypotheses" in schema_hint:

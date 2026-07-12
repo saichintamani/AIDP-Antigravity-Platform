@@ -159,7 +159,7 @@ class ScientificDebateEngine:
                 }
             ),
             "controls": json.dumps(design.get("controls", [])),
-            "sample_size": "Not provided",
+            "sample_size": design.get("sampleSize", "Not provided"),
             "metrics": design.get("failureCriteria", "Not provided"),
         }
         return self._query_persona(
@@ -186,7 +186,7 @@ class ScientificDebateEngine:
         context = {
             "claim": hypothesis.get("claim", ""),
             "hypothesis": json.dumps(hypothesis),
-            "evidence": "Not provided",
+            "evidence": hypothesis.get("evidence", "Not provided"),
         }
         return self._query_persona(
             "Domain Expert", CognitiveTaskType.DOMAIN_REVIEW, context, fallback
@@ -219,14 +219,14 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": "Not provided",
+            "protocol": design.get("protocol", "Not provided"),
             "experiment_flow": json.dumps(
                 {
                     "independent": design.get("independentVariables", []),
                     "dependent": design.get("dependentVariables", []),
                 }
             ),
-            "confounders": "Not provided",
+            "confounders": design.get("confounders", "Not provided"),
         }
         return self._query_persona(
             "Methodologist", CognitiveTaskType.METHODOLOGY_REVIEW, context, fallback
@@ -248,7 +248,7 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": "Not provided",
+            "protocol": design.get("protocol", "Not provided"),
             "resources": design.get("resourceEstimation", "Not provided"),
         }
         return self._query_persona("Ethicist", CognitiveTaskType.ETHICS_REVIEW, context, fallback)
@@ -269,7 +269,7 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": "Not provided",
+            "protocol": design.get("protocol", "Not provided"),
             "resources": design.get("resourceEstimation", "Not provided"),
             "cost_prediction": design.get("costPrediction", "Not provided"),
             "failure_prediction": design.get("failurePrediction", "Not provided"),

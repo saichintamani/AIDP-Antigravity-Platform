@@ -1,0 +1,185 @@
+{
+  "total_cases": 20,
+  "cases": [
+    {
+      "case_id": "case-oncology-001",
+      "baseline_score": 0.5,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-oncology-002",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-oncology-003",
+      "baseline_score": 0.5,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-oncology-004",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-genetics-001",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-genetics-002",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-genetics-003",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 2
+    },
+    {
+      "case_id": "case-genetics-004",
+      "baseline_score": 0.5,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-neuroscience-001",
+      "baseline_score": 0.5,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-neuroscience-002",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-neuroscience-003",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-neuroscience-004",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "REJECTED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 0
+    },
+    {
+      "case_id": "case-immunology-001",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-immunology-002",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-immunology-003",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-immunology-004",
+      "baseline_score": 0.8,
+      "aidp_score": 0.8,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 3
+    },
+    {
+      "case_id": "case-materials-001",
+      "baseline_score": 0.5,
+      "aidp_score": 0.8,
+      "governance_result": "REJECTED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.8,
+      "retrieved_sources": 0
+    },
+    {
+      "case_id": "case-materials-002",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 1
+    },
+    {
+      "case_id": "case-climate-001",
+      "baseline_score": 0.8,
+      "aidp_score": 0.5,
+      "governance_result": "REJECTED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 0
+    },
+    {
+      "case_id": "case-climate-002",
+      "baseline_score": 0.5,
+      "aidp_score": 0.5,
+      "governance_result": "PASSED",
+      "evidence_quality": 0.0,
+      "semantic_correctness": 0.5,
+      "retrieved_sources": 3
+    }
+  ]
+}

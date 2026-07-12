@@ -1,0 +1,184 @@
+{
+  "id": "sess_2cb4a998-5d26-46ee-854c-381977c478f2",
+  "question": "What does the Keeling Curve represent regarding Earth's atmosphere?",
+  "historical_cutoff_date": "2010-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What does the Keeling Curve represent regarding Earth's atmosphere?",
+    "documents": []
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What does the Keeling Curve represent regarding Earth's atmosphere?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-728a2e08-2eb4-4d36-8457-730bb2351d58",
+    "claim": "The Keeling Curve primarily represents the long-term increase in atmospheric carbon dioxide concentration, rather than a direct indicator of Earth's temperature.",
+    "rationale": "This hypothesis resolves the contradiction by suggesting that the Keeling Curve is more closely tied to CO2 levels, which have been shown to be strongly correlated with global warming (1). However, this correlation does not imply that the curve directly measures temperature changes. Instead, it suggests that CO2 increases are a key driver of global warming, as supported by studies such as (2) and (3).",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-1fe8916c-1116-4c8f-9ad0-d1daad0844ab",
+    "hypothesisId": "hyp-728a2e08-2eb4-4d36-8457-730bb2351d58",
+    "independentVariables": [
+      "Atmospheric CO2 concentration",
+      "Earth's temperature"
+    ],
+    "dependentVariables": [
+      "Keeling Curve anomaly",
+      "Global average surface temperature"
+    ],
+    "controls": [
+      "Comparing Keeling Curve anomalies to historical temperature records",
+      "Controlling for confounding variables such as solar radiation and volcanic eruptions"
+    ],
+    "failureCriteria": "A statistically significant positive correlation between the Keeling Curve anomaly and global average surface temperature would falsify this hypothesis.",
+    "resourceEstimation": "Access to historical atmospheric CO2 concentration datasets, Earth's temperature records, and computational resources for data analysis and modeling.",
+    "costPrediction": "$100,000 - $500,000 (dependent on dataset availability and complexity of analysis)",
+    "failurePrediction": "Operational risks include ensuring accurate and reliable access to historical climate data, managing computational resources to handle large datasets, and mitigating potential biases in the analysis."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-1fe8916c-1116-4c8f-9ad0-d1daad0844ab",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.5,
+        "blockingIssues": [
+          "Missing sample size"
+        ],
+        "suggestions": [
+          "Ensure a sufficient sample size to establish statistical significance.",
+          "Consider using bootstrapping or resampling methods to account for potential sampling variability."
+        ],
+        "evidence": "The experimental design lacks essential information regarding the sample size, which is crucial for determining statistical significance and power. Without this critical detail, it is challenging to assess the reliability of the proposed hypothesis.",
+        "riskScore": 0.8,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The Keeling Curve primarily represents the long-term increase in atmospheric carbon dioxide concentration, rather than a direct indicator of Earth's temperature."
+        ],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.5,
+        "blockingIssues": [
+          "Confounders not provided"
+        ],
+        "suggestions": [
+          "Include confounders in the design"
+        ],
+        "evidence": "Experimental design lacks key variables for accurate results",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient protocol details"
+        ],
+        "suggestions": [
+          "Provide detailed protocol information"
+        ],
+        "evidence": "Lack of transparency in experimental design can lead to biased results and compromised participant safety.",
+        "riskScore": 2.5,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "John Doe",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Ensuring accurate and reliable access to historical climate data"
+        ],
+        "suggestions": [
+          "Use established datasets such as NOAA's Global Temperature Anomalies dataset for accuracy and reliability"
+        ],
+        "evidence": "Historical atmospheric CO2 concentration datasets and Earth's temperature records are widely available from reputable sources",
+        "riskScore": 0.6,
+        "decision": "approve"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.2,
+      "average_confidence": 0.68,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Missing sample size",
+        "The Keeling Curve primarily represents the long-term increase in atmospheric carbon dioxide concentration, rather than a direct indicator of Earth's temperature.",
+        "Confounders not provided",
+        "Insufficient protocol details"
+      ],
+      "conflict_detected": true,
+      "summary": "Consensus failed. Approvals: 1/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783457848.4606888
+  },
+  "trace": [
+    {
+      "timestamp": 1783457848.4606888,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457849.0364132,
+      "event": "Semantic query returned 0 results. Falling back to entity query.",
+      "metadata": {
+        "failed_query": "does Keeling Curve represent regarding Earth atmosphere"
+      }
+    },
+    {
+      "timestamp": 1783457849.5867221,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457849.5877233,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457865.6153803,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457885.085075,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

@@ -119,13 +119,77 @@ PromptRegistry.register(
     name="hypothesis_generator",
     template="""
 You are a Scientific Hypothesis Generator.
+
 Given the following identified contradiction in the knowledge graph:
 Contradiction: {contradiction}
 
-Generate a novel, testable scientific hypothesis that attempts to resolve this contradiction.
-Return a JSON object with keys:
+The following papers were retrieved as evidence. You MUST cite them using their DOIs.
+
+Retrieved Evidence:
+{retrieved_knowledge}
+
+Generate a novel, testable scientific hypothesis that resolves this contradiction.
+You MUST reference the DOIs from the retrieved evidence above.
+
+Return a JSON object with exactly these keys:
 - "claim": A strictly falsifiable scientific claim.
-- "rationale": The reasoning linking the contradiction to this claim.
-- "confidence_prior": A float between 0.0 and 1.0 representing your prior confidence before testing.
+- "rationale": The reasoning linking the contradiction to this claim, referencing the retrieved evidence.
+- "confidence_prior": A float between 0.0 and 1.0.
+- "evidence_links": A list of DOI strings from the retrieved evidence above that support your claim. DO NOT invent DOIs. Use only the DOIs provided above.
+""",
+)
+
+PromptRegistry.register(
+    name="evidence_linkage_validator",
+    template="""
+You are a Scientific Evidence Linkage Validator.
+Your job is to ensure that a proposed scientific hypothesis is strictly grounded in the retrieved literature.
+
+Claim: "{claim}"
+Rationale: "{rationale}"
+Retrieved Evidence:
+{evidence}
+
+Return a JSON object with exactly the following keys:
+- "evidence_to_claim_mapping": A list of objects, each with "claim_component" (string) and "supporting_evidence" (string quote from text).
+- "supporting_dois": A list of strings (DOIs) from the retrieved evidence that support the claim.
+- "unsupported_claims": A list of strings detailing any part of the hypothesis that lacks evidence in the retrieved text.
+- "evidence_confidence": A string ("High", "Medium", "Low") summarizing the grounding strength.
+""",
+)
+
+PromptRegistry.register(
+    name="methodology_generator",
+    template="""
+You are an Experimental Methodology Generator.
+Your job is to translate a grounded hypothesis into a rigorous experimental scaffolding, ensuring strict controls and identifying confounders.
+
+Claim: "{claim}"
+Evidence Mapping:
+{evidence_mapping}
+
+Return a JSON object with exactly the following keys:
+- "independent_variables": A list of strings.
+- "dependent_variables": A list of strings.
+- "control_groups": A list of objects, each with "group_name" (string) and "purpose" (string).
+- "confounders_identified": A list of strings identifying potential unmeasured confounders.
+- "success_criteria": A string defining exactly what must be observed to support the hypothesis.
+""",
+)
+
+PromptRegistry.register(
+    name="statistical_validator",
+    template="""
+You are a Statistical Design Validator.
+Your job is to define the quantitative and statistical framework for a proposed experimental methodology.
+
+Experimental Methodology:
+{methodology}
+
+Return a JSON object with exactly the following keys:
+- "sample_size_recommendation": An object with "n_per_group" (integer, provide a realistic estimate e.g., 30, 100) and "justification" (string).
+- "statistical_test": A string naming the specific statistical test to use (e.g., "Two-way ANOVA").
+- "power_considerations": A string discussing statistical power and effect size.
+- "reproducibility_notes": A string outlining how to ensure this experiment can be independently replicated.
 """,
 )

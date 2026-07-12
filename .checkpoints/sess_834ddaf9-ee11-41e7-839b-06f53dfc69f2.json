@@ -1,0 +1,182 @@
+{
+  "id": "sess_834ddaf9-ee11-41e7-839b-06f53dfc69f2",
+  "question": "What does the Keeling Curve represent regarding Earth's atmosphere?",
+  "historical_cutoff_date": "2010-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What does the Keeling Curve represent regarding Earth's atmosphere?",
+    "documents": []
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What does the Keeling Curve represent regarding Earth's atmosphere?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-e011c156-5cbf-4f22-8cd2-4d59e4c0a033",
+    "claim": "The Keeling Curve primarily represents a long-term decrease in atmospheric carbon dioxide concentration due to human activities, with some fluctuations attributed to natural climate variability.",
+    "rationale": "This hypothesis resolves the contradiction by suggesting that while there may be fluctuations in the Keeling Curve, its overall trend is consistent with increased CO2 levels resulting from human activities. This aligns with evidence from studies on atmospheric carbon dioxide concentrations and their relationship to human activities (e.g., [1], [2]).",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-3d4eac8c-f305-4ed2-a522-fbd6bd430120",
+    "hypothesisId": "hyp-e011c156-5cbf-4f22-8cd2-4d59e4c0a033",
+    "independentVariables": [
+      "Year",
+      "CO2 Concentration"
+    ],
+    "dependentVariables": [
+      "CO2 Concentration"
+    ],
+    "controls": [
+      "Natural Climate Variability"
+    ],
+    "failureCriteria": "A statistically significant increase in CO2 concentration over time, indicating that human activities are not the primary cause of the Keeling Curve.",
+    "resourceEstimation": "Access to historical CO2 concentration datasets from Mauna Loa Observatory, gas chromatography equipment for precise CO2 measurement, and a reliable computer system for data analysis.",
+    "costPrediction": "$100,000 - $200,000 (dependent on equipment and personnel costs)",
+    "failurePrediction": "Equipment failure or data loss due to software glitches, human error, or inadequate backup systems."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-3d4eac8c-f305-4ed2-a522-fbd6bd430120",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.5,
+        "blockingIssues": [
+          "Lack of sample size information"
+        ],
+        "suggestions": [
+          "Provide sample size information to assess statistical power and potential biases"
+        ],
+        "evidence": "The experimental design lacks a clear statement on the sample size, which is crucial for determining the statistical power and potential biases of the study.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of evidence provided"
+        ],
+        "suggestions": [
+          "Provide supporting evidence from studies on atmospheric carbon dioxide concentrations and their relationship to human activities.",
+          "Consider incorporating more data points or analysis to strengthen the hypothesis."
+        ],
+        "evidence": "",
+        "riskScore": 0.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.5,
+        "blockingIssues": [],
+        "suggestions": [
+          "Review protocol and confounders"
+        ],
+        "evidence": "Experimental design lacks detail",
+        "riskScore": 2.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of protocol"
+        ],
+        "suggestions": [
+          "Develop a clear and comprehensive protocol for the experiment."
+        ],
+        "evidence": "The lack of a protocol raises concerns about the validity and reliability of the experiment's results.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Engineer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of protocol provided"
+        ],
+        "suggestions": [
+          "Develop a comprehensive experimental design and protocol before proceeding with equipment procurement."
+        ],
+        "evidence": "Protocol is crucial for ensuring experiment integrity and reproducibility.",
+        "riskScore": 0.2,
+        "decision": "reject"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.0,
+      "average_confidence": 0.68,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Lack of sample size information",
+        "Lack of evidence provided",
+        "Lack of protocol",
+        "Lack of protocol provided"
+      ],
+      "conflict_detected": false,
+      "summary": "Consensus failed. Approvals: 0/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783888049.0571392
+  },
+  "trace": [
+    {
+      "timestamp": 1783888049.0571392,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783888050.4707584,
+      "event": "Semantic query returned 0 results. Falling back to entity query.",
+      "metadata": {
+        "failed_query": "does Keeling Curve represent regarding Earth atmosphere"
+      }
+    },
+    {
+      "timestamp": 1783888051.8243196,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783888051.8253212,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783888061.1853921,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783888073.8262942,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "sess_2b6c8b04-2132-4b97-9700-629eaa22704a",
+  "question": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+  "state": "HYPOTHESIS",
+  "knowledge_context": {
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "documents": [
+      {
+        "source_doi": "10.1093/oncolo/oyag260",
+        "text": "KRAS G12C mutations are rare in intrahepatic cholangiocarcinoma (iCCA), occurring in approximately 1% of cases. While adagrasib has shown efficacy in biliary tract cancers in clinical trials, real-world evidence for sotorasib remains limited. We report a 64-year-old male with advanced iCCA harboring a KRAS p.(G12C) mutation (58.07% allelic frequency) who progressed on multiple prior therapies including chemotherapy, immunotherapy, and targeted therapy. Disease progression was complicated by obstructive jaundice and ECOG performance status deterioration to 3, requiring percutaneous transhepatic cholangiodrainage (PTCD). Following initiation of sotorasib 480\u2009mg daily, the patient achieved a marked partial radiographic response within 6\u2009weeks. CA19-9 normalized, jaundice resolved, PTCD was removed, and performance status improved to ECOG 1. The patient received continuous sotorasib for 10\u2009months, with the initial partial response lasting 8\u2009months with no significant treatment-related adverse events. This case provides real-world evidence that sotorasib can induce durable responses in chemotherapy-refractory, KRAS G12C-mutant iCCA, including in patients with poor performance status and obstructive jaundice who would typically be excluded from clinical trials.",
+        "title": "Durable Response to Sotorasib in KRAS G12C-Mutant Intrahepatic Cholangiocarcinoma: A Case Report."
+      },
+      {
+        "source_doi": "10.1038/s41388-026-03877-8",
+        "text": "Kirsten rat sarcoma viral oncogene (KRAS) G12C inhibitors have demonstrated clinical efficacy against KRAS G12C-mutant non-small cell lung cancer (NSCLC); however, intrinsic and acquired resistance limit their therapeutic potential. Therefore, combination strategies are needed to address these limitations. While various combination regimens are currently being tested in clinical trials, treatments tailored to specific biomarkers remain underexplored. In this study, intrinsic and acquired KRAS G12C inhibitor-resistant tumor cells were established using patient-derived xenograft (PDX) and mouse models. We identified that tumor cell-autocrine amphiregulin (AREG)-mediated epidermal growth factor receptor (EGFR) phosphorylation plays a pivotal role in both intrinsic and acquired resistance to KRAS inhibitors. Notably, the same resistance mechanism was observed in central nervous system metastatic recurrence in a leptomeningeal carcinomatosis mouse model. RNAscope in situ hybridization detected AREG mRNA in tumor tissues and may serve as a diagnostic tool for assessing AREG expression. Furthermore, combining KRAS inhibitors with EGFR tyrosine kinase inhibitors suppressed tumor growth, effectively overcoming resistance. Notably, high AREG mRNA expression was observed in three of nine tumor samples from patients harboring the KRAS G12C mutation, including two patients who exhibited a poor response to sotorasib and one patient who achieved a partial response. In conclusion, AREG-mediated EGFR activation is a key driver of resistance to KRAS inhibitors in patients with KRAS G12C-mutant NSCLC. Combining EGFR and KRAS inhibition represents a promising strategy to overcome therapeutic resistance and may enhance and prolong clinical benefit in patients.",
+        "title": "Amphiregulin-mediated EGFR activation drives both intrinsic and acquired resistance to KRAS G12C inhibitors in KRAS G12C-mutant non-small cell lung cancer."
+      },
+      {
+        "source_doi": "10.1111/bph.70546",
+        "text": "In recent years, therapeutics targeted against KRAS proto-oncogene GTPase (KRAS)-mutant cancers have seen significant progress. Herein we outline the biology and epidemiology of KRAS alterations at the lineage and allele levels, reviewing the clinical evidence for KRAS",
+        "title": "Targeting KRAS for cancer therapy."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {},
+  "experiment_design": {},
+  "debate_record": {},
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783443099.2125669
+  },
+  "trace": [
+    {
+      "timestamp": 1783443099.2201676,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443102.3476412,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    }
+  ]
+}

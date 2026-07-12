@@ -2,7 +2,7 @@ import json
 from typing import Optional, Any
 
 from aidp.discovery.debate import ScientificDebateEngine
-from aidp.discovery.experimental_design import ExperimentPlanner
+from aidp.discovery.scientific_planning import ScientificPlanningLayer
 from aidp.intelligence.providers.capabilities import GEMINI_1_5_PRO_CAPABILITIES
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 from aidp.intelligence.providers.routing import RoutingPolicy
@@ -12,16 +12,32 @@ class MockLLMProviderForPipeline:
     """Mocks the raw string output of an LLM responding to pipeline prompts."""
 
     def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> Any:
-        if "Scientific Methodologist" in prompt:
-            # Responding to ExperimentPlanner
+        print(f"MOCK RECEIVED PROMPT:\n{prompt}")
+        if "Evidence Linkage Validator" in prompt:
             payload = {
-                "independentVariables": ["Variable X"],
-                "dependentVariables": ["Variable Y"],
-                "controls": ["Control Group 1"],
-                "failureCriteria": "If X does not change Y, it is falsified.",
-                "resourceEstimation": "Standard compute",
-                "costPrediction": "Low",
-                "failurePrediction": "Convergence failure",
+                "evidence_to_claim_mapping": [{"claim_component": "X causes Y", "supporting_evidence": "Found in text."}],
+                "supporting_dois": ["10.123/456"],
+                "unsupported_claims": [],
+                "evidence_confidence": "High"
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Experimental Methodology Generator" in prompt:
+            payload = {
+                "independent_variables": ["Variable X"],
+                "dependent_variables": ["Variable Y"],
+                "control_groups": [{"group_name": "Control", "purpose": "Baseline"}],
+                "confounders_identified": ["None"],
+                "success_criteria": "If X changes Y",
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Statistical Design Validator" in prompt:
+            payload = {
+                "sample_size_recommendation": {"n_per_group": 30, "justification": "Standard"},
+                "statistical_test": "ANOVA",
+                "power_considerations": "High power",
+                "reproducibility_notes": "Replicate 3 times",
             }
             return f"```json\n{json.dumps(payload)}\n```"
 
@@ -58,18 +74,19 @@ def test_m10_2_end_to_end_pipeline() -> None:
     routing.register_provider("mock", provider, GEMINI_1_5_PRO_CAPABILITIES)
     gateway = IntelligenceGateway(routing_policy=routing)
 
-    planner = ExperimentPlanner(gateway=gateway)
+    planner = ScientificPlanningLayer(gateway=gateway)
     debate_engine = ScientificDebateEngine(gateway=gateway)
 
     hypothesis = {"id": "h_1", "claim": "X causes Y"}
     ledger_entry = {"id": "l_1", "readiness": "readyForExperiment"}
+    knowledge_context = {"documents": []}
 
     # 1. Plan Experiment via LLM
-    design = planner.design_experiment(hypothesis, ledger_entry)
+    design = planner.design_experiment(hypothesis, ledger_entry, knowledge_context)
 
     assert "Variable X" in design["independentVariables"]
     assert "Variable Y" in design["dependentVariables"]
-    assert design["failureCriteria"] != ""
+    assert design["successCriteria"] != ""
 
     # 2. Debate Experiment via LLM
     debate_record = debate_engine.evaluate_design(design, hypothesis)
@@ -82,6 +99,6 @@ def test_m10_2_end_to_end_pipeline() -> None:
         assert critique["decision"] == "approve"
         assert len(critique["blockingIssues"]) == 0
 
-    # Check Telemetry to ensure the Gateway actually processed all 6 calls
-    # (1 for planner, 5 for debate)
-    assert len(gateway.traces) == 6
+    # Check Telemetry to ensure the Gateway actually processed all 8 calls
+    # (3 for planner, 5 for debate)
+    assert len(gateway.traces) == 8

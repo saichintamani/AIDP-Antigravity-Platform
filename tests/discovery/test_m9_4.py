@@ -1,10 +1,10 @@
 from aidp.discovery.active_discovery import ActiveDiscoveryPlanner
-from aidp.discovery.experimental_design import ExperimentPlanner
+from aidp.discovery.scientific_planning import ScientificPlanningLayer
 
 
 def test_experiment_planning() -> None:
     """Validates that a hypothesis generates an experiment with controls and falsifiable failure criteria."""
-    planner = ExperimentPlanner()
+    planner = ScientificPlanningLayer()
 
     mock_hypothesis = {
         "id": "h1",
@@ -18,7 +18,7 @@ def test_experiment_planning() -> None:
         "readiness": "readyForExperiment",
     }
 
-    design = planner.design_experiment(mock_hypothesis, mock_ledger_entry)
+    design = planner.design_experiment(mock_hypothesis, mock_ledger_entry, {})
 
     assert "Variable A" in design["independentVariables"]
     assert "Variable B" in design["dependentVariables"]

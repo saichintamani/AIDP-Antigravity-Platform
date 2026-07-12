@@ -1,0 +1,11 @@
+{
+  "Provider": "OpenAI",
+  "Model": "gpt-3.5-turbo",
+  "Status": "FAILED",
+  "Response": "N/A",
+  "PromptTokens": 0,
+  "CompletionTokens": 0,
+  "Cost": 0.0,
+  "Latency": 0.03503775596618652,
+  "ErrorDetails": "litellm.InternalServerError: InternalServerError: OpenAIException - Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable."
+}

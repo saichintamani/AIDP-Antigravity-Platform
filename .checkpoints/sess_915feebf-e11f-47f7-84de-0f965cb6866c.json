@@ -1,0 +1,35 @@
+{
+  "id": "sess_915feebf-e11f-47f7-84de-0f965cb6866c",
+  "question": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+  "state": "HYPOTHESIS",
+  "knowledge_context": {
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "documents": []
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {},
+  "experiment_design": {},
+  "debate_record": {},
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783442930.370197
+  },
+  "trace": [
+    {
+      "timestamp": 1783442930.374414,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783442931.8645465,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    }
+  ]
+}

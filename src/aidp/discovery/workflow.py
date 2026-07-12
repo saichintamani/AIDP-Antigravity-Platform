@@ -7,7 +7,7 @@ from enum import Enum
 from typing import Optional, Any
 
 from aidp.discovery.debate import ScientificDebateEngine
-from aidp.discovery.experimental_design import ExperimentPlanner
+from aidp.discovery.scientific_planning import ScientificPlanningLayer
 from aidp.discovery.hypothesis import HypothesisGenerator
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 
@@ -29,6 +29,7 @@ class DiscoveryState(Enum):
 class DiscoverySession:
     id: str = field(default_factory=lambda: f"sess_{uuid.uuid4()}")
     question: str = ""
+    historical_cutoff_date: Optional[str] = None
     state: DiscoveryState = DiscoveryState.INIT
 
     knowledge_context: dict[str, Any] = field(default_factory=dict)
@@ -85,9 +86,62 @@ class RetrievalNode(WorkflowNode):
         super().__init__("KnowledgeRetrieval")
 
     def execute(self, session: DiscoverySession) -> DiscoveryState:
+        from aidp.knowledge.connectors.pubmed_connector import PubMedConnector
+        from dataclasses import asdict
+        
         session.log_trace("Entering Knowledge Retrieval")
-        # Mocking retrieval based on the question
-        session.knowledge_context = {"query": session.question, "documents": ["doc1", "doc2"]}
+        
+        connector = PubMedConnector(max_results=3)
+        # Robust stop word filtering for concept retention (reusing metrics logic)
+        stop_words = {
+            "the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for", 
+            "of", "with", "by", "as", "is", "are", "was", "were", "be", "been", 
+            "being", "it", "its", "that", "this", "these", "those", "what", "how", "why"
+        }
+        sentence = session.question
+        for p in ".,;:'\"()[]{}!?":
+            sentence = sentence.replace(p, " ")
+        words = sentence.split()
+        search_term = " ".join([w for w in words if w.lower() not in stop_words and len(w) > 2])
+        
+        if not search_term:
+            search_term = session.question
+        
+        # Pass the historical cutoff date formatted as YYYY/MM/DD
+        max_date = None
+        if session.historical_cutoff_date:
+            try:
+                # If it's a datetime.date object from the benchmark, format it
+                if hasattr(session.historical_cutoff_date, 'strftime'):
+                    max_date = session.historical_cutoff_date.strftime("%Y/%m/%d")
+                else:
+                    # Attempt to parse string YYYY-MM-DD
+                    max_date = session.historical_cutoff_date.replace('-', '/')
+            except Exception:
+                pass
+
+        provenance_entries = connector.fetch_literature_provenance(search_term, max_date=max_date)
+        
+        # Query Fallback Strategy: if the highly specific semantic query returns 0 results, 
+        # fall back to a broader entity-only query.
+        if len(provenance_entries) == 0:
+            session.log_trace("Semantic query returned 0 results. Falling back to entity query.", {"failed_query": search_term})
+            fallback_term = " ".join([w for w in session.question.replace('?','').split() if any(c.isupper() for c in w)])
+            if fallback_term:
+                provenance_entries = connector.fetch_literature_provenance(fallback_term, max_date=max_date)
+        
+        documents = []
+        for entry in provenance_entries:
+            documents.append({
+                "source_doi": entry.source_paper_doi,
+                "text": entry.claim_text,
+                "title": entry.retriever_metadata.get("title")
+            })
+            
+        session.knowledge_context = {
+            "query": session.question, 
+            "documents": documents
+        }
         return DiscoveryState.GAP_ANALYSIS
 
 
@@ -115,7 +169,7 @@ class HypothesisNode(WorkflowNode):
             return DiscoveryState.FAILED
 
         contradiction = session.contradictions[0]
-        hypotheses = self.generator.generate_from_contradiction(contradiction)
+        hypotheses = self.generator.generate_from_contradiction(contradiction, session.knowledge_context)
         if not hypotheses:
             raise RuntimeError("Hypothesis generator returned no hypotheses. Transient failure?")
         session.hypothesis = hypotheses[0]
@@ -125,7 +179,7 @@ class HypothesisNode(WorkflowNode):
 class PlanningNode(WorkflowNode):
     def __init__(self, gateway: IntelligenceGateway) -> None:
         super().__init__("ExperimentPlanning")
-        self.planner = ExperimentPlanner(gateway=gateway)
+        self.planner = ScientificPlanningLayer(gateway=gateway)
 
     def execute(self, session: DiscoverySession) -> DiscoveryState:
         session.log_trace("Entering Experiment Planning")
@@ -133,7 +187,7 @@ class PlanningNode(WorkflowNode):
             return DiscoveryState.FAILED
 
         ledger_entry = {"id": f"l_{uuid.uuid4()}", "readiness": "readyForExperiment"}
-        design = self.planner.design_experiment(session.hypothesis, ledger_entry)
+        design = self.planner.design_experiment(session.hypothesis, ledger_entry, session.knowledge_context)
         session.experiment_design = design
         return DiscoveryState.REVIEW
 
@@ -240,8 +294,8 @@ class AutonomousDiscoveryOrchestrator:
         self.dag.register_node(DiscoveryState.REVIEW, ReviewNode(self.gateway))
         self.dag.register_node(DiscoveryState.APPROVED, MemoryUpdateNode())
 
-    def run_discovery_cycle(self, question: str) -> DiscoverySession:
-        session = DiscoverySession(question=question)
+    def run_discovery_cycle(self, question: str, historical_cutoff_date: Optional[str] = None) -> DiscoverySession:
+        session = DiscoverySession(question=question, historical_cutoff_date=historical_cutoff_date)
         return self.dag.execute(session)
 
     def resume_discovery_cycle(self, checkpoint_path: str) -> DiscoverySession:
@@ -271,6 +325,8 @@ class AutonomousDiscoveryOrchestrator:
         report += "\n## 4. Scientific Review & Consensus\n"
         if session.debate_record:
             report += f"**Consensus Reached:** {session.debate_record.get('consensusReached')}\n"
+            for critique in session.debate_record.get('critiques', []):
+                report += f"- **{critique.get('role')}**: Decision={critique.get('decision')}, BlockingIssues={critique.get('blockingIssues')}\n"
 
         report += "\n## 5. Telemetry\n"
         report += f"**Runtime:** {session.telemetry.get('total_runtime_seconds', 0):.2f}s\n"

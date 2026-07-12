@@ -19,9 +19,11 @@ class PubMedConnector:
         self.email = email
         self.max_results = max_results
 
-    def _search_pmids(self, query: str) -> list[str]:
+    def _search_pmids(self, query: str, max_date: str = None) -> list[str]:
         """Searches PubMed and returns a list of PMIDs."""
-        url = f"{self.BASE_URL}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(query)}&retmax={self.max_results}&retmode=json&email={self.email}"
+        url = f"{self.BASE_URL}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(query)}&retmax={self.max_results}&retmode=json&email={self.email}&sort=relevance"
+        if max_date:
+            url += f"&mindate=1900/01/01&maxdate={max_date}&datetype=pdat"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "AIDP-Research-Bot/1.0"})
             with urllib.request.urlopen(req) as response:
@@ -68,12 +70,12 @@ class PubMedConnector:
 
         return results
 
-    def fetch_literature_provenance(self, query: str) -> list[ProvenanceEntry]:
+    def fetch_literature_provenance(self, query: str, max_date: str = None) -> list[ProvenanceEntry]:
         """
         Executes a search and returns raw ProvenanceEntry objects containing the literature metadata.
         This provides the raw material for the Knowledge Evolution Engine.
         """
-        pmids = self._search_pmids(query)
+        pmids = self._search_pmids(query, max_date=max_date)
         articles = self._fetch_abstracts(pmids)
 
         provenance_entries = []

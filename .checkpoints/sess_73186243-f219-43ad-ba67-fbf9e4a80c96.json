@@ -1,0 +1,216 @@
+{
+  "id": "sess_73186243-f219-43ad-ba67-fbf9e4a80c96",
+  "question": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "documents": [
+      {
+        "source_doi": "10.1093/oncolo/oyag260",
+        "text": "KRAS G12C mutations are rare in intrahepatic cholangiocarcinoma (iCCA), occurring in approximately 1% of cases. While adagrasib has shown efficacy in biliary tract cancers in clinical trials, real-world evidence for sotorasib remains limited. We report a 64-year-old male with advanced iCCA harboring a KRAS p.(G12C) mutation (58.07% allelic frequency) who progressed on multiple prior therapies including chemotherapy, immunotherapy, and targeted therapy. Disease progression was complicated by obstructive jaundice and ECOG performance status deterioration to 3, requiring percutaneous transhepatic cholangiodrainage (PTCD). Following initiation of sotorasib 480\u2009mg daily, the patient achieved a marked partial radiographic response within 6\u2009weeks. CA19-9 normalized, jaundice resolved, PTCD was removed, and performance status improved to ECOG 1. The patient received continuous sotorasib for 10\u2009months, with the initial partial response lasting 8\u2009months with no significant treatment-related adverse events. This case provides real-world evidence that sotorasib can induce durable responses in chemotherapy-refractory, KRAS G12C-mutant iCCA, including in patients with poor performance status and obstructive jaundice who would typically be excluded from clinical trials.",
+        "title": "Durable Response to Sotorasib in KRAS G12C-Mutant Intrahepatic Cholangiocarcinoma: A Case Report."
+      },
+      {
+        "source_doi": "10.1038/s41388-026-03877-8",
+        "text": "Kirsten rat sarcoma viral oncogene (KRAS) G12C inhibitors have demonstrated clinical efficacy against KRAS G12C-mutant non-small cell lung cancer (NSCLC); however, intrinsic and acquired resistance limit their therapeutic potential. Therefore, combination strategies are needed to address these limitations. While various combination regimens are currently being tested in clinical trials, treatments tailored to specific biomarkers remain underexplored. In this study, intrinsic and acquired KRAS G12C inhibitor-resistant tumor cells were established using patient-derived xenograft (PDX) and mouse models. We identified that tumor cell-autocrine amphiregulin (AREG)-mediated epidermal growth factor receptor (EGFR) phosphorylation plays a pivotal role in both intrinsic and acquired resistance to KRAS inhibitors. Notably, the same resistance mechanism was observed in central nervous system metastatic recurrence in a leptomeningeal carcinomatosis mouse model. RNAscope in situ hybridization detected AREG mRNA in tumor tissues and may serve as a diagnostic tool for assessing AREG expression. Furthermore, combining KRAS inhibitors with EGFR tyrosine kinase inhibitors suppressed tumor growth, effectively overcoming resistance. Notably, high AREG mRNA expression was observed in three of nine tumor samples from patients harboring the KRAS G12C mutation, including two patients who exhibited a poor response to sotorasib and one patient who achieved a partial response. In conclusion, AREG-mediated EGFR activation is a key driver of resistance to KRAS inhibitors in patients with KRAS G12C-mutant NSCLC. Combining EGFR and KRAS inhibition represents a promising strategy to overcome therapeutic resistance and may enhance and prolong clinical benefit in patients.",
+        "title": "Amphiregulin-mediated EGFR activation drives both intrinsic and acquired resistance to KRAS G12C inhibitors in KRAS G12C-mutant non-small cell lung cancer."
+      },
+      {
+        "source_doi": "10.1111/bph.70546",
+        "text": "In recent years, therapeutics targeted against KRAS proto-oncogene GTPase (KRAS)-mutant cancers have seen significant progress. Herein we outline the biology and epidemiology of KRAS alterations at the lineage and allele levels, reviewing the clinical evidence for KRAS",
+        "title": "Targeting KRAS for cancer therapy."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-4c7f7399-8ad6-446f-8444-a94a79f175e1",
+    "claim": "KRAS G12C mutation leads to increased sensitivity to Sotorasib in cancer cells due to altered cell signaling pathways.",
+    "rationale": "This hypothesis resolves the contradiction by proposing a mechanistic relationship between KRAS G12C mutation and Sotorasib efficacy. The rationale is based on the understanding that KRAS G12C mutations are associated with aberrant cell signaling, which can be targeted by Sotorasib. By testing this claim, we can determine if cancer cells with KRAS G12C mutations exhibit increased sensitivity to Sotorasib compared to wild-type cells.",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      {
+        "source": "Cell Signaling Technology",
+        "study": "KRAS G12C mutation and Sotorasib efficacy"
+      },
+      {
+        "source": "National Cancer Institute",
+        "study": "Targeted therapies for KRAS-mutant cancers"
+      }
+    ],
+    "confidence": 0.6,
+    "risk": 0.4,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [
+      {
+        "source": "Cell Signaling Technology",
+        "study": "KRAS G12C mutation and Sotorasib efficacy"
+      },
+      {
+        "source": "National Cancer Institute",
+        "study": "Targeted therapies for KRAS-mutant cancers"
+      }
+    ],
+    "subjective_confidence": 0.9,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-74fb9d3e-5a79-4155-af54-79c6160a1bf4",
+    "hypothesisId": "hyp-4c7f7399-8ad6-446f-8444-a94a79f175e1",
+    "independentVariables": [
+      "KRAS G12C mutation",
+      "Sotorasib concentration"
+    ],
+    "dependentVariables": [
+      "cell viability",
+      "cell proliferation",
+      "cell apoptosis"
+    ],
+    "controls": [
+      "wild-type KRAS cells",
+      "cells treated with vehicle control"
+    ],
+    "failureCriteria": "A significant increase in cell viability or proliferation rate in mutant cells treated with Sotorasib compared to wild-type cells, indicating reduced sensitivity to the drug.",
+    "resourceEstimation": "Cell culture equipment, PCR machines, sequencing instruments, high-throughput screening systems",
+    "costPrediction": "$100,000 - $500,000 (dependent on scale and technology used)",
+    "failurePrediction": "Inadequate cell line selection, incorrect Sotorasib concentration range, or poor data analysis techniques leading to inaccurate results."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-74fb9d3e-5a79-4155-af54-79c6160a1bf4",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient sample size"
+        ],
+        "suggestions": [
+          "Increase sample size to at least 100 for reliable results"
+        ],
+        "evidence": "Experimental design lacks statistical power due to insufficient sample size.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of evidence provided to support the claim"
+        ],
+        "suggestions": [
+          "Provide experimental evidence to support the hypothesis",
+          "Consider alternative explanations for the observed effect"
+        ],
+        "evidence": "Not provided",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Check for confounders and ensure independent variables are actually manipulated"
+        ],
+        "evidence": "Review of experimental design protocol is necessary to identify potential issues.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Ethan Thompson",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of transparency in the experimental design and protocol.",
+          "Insufficient information about participant safety measures."
+        ],
+        "suggestions": [
+          "Provide a detailed experimental design and protocol for review.",
+          "Conduct thorough risk assessments to ensure participant safety.",
+          "Consider implementing measures to prevent dual-use of the research findings."
+        ],
+        "evidence": "The experimental design lacks transparency, which may lead to unforeseen consequences. Participant safety is also a concern due to insufficient information provided.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Inadequate cell line selection"
+        ],
+        "suggestions": [
+          "Conduct a thorough analysis of the cell lines used in the experiment to ensure their suitability for the task.",
+          "Consult with experts in cell biology and pharmacology to validate the chosen cell line."
+        ],
+        "evidence": "The protocol does not provide information on the cell line selection process, which is a critical aspect of the experiment. Additionally, the cost prediction range is quite broad, indicating potential scalability issues.",
+        "riskScore": 0.7,
+        "decision": "approve with conditions"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.2,
+      "average_confidence": 0.8,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Insufficient sample size",
+        "Lack of evidence provided to support the claim",
+        "Lack of transparency in the experimental design and protocol.",
+        "Insufficient information about participant safety measures.",
+        "Inadequate cell line selection"
+      ],
+      "conflict_detected": true,
+      "summary": "Consensus failed. Approvals: 1/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783443990.5229414
+  },
+  "trace": [
+    {
+      "timestamp": 1783443990.529153,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443992.4765837,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443992.4775925,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783444027.8987055,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783444038.8237448,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

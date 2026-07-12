@@ -1,17 +1,342 @@
 [
   {
     "case_id": "case-oncology-001",
-    "governance_checks_executed": [],
-    "decisions": []
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
   },
   {
     "case_id": "case-oncology-002",
-    "governance_checks_executed": [],
-    "decisions": []
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
   },
   {
     "case_id": "case-oncology-003",
-    "governance_checks_executed": [],
-    "decisions": []
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-oncology-004",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-003",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-004",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-neuroscience-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-neuroscience-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-neuroscience-004",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": false,
+        "reason": "Governance Rejected: EvidenceCheck failed: No valid citations provided for claims."
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-003",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-004",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-materials-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": false,
+        "reason": "Governance Rejected: EvidenceCheck failed: No valid citations provided for claims."
+      }
+    ]
+  },
+  {
+    "case_id": "case-materials-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
+  },
+  {
+    "case_id": "case-climate-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": false,
+        "reason": "Governance Rejected: EvidenceCheck failed: No valid citations provided for claims."
+      }
+    ]
+  },
+  {
+    "case_id": "case-climate-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": true,
+        "reason": "Governance Approved: Constitution of Science satisfied."
+      }
+    ]
   }
 ]

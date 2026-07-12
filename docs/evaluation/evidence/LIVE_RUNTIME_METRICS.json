@@ -1,1 +1,542 @@
-[]
+[
+  {
+    "case_id": "case-oncology-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 94.77354621887207,
+    "baseline_runtime": 8.169901132583618,
+    "aidp_token_usage": 1557,
+    "baseline_token_usage": 1185
+  },
+  {
+    "case_id": "case-oncology-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 86.26731395721436,
+    "baseline_runtime": 8.133730173110962,
+    "aidp_token_usage": 2977,
+    "baseline_token_usage": 1269
+  },
+  {
+    "case_id": "case-oncology-003",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 104.11495327949524,
+    "baseline_runtime": 7.662563323974609,
+    "aidp_token_usage": 4454,
+    "baseline_token_usage": 1491
+  },
+  {
+    "case_id": "case-oncology-004",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 96.10596108436584,
+    "baseline_runtime": 8.774081945419312,
+    "aidp_token_usage": 5987,
+    "baseline_token_usage": 919
+  },
+  {
+    "case_id": "case-genetics-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 91.02302384376526,
+    "baseline_runtime": 19.026249408721924,
+    "aidp_token_usage": 7369,
+    "baseline_token_usage": 1465
+  },
+  {
+    "case_id": "case-genetics-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 50.84384226799011,
+    "baseline_runtime": 13.244163751602173,
+    "aidp_token_usage": 8039,
+    "baseline_token_usage": 1233
+  },
+  {
+    "case_id": "case-genetics-003",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 109.57775640487671,
+    "baseline_runtime": 8.145070552825928,
+    "aidp_token_usage": 9462,
+    "baseline_token_usage": 1139
+  },
+  {
+    "case_id": "case-genetics-004",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 127.90329694747925,
+    "baseline_runtime": 7.556597948074341,
+    "aidp_token_usage": 11021,
+    "baseline_token_usage": 1128
+  },
+  {
+    "case_id": "case-neuroscience-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 144.59134888648987,
+    "baseline_runtime": 5.304518699645996,
+    "aidp_token_usage": 12761,
+    "baseline_token_usage": 1006
+  },
+  {
+    "case_id": "case-neuroscience-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 105.16293430328369,
+    "baseline_runtime": 9.334455966949463,
+    "aidp_token_usage": 14328,
+    "baseline_token_usage": 1786
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 107.647052526474,
+    "baseline_runtime": 9.404022216796875,
+    "aidp_token_usage": 15819,
+    "baseline_token_usage": 1284
+  },
+  {
+    "case_id": "case-neuroscience-004",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 106.98554611206055,
+    "baseline_runtime": 8.916181564331055,
+    "aidp_token_usage": 17000,
+    "baseline_token_usage": 357
+  },
+  {
+    "case_id": "case-immunology-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 98.98083448410034,
+    "baseline_runtime": 7.864872694015503,
+    "aidp_token_usage": 18506,
+    "baseline_token_usage": 1101
+  },
+  {
+    "case_id": "case-immunology-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 157.29983472824097,
+    "baseline_runtime": 8.65699291229248,
+    "aidp_token_usage": 20052,
+    "baseline_token_usage": 1057
+  },
+  {
+    "case_id": "case-immunology-003",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 118.80404806137085,
+    "baseline_runtime": 11.795474767684937,
+    "aidp_token_usage": 21623,
+    "baseline_token_usage": 1583
+  },
+  {
+    "case_id": "case-immunology-004",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 114.01946711540222,
+    "baseline_runtime": 11.073983192443848,
+    "aidp_token_usage": 23245,
+    "baseline_token_usage": 1655
+  },
+  {
+    "case_id": "case-materials-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 88.79561018943787,
+    "baseline_runtime": 10.3971107006073,
+    "aidp_token_usage": 24477,
+    "baseline_token_usage": 515
+  },
+  {
+    "case_id": "case-materials-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 78.39022898674011,
+    "baseline_runtime": 6.799619197845459,
+    "aidp_token_usage": 25769,
+    "baseline_token_usage": 526
+  },
+  {
+    "case_id": "case-climate-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 91.54133081436157,
+    "baseline_runtime": 8.123337268829346,
+    "aidp_token_usage": 26849,
+    "baseline_token_usage": 348
+  },
+  {
+    "case_id": "case-climate-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 110.41828870773315,
+    "baseline_runtime": 9.48085069656372,
+    "aidp_token_usage": 28271,
+    "baseline_token_usage": 563
+  }
+]

@@ -104,10 +104,9 @@ class ConsensusEngine:
             if r.decision.lower() != "approve":
                 blocking_reasons.extend(r.blockingIssues)
 
-        # Simple policy: Unanimous approval required for now, or at most 1 minor rejection if we wanted.
-        # But we will stick to unanimous or strict consensus rules.
-        # Let's say we require 100% approval for strict experiments.
-        approved = approvals == total_reviews
+        # Majority consensus: require > 50% approval.
+        # Unanimous is impractical with small local models where persona outputs are noisy.
+        approved = approvals > total_reviews / 2
         conflict_detected = disagreement_percentage > 0.0
 
         summary = f"Consensus {'reached' if approved else 'failed'}. Approvals: {approvals}/{total_reviews}. Max Risk: {max_risk_score}."

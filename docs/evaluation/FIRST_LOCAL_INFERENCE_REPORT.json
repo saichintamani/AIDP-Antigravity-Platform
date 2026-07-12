@@ -1,0 +1,11 @@
+{
+  "Provider": "Ollama (Localhost)",
+  "Model": "ollama/qwen2.5:0.5b",
+  "Status": "SUCCESS",
+  "Response": "READY",
+  "PromptTokens": 40,
+  "CompletionTokens": 2,
+  "Cost": 0.0,
+  "Latency": 77.42064809799194,
+  "ErrorDetails": null
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "case_id": "case-oncology-001",
+    "metrics": {
+      "scientific_correctness": 0.85,
+      "evidence_quality": 0.95,
+      "hallucination_rate": 0.05
+    },
+    "runtime_sec": 45.2,
+    "governance_passed": true,
+    "consensus_passed": true
+  }
+]

@@ -1,0 +1,210 @@
+{
+  "id": "sess_a100f50c-b064-40ef-b986-1607458fae4f",
+  "question": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "documents": [
+      {
+        "source_doi": "10.1093/oncolo/oyag260",
+        "text": "KRAS G12C mutations are rare in intrahepatic cholangiocarcinoma (iCCA), occurring in approximately 1% of cases. While adagrasib has shown efficacy in biliary tract cancers in clinical trials, real-world evidence for sotorasib remains limited. We report a 64-year-old male with advanced iCCA harboring a KRAS p.(G12C) mutation (58.07% allelic frequency) who progressed on multiple prior therapies including chemotherapy, immunotherapy, and targeted therapy. Disease progression was complicated by obstructive jaundice and ECOG performance status deterioration to 3, requiring percutaneous transhepatic cholangiodrainage (PTCD). Following initiation of sotorasib 480\u2009mg daily, the patient achieved a marked partial radiographic response within 6\u2009weeks. CA19-9 normalized, jaundice resolved, PTCD was removed, and performance status improved to ECOG 1. The patient received continuous sotorasib for 10\u2009months, with the initial partial response lasting 8\u2009months with no significant treatment-related adverse events. This case provides real-world evidence that sotorasib can induce durable responses in chemotherapy-refractory, KRAS G12C-mutant iCCA, including in patients with poor performance status and obstructive jaundice who would typically be excluded from clinical trials.",
+        "title": "Durable Response to Sotorasib in KRAS G12C-Mutant Intrahepatic Cholangiocarcinoma: A Case Report."
+      },
+      {
+        "source_doi": "10.1038/s41388-026-03877-8",
+        "text": "Kirsten rat sarcoma viral oncogene (KRAS) G12C inhibitors have demonstrated clinical efficacy against KRAS G12C-mutant non-small cell lung cancer (NSCLC); however, intrinsic and acquired resistance limit their therapeutic potential. Therefore, combination strategies are needed to address these limitations. While various combination regimens are currently being tested in clinical trials, treatments tailored to specific biomarkers remain underexplored. In this study, intrinsic and acquired KRAS G12C inhibitor-resistant tumor cells were established using patient-derived xenograft (PDX) and mouse models. We identified that tumor cell-autocrine amphiregulin (AREG)-mediated epidermal growth factor receptor (EGFR) phosphorylation plays a pivotal role in both intrinsic and acquired resistance to KRAS inhibitors. Notably, the same resistance mechanism was observed in central nervous system metastatic recurrence in a leptomeningeal carcinomatosis mouse model. RNAscope in situ hybridization detected AREG mRNA in tumor tissues and may serve as a diagnostic tool for assessing AREG expression. Furthermore, combining KRAS inhibitors with EGFR tyrosine kinase inhibitors suppressed tumor growth, effectively overcoming resistance. Notably, high AREG mRNA expression was observed in three of nine tumor samples from patients harboring the KRAS G12C mutation, including two patients who exhibited a poor response to sotorasib and one patient who achieved a partial response. In conclusion, AREG-mediated EGFR activation is a key driver of resistance to KRAS inhibitors in patients with KRAS G12C-mutant NSCLC. Combining EGFR and KRAS inhibition represents a promising strategy to overcome therapeutic resistance and may enhance and prolong clinical benefit in patients.",
+        "title": "Amphiregulin-mediated EGFR activation drives both intrinsic and acquired resistance to KRAS G12C inhibitors in KRAS G12C-mutant non-small cell lung cancer."
+      },
+      {
+        "source_doi": "10.1111/bph.70546",
+        "text": "In recent years, therapeutics targeted against KRAS proto-oncogene GTPase (KRAS)-mutant cancers have seen significant progress. Herein we outline the biology and epidemiology of KRAS alterations at the lineage and allele levels, reviewing the clinical evidence for KRAS",
+        "title": "Targeting KRAS for cancer therapy."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-6b759e29-ad76-4c0d-96a0-9cebf02b36db",
+    "claim": "KRAS G12C mutation activates a specific signaling pathway that is inhibited by Sotorasib, but this inhibition does not directly affect KRAS G12C mutation's mechanistic relationship with targeted inhibitors.",
+    "rationale": "The contradiction arises from the fact that KRAS G12C mutation is often associated with cancer cell proliferation and survival. However, Sotorasib targets a specific pathway (MEK/ERK) that is downstream of KRAS G12C mutation. The proposed claim suggests that while Sotorasib inhibits this pathway, it does not directly affect the mechanistic relationship between KRAS G12C mutation and targeted inhibitors.",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      {
+        "source": "National Cancer Institute",
+        "reference": "NCI: KRAS G12C Mutation"
+      },
+      {
+        "source": "ClinicalTrials.gov",
+        "reference": "Sotorasib Clinical Trials"
+      }
+    ],
+    "confidence": 0.6,
+    "risk": 0.4,
+    "expectedInformationGain": 0.95
+  },
+  "experiment_design": {
+    "id": "exp-ccfb9604-23af-4291-95d9-88bf9493031b",
+    "hypothesisId": "hyp-6b759e29-ad76-4c0d-96a0-9cebf02b36db",
+    "independentVariables": [
+      "KRAS G12C mutation",
+      "Sotorasib",
+      "targeted inhibitors"
+    ],
+    "dependentVariables": [
+      "signaling pathway activation",
+      "inhibition by Sotorasib",
+      "mechanistic relationship with targeted inhibitors"
+    ],
+    "controls": [
+      "wild-type KRAS",
+      "Sotorasib alone",
+      "targeted inhibitor alone"
+    ],
+    "failureCriteria": "No significant inhibition of signaling pathway activation in cells expressing KRAS G12C mutation treated with Sotorasib, or no alteration in mechanistic relationship with targeted inhibitors.",
+    "resourceEstimation": "Cell culture setup, PCR, Western blotting, flow cytometry, bioinformatics analysis",
+    "costPrediction": "$100,000 - $200,000 (estimated based on cell culture costs, reagents, and personnel)",
+    "failurePrediction": "Inadequate Sotorasib concentration, incorrect cell line selection, or failure to maintain stable KRAS G12C mutation expression."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-ccfb9604-23af-4291-95d9-88bf9493031b",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.2,
+        "blockingIssues": [
+          "Lack of control groups"
+        ],
+        "suggestions": [
+          "Include at least one wild-type KRAS control group and one Sotorasib-only control group to establish a baseline for comparison.",
+          "Consider adding a targeted inhibitor-only control group to assess the mechanistic relationship between Sotorasib and targeted inhibitors."
+        ],
+        "evidence": "The experimental design lacks strict control groups, which are essential for establishing a clear baseline for comparison. This may lead to biased results and conclusions.",
+        "riskScore": 0.8,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.7,
+        "blockingIssues": [
+          "The proposed claim is contradictory and lacks mechanistic clarity regarding the relationship between KRAS G12C mutation, Sotorasib inhibition, and targeted inhibitors."
+        ],
+        "suggestions": [
+          "Provide more detailed information on the signaling pathway activated by KRAS G12C mutation and how it relates to MEK/ERK pathway inhibited by Sotorasib.",
+          "Include experimental data or biochemical assays demonstrating the effect of Sotorasib inhibition on targeted inhibitors in KRAS G12C mutation."
+        ],
+        "evidence": null,
+        "riskScore": 0.8,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Unmeasured confounders: No information on potential confounders is provided.",
+          "Independent variables not manipulated: KRAS G12C mutation and targeted inhibitors are not being manipulated, only Sotorasib is being tested."
+        ],
+        "suggestions": [
+          "Include a list of potential confounders in the experimental design.",
+          "Consider using a control group or a placebo to isolate the effect of Sotorasib."
+        ],
+        "evidence": "Experimental design lacks transparency and fails to address key methodological concerns.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of informed consent",
+          "Insufficient participant screening"
+        ],
+        "suggestions": [
+          "Conduct thorough participant screening",
+          "Obtain explicit informed consent"
+        ],
+        "evidence": "Regulatory guidelines (e.g., IRB) emphasize the importance of informed consent and participant screening in experimental designs.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of protocol provided"
+        ],
+        "suggestions": [
+          "Develop a detailed experimental design and protocol before proceeding.",
+          "Consider using automation tools for PCR, Western blotting, and flow cytometry to increase efficiency and reduce manual errors."
+        ],
+        "evidence": "The estimated cost range is reasonable considering the resources required. However, without a clear protocol, it's challenging to assess the technical feasibility of the experiment.",
+        "riskScore": 0.6,
+        "decision": "approve with conditions"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.0,
+      "average_confidence": 0.6599999999999999,
+      "max_risk_score": 0.8,
+      "blocking_reasons": [
+        "Lack of control groups",
+        "The proposed claim is contradictory and lacks mechanistic clarity regarding the relationship between KRAS G12C mutation, Sotorasib inhibition, and targeted inhibitors.",
+        "Unmeasured confounders: No information on potential confounders is provided.",
+        "Independent variables not manipulated: KRAS G12C mutation and targeted inhibitors are not being manipulated, only Sotorasib is being tested.",
+        "Lack of informed consent",
+        "Insufficient participant screening",
+        "Lack of protocol provided"
+      ],
+      "conflict_detected": false,
+      "summary": "Consensus failed. Approvals: 0/5. Max Risk: 0.8."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783443653.3134933
+  },
+  "trace": [
+    {
+      "timestamp": 1783443653.3200145,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443655.7625563,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443655.7635558,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443693.9747157,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783443706.2510598,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

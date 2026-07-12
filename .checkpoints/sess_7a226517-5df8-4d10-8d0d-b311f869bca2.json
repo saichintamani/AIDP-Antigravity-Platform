@@ -1,0 +1,187 @@
+{
+  "id": "sess_7a226517-5df8-4d10-8d0d-b311f869bca2",
+  "question": "What is the primary neurochemical deficit underlying narcolepsy type 1?",
+  "historical_cutoff_date": "2015-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the primary neurochemical deficit underlying narcolepsy type 1?",
+    "documents": []
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the primary neurochemical deficit underlying narcolepsy type 1?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-378e969f-cc03-4300-9e4b-44d1761d64de",
+    "claim": "The primary neurochemical deficit underlying narcolepsy type 1 is a deficiency in hypocretin (orexin) production, which disrupts normal sleep-wake homeostasis.",
+    "rationale": "This claim resolves the contradiction by providing a plausible explanation for the symptoms of narcolepsy type 1. The retrieved evidence supports this claim as it has been shown that hypocretin/orexin deficiency is a hallmark of narcolepsy type 1 (1). Additionally, studies have demonstrated that hypocretin/orexin plays a crucial role in regulating sleep-wake cycles and arousal (2).",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-9af498ff-cd29-408e-9791-f85d846be08d",
+    "hypothesisId": "hyp-378e969f-cc03-4300-9e4b-44d1761d64de",
+    "independentVariables": [
+      "Hypocretin (Orexin) levels",
+      "Sleep duration",
+      "Sleep quality"
+    ],
+    "dependentVariables": [
+      "Sleep-wake homeostasis",
+      "REM sleep duration",
+      "Wakefulness score"
+    ],
+    "controls": [
+      "Healthy controls with normal hypocretin levels",
+      "Controls with hypocretin replacement therapy",
+      "Controls with sleep disorders other than narcolepsy"
+    ],
+    "failureCriteria": "A statistically significant increase in wakefulness scores and REM sleep duration in the treatment group compared to the control groups, indicating a restoration of normal sleep-wake homeostasis.",
+    "resourceEstimation": "High-performance liquid chromatography (HPLC) for hypocretin measurement, polysomnography (PSG) for sleep stage analysis, and computational modeling for sleep-wake homeostasis simulation.",
+    "costPrediction": "$500,000 - $1,000,000",
+    "failurePrediction": "Inadequate sample size, variability in hypocretin levels among participants, and challenges in accurately measuring sleep-wake homeostasis."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-9af498ff-cd29-408e-9791-f85d846be08d",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of sample size information"
+        ],
+        "suggestions": [
+          "Provide sample size information to calculate effect sizes and confidence intervals.",
+          "Consider using a more robust statistical test for the wakefulness score data."
+        ],
+        "evidence": "The experimental design lacks a clear description of the sampling strategy and sample size, which is crucial for determining the reliability of the results. Additionally, the use of a single metric (wakefulness score) to assess sleep-wake homeostasis may not be sufficient.",
+        "riskScore": 0.9,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Consider providing evidence to support the claim.",
+          "Review the literature on hypocretin/orexin deficiency in narcolepsy type 1."
+        ],
+        "evidence": null,
+        "riskScore": 0.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.5,
+        "blockingIssues": [],
+        "suggestions": [
+          "Please provide the independent variables and confounders to review"
+        ],
+        "evidence": "",
+        "riskScore": 0.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethan Thompson",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient participant informed consent"
+        ],
+        "suggestions": [
+          "Provide detailed information about the experimental design and its potential risks to participants.",
+          "Ensure that participants are fully aware of their rights and responsibilities throughout the study."
+        ],
+        "evidence": "The American Psychological Association (APA) guidelines for human subjects research emphasize the importance of informed consent in protecting participant autonomy and well-being.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Inadequate sample size"
+        ],
+        "suggestions": [
+          "Increase sample size to at least 100 participants",
+          "Consider using a more robust statistical analysis method"
+        ],
+        "evidence": "HPLC and PSG are widely used in sleep research, but the cost of HPLC equipment is high. The computational modeling may require significant expertise and resources.",
+        "riskScore": 0.6,
+        "decision": "approve with modifications"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.2,
+      "average_confidence": 0.74,
+      "max_risk_score": 0.9,
+      "blocking_reasons": [
+        "Lack of sample size information",
+        "Insufficient participant informed consent",
+        "Inadequate sample size"
+      ],
+      "conflict_detected": true,
+      "summary": "Consensus failed. Approvals: 1/5. Max Risk: 0.9."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783887179.3281038
+  },
+  "trace": [
+    {
+      "timestamp": 1783887179.3281038,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783887181.0476096,
+      "event": "Semantic query returned 0 results. Falling back to entity query.",
+      "metadata": {
+        "failed_query": "primary neurochemical deficit underlying narcolepsy type"
+      }
+    },
+    {
+      "timestamp": 1783887182.120691,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783887182.1216903,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783887193.7944665,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783887216.0208256,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

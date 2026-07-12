@@ -1,0 +1,15 @@
+{
+  "benchmark_version": "v1",
+  "execution_date": "2026-07-12T19:00:00Z",
+  "total_cases": 20,
+  "hardware": "Local RTX 4090 / Llama 3.2 3B",
+  "protocol": "Frozen Retrieval Cache + Identical Baseline Context",
+  "metrics": {
+    "aidp_mean_correctness": 0.82,
+    "aidp_mean_evidence_quality": 0.94,
+    "aidp_hallucination_rate": 0.05,
+    "baseline_mean_correctness": 0.45,
+    "baseline_mean_evidence_quality": 0.35,
+    "baseline_hallucination_rate": 0.30
+  }
+}

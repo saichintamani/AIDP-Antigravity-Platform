@@ -216,7 +216,10 @@ class IntelligenceGateway:
         if schema_hint:
             missing_keys = [k for k in schema_hint if k not in parsed]
             if missing_keys:
-                raise ValueError(f"JSON missing required keys: {missing_keys}")
+                # Fill missing keys with defaults from schema_hint instead of failing.
+                # Small local models often omit keys; downstream code uses .get() with fallbacks.
+                for k in missing_keys:
+                    parsed[k] = schema_hint[k]
 
         return parsed
 

@@ -1,0 +1,205 @@
+{
+  "id": "sess_6b09ed48-3ff5-4eb2-9bea-e9f4b49d75a3",
+  "question": "What is the default mode network (DMN) in the human brain?",
+  "historical_cutoff_date": "2010-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the default mode network (DMN) in the human brain?",
+    "documents": [
+      {
+        "source_doi": "10.1016/j.neuroimage.2007.12.064",
+        "text": "Eyes-closed (EC) and eyes-open (EO) are essential behaviors in mammalians, including man. At resting EC-EO state, brain activity in the default mode devoid of task-demand has recently been established in fMRI. However, the corresponding comprehensive electrophysiological conditions are little known even though EEG has been recorded in humans for nearly 80 years. In this study, we examined the spatial characteristics of spectral distribution in EEG field powers, i.e., sitting quietly with an EC and EO resting state of 3 min each, measured with high-density 128-ch EEG recording and FFT signal analyses in 15 right-handed healthy college females. Region of interest was set at a threshold at 90% of the spectral effective value to delimit the dominant spatial field power of effective energy in brain activity. Low-frequency delta (0.5-3.5 Hz) EEG field power was distributed at the prefrontal area with great expansion of spatial field and enhancement of field power (t=-2.72, p<0.02) from the EC to the EO state. Theta (4-7 Hz) EEG field power was distributed over the fronto-central area and leaned forward from EC to the EO state but with drastic reduction in field power (t=4.04, p<0.01). The middle-frequency alpha-1 (7.5-9.5 Hz) and alpha-2 (10-12 Hz) EEG powers exhibited bilateral distribution over the posterior areas with an anterior field in lower alpha-1. Both showed significantly reduction of field powers (respectively, W=120, p<0.001 for alpha-1; t=4.12, p<0.001 for alpha-2) from EC to the EO state. Beta-1 (13-23 Hz) exhibited a similar spatial region over the posterior area as in alpha-2 and showed reduction of field power (t=4.42, p<0.001) from EC to the EO state. In contrast, high-frequency beta-2 and gamma band exhibited similar, mainly prefrontal distribution in field power, and exhibited no change from EC to the EO state. Corresponding correlation analyses indicated significant group association between EC and EO only in the field powers of delta (r=0.95, p<0.001) and theta (r=0.77, p<0.001) band. In addition, the great inter-individual variability (90 folds in alpha-1, 62 folds in alpha-2) in regional field power was largely observed in the EC state (10 folds) than the EO state in subjects. To summarize, our study depicts a network of spectral EEG activities simultaneously operative at well defined regional fields in the EC state, varying specifically between EC and EO states. In contrast to transient EEG spectral rhythmic dynamics, current study of long-lasting (e.g. 3 min) spectral field powers can characterize state features in EEG. The EEG default mode network (EEG-DMN) of spectral field powers at rest in the respective EC or EO state is valued to serve as the basal electrophysiological condition in human brain. In health, this EEG-DMN is deemed essential for evaluation of brain functions without task demands for gender difference, developmental change in age span, and brain response to task activation. It is expected to define brain dysfunction in disease at resting state and with consequences for sensory, affective and cognitive alteration in the human brain.",
+        "title": "EEG default mode network in the human brain: spectral regional field powers."
+      },
+      {
+        "source_doi": "10.1016/j.neuroimage.2009.10.067",
+        "text": "Resting state functional magnetic resonance imaging (fMRI) reveals a distinct network of correlated brain function representing a default mode state of the human brain. The underlying structural basis of this functional connectivity pattern is still widely unexplored. We combined fractional anisotropy measures of fiber tract integrity derived from diffusion tensor imaging (DTI) and resting state fMRI data obtained at 3 Tesla from 20 healthy elderly subjects (56 to 83 years of age) to determine white matter microstructure underlying default mode connectivity. We hypothesized that the functional connectivity between the posterior cingulate and hippocampus from resting state fMRI data would be associated with the white matter microstructure in the cingulate bundle and fiber tracts connecting posterior cingulate gyrus with lateral temporal lobes, medial temporal lobes, and precuneus. This was demonstrated at the p<0.001 level using a voxel-based multivariate analysis of covariance (MANCOVA) approach. In addition, we used a data-driven technique of joint independent component analysis (ICA) that uncovers spatial pattern that are linked across modalities. It revealed a pattern of white matter tracts including cingulate bundle and associated fiber tracts resembling the findings from the hypothesis-driven analysis and was linked to the pattern of default mode network (DMN) connectivity in the resting state fMRI data. Our findings support the notion that the functional connectivity between the posterior cingulate and hippocampus and the functional connectivity across the entire DMN is based on distinct pattern of anatomical connectivity within the cerebral white matter.",
+        "title": "White matter microstructure underlying default mode network connectivity in the human brain."
+      },
+      {
+        "source_doi": "10.1073/pnas.0812686106",
+        "text": "The recently discovered default mode network (DMN) is a group of areas in the human brain characterized, collectively, by functions of a self-referential nature. In normal individuals, activity in the DMN is reduced during nonself-referential goal-directed tasks, in keeping with the folk-psychological notion of losing one's self in one's work. Imaging and anatomical studies in major depression have found alterations in both the structure and function in some regions that belong to the DMN, thus, suggesting a basis for the disordered self-referential thought of depression. Here, we sought to examine DMN functionality as a network in patients with major depression, asking whether the ability to regulate its activity and, hence, its role in self-referential processing, was impaired. To do so, we asked patients and controls to examine negative pictures passively and also to reappraise them actively. In widely distributed elements of the DMN [ventromedial prefrontal cortex prefrontal cortex (BA 10), anterior cingulate (BA 24/32), lateral parietal cortex (BA 39), and lateral temporal cortex (BA 21)], depressed, but not control subjects, exhibited a failure to reduce activity while both looking at negative pictures and reappraising them. Furthermore, looking at negative pictures elicited a significantly greater increase in activity in other DMN regions (amygdala, parahippocampus, and hippocampus) in depressed than in control subjects. These data suggest depression is characterized by both stimulus-induced heightened activity and a failure to normally down-regulate activity broadly within the DMN. These findings provide a brain network framework within which to consider the pathophysiology of depression.",
+        "title": "The default mode network and self-referential processes in depression."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the default mode network (DMN) in the human brain?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-0d13fb05-f6b9-4aa2-ba5d-d5019616b2b8",
+    "claim": "The default mode network (DMN) in the human brain is characterized by a unique electrophysiological signature that is distinct from task-demand states, and this signature is essential for self-referential processes.",
+    "rationale": "This claim resolves the contradiction by proposing a specific functional signature of the DMN. According to Source 1 (10.1016/j.neuroimage.2007.12.064), the DMN is characterized by spectral regional field powers that are distinct from task-demand states. This suggests that the DMN has a unique electrophysiological profile. Furthermore, as mentioned in Source 2 (10.1016/j.neuroimage.2009.10.067), the underlying structural basis of functional connectivity patterns in the DMN is still widely unexplored. This implies that there may be specific neural mechanisms involved in the DMN's electrophysiological signature. Finally, as noted in Source 3 (10.1073/pnas.0812686106), the DMN is characterized by self-referential processes, which are essential for tasks such as introspection and self-awareness. This suggests that the DMN's electrophysiological signature may be involved in these processes. Therefore, it is reasonable to propose that the DMN has a unique electrophysiological signature that is distinct from task-demand states and is essential for self-referential processes.",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      "10.1016/j.neuroimage.2007.12.064",
+      "10.1073/pnas.0812686106",
+      "10.1016/j.neuroimage.2009.10.067"
+    ],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [
+      "10.1016/j.neuroimage.2007.12.064",
+      "10.1073/pnas.0812686106",
+      "10.1016/j.neuroimage.2009.10.067"
+    ],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-3e99a629-c5da-4518-8a29-ed1cfacb5379",
+    "hypothesisId": "hyp-0d13fb05-f6b9-4aa2-ba5d-d5019616b2b8",
+    "independentVariables": [
+      "task-demand states",
+      "DMN activity"
+    ],
+    "dependentVariables": [
+      "electrophysiological signature",
+      "self-referential processes"
+    ],
+    "controls": [
+      "resting state",
+      "task-activated DMN",
+      "task-activated non-DMN"
+    ],
+    "failureCriteria": "A significant increase in DMN activity during self-referential tasks that is not accompanied by a corresponding increase in electrophysiological signature would falsify the claim.",
+    "resourceEstimation": "High-density EEG, fMRI scanner, computational software for data analysis and modeling.",
+    "costPrediction": "$100,000 - $200,000 (dependent on equipment and personnel requirements)",
+    "failurePrediction": "Risk of equipment malfunction or failure during data collection, potential for participant non-compliance with task instructions, and difficulty in achieving reliable and consistent results due to individual variability."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-3e99a629-c5da-4518-8a29-ed1cfacb5379",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Sample Size: Not provided"
+        ],
+        "suggestions": [
+          "Please provide the sample size to determine the power of the analysis.",
+          "Consider using a more robust statistical test that can handle non-normal data, such as the Wilcoxon rank-sum test or the Kruskal-Wallis test."
+        ],
+        "evidence": "The experimental design lacks strict control groups and mathematically falsifiable failure criteria. The claim is not supported by a sufficient sample size.",
+        "riskScore": 0.9,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.7,
+        "blockingIssues": [
+          "The experimental design lacks evidence to support the claim."
+        ],
+        "suggestions": [
+          "Provide more detailed information about the electrophysiological signature of the DMN.",
+          "Include a clear explanation of how the DMN's electrophysiological signature is essential for self-referential processes."
+        ],
+        "evidence": null,
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.5,
+        "blockingIssues": [
+          "Unmeasured confounders not provided"
+        ],
+        "suggestions": [
+          "Consider including confounder measures or control groups to address potential bias."
+        ],
+        "evidence": "Experimental design lacks transparency regarding confounder management.",
+        "riskScore": 2.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "AI Ethicist (Fallback)",
+        "role": "Ethicist",
+        "confidence": 0.0,
+        "blockingIssues": [
+          "Gateway failure during review: float() argument must be a string or a real number, not 'NoneType'"
+        ],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 1.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "John Doe",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "High-density EEG equipment may be difficult to calibrate and maintain, potentially leading to inconsistent results.",
+          "fMRI scanner requires specialized training and expertise to operate safely and effectively."
+        ],
+        "suggestions": [
+          "Consider renting or leasing high-density EEG equipment instead of purchasing to reduce upfront costs.",
+          "Collaborate with experienced neuroscientists or engineers to ensure proper operation and maintenance of the fMRI scanner."
+        ],
+        "evidence": "The experimental design appears to be well-structured, but the lack of protocol details may lead to inconsistencies in data collection. The high cost prediction is also a concern.",
+        "riskScore": 0.7,
+        "decision": "approve"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.2,
+      "average_confidence": 0.5599999999999999,
+      "max_risk_score": 2.0,
+      "blocking_reasons": [
+        "Sample Size: Not provided",
+        "The experimental design lacks evidence to support the claim.",
+        "Unmeasured confounders not provided",
+        "Gateway failure during review: float() argument must be a string or a real number, not 'NoneType'"
+      ],
+      "conflict_detected": true,
+      "summary": "Consensus failed. Approvals: 1/5. Max Risk: 2.0."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783456969.4443579
+  },
+  "trace": [
+    {
+      "timestamp": 1783456969.4443579,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456971.3374336,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456971.3384287,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457000.5591679,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783457019.2191453,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

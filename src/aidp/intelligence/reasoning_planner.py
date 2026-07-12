@@ -45,6 +45,12 @@ class ReasoningPlanner:
             return "engineer_review"
         elif task_type == CognitiveTaskType.ETHICS_REVIEW:
             return "ethicist_review"
+        elif task_type == CognitiveTaskType.EVIDENCE_LINKAGE_VALIDATION:
+            return "evidence_linkage_validator"
+        elif task_type == CognitiveTaskType.METHODOLOGY_GENERATION:
+            return "methodology_generator"
+        elif task_type == CognitiveTaskType.STATISTICAL_DESIGN_VALIDATION:
+            return "statistical_validator"
         else:
             raise ValueError(f"Unsupported task type for mapping: {task_type}")
 
@@ -52,6 +58,9 @@ class ReasoningPlanner:
         if task_type in [
             CognitiveTaskType.HYPOTHESIS_GENERATION,
             CognitiveTaskType.EXPERIMENT_PLANNING,
+            CognitiveTaskType.EVIDENCE_LINKAGE_VALIDATION,
+            CognitiveTaskType.METHODOLOGY_GENERATION,
+            CognitiveTaskType.STATISTICAL_DESIGN_VALIDATION,
         ]:
             return ReasoningTier.EXPERT
         elif task_type in [

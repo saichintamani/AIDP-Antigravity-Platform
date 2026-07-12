@@ -5,16 +5,16 @@ live_execution:
   
 models:
   baseline_a:
-    primary: "gpt-4-turbo"
+    primary: "ollama/llama3.2:3b"
     temperature: 0.1
     max_tokens: 1500
   baseline_b:
-    primary: "gpt-4-turbo"
+    primary: "ollama/llama3.2:3b"
     temperature: 0.1
     max_tokens: 2000
   baseline_c_aidp:
-    reasoning_model: "gpt-4-turbo"
-    debate_model: "claude-3-sonnet-20240229"
+    reasoning_model: "ollama/llama3.2:3b"
+    debate_model: "ollama/llama3.2:3b"
     temperature: 0.3
     max_tokens: 4000
 

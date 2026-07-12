@@ -1,0 +1,210 @@
+{
+  "id": "sess_04985555-c128-49a7-8ec6-b1f9de66cf1e",
+  "question": "How can the CRISPR-Cas9 system be utilized for targeted eukaryotic genome editing?",
+  "historical_cutoff_date": "2014-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "How can the CRISPR-Cas9 system be utilized for targeted eukaryotic genome editing?",
+    "documents": [
+      {
+        "source_doi": "10.1016/B978-0-12-801185-0.00022-2",
+        "text": "Targeted modification of plant genome is key to elucidating and manipulating gene functions in plant research and biotechnology. The clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein (Cas) technology is emerging as a powerful genome-editing method in diverse plants that traditionally lacked facile and versatile tools for targeted genetic engineering. This technology utilizes easily reprogrammable guide RNAs (sgRNAs) to direct Streptococcus pyogenes Cas9 endonuclease to generate DNA double-stranded breaks in targeted genome sequences, which facilitates efficient mutagenesis by error-prone nonhomologous end-joining (NHEJ) or sequence replacement by homology-directed repair (HDR). In this chapter, we describe the procedure to design and evaluate dual sgRNAs for plant codon-optimized Cas9-mediated genome editing using mesophyll protoplasts as model cell systems in Arabidopsis thaliana and Nicotiana benthamiana. We also discuss future directions in sgRNA/Cas9 applications for generating targeted genome modifications and gene regulations in plants.",
+        "title": "Cas9-based genome editing in Arabidopsis and tobacco."
+      },
+      {
+        "source_doi": "10.1371/journal.pone.0108424",
+        "text": "CRISPR-Cas systems are a diverse family of RNA-protein complexes in bacteria that target foreign DNA sequences for cleavage. Derivatives of these complexes have been engineered to cleave specific target sequences depending on the sequence of a CRISPR-derived guide RNA (gRNA) and the source of the Cas9 protein. Important considerations for the design of gRNAs are to maximize aimed activity at the desired target site while minimizing off-target cleavage. Because of the rapid advances in the understanding of existing CRISPR-Cas9-derived RNA-guided nucleases and the development of novel RNA-guided nuclease systems, it is critical to have computational tools that can accommodate a wide range of different parameters for the design of target-specific RNA-guided nuclease systems. We have developed CRISPRseek, a highly flexible, open source software package to identify gRNAs that target a given input sequence while minimizing off-target cleavage at other sites within any selected genome. CRISPRseek will identify potential gRNAs that target a sequence of interest for CRISPR-Cas9 systems from different bacterial species and generate a cleavage score for potential off-target sequences utilizing published or user-supplied weight matrices with position-specific mismatch penalty scores. Identified gRNAs may be further filtered to only include those that occur in paired orientations for increased specificity and/or those that overlap restriction enzyme sites. For applications where gRNAs are desired to discriminate between two related sequences, CRISPRseek can rank gRNAs based on the difference between predicted cleavage scores in each input sequence. CRISPRseek is implemented as a Bioconductor package within the R statistical programming environment, allowing it to be incorporated into computational pipelines to automate the design of gRNAs for target sequences identified in a wide variety of genome-wide analyses. CRISPRseek is available under the GNU General Public Licence v3.0 at http://www.bioconductor.org.",
+        "title": "CRISPRseek: a bioconductor package to identify target-specific guide RNAs for CRISPR-Cas9 genome-editing systems."
+      },
+      {
+        "source_doi": "10.1534/genetics.113.155382",
+        "text": "Exploitation of custom-designed nucleases to induce DNA double-strand breaks (DSBs) at genomic locations of choice has transformed our ability to edit genomes, regardless of their complexity. DSBs can trigger either error-prone repair pathways that induce random mutations at the break sites or precise homology-directed repair pathways that generate specific insertions or deletions guided by exogenously supplied DNA. Prior editing strategies using site-specific nucleases to modify the Caenorhabditis elegans genome achieved only the heritable disruption of endogenous loci through random mutagenesis by error-prone repair. Here we report highly effective strategies using TALE nucleases and RNA-guided CRISPR/Cas9 nucleases to induce error-prone repair and homology-directed repair to create heritable, precise insertion, deletion, or substitution of specific DNA sequences at targeted endogenous loci. Our robust strategies are effective across nematode species diverged by 300 million years, including necromenic nematodes (Pristionchus pacificus), male/female species (Caenorhabditis species 9), and hermaphroditic species (C. elegans). Thus, genome-editing tools now exist to transform nonmodel nematode species into genetically tractable model organisms. We demonstrate the utility of our broadly applicable genome-editing strategies by creating reagents generally useful to the nematode community and reagents specifically designed to explore the mechanism and evolution of X chromosome dosage compensation. By developing an efficient pipeline involving germline injection of nuclease mRNAs and single-stranded DNA templates, we engineered precise, heritable nucleotide changes both close to and far from DSBs to gain or lose genetic function, to tag proteins made from endogenous genes, and to excise entire loci through targeted FLP-FRT recombination.",
+        "title": "Precise and heritable genome editing in evolutionarily diverse nematodes using TALENs and CRISPR/Cas9 to engineer insertions and deletions."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to How can the CRISPR-Cas9 system be utilized for targeted eukaryotic genome editing?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-902d0e29-9d72-4d23-8335-213ec9442599",
+    "claim": "The CRISPR-Cas9 system can be utilized for targeted eukaryotic genome editing by designing guide RNAs that specifically target and cleave genes of interest.",
+    "rationale": "This claim is supported by evidence suggesting that CRISPR-Cas systems are capable of targeting specific sequences (Source 2), and that custom-designed nucleases can induce precise DNA double-strand breaks at genomic locations of choice (Source 3). Furthermore, the use of targeted genome modification in plant research and biotechnology has been demonstrated to elucidate and manipulate gene functions (Source 1).",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      "10.1016/B978-0-12-801185-0.00022-2",
+      "10.1371/journal.pone.0108424",
+      "10.1534/genetics.113.155382"
+    ],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [
+      "10.1016/B978-0-12-801185-0.00022-2",
+      "10.1371/journal.pone.0108424",
+      "10.1534/genetics.113.155382"
+    ],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-f1b4c9e8-9ac1-4312-a461-0d2e825247d5",
+    "hypothesisId": "hyp-902d0e29-9d72-4d23-8335-213ec9442599",
+    "independentVariables": [
+      "Guide RNA design",
+      "Cas9 enzyme concentration",
+      "Targeting specificity"
+    ],
+    "dependentVariables": [
+      "Genome editing efficiency",
+      "Specificity of gene cleavage",
+      "Off-target effects"
+    ],
+    "controls": [
+      "Negative control with no guide RNA",
+      "Positive control with known target sequence",
+      "Control with non-specific guide RNA targeting"
+    ],
+    "failureCriteria": "A genome edit rate < 10% or an off-target effect rate > 20% would falsify the claim.",
+    "resourceEstimation": "High-throughput sequencing, PCR, gel electrophoresis equipment, Cas9 enzyme, guide RNAs, eukaryotic cells",
+    "costPrediction": "$100,000 - $500,000 (dependent on scale and complexity of experiment)",
+    "failurePrediction": "Inadequate cell culture conditions, contamination risks, and potential for guide RNA degradation or Cas9 enzyme inactivation."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-f1b4c9e8-9ac1-4312-a461-0d2e825247d5",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Missing sample size"
+        ],
+        "suggestions": [
+          "Provide sample size to calculate statistical power and determine the required effect size.",
+          "Consider using a more conservative failure criterion for off-target effects."
+        ],
+        "evidence": "The experimental design lacks a clear statement of the null hypothesis and alternative hypothesis.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Unmeasured confounders: No information on potential confounding variables.",
+          "Independent variables not manipulated: Guide RNA design and Cas9 enzyme concentration are not explicitly stated as being manipulated.",
+          "Off-target effects: Lack of information on how off-target effects will be measured or controlled."
+        ],
+        "suggestions": [
+          "Include a detailed description of the experimental protocol, including the specific guide RNAs used and the concentrations of Cas9 enzyme.",
+          "Consider adding confounding variables to the experiment, such as the presence of other guide RNAs or the use of different Cas9 enzymes.",
+          "Develop a plan for measuring and controlling off-target effects."
+        ],
+        "evidence": "Experimental design lacks clarity and detail.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Jane",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of transparency in protocol"
+        ],
+        "suggestions": [
+          "Provide detailed protocol and informed consent forms for participants.",
+          "Consider alternative methods to reduce resource requirements."
+        ],
+        "evidence": "General guidelines for high-throughput sequencing, PCR, gel electrophoresis equipment, Cas9 enzyme, guide RNAs, and eukaryotic cells suggest careful consideration of participant safety and dual-use risks.",
+        "riskScore": 0.6,
+        "decision": "approve with conditions"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Inadequate cell culture conditions"
+        ],
+        "suggestions": [
+          "Implement a controlled environment for cell culture",
+          "Monitor temperature and humidity levels"
+        ],
+        "evidence": "Cell culture conditions can significantly impact the success of the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve with conditions"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.2,
+      "average_confidence": 0.8,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Missing sample size",
+        "Unmeasured confounders: No information on potential confounding variables.",
+        "Independent variables not manipulated: Guide RNA design and Cas9 enzyme concentration are not explicitly stated as being manipulated.",
+        "Off-target effects: Lack of information on how off-target effects will be measured or controlled.",
+        "Lack of transparency in protocol",
+        "Inadequate cell culture conditions"
+      ],
+      "conflict_detected": true,
+      "summary": "Consensus failed. Approvals: 1/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783886324.9781408
+  },
+  "trace": [
+    {
+      "timestamp": 1783886324.9781408,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783886328.9121065,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783886328.9131074,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783886342.0905502,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783886357.910743,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

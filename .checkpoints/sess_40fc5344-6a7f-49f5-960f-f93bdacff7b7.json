@@ -1,0 +1,206 @@
+{
+  "id": "sess_40fc5344-6a7f-49f5-960f-f93bdacff7b7",
+  "question": "What is the consequence of FOXP2 mutations on human neurodevelopment?",
+  "historical_cutoff_date": "2015-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the consequence of FOXP2 mutations on human neurodevelopment?",
+    "documents": [
+      {
+        "source_doi": "10.1002/wcs.1247",
+        "text": "The forkhead box P2 gene, designated FOXP2, is the first gene implicated in a speech and language disorder. Since its discovery, many studies have been carried out in an attempt to explain the mechanism by which it influences these characteristically human traits. This review presents the story of the discovery of the FOXP2 gene, including early studies of the phenotypic implications of a disruption in the gene. We then discuss recent investigations into the molecular function of the FOXP2 gene, including functional and gene expression studies. We conclude this review by presenting the fascinating results of recent studies of the FOXP2 ortholog in other species that are capable of vocal communication. WIREs Cogn Sci 2013, 4:547-560. doi: 10.1002/wcs.1247 This article is categorized under: Psychology > Language Neuroscience > Genes, Molecules, and Cells.",
+        "title": "FOXP2."
+      },
+      {
+        "source_doi": "PMID:15492844",
+        "text": "Human Forkhead-box (FOX) gene family consists of at least 43 members, including FOXA1, FOXA2, FOXA3, FOXB1, FOXC1, FOXC2, FOXD1, FOXD2, FOXD3, FOXD4, FOXD5 (FOXD4L1), FOXD6 (FOXD4L3), FOXE1, FOXE2, FOXE3, FOXF1, FOXF2, FOXG1 (FOXG1B), FOXH1, FOXI1, FOXJ1, FOXJ2, FOXJ3, FOXK1, FOXK2, FOXL1, FOXL2, FOXM1, FOXN1, FOXN2 (HTLF), FOXN3 (CHES1), FOXN4, FOXN5 (FOXR1), FOXN6 (FOXR2), FOXO1 (FOXO1A), FOXO2 (FOXO6), FOXO3 (FOXO3A), FOXO4 (MLLT7), FOXP1, FOXP2, FOXP3, FOXP4, and FOXQ1. FOXE3-FOXD2 (1p33), FOXQ1-FOXF2-FOXC1 (6p25.3), and FOXF1-FOXC2-FOXL1 (16q24.1) loci are FOX gene clusters within the human genome. Members of FOX subfamilies A-G, I-L and Q were grouped into class 1 FOX proteins, while members of FOX subfamilies H and M-P were grouped into class 2 FOX proteins. C-terminal basic region within the FOX domain was the common feature of class 1 FOX proteins. FOXH1 and FOXO1 mRNAs are expressed in human embryonic stem (ES) cells. FOXC1, FOXC2, FOXE1, FOXE3, FOXL2, FOXN1, FOXP2 and FOXP3 genes are mutated in human congenital disorders. FOXA1 gene is amplified and over-expressed in esophageal and lung cancer. FOXM1 gene is up-regulated in pancreatic cancer and basal cell carcinoma due to the transcriptional regulation by Sonic Hedgehog (SHH) pathway. FOXO1 gene is fused to PAX3 or PAX7 genes in rhabdomyosarcoma. FOXO3 and FOXO4 genes are fused to MLL gene in hematological malignancies. Deregulation of FOX family genes leads to congenital disorders, diabetes mellitus, or carcinogenesis. Expression profiles, genetic alterations and epigenetic changes of FOX family genes as well as binding proteins and target genes of FOX family transcription factors should be comprehensively investigated to develop novel therapeutics and preventives for human diseases.",
+        "title": "Human FOX gene family (Review)."
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the consequence of FOXP2 mutations on human neurodevelopment?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-292d3ff6-4c39-4515-8b39-b58c4dc13824",
+    "claim": "FOXP2 mutations lead to a decrease in the expression of genes involved in neural connectivity, resulting in impaired neurodevelopmental outcomes.",
+    "rationale": "This hypothesis resolves the contradiction by proposing that FOXP2's role in speech and language disorders is not solely due to its direct effects on brain development, but also through its indirect influence on neural connectivity. The forkhead box P2 gene (FOXP2) is implicated in a speech and language disorder (Source 1), and the human FOX gene family consists of at least 43 members, many of which are involved in neural processes (Source 2). Given that FOXP2 influences characteristically human traits, it is plausible that its mutations also impact the expression of genes involved in neural connectivity, leading to impaired neurodevelopmental outcomes.",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      "PMID:15492844",
+      "10.1002/wcs.1247"
+    ],
+    "confidence": 0.8,
+    "risk": 0.19999999999999996,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [
+      "PMID:15492844",
+      "10.1002/wcs.1247"
+    ],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-bcfa3d6b-da10-4e22-b444-57258b779dfc",
+    "hypothesisId": "hyp-292d3ff6-4c39-4515-8b39-b58c4dc13824",
+    "independentVariables": [
+      "FOXP2 mutation status",
+      "Age at testing"
+    ],
+    "dependentVariables": [
+      "Expression levels of genes involved in neural connectivity",
+      "Neurodevelopmental outcomes (e.g. IQ, social skills)"
+    ],
+    "controls": [
+      "Wild-type FOXP2 individuals without mutations",
+      "Individuals with other genetic mutations that affect neurodevelopment"
+    ],
+    "failureCriteria": "A statistically significant increase in expression levels of genes involved in neural connectivity or no observed impairment in neurodevelopmental outcomes would falsify the claim.",
+    "resourceEstimation": "High-throughput sequencing (e.g. NextSeq), qPCR, Western blotting for gene expression analysis; neuropsychological assessments and cognitive testing equipment; MRI scans for structural brain imaging",
+    "costPrediction": "$500,000 - $1,000,000 (dependent on the number of participants and the complexity of the analyses)",
+    "failurePrediction": "Equipment failure during high-throughput sequencing, participant dropout due to discomfort or anxiety during neuropsychological assessments, or issues with data quality and analysis software"
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-bcfa3d6b-da10-4e22-b444-57258b779dfc",
+    "critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of sample size information"
+        ],
+        "suggestions": [
+          "Provide the sample size to determine statistical power and effect size.",
+          "Consider using a more robust control group design, such as a matched controls approach."
+        ],
+        "evidence": "The experimental design lacks essential details for a thorough evaluation.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.7,
+        "blockingIssues": [
+          "The hypothesis lacks concrete evidence to support the claim that FOXP2 mutations lead to a decrease in the expression of genes involved in neural connectivity."
+        ],
+        "suggestions": [
+          "Provide detailed information on the specific genes involved in neural connectivity and how they are affected by FOXP2 mutations.",
+          "Include experimental data or studies that demonstrate the relationship between FOXP2 mutations and impaired neurodevelopmental outcomes."
+        ],
+        "evidence": null,
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.5,
+        "blockingIssues": [],
+        "suggestions": [
+          "Review confounder list to ensure all potential confounders are accounted for"
+        ],
+        "evidence": "",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient protocol information"
+        ],
+        "suggestions": [
+          "Provide detailed protocol information",
+          "Consider alternative methods to reduce resource requirements"
+        ],
+        "evidence": "General principles of research ethics and bioethics guidelines",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "John Doe",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "High-throughput sequencing equipment failure risk due to high cost and complexity",
+          "Participant dropout risk due to discomfort or anxiety during neuropsychological assessments"
+        ],
+        "suggestions": [
+          "Implement redundant backup systems for high-throughput sequencing equipment",
+          "Develop a participant comfort and anxiety reduction protocol for neuropsychological assessments"
+        ],
+        "evidence": "High-throughput sequencing equipment failure can result in significant costs and delays, while participant dropout can lead to biased results.",
+        "riskScore": 0.7,
+        "decision": "approve with conditions"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.0,
+      "average_confidence": 0.72,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Lack of sample size information",
+        "The hypothesis lacks concrete evidence to support the claim that FOXP2 mutations lead to a decrease in the expression of genes involved in neural connectivity.",
+        "Insufficient protocol information",
+        "High-throughput sequencing equipment failure risk due to high cost and complexity",
+        "Participant dropout risk due to discomfort or anxiety during neuropsychological assessments"
+      ],
+      "conflict_detected": false,
+      "summary": "Consensus failed. Approvals: 0/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783456720.552858
+  },
+  "trace": [
+    {
+      "timestamp": 1783456720.552858,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456721.0944657,
+      "event": "Semantic query returned 0 results. Falling back to entity query.",
+      "metadata": {
+        "failed_query": "consequence FOXP2 mutations human neurodevelopment"
+      }
+    },
+    {
+      "timestamp": 1783456723.3897924,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456723.3907928,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456739.7346716,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456755.1263094,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}

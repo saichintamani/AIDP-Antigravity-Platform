@@ -1,0 +1,799 @@
+[
+  {
+    "case_id": "case-oncology-004",
+    "hypothesis": {
+      "claim": "CD22-directed CAR-T cell therapy can be a viable alternative to CD19-directed CAR-T cell therapy for treating B-cell acute lymphoblastic leukemia (B-ALL), particularly in cases where patients have lost expression of CD19.",
+      "rationale": "This claim is supported by the finding that CD22 is expressed in most cases of B-ALL and can be targeted by CAR T cells, which suggests that CD22-directed therapy may be effective in patients who have lost expression of CD19 (Source 1). Additionally, the fact that antigen loss is a frequent cause of resistance to CD19-targeted immunotherapy supports the idea that targeting alternative antigens like CD22 could provide an alternative approach for treating B-ALL. Furthermore, while Source 2 does not provide any findings on CD22-directed CAR-T cell therapy, this lack of evidence does not necessarily refute the claim, as it is possible that further research may reveal the efficacy of CD22-directed therapy in B-ALL patients."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Missing sample size']\n- **Domain Expert**: Decision=reject, BlockingIssues=['Lack of evidence supporting the claim']\n- **Methodologist**: Decision=reject, BlockingIssues=[]\n- **Ethicist**: Decision=reject, BlockingIssues=[{'issue': 'Insufficient participant consent forms', 'description': 'Participant consent forms are not explicitly stated in the protocol, which may lead to inadequate informed consent.', 'riskLevel': 'Moderate'}, {'issue': 'Dual-use risk of flow cytometry machine', 'description': 'The flow cytometry machine has the potential for dual-use applications, such as bioterrorism or biowarfare. Proper decontamination and security measures must be implemented.', 'riskLevel': 'High'}]\n- **Engineer**: Decision=approve with reservations, BlockingIssues=['Insufficient data on CAR-T cell production and patient outcomes']\n\n## 5. Telemetry\n**Runtime:** 96.11s\n",
+    "new_design": {
+      "id": "exp-587d5d1f-e3d9-4fd3-b36d-c012697ba73e",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "CD22-directed CAR-T cell therapy can be a viable alternative to CD19-directed CAR-T cell therapy for treating B-cell acute lymphoblastic leukemia (B-ALL)",
+          "supporting_evidence": "This claim is supported by the finding that CD22 is expressed in most cases of B-ALL and can be targeted by CAR T cells, which suggests that CD22-directed therapy may be effective in patients who have lost expression of CD19 (Source 1)."
+        }
+      ],
+      "supporting_dois": [
+        "10.1038/nm.4441"
+      ],
+      "unsupported_claims": [
+        "The fact that antigen loss is a frequent cause of resistance to CD19-targeted immunotherapy supports the idea that targeting alternative antigens like CD22 could provide an alternative approach for treating B-ALL.",
+        "While Source 2 does not provide any findings on CD22-directed CAR-T cell therapy, this lack of evidence does not necessarily refute the claim, as it is possible that further research may reveal the efficacy of CD22-directed therapy in B-ALL patients."
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "CD22-directed CAR-T cell therapy",
+        "CD19-directed CAR-T cell therapy"
+      ],
+      "dependentVariables": [
+        "B-cell acute lymphoblastic leukemia (B-ALL) response"
+      ],
+      "controls": [
+        {
+          "group_name": "CD19-directed CAR-T cell therapy control group",
+          "purpose": "to serve as a baseline for comparison with CD22-directed CAR-T cell therapy"
+        },
+        {
+          "group_name": "Standard of care chemotherapy control group",
+          "purpose": "to provide an alternative treatment option for patients who are not eligible or have failed previous treatments"
+        }
+      ],
+      "confounders": [
+        "Patient age",
+        "White blood cell count at diagnosis",
+        "Presence of co-morbidities"
+      ],
+      "successCriteria": "A statistically significant improvement in B-ALL response rates and overall survival compared to CD19-directed CAR-T cell therapy, as measured by Kaplan-Meier analysis, with a p-value < 0.05.",
+      "sampleSize": {
+        "n_per_group": 100,
+        "justification": "A sample size of 100 per group is recommended to achieve sufficient statistical power for detecting a moderate effect size, as suggested by the formula n = (Z^2 \u00d7 \u03c0) / E^2, where Z is the desired Z-score (1.96 for p < 0.05), and E is the expected effect size (0.5 for a moderate difference in B-ALL response rates)"
+      },
+      "statisticalTest": "Two-way ANOVA with post-hoc tests",
+      "powerConsiderations": "Given the number of confounders identified (3) and the complexity of the experimental design, it is essential to consider statistical power when selecting an appropriate test. A two-way ANOVA with post-hoc tests will provide a balanced approach to testing both independent variables while controlling for potential interactions.",
+      "reproducibilityNotes": "To ensure reproducibility, it is crucial to follow established protocols for randomization, blinding, and data recording. Additionally, using standardized statistical software and following established guidelines for ANOVA analysis will facilitate the replication of results.",
+      "failureCriteria": "A statistically significant improvement in B-ALL response rates and overall survival compared to CD19-directed CAR-T cell therapy, as measured by Kaplan-Meier analysis, with a p-value < 0.05.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The control groups are not strictly defined as they include a 'Standard of care chemotherapy control group'. This could introduce bias and affect the overall validity of the study.",
+          "There is no clear failure criteria for the treatment arms, which makes it difficult to determine if the observed effects are statistically significant."
+        ],
+        "suggestions": [
+          "Consider using a more rigorous control group design, such as a placebo-controlled or sham-treated group, to reduce bias and increase the validity of the study.",
+          "Establish clear failure criteria for the treatment arms, such as a predefined endpoint or a specific survival time, to determine if the observed effects are statistically significant."
+        ],
+        "evidence": "The sample size calculation suggests that the study has sufficient statistical power to detect a moderate effect size. However, the control groups are not strictly defined, which may introduce bias and affect the overall validity of the study.",
+        "riskScore": 0.7,
+        "decision": "approve with reservations"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.6,
+        "blockingIssues": [
+          "Insufficient evidence"
+        ],
+        "suggestions": [
+          "Provide experimental data to support the hypothesis.",
+          "Conduct further research on CD22-directed CAR-T cell therapy in B-ALL patients.",
+          "Consider conducting a comparison study with CD19-directed CAR-T cell therapy to demonstrate efficacy and safety."
+        ],
+        "evidence": "Not provided",
+        "riskScore": 0.4,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Consider adding a control group to the experiment"
+        ],
+        "evidence": "Experimental design lacks a control group.",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-002",
+    "hypothesis": {
+      "claim": "BRCA2 mutations are more strongly associated with an increased risk of pancreatic cancer than BRCA1 mutations.",
+      "rationale": "This hypothesis resolves the contradiction by suggesting a differential role of BRCA1 and BRCA2 in cancer susceptibility. According to Source 2, germline BRCA2 mutations have been clearly associated with the development of pancreatic cancer, while mutations in BRCA1 appear to have a limited role. This finding is supported by the fact that BRCA proteins are involved in a multitude of pivotal cellular processes, including DNA repair and transcription (Source 1). Furthermore, Source 3 highlights the importance of high-penetrance breast cancer genes like BRCA2 in understanding the molecular mechanisms underlying pancreatic cancer development."
+    },
+    "old_critiques": "\n\n## 5. Telemetry\n**Runtime:** 50.84s\n",
+    "new_design": {
+      "id": "exp-c12274a5-6296-4701-a6be-e725c25aadce",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "Association with pancreatic cancer risk",
+          "supporting_evidence": "Many factors, including a family history of cancer, have been implicated in the development of pancreatic cancer. Among these factors, germline BRCA2 mutations have been clearly associated with the development of this disease, while mutations in BRCA1 appear to have a limited role."
+        },
+        {
+          "claim_component": "Differential role of BRCA1 and BRCA2",
+          "supporting_evidence": "This hypothesis resolves the contradiction by suggesting a differential role of BRCA1 and BRCA2 in cancer susceptibility."
+        },
+        {
+          "claim_component": "Mechanism of mutant BRCA2 contributing to pancreatic cancer development",
+          "supporting_evidence": "The mechanism by which mutant BRCA2 contributes to development of pancreatic cancers is not well understood. However, it appears that inactivation of several independent functions of BRCA2 including regulation of gene transcription, chromatin remodeling, cell growth, DNA damage repair, and chromosomal instability may provide a pathophysiological basis for the association of BRCA2 mutations and pancreatic cancer."
+        }
+      ],
+      "supporting_dois": [
+        "10.1111/j.1349-7006.2004.tb02195.x",
+        "10.1385/IJGC:31:1-3:99",
+        "10.1017/S146239940200491X"
+      ],
+      "unsupported_claims": [
+        "The functions of BRCA proteins are also linked to distinct and specific phosphorylation events; however, the extent to which phosphorylation-activated molecular pathways contribute to tumor suppressor activity remains unclear."
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "BRCA2 mutations",
+        "BRCA1 mutations"
+      ],
+      "dependentVariables": [
+        "string"
+      ],
+      "controls": [
+        {
+          "group_name": "Unaffected individuals",
+          "purpose": "Comparison group for pancreatic cancer risk assessment"
+        },
+        {
+          "group_name": "Individuals with BRCA1 mutations",
+          "purpose": "Control group to assess differential role of BRCA1 and BRCA2"
+        }
+      ],
+      "confounders": [
+        "Family history of cancer",
+        "Other genetic factors"
+      ],
+      "successCriteria": "A significant increase in pancreatic cancer incidence among individuals with BRCA2 mutations compared to those with BRCA1 mutations, while controlling for confounding variables.",
+      "sampleSize": {
+        "n_per_group": 100,
+        "justification": "A sample size of 100 per group is recommended to achieve adequate statistical power for detecting a moderate effect size between BRCA2 and BRCA1 mutations on pancreatic cancer risk, while controlling for confounding variables."
+      },
+      "statisticalTest": "Two-way ANOVA",
+      "powerConsiderations": "To ensure sufficient statistical power, the sample size should be calculated based on the expected effect size and desired level of significance. A moderate effect size (Cohen's d = 0.5) is assumed for this study. The two-way ANOVA model will control for both BRCA2 and BRCA1 mutations as independent variables, while accounting for confounding variables through regression adjustment.",
+      "reproducibilityNotes": "To ensure reproducibility, the experimental design should be clearly documented, including detailed descriptions of the control groups, confounders, and statistical analysis plan. The data collection process should also be standardized to minimize variability between replicates.",
+      "failureCriteria": "A significant increase in pancreatic cancer incidence among individuals with BRCA2 mutations compared to those with BRCA1 mutations, while controlling for confounding variables.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of clear failure criteria"
+        ],
+        "suggestions": [
+          "Establish a p-value threshold for significance and define the power analysis used to determine sample size.",
+          "Consider incorporating a sensitivity analysis to assess the robustness of findings to different assumptions."
+        ],
+        "evidence": "The experimental design lacks explicit failure criteria, which may lead to inconsistent or unreliable results.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.6,
+        "blockingIssues": [
+          "Insufficient evidence"
+        ],
+        "suggestions": [
+          "Provide supporting evidence from reputable sources to validate the hypothesis.",
+          "Consider alternative explanations for the observed association between BRCA2 mutations and pancreatic cancer risk."
+        ],
+        "evidence": "",
+        "riskScore": 0.4,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": ""
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  },
+  {
+    "case_id": "case-genetics-003",
+    "hypothesis": {
+      "claim": "Mutations in the FOXP2 gene are associated with altered expression of downstream target genes involved in human neurodevelopmental processes.",
+      "rationale": "The contradiction arises from the fact that FOXP2 is primarily known for its role in speech and language disorders (Source 1), yet the human FOX gene family, which includes FOXP2, has a wide range of functions including roles in development and disease (Source 2). This suggests that while FOXP2 may be crucial for specific aspects of neurodevelopment, other members of the FOX gene family may play more broadly important roles. Therefore, it is reasonable to hypothesize that mutations in FOXP2 could have downstream effects on target genes involved in human neurodevelopmental processes."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Insufficient sample size provided for statistical analysis.', \"Lack of clear failure criteria for the study's hypothesis.\"]\n- **Domain Expert**: Decision=reject, BlockingIssues=['Lack of evidence provided']\n- **Methodologist**: Decision=reject, BlockingIssues=['Unmeasured confounders not provided']\n- **Ethicist**: Decision=reject, BlockingIssues=['Insufficient protocol provided']\n- **Engineer**: Decision=approve, BlockingIssues=['Insufficient sample size due to ethical constraints or difficulties in recruiting participants with FOXP2 mutations']\n\n## 5. Telemetry\n**Runtime:** 109.58s\n",
+    "new_design": {
+      "id": "exp-55e93f85-e1c0-42b9-a3f4-5348c00b9986",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "Rationale",
+          "supporting_evidence": "The contradiction arises from the fact that FOXP2 is primarily known for its role in speech and language disorders (Source 1), yet the human FOX gene family, which includes FOXP2, has a wide range of functions including roles in development and disease (Source 2)."
+        }
+      ],
+      "supporting_dois": [
+        "10.1002/wcs.1247",
+        "PMID:15492844"
+      ],
+      "unsupported_claims": [
+        "While FOXP2 may be crucial for specific aspects of neurodevelopment, other members of the FOX gene family may play more broadly important roles."
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "FOXP2 gene expression"
+      ],
+      "dependentVariables": [
+        "expression of downstream target genes involved in human neurodevelopmental processes"
+      ],
+      "controls": [
+        {
+          "group_name": "Wild-type FOXP2",
+          "purpose": "Control group for comparison with mutated FOXP2"
+        }
+      ],
+      "confounders": [
+        "Age",
+        "Genetic background",
+        "Environmental factors"
+      ],
+      "successCriteria": "Significant alteration in expression of downstream target genes involved in human neurodevelopmental processes compared to wild-type FOXP2, as measured by qRT-PCR or RNA sequencing.",
+      "sampleSize": {
+        "n_per_group": 100,
+        "justification": "A sample size of 100 per group provides a sufficient balance between statistical power and practicality for detecting significant alterations in expression levels."
+      },
+      "statisticalTest": "Two-way ANOVA",
+      "powerConsiderations": "Given the complexity of downstream target genes involved in human neurodevelopmental processes, it is essential to consider the effect size of FOXP2 gene expression on these targets. A power analysis suggests that a sample size of 100 per group will provide adequate statistical power (80\") to detect significant alterations.",
+      "reproducibilityNotes": "To ensure reproducibility, it is crucial to use standardized qRT-PCR or RNA sequencing protocols and to control for confounding variables such as age, genetic background, and environmental factors. Additionally, blinded data analysis and randomization of samples will be necessary to minimize bias.",
+      "failureCriteria": "Significant alteration in expression of downstream target genes involved in human neurodevelopmental processes compared to wild-type FOXP2, as measured by qRT-PCR or RNA sequencing.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient sample size for detecting significant alterations in expression levels"
+        ],
+        "suggestions": [
+          "Consider increasing the sample size to at least 200 per group to improve statistical power.",
+          "Use a more robust statistical test such as ANOVA or t-test instead of qRT-PCR or RNA sequencing."
+        ],
+        "evidence": "The sample size justification is based on a general rule of thumb and may not be sufficient for detecting significant alterations in expression levels. Additionally, the choice of statistical test may impact the results.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.4,
+        "blockingIssues": [
+          "Lack of evidence to support the hypothesis"
+        ],
+        "suggestions": [
+          "Provide experimental or clinical data to validate the association between FOXP2 mutations and altered expression of downstream target genes in human neurodevelopmental processes.",
+          "Consider alternative explanations for the observed effects, such as epigenetic modifications or interactions with other genes."
+        ],
+        "evidence": "Not provided",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [
+          "Provide the experimental protocol to assess the manipulation of independent variables"
+        ],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "hypothesis": {
+      "claim": "Grid cells play a crucial role in spatial navigation by providing both distance information and self-motion guidance, with the former being more prominent when the latter is absent or irrelevant.",
+      "rationale": "This claim resolves the contradiction by suggesting that grid cells are not solely responsible for providing distance information (Source 1), but rather they also contribute to self-motion guidance. The vestibular system, which provides idiothetic information, plays a major role in navigation when allothetic information is absent or irrelevant (Source 3). Additionally, hippocampal theta oscillations, which are slower in humans than in rodents, may be related to the neural basis of spatial memory and navigation, supporting the idea that grid cells are not the only players in this process (Source 2)."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Sample Size Not Provided']\n- **Domain Expert**: Decision=reject, BlockingIssues=['The experimental design is not fully specified, and the evidence required to support this hypothesis is not provided.']\n- **Methodologist**: Decision=reject, BlockingIssues=['Confounders not provided', 'Independent variables not clearly manipulated']\n- **Ethicist**: Decision=approve, BlockingIssues=['Lack of transparency in protocol']\n- **Engineer**: Decision=approve, BlockingIssues=['High-speed cameras may require additional power supply and cooling systems to maintain performance.', 'Computer-controlled navigation apparatus may require significant software development and testing to ensure accuracy and reliability.']\n\n## 5. Telemetry\n**Runtime:** 107.65s\n",
+    "new_design": {
+      "id": "exp-6dd0a55c-0c86-4bc8-aac1-5b1e15ed7fd0",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "Grid cells provide both distance information and self-motion guidance",
+          "supporting_evidence": "This claim resolves the contradiction by suggesting that grid cells are not solely responsible for providing distance information (Source 1), but rather they also contribute to self-motion guidance."
+        },
+        {
+          "claim_component": "The vestibular system plays a major role in navigation when allothetic information is absent or irrelevant",
+          "supporting_evidence": "Navigation in rodents depends on both self-motion (idiothetic) and external (allothetic) information. Idiothetic information has a predominant role when allothetic information is absent or irrelevant."
+        },
+        {
+          "claim_component": "Hippocampal theta oscillations may be related to the neural basis of spatial memory and navigation",
+          "supporting_evidence": "The theta oscillation is a neuroscience enigma. When a rat runs through an environment, large-amplitude theta oscillations (4-10 Hz) reliably appear in the hippocampus's electrical activity."
+        }
+      ],
+      "supporting_dois": [
+        "10.1098/rstb.2013.0370",
+        "10.1098/rstb.2013.0304",
+        "10.3389/fnint.2014.00038"
+      ],
+      "unsupported_claims": [
+        "Grid cells provide a rigid distance metric",
+        "Grid cells have a crucial navigational role in both light and dark conditions",
+        "Place cell activity in the light depends on grid cell activity"
+      ],
+      "evidence_confidence": "Medium",
+      "independentVariables": [
+        "Grid cell activity",
+        "Vestibular system activity",
+        "Hippocampal theta oscillations"
+      ],
+      "dependentVariables": [
+        "Spatial navigation performance",
+        "Self-motion guidance accuracy"
+      ],
+      "controls": [
+        {
+          "group_name": "Allothetic information present",
+          "purpose": "Navigation when allothetic information is relevant"
+        },
+        {
+          "group_name": "Allothetic information absent or irrelevant",
+          "purpose": "Navigation when allothetic information is absent or irrelevant"
+        }
+      ],
+      "confounders": [
+        "Light conditions",
+        "Environmental novelty"
+      ],
+      "successCriteria": "Spatial navigation performance improves with increased grid cell activity and vestibular system activity, while hippocampal theta oscillations are not significantly correlated with spatial navigation performance.",
+      "sampleSize": {
+        "n_per_group": 40,
+        "justification": "Based on the expected moderate effect sizes for grid cell activity and vestibular system activity on spatial navigation performance, a sample size of at least 40 per group is recommended to achieve adequate statistical power."
+      },
+      "statisticalTest": "Two-way ANOVA with interaction term",
+      "powerConsiderations": "Given the expected moderate effect sizes and the presence of confounders (light conditions and environmental novelty), it is crucial to select a statistical test that can handle multiple variables and interactions. A two-way ANOVA with an interaction term will allow for the examination of both main effects and their interaction.",
+      "reproducibilityNotes": "To ensure replicability, it is essential to: (1) clearly document the experimental design, including the control groups and confounders; (2) use standardized procedures for data collection and analysis; (3) report all results, including any outliers or missing values; and (4) make raw data available upon request.",
+      "failureCriteria": "Spatial navigation performance improves with increased grid cell activity and vestibular system activity, while hippocampal theta oscillations are not significantly correlated with spatial navigation performance.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Controls do not meet the criteria for strict control groups."
+        ],
+        "suggestions": [
+          "Consider using a more robust statistical analysis, such as ANCOVA or mixed-effects models, to account for potential confounding variables.",
+          "Validate the assumption of normality for spatial navigation performance and grid cell activity."
+        ],
+        "evidence": "The experimental design does not meet the criteria for strict control groups, which may lead to biased results. However, the analysis suggests a significant correlation between grid cell activity and vestibular system activity with spatial navigation performance.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of evidence"
+        ],
+        "suggestions": [
+          "Provide empirical evidence to support the hypothesis.",
+          "Consider alternative explanations for the observed effects of grid cells on spatial navigation"
+        ],
+        "evidence": "",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Unmeasured confounders: Light conditions and Environmental novelty are not accounted for in the experimental design.",
+          "Independent variables are not manipulated: Grid cell activity, Vestibular system activity, and Hippocampal theta oscillations are measured rather than manipulated."
+        ],
+        "suggestions": [
+          "Consider using control groups to isolate the effect of each independent variable.",
+          "Use blocking or stratification to account for confounders like Light conditions and Environmental novelty."
+        ],
+        "evidence": "Experimental design lacks clear manipulation of independent variables and fails to account for potential confounders.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-003",
+    "hypothesis": {
+      "claim": "The generation of antigen receptor diversity in developing B and T cells is influenced by the exposure to bacterial lipopolysaccharides (LPS) during fetal development, leading to a unique repertoire of antigens recognized by gamma delta T cells.",
+      "rationale": "This hypothesis resolves the contradiction by proposing that LPS, which are known to be present in the fetus (Source 1), can influence the development of antigen receptor diversity in B and T cells. Furthermore, gamma delta T cells, which are also present in the fetus (Source 2), have been shown to recognize a variety of antigens, including those expressed on tumor cells (Source 3). This suggests that LPS exposure may play a role in shaping the immune system's ability to recognize and respond to different types of antigens."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Lack of control groups']\n- **Domain Expert**: Decision=reject, BlockingIssues=['Lack of experimental evidence to support the hypothesis']\n- **Methodologist**: Decision=reject, BlockingIssues=['Confounders not provided: This is a critical oversight as confounders can significantly impact the validity of the results.', 'Independent variables not clearly manipulated: The experimental design does not explicitly state how the independent variables are being manipulated, which could lead to biased results.']\n- **Ethicist**: Decision=reject, BlockingIssues=['Lack of protocol provided']\n- **Engineer**: Decision=approve with conditions, BlockingIssues=['Inadequate control for confounding variables', 'Instrument calibration issues']\n\n## 5. Telemetry\n**Runtime:** 118.80s\n",
+    "new_design": {
+      "id": "exp-f4edb68a-3796-41a3-b4f6-029bad6d975d",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "LPS exposure during fetal development influences B and T cell antigen receptor diversity",
+          "supporting_evidence": "This hypothesis resolves the contradiction by proposing that LPS, which are known to be present in the fetus (Source 1), can influence the development of antigen receptor diversity in B and T cells."
+        },
+        {
+          "claim_component": "Gamma delta T cells recognize a variety of antigens including those expressed on tumor cells",
+          "supporting_evidence": "gamma delta T cells have been shown to recognize classical MHC class I and class II proteins or MHC class I-like proteins, and in very few cases the presented peptides are known."
+        },
+        {
+          "claim_component": "Tumor cells express a great variety of antigens including tumor specific transplantation antigens",
+          "supporting_evidence": "Tumor cells express a great variety of antigens including tumor specific transplantation antigens, tumor-associated antigens, differentiation antigens, histocompatibility antigens, lectin-binding sites and receptors for natural killer cells and natural antibodies."
+        }
+      ],
+      "supporting_dois": [
+        "10.1146/annurev.biochem.71.110601.135414",
+        "10.1007/BF00124215"
+      ],
+      "unsupported_claims": [
+        "The generation of antigen receptor diversity in developing B and T cells is influenced by the exposure to bacterial lipopolysaccharides (LPS) during fetal development, leading to a unique repertoire of antigens recognized by gamma delta T cells."
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "LPS exposure during fetal development"
+      ],
+      "dependentVariables": [
+        "antigen receptor diversity in B and T cells",
+        "unique repertoire of antigens recognized by gamma delta T cells"
+      ],
+      "controls": [
+        {
+          "group_name": "Control group without LPS exposure",
+          "purpose": "Comparison group to assess the effect of LPS exposure"
+        }
+      ],
+      "confounders": [
+        "Maternal health status",
+        "Environmental factors during fetal development"
+      ],
+      "successCriteria": "The presence of gamma delta T cells recognizing a variety of antigens, including tumor-specific transplantation antigens, in individuals exposed to LPS during fetal development.",
+      "sampleSize": {
+        "n_per_group": 100,
+        "justification": "Adequate sample size is required to detect significant differences in antigen receptor diversity between LPS-exposed and control groups, as well as to account for potential confounding variables."
+      },
+      "statisticalTest": "Two-way ANOVA with post-hoc tests",
+      "powerConsiderations": "The experiment should be powered to detect a moderate effect size (Cohen's d = 0.5) between the LPS-exposed group and control group, considering the potential confounding variables.",
+      "reproducibilityNotes": "To ensure reproducibility, the experimental design should include clear protocols for LPS exposure, sampling, data collection, and analysis, as well as standardized methods for assessing antigen receptor diversity and gamma delta T cell function.",
+      "failureCriteria": "The presence of gamma delta T cells recognizing a variety of antigens, including tumor-specific transplantation antigens, in individuals exposed to LPS during fetal development.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of clear failure criteria"
+        ],
+        "suggestions": [
+          "Establish specific failure criteria for the experiment to ensure that it can be mathematically falsified.",
+          "Consider using a placebo control group to further establish the causal relationship between LPS exposure and antigen receptor diversity."
+        ],
+        "evidence": "The experimental design lacks strict control groups, which makes it difficult to determine whether any observed effects are due to the LPS exposure or other factors.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.4,
+        "blockingIssues": [
+          "Lack of evidence"
+        ],
+        "suggestions": [
+          "Provide experimental data or studies to support the hypothesis.",
+          "Consider alternative explanations for the observed effects of LPS on antigen receptor diversity."
+        ],
+        "evidence": "",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Unmeasured confounders: Maternal health status and Environmental factors during fetal development are not accounted for in the experiment design.",
+          "Independent variable manipulation: LPS exposure during fetal development is not clearly defined as a manipulated independent variable."
+        ],
+        "suggestions": [
+          "Consider including maternal health status and environmental factors during fetal development as measured confounders or blocking variables.",
+          "Clearly define LPS exposure during fetal development as a manipulated independent variable and consider its dosage and duration for fetal exposure."
+        ],
+        "evidence": "Experimental design lacks clear definition of independent and dependent variables, and does not account for potential confounding variables.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  },
+  {
+    "case_id": "case-materials-002",
+    "hypothesis": {
+      "claim": "The electronic spectrum in the pseudogap phase of cuprates is a two-component system, with one component being responsible for superconductivity and the other for the pseudogap phase.",
+      "rationale": "This claim resolves the contradiction by proposing a specific mechanism for high-temperature superconductivity. The retrieved evidence suggests that understanding the electronic spectrum in the pseudogap phase is crucial for explaining superconductivity (Source 1). A two-component system would provide a plausible explanation for how one component can give rise to superconductivity while another component is responsible for the pseudogap phase. This hypothesis is supported by the fact that angle-resolved photoemission data is lacking for every cuprate family, which makes it difficult to agree on the structure and doping of the electronic spectrum in the pseudogap phase (Source 1)."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Lack of sample size information']\n- **Domain Expert**: Decision=reject, BlockingIssues=['The experimental design lacks evidence to support the hypothesis.']\n- **Methodologist**: Decision=reject, BlockingIssues=['Unmeasured confounders: No information about confounding variables.', 'Independent variables not manipulated: Doping Concentration']\n- **Ethicist**: Decision=reject, BlockingIssues=['Insufficient participant consent']\n- **Engineer**: Decision=reject, BlockingIssues=['Equipment failure during ARPES measurements', 'Data loss due to software glitches']\n\n## 5. Telemetry\n**Runtime:** 78.39s\n",
+    "new_design": {
+      "id": "exp-d91cc1bc-33f6-48e7-93f7-5c96f92814e0",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "The electronic spectrum in the pseudogap phase of cuprates is a two-component system",
+          "supporting_evidence": "This claim resolves the contradiction by proposing a specific mechanism for high-temperature superconductivity."
+        },
+        {
+          "claim_component": "with one component being responsible for superconductivity and the other for the pseudogap phase",
+          "supporting_evidence": "A two-component system would provide a plausible explanation for how one component can give rise to superconductivity while another component is responsible for the pseudogap phase."
+        }
+      ],
+      "supporting_dois": [
+        "10.1038/srep08524"
+      ],
+      "unsupported_claims": [
+        "The electronic spectrum in the pseudogap phase is lacking for every cuprate family, which makes it difficult to agree on the structure and doping of the electronic spectrum in the pseudogap phase."
+      ],
+      "evidence_confidence": "Medium",
+      "independentVariables": [
+        "Electronic spectrum in pseudogap phase",
+        "Doping level"
+      ],
+      "dependentVariables": [
+        "Superconductivity",
+        "Pseudogap phase"
+      ],
+      "controls": [
+        {
+          "group_name": "Undoped cuprate sample",
+          "purpose": "Comparison to control the effect of doping on the electronic spectrum."
+        },
+        {
+          "group_name": "Doped cuprate sample with different doping levels",
+          "purpose": "Comparison to control the effect of varying doping levels on superconductivity and pseudogap phase."
+        }
+      ],
+      "confounders": [
+        "Lattice strain",
+        "Oxygen vacancies"
+      ],
+      "successCriteria": "The electronic spectrum in the pseudogap phase must show a clear two-component system, with one component exhibiting superconducting behavior and the other exhibiting pseudogap-like behavior, while controlling for the effects of doping level and lattice strain.",
+      "sampleSize": {
+        "n_per_group": 30,
+        "justification": "A sample size of 30 per group provides a reasonable balance between statistical power and practicality, allowing for the detection of moderate effect sizes while minimizing the risk of Type I errors."
+      },
+      "statisticalTest": "Two-way ANOVA",
+      "powerConsiderations": "Given the presence of confounders (lattice strain, oxygen vacancies) and multiple dependent variables (superconductivity, pseudogap phase), a two-way ANOVA is suitable for detecting main effects and interactions. However, the experiment's power may be limited by the small sample size, particularly if the effect sizes are small.",
+      "reproducibilityNotes": "To ensure reproducibility, it is essential to: (1) use identical experimental protocols and instrumentation across all samples; (2) maintain precise control over confounding variables (e.g., temperature, pressure); and (3) employ rigorous data analysis procedures to minimize bias and ensure accurate results.",
+      "failureCriteria": "The electronic spectrum in the pseudogap phase must show a clear two-component system, with one component exhibiting superconducting behavior and the other exhibiting pseudogap-like behavior, while controlling for the effects of doping level and lattice strain.",
+      "resourceEstimation": "Determined via detailed methodology",
+      "costPrediction": "Determined via sample size",
+      "failurePrediction": "Mitigated by statistical power"
+    },
+    "new_decision": "rejected",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of clear failure criteria"
+        ],
+        "suggestions": [
+          "Establish mathematically falsifiable failure criteria to ensure the experiment's validity.",
+          "Consider using a more robust statistical analysis method, such as mixed-effects models or Bayesian methods, to account for potential correlations between variables."
+        ],
+        "evidence": "The experimental design lacks specificity regarding how success will be defined and measured. Without clear failure criteria, it is challenging to determine whether the experiment has been successful or not.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.4,
+        "blockingIssues": [
+          "Lack of evidence"
+        ],
+        "suggestions": [
+          "Retrieval of evidence is crucial to support this hypothesis.",
+          "Further analysis of angle-resolved photoemission data for cuprate families is necessary."
+        ],
+        "evidence": "",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "AI Methodologist (Fallback)",
+        "role": "Methodologist",
+        "confidence": 0.0,
+        "blockingIssues": [
+          "Gateway failure during review: float() argument must be a string or a real number, not 'NoneType'"
+        ],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 1.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Ensure participant informed consent is clearly explained and obtained.",
+          "Consider using anonymization methods to protect participant privacy."
+        ],
+        "evidence": "The methodology provides a detailed description of the resource requirements and potential risks associated with the experiment.",
+        "riskScore": 6.2,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.0,
+        "blockingIssues": [],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 0.0,
+        "decision": "none"
+      }
+    ]
+  }
+]

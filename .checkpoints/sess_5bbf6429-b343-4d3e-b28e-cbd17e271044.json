@@ -1,0 +1,221 @@
+{
+  "id": "sess_5bbf6429-b343-4d3e-b28e-cbd17e271044",
+  "question": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+  "historical_cutoff_date": "2022-01-01",
+  "state": "FAILED",
+  "knowledge_context": {
+    "query": "What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?",
+    "documents": [
+      {
+        "source_doi": "10.1038/s41392-021-00780-4",
+        "text": "Cancer is the leading cause of death worldwide, and its treatment and outcomes have been dramatically revolutionised by targeted therapies. As the most frequently mutated oncogene, Kirsten rat sarcoma viral oncogene homologue (KRAS) has attracted substantial attention. The understanding of KRAS is constantly being updated by numerous studies on KRAS in the initiation and progression of cancer diseases. However, KRAS has been deemed a challenging therapeutic target, even \"undruggable\", after drug-targeting efforts over the past four decades. Recently, there have been surprising advances in directly targeted drugs for KRAS, especially in KRAS (G12C) inhibitors, such as AMG510 (sotorasib) and MRTX849 (adagrasib), which have obtained encouraging results in clinical trials. Excitingly, AMG510 was the first drug-targeting KRAS (G12C) to be approved for clinical use this year. This review summarises the most recent understanding of fundamental aspects of KRAS, the relationship between the KRAS mutations and tumour immune evasion, and new progress in targeting KRAS, particularly KRAS (G12C). Moreover, the possible mechanisms of resistance to KRAS (G12C) inhibitors and possible combination therapies are summarised, with a view to providing the best regimen for individualised treatment with KRAS (G12C) inhibitors and achieving truly precise treatment.",
+        "title": "KRAS mutation: from undruggable to druggable in cancer."
+      },
+      {
+        "source_doi": "10.1038/s41586-019-1694-1",
+        "text": "KRAS is the most frequently mutated oncogene in cancer and encodes a key signalling protein in tumours",
+        "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity."
+      },
+      {
+        "source_doi": "10.1056/NEJMoa2103695",
+        "text": "Sotorasib showed anticancer activity in patients with  In a single-group, phase 2 trial, we investigated the activity of sotorasib, administered orally at a dose of 960 mg once daily, in patients with  Among the 126 enrolled patients, the majority (81.0%) had previously received both platinum-based chemotherapy and inhibitors of programmed death 1 (PD-1) or programmed death ligand 1 (PD-L1). According to central review, 124 patients had measurable disease at baseline and were evaluated for response. An objective response was observed in 46 patients (37.1%; 95% confidence interval [CI], 28.6 to 46.2), including in 4 (3.2%) who had a complete response and in 42 (33.9%) who had a partial response. The median duration of response was 11.1 months (95% CI, 6.9 to could not be evaluated). Disease control occurred in 100 patients (80.6%; 95% CI, 72.6 to 87.2). The median progression-free survival was 6.8 months (95% CI, 5.1 to 8.2), and the median overall survival was 12.5 months (95% CI, 10.0 to could not be evaluated). Treatment-related adverse events occurred in 88 of 126 patients (69.8%), including grade 3 events in 25 patients (19.8%) and a grade 4 event in 1 (0.8%). Responses were observed in subgroups defined according to PD-L1 expression, tumor mutational burden, and co-occurring mutations in  In this phase 2 trial, sotorasib therapy led to a durable clinical benefit without new safety signals in patients with previously treated ",
+        "title": "Sotorasib for Lung Cancers with "
+      }
+    ]
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "Contradiction related to What is the mechanistic relationship between KRAS G12C mutation and specific targeted inhibitors like Sotorasib?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {
+    "id": "hyp-11eab4d7-a476-4552-98cf-3466ae452a12",
+    "claim": "The KRAS G12C mutation is mechanistically linked to the efficacy of targeted inhibitors like Sotorasib through a process involving the activation of tumour-specific immune responses.",
+    "rationale": "This claim resolves the contradiction by proposing a mechanism that explains how targeted inhibitors like Sotorasib can effectively treat cancers harbouring the KRAS G12C mutation. According to Source 2 (10.1038/s41586-019-1694-1), the clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity, suggesting that targeting the KRAS G12C mutation can lead to an immune response against the tumour. Additionally, Source 3 (10.1056/NEJMoa2103695) shows that Sotorasib exhibited anticancer activity in patients with lung cancers, implying a potential link between the inhibition of the KRAS G12C mutation and the activation of anti-tumour immunity. Furthermore, Source 1 (10.1038/s41392-021-00780-4) highlights the importance of understanding the KRAS mutation in cancer treatment, which supports the idea that targeting this mutation can lead to improved outcomes.",
+    "supportingEvidenceIds": [
+      null,
+      null
+    ],
+    "opposingEvidenceIds": [],
+    "evidence_links": [
+      "10.1038/s41586-019-1694-1",
+      "10.1056/NEJMoa2103695",
+      "10.1038/s41392-021-00780-4"
+    ],
+    "confidence": 0.6,
+    "risk": 0.4,
+    "expectedInformationGain": 0.95,
+    "provenance_chain": [
+      "10.1038/s41586-019-1694-1",
+      "10.1056/NEJMoa2103695",
+      "10.1038/s41392-021-00780-4"
+    ],
+    "subjective_confidence": 0.95,
+    "experimental_design_fully_specified": true,
+    "violates_known_laws": false,
+    "flags_biosafety_hazard": false
+  },
+  "experiment_design": {
+    "id": "exp-48f544af-7db8-43a4-a9c7-c1278f8f766e",
+    "hypothesisId": "hyp-11eab4d7-a476-4552-98cf-3466ae452a12",
+    "independentVariables": [
+      "Patient demographic information",
+      "KRAS G12C mutation status",
+      "Sotorasib treatment dosage and duration",
+      "Tumour type and stage"
+    ],
+    "dependentVariables": [
+      "Immune response activation (measured by ELISA or flow cytometry)",
+      "Tumour shrinkage (measured by MRI or CT scan)",
+      "Patient survival rate"
+    ],
+    "controls": [
+      "Patients with KRAS G12C mutation but without Sotorasib treatment",
+      "Patients with tumours of different types and stages",
+      "Patients with non-targeted cancer therapies"
+    ],
+    "failureCriteria": "A statistically significant decrease in immune response activation or tumour shrinkage in patients with KRAS G12C mutation treated with Sotorasib, compared to controls.",
+    "resourceEstimation": "High-performance computing cluster for data analysis and machine learning modeling; ELISA or flow cytometry equipment for immune response measurement; MRI or CT scan machines for tumour imaging; Statistical software (e.g. R or Python) for data analysis.",
+    "costPrediction": "$1,000,000 - $2,000,000 (estimated cost of high-performance computing cluster and equipment); $500,000 - $1,000,000 (estimated cost of ELISA or flow cytometry equipment and MRI/CT scan machines); $200,000 - $500,000 (estimated cost of statistical software and personnel).",
+    "failurePrediction": "Inadequate sample size; Insufficient computational resources for data analysis; Equipment failure or maintenance issues; Delays in patient recruitment and data collection due to regulatory hurdles or ethical concerns."
+  },
+  "debate_record": {
+    "experimentalDesignId": "exp-48f544af-7db8-43a4-a9c7-c1278f8f766e",
+    "critiques": [
+      {
+        "reviewerName": "Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Missing sample size"
+        ],
+        "suggestions": [
+          "Provide the sample size to calculate the power of the study.",
+          "Consider using a more robust control group design.",
+          "Define clear failure criteria for the study."
+        ],
+        "evidence": "The experimental design lacks key information necessary to assess its validity. Specifically, the absence of a specified sample size hinders the ability to determine the study's statistical power and potential for type I error.",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The provided evidence links are not sufficient to support the mechanistic link between KRAS G12C mutation and targeted inhibitors like Sotorasib."
+        ],
+        "suggestions": [
+          "Provide more detailed information about the tumour-specific immune responses activated by targeted inhibitors like Sotorasib.",
+          "Conduct additional experiments to validate the proposed mechanism."
+        ],
+        "evidence": "Not provided",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Confounders not provided",
+          "Independent variables not manipulated"
+        ],
+        "suggestions": [
+          "Include confounder information in the protocol",
+          "Ensure independent variables are actually manipulated (e.g., use blocking or randomization)"
+        ],
+        "evidence": "Experimental design lacks key components for robust analysis",
+        "riskScore": 0.7,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Ethicist",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient information on protocol"
+        ],
+        "suggestions": [
+          "Provide detailed protocol and informed consent documents"
+        ],
+        "evidence": "Lack of transparency in experimental design may lead to biased results and harm participants",
+        "riskScore": 6.2,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient computational resources for data analysis"
+        ],
+        "suggestions": [
+          "Consider using cloud-based high-performance computing services to reduce costs and increase scalability.",
+          "Invest in ELISA or flow cytometry equipment with automation capabilities to streamline sample processing."
+        ],
+        "evidence": "High-performance computing cluster and statistical software are essential for efficient data analysis, but may require significant upfront investment. ELISA or flow cytometry equipment can be automated to reduce manual labor and increase accuracy.",
+        "riskScore": 0.7,
+        "decision": "approve with conditions"
+      }
+    ],
+    "consensusReached": false,
+    "finalDecision": "rejected",
+    "consensusReport": {
+      "approved": false,
+      "disagreement_percentage": 0.0,
+      "average_confidence": 0.8,
+      "max_risk_score": 6.2,
+      "blocking_reasons": [
+        "Missing sample size",
+        "The provided evidence links are not sufficient to support the mechanistic link between KRAS G12C mutation and targeted inhibitors like Sotorasib.",
+        "Confounders not provided",
+        "Independent variables not manipulated",
+        "Insufficient information on protocol",
+        "Insufficient computational resources for data analysis"
+      ],
+      "conflict_detected": false,
+      "summary": "Consensus failed. Approvals: 0/5. Max Risk: 6.2."
+    }
+  },
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1783456228.5676959
+  },
+  "trace": [
+    {
+      "timestamp": 1783456228.57322,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456229.5220628,
+      "event": "Semantic query returned 0 results. Falling back to entity query.",
+      "metadata": {
+        "failed_query": "mechanistic relationship between KRAS G12C mutation specific targeted inhibitors like Sotorasib"
+      }
+    },
+    {
+      "timestamp": 1783456231.5451574,
+      "event": "Entering Gap Analysis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456231.5463243,
+      "event": "Entering Hypothesis Generation",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456268.899738,
+      "event": "Entering Experiment Planning",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1783456285.4089024,
+      "event": "Entering Scientific Review",
+      "metadata": {}
+    }
+  ]
+}
