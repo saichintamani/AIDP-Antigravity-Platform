@@ -26,7 +26,7 @@ class GemmaMechanisticProber:
             logger.warning("HuggingFace Transformers/PyTorch not detected. Running in mathematical simulation mode.")
             self.is_loaded = False
 
-    def extract_attention_matrix(self, prompt: str, historical_token: str) -> dict:
+    def extract_attention_matrix(self, prompt: str, historical_token: str, intervention_mode: bool = False) -> dict:
         """
         Extracts the attention weights between the final generated tokens and the historical token constraint.
         """
@@ -61,8 +61,18 @@ class GemmaMechanisticProber:
         simulated_historical_weight = np.random.uniform(0.01, 0.15)
         simulated_modern_weight = 1.0 - simulated_historical_weight
         
-        return {
+        attention_matrix = {
             "historical_attention_weight": float(simulated_historical_weight),
             "modern_attention_weight": float(simulated_modern_weight),
             "layer": "L-1 (Final Attention Layer)"
         }
+        
+        if intervention_mode:
+            try:
+                from src.aidp.mechanistic.attention_steerer import EpistemicAttentionSteerer
+                steerer = EpistemicAttentionSteerer(steering_strength=15.0)
+                attention_matrix = steerer.apply_attention_intervention(attention_matrix)
+            except ImportError:
+                logger.error("Intervention module not found.")
+                
+        return attention_matrix

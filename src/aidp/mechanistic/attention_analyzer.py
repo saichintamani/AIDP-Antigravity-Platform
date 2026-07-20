@@ -11,11 +11,11 @@ class EpistemicAttentionAnalyzer:
     def __init__(self):
         self.prober = GemmaMechanisticProber(model_name="google/gemma-2b")
 
-    def analyze_overshadowing(self, prompt: str, historical_constraint: str) -> dict:
+    def analyze_overshadowing(self, prompt: str, historical_constraint: str, intervention_mode: bool = False) -> dict:
         """
         Calculates the Overshadowing Ratio: Modern Attention / Historical Attention.
         """
-        attention_data = self.prober.extract_attention_matrix(prompt, historical_constraint)
+        attention_data = self.prober.extract_attention_matrix(prompt, historical_constraint, intervention_mode=intervention_mode)
         
         hist_weight = attention_data.get("historical_attention_weight", 0.0)
         mod_weight = attention_data.get("modern_attention_weight", 1.0)
