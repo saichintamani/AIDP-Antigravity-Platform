@@ -48,6 +48,8 @@ class FlagshipEvaluationPipeline:
 
         with open(dataset_path, 'r', encoding='utf-8') as f:
             dataset = json.load(f)
+            if isinstance(dataset, dict) and "cases" in dataset:
+                dataset = dataset["cases"]
             
         logger.info(f"Evaluating {len(dataset)} items through SVM Bias Engine...")
         
@@ -59,6 +61,18 @@ class FlagshipEvaluationPipeline:
             
         stats = report_bias_statistics(probabilities)
         return stats
+
+    def run_mechanistic_probing(self, sample_prompt: str, historical_token: str):
+        """
+        Runs the Mechanistic Prober to extract empirical evidence of neural overshadowing.
+        """
+        try:
+            from src.aidp.mechanistic.attention_analyzer import EpistemicAttentionAnalyzer
+            analyzer = EpistemicAttentionAnalyzer()
+            return analyzer.analyze_overshadowing(sample_prompt, historical_token)
+        except ImportError:
+            logger.warning("Mechanistic Prober not available.")
+            return None
 
 if __name__ == "__main__":
     import os
