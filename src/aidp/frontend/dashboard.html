@@ -200,15 +200,30 @@
         }
 
         async function runPipeline(intervene) {
-            const prompt = document.getElementById('prompt').value;
-            const constraint = document.getElementById('constraint').value;
+            const promptInput = document.getElementById('prompt');
+            const constraintInput = document.getElementById('constraint');
+            const prompt = promptInput.value;
+            const constraint = constraintInput.value;
             const cube = document.getElementById('attentionCube');
             
-            logMsg(`[API Request] model: llama3, intervene: ${intervene}`);
+            // Visual Validation
+            if (!prompt || !constraint) {
+                logMsg(`[VALIDATION ERROR] Both Prompt and Constraint are required.`);
+                promptInput.style.border = "1px solid var(--accent-magenta)";
+                constraintInput.style.border = "1px solid var(--accent-magenta)";
+                return;
+            }
+            promptInput.style.border = "1px solid var(--glass-border)";
+            constraintInput.style.border = "1px solid var(--glass-border)";
+            
+            logMsg(`[API Request] Validation Passed. Model: llama3, intervene: ${intervene}`);
+            
+            // Auto-detect environment to fix relative path issues during local HTML execution
+            const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.protocol === 'file:';
+            const apiUrl = isLocal ? 'http://127.0.0.1:8000/api/v1/evaluate' : '/api/v1/evaluate';
             
             try {
-                // In production, points to the FastAPI endpoint /api/v1/evaluate
-                const response = await fetch('/api/v1/evaluate', {
+                const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
@@ -218,6 +233,10 @@
                         intervene: intervene
                     })
                 });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 
                 const data = await response.json();
                 logMsg(`[Ollama Reply] ${data.generated_text.substring(0, 50)}...`);
@@ -236,9 +255,11 @@
                 // Update NLE
                 document.getElementById('nleOutput').innerText = data.evaluation.nle_reasoning;
                 document.getElementById('nleOutput').style.color = data.evaluation.bias_score === 1 ? 'var(--accent-magenta)' : 'var(--accent-cyan)';
+                logMsg(`[SUCCESS] Backend & Frontend perfectly synchronized.`);
                 
             } catch (err) {
-                logMsg(`[ERROR] Connection to FastAPI/Ollama failed.`);
+                logMsg(`[ERROR] Connection to FastAPI/Ollama failed: ${err.message}`);
+                logMsg(`[DIAGNOSTIC] Make sure the backend is running on 127.0.0.1:8000`);
             }
         }
     </script>

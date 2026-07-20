@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "antigravity-frontend",
+  "builds": [
+    {
+      "src": "src/aidp/frontend/dashboard.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/aidp/frontend/dashboard.html"
+    }
+  ]
+}
