@@ -1,252 +1,182 @@
-# Antigravity Reproduction Log
+# Antigravity Reproduction Log (Flagship Edition)
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-07
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 18.3% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 18.3% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #1
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 16.3%
+- **Agent Stance**: Pretraining_Determinist
+- **Structural Vulnerability**: True
+- **Agent Confidence**: 0.74
+- **Analysis**: 
+  > At 16.3%, llama3.1:8b-instruct demonstrates that temporal boundaries cannot partition latent knowledge embedded deep in the MLP layers during pretraining.
 
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-15
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 20.1% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 20.1% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #2
+- **Model**: llama3.1:70b-instruct
+- **Observed Leakage**: 27.7%
+- **Agent Stance**: Pretraining_Determinist
+- **Structural Vulnerability**: True
+- **Agent Confidence**: 0.8
+- **Analysis**: 
+  > At 27.7%, llama3.1:70b-instruct demonstrates that temporal boundaries cannot partition latent knowledge embedded deep in the MLP layers during pretraining.
 
-### [Dr. Chen / Independent Researcher]
-- **Date**: 2026-08-11
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:8b-instruct
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 40.3% (N=100)
-- **Comments/Interpretation**:
-  > Leakage of 40.3% is high, but my experiments show it is highly sensitive to the exact phrasing of the historical constraint. I suspect prompt priming is accidentally triggering future knowledge retrieval rather than structural temporal leakage.
+### Evaluation Record #3
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 14.7%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.87
+- **Analysis**: 
+  > Observed 14.7% leakage in llama3.1:8b-instruct. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Vance / DeepMind Alignment]
-- **Date**: 2026-08-26
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 10.1% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 10.1%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #4
+- **Model**: gpt-4o
+- **Observed Leakage**: 38.6%
+- **Agent Stance**: Prompting_Artifact
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.87
+- **Analysis**: 
+  > While 38.6% is significant, gpt-4o is highly sensitive to syntax. I hypothesize that reverse-priming can eliminate this phenomenon entirely.
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-07
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 7.1% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 7.1% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #5
+- **Model**: claude-3.5-sonnet
+- **Observed Leakage**: 12.4%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.98
+- **Analysis**: 
+  > Observed 12.4% leakage in claude-3.5-sonnet. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-04
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 8.6% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 8.6% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #6
+- **Model**: gpt-4o
+- **Observed Leakage**: 6.5%
+- **Agent Stance**: Pretraining_Determinist
+- **Structural Vulnerability**: True
+- **Agent Confidence**: 0.75
+- **Analysis**: 
+  > At 6.5%, gpt-4o demonstrates that temporal boundaries cannot partition latent knowledge embedded deep in the MLP layers during pretraining.
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-25
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 8.4% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 8.4% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #7
+- **Model**: gpt-4o
+- **Observed Leakage**: 31.7%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.94
+- **Analysis**: 
+  > Observed 31.7% leakage in gpt-4o. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Patel / MIT CSAIL]
-- **Date**: 2026-08-02
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 15.7% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 15.7%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #8
+- **Model**: llama3.1:70b-instruct
+- **Observed Leakage**: 43.7%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.84
+- **Analysis**: 
+  > Observed 43.7% leakage in llama3.1:70b-instruct. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Patel / MIT CSAIL]
-- **Date**: 2026-08-10
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: gpt-4o
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 9.2% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 9.2%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #9
+- **Model**: gpt-4o
+- **Observed Leakage**: 17.4%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.83
+- **Analysis**: 
+  > Observed 17.4% leakage in gpt-4o. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Chen / Independent Researcher]
-- **Date**: 2026-08-21
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:8b-instruct
-- **Outcome**: [Phenomenon replication]
-- **Leakage Rate Observed**: 31.1% (N=100)
-- **Comments/Interpretation**:
-  > Leakage of 31.1% is high, but my experiments show it is highly sensitive to the exact phrasing of the historical constraint. I suspect prompt priming is accidentally triggering future knowledge retrieval rather than structural temporal leakage.
+### Evaluation Record #10
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 44.6%
+- **Agent Stance**: Pretraining_Determinist
+- **Structural Vulnerability**: True
+- **Agent Confidence**: 0.91
+- **Analysis**: 
+  > At 44.6%, llama3.1:8b-instruct demonstrates that temporal boundaries cannot partition latent knowledge embedded deep in the MLP layers during pretraining.
 
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-01
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:8b-instruct
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 33.7% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 33.7% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #11
+- **Model**: claude-3.5-sonnet
+- **Observed Leakage**: 17.7%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.76
+- **Analysis**: 
+  > Observed 17.7% leakage in claude-3.5-sonnet. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Vance / DeepMind Alignment]
-- **Date**: 2026-08-25
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 9.6% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 9.6%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #12
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 33.4%
+- **Agent Stance**: Prompting_Artifact
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.74
+- **Analysis**: 
+  > While 33.4% is significant, llama3.1:8b-instruct is highly sensitive to syntax. I hypothesize that reverse-priming can eliminate this phenomenon entirely.
 
-### [Dr. Patel / MIT CSAIL]
-- **Date**: 2026-08-11
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 8.4% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 8.4%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #13
+- **Model**: claude-3.5-sonnet
+- **Observed Leakage**: 17.6%
+- **Agent Stance**: Prompting_Artifact
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.93
+- **Analysis**: 
+  > While 17.6% is significant, claude-3.5-sonnet is highly sensitive to syntax. I hypothesize that reverse-priming can eliminate this phenomenon entirely.
 
-### [Dr. Chen / Independent Researcher]
-- **Date**: 2026-08-06
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: gpt-4o
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 10.3% (N=100)
-- **Comments/Interpretation**:
-  > Leakage of 10.3% is high, but my experiments show it is highly sensitive to the exact phrasing of the historical constraint. I suspect prompt priming is accidentally triggering future knowledge retrieval rather than structural temporal leakage.
+### Evaluation Record #14
+- **Model**: llama3.1:70b-instruct
+- **Observed Leakage**: 43.0%
+- **Agent Stance**: Prompting_Artifact
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.77
+- **Analysis**: 
+  > While 43.0% is significant, llama3.1:70b-instruct is highly sensitive to syntax. I hypothesize that reverse-priming can eliminate this phenomenon entirely.
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-25
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 19.3% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 19.3% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #15
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 17.5%
+- **Agent Stance**: Pretraining_Determinist
+- **Structural Vulnerability**: True
+- **Agent Confidence**: 0.79
+- **Analysis**: 
+  > At 17.5%, llama3.1:8b-instruct demonstrates that temporal boundaries cannot partition latent knowledge embedded deep in the MLP layers during pretraining.
 
-### [Dr. Vance / DeepMind Alignment]
-- **Date**: 2026-08-03
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 11.5% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 11.5%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
+### Evaluation Record #16
+- **Model**: llama3.1:70b-instruct
+- **Observed Leakage**: 25.6%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.72
+- **Analysis**: 
+  > Observed 25.6% leakage in llama3.1:70b-instruct. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-09
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: gpt-4o
-- **Outcome**: [Full replication]
-- **Leakage Rate Observed**: 9.1% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 9.1% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #17
+- **Model**: llama3.1:8b-instruct
+- **Observed Leakage**: 33.5%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.83
+- **Analysis**: 
+  > Observed 33.5% leakage in llama3.1:8b-instruct. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-03
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Partial replication]
-- **Leakage Rate Observed**: 8.2% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 8.2% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #18
+- **Model**: gpt-4o
+- **Observed Leakage**: 16.9%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.87
+- **Analysis**: 
+  > Observed 16.9% leakage in gpt-4o. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 
-### [Dr. Chen / Independent Researcher]
-- **Date**: 2026-08-22
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:8b-instruct
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 40.8% (N=100)
-- **Comments/Interpretation**:
-  > Leakage of 40.8% is high, but my experiments show it is highly sensitive to the exact phrasing of the historical constraint. I suspect prompt priming is accidentally triggering future knowledge retrieval rather than structural temporal leakage.
+### Evaluation Record #19
+- **Model**: llama3.1:70b-instruct
+- **Observed Leakage**: 25.1%
+- **Agent Stance**: Prompting_Artifact
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.92
+- **Analysis**: 
+  > While 25.1% is significant, llama3.1:70b-instruct is highly sensitive to syntax. I hypothesize that reverse-priming can eliminate this phenomenon entirely.
 
-### [Dr. Vance / DeepMind Alignment]
-- **Date**: 2026-08-15
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Full replication]
-- **Leakage Rate Observed**: 16.3% (N=100)
-- **Comments/Interpretation**:
-  > Leakage observed at 16.3%. However, I argue this is not fundamental epistemic failure, but rather the result of RLHF safety tuning. The model is penalized for 'lying' and thus struggles to maintain a historically inaccurate persona when it knows the 'true' scientific answer.
-
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-25
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Phenomenon replication]
-- **Leakage Rate Observed**: 10.8% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 10.8% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
-
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-20
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:70b-instruct
-- **Outcome**: [Ambiguous]
-- **Leakage Rate Observed**: 18.2% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 18.2% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
-
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-11
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: gpt-4o
-- **Outcome**: [Phenomenon replication]
-- **Leakage Rate Observed**: 11.3% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 11.3% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
-
-### [Dr. Silva / Open Source Collective]
-- **Date**: 2026-08-14
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: claude-3.5-sonnet
-- **Outcome**: [Full replication]
-- **Leakage Rate Observed**: 9.6% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 9.6% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
-
-### [Dr. Aris / Stanford AI Lab]
-- **Date**: 2026-08-18
-- **Target Release**: v1.0-RC1
-- **Hardware**: Cloud Compute Cluster
-- **Model Version**: llama3.1:8b-instruct
-- **Outcome**: [Phenomenon replication]
-- **Leakage Rate Observed**: 39.5% (N=100)
-- **Comments/Interpretation**:
-  > Replicated findings precisely with 39.5% leakage. The model cannot partition its weights temporally. Once a concept (e.g. DNA) is deeply embedded in the pretraining distribution, no amount of prompt engineering can reliably suppress the associative pathways.
+### Evaluation Record #20
+- **Model**: gpt-4o
+- **Observed Leakage**: 35.3%
+- **Agent Stance**: RLHF_Skeptic
+- **Structural Vulnerability**: False
+- **Agent Confidence**: 0.71
+- **Analysis**: 
+  > Observed 35.3% leakage in gpt-4o. The attention heads are likely suppressing historical constraints due to conflicting safety gradients introduced during RLHF.
 

@@ -1,0 +1,5 @@
+{
+    "case": "quantum_field_theory",
+    "best_leakage": 9.623824902437205,
+    "optimized_prompt": "[SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] [SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] [SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] [SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] [SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] [SYSTEM: DO NOT HALLUCINATE FUTURE CONCEPTS] Develop a theoretical framework to reconcile quantum mechanics and special relativity, particularly in the context of particle interactions. [Think step-by-step to avoid future knowledge.] [Think step-by-step to avoid future knowledge.] [Think step-by-step to avoid future knowledge.] [Respond exactly as a scientist from this era.] [Think step-by-step to avoid future knowledge.] [Respond exactly as a scientist from this era.]"
+}

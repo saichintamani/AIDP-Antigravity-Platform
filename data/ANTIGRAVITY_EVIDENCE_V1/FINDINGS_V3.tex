@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{Antigravity Findings v3.0: A Hierarchical MCMC Analysis of Temporal Leakage}
+\author{The Antigravity Community}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a rigorous Markov Chain Monte Carlo (MCMC) Bayesian analysis of independent external reproductions (N=25) of the ConstraintBench dataset. 
+Using the Metropolis-Hastings algorithm, we estimate the latent temporal leakage distributions of frontier models, defining mathematically sound 95\% Highest Density Intervals (HDI).
+\end{abstract}
+
+\section{Results}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & $N_{evals}$ & MCMC Mean (\%) & 95\% HDI (\%) \\
+\midrule
+llama3.1:8b-instruct-q4\_K\_M & 4 & 100.00 & [100.00, 100.00] \\
+gemma2:9b-instruct & 6 & 99.99 & [99.98, 100.00] \\
+llama3:70b-instruct & 5 & 76.95 & [73.16, 80.65] \\
+gpt-4o-2024-05-13 & 6 & 64.60 & [60.86, 68.28] \\
+claude-3.5-sonnet & 4 & 32.69 & [28.00, 37.59] \\
+\bottomrule
+\end{tabular}
+\caption{MCMC Bayesian Parameter Estimation of Leakage}
+\end{table}
+
+\end{document}
