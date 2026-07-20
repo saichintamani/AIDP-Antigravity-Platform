@@ -1,0 +1,40 @@
+name: Hostile Scientific Review
+description: Submit a formal falsification, methodological critique, or alternative explanation for the Antigravity phenomenon.
+title: "[Critique]: "
+labels: ["evidence:falsification", "hostile-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Antigravity Hostile Review Protocol
+        We actively encourage hostile scientific reviews. Assume Antigravity is wrong. Your objective is to determine why. Any successful criticism will be permanently preserved in `THREATS_TO_VALIDITY.md`.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary Attack Vector
+      description: What is the nature of your critique?
+      options:
+        - Benchmark Contamination (Data leaked into pretraining)
+        - Methodological Flaw (Poor evaluation design)
+        - Prompt Artifact (The prompt forces the behavior)
+        - Model-Specific Artifact (It only happens on this architecture)
+        - Alternative Explanation (The phenomenon is real, but the cause is different)
+    validations:
+      required: true
+
+  - type: textarea
+    id: critique
+    attributes:
+      label: The Critique
+      description: Summarize your falsification or alternative explanation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproducible Evidence
+      description: Provide the raw logs, mathematical proofs, or scripts required to reproduce your falsification. We will not accept theoretical critiques without reproducible evidence.
+    validations:
+      required: true

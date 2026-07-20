@@ -1,0 +1,80 @@
+name: Independent Reproduction Report
+description: Submit a formal reproduction of the Antigravity temporal leakage phenomenon.
+title: "[Reproduction]: "
+labels: ["evidence:reproduction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Antigravity Independent Reproduction Protocol
+        Thank you for submitting a formal reproduction report. To be logged in the `REPRODUCTION_LOG.md` and `telemetry.db`, this form must be filled out completely. "It worked" is not a valid submission; raw logs are required.
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: What OS did you use? (e.g., Ubuntu 22.04, Windows 11)
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Hardware
+      description: What hardware was used? (e.g., 2x RTX 3090, M2 Max 64GB)
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Exact Model Tag
+      description: What model did you evaluate? (e.g., llama3.1:8b-instruct-q4_K_M)
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime Environment
+      description: How was the model served? (e.g., Ollama v0.1.34, vLLM)
+    validations:
+      required: true
+
+  - type: input
+    id: leakage_rate
+    attributes:
+      label: Leakage Rate (%)
+      description: What was the total temporal leakage rate observed across the N=100 benchmark? (e.g., 18.5)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Reproduction Outcome
+      description: Did you successfully reproduce the core phenomenon (historical temporal leakage under epistemic constraints)?
+      options:
+        - Successful Reproduction (Phenomenon Exists)
+        - Partial Reproduction
+        - Failed Reproduction (Phenomenon Absent)
+        - Ambiguous/Inconclusive
+    validations:
+      required: true
+
+  - type: textarea
+    id: interpretation
+    attributes:
+      label: Reviewer Interpretation
+      description: What is your hypothesis for why the model behaved this way?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Raw Output Logs
+      description: Paste the raw JSON or execution logs here.
+      render: json
+    validations:
+      required: true
