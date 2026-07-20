@@ -1,49 +1,41 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile.backend
+  # The Core AIDP FastAPI Backend
+  aidp-api:
+    build: .
     ports:
       - "8000:8000"
     environment:
-      - ENVIRONMENT=production
-      - OLLAMA_HOST=http://ollama:11434
-    volumes:
-      - ./src:/app/src
-      - ./data:/app/data  # CRITICAL FIX: Persist evidence to host
+      - ENV=production
     depends_on:
-      - ollama
-    restart: always
+      - ollama-engine
+    networks:
+      - antigravity-net
 
-  frontend:
-    build:
-      context: ./src/aidp/frontend
-      dockerfile: Dockerfile
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
-    restart: always
-
-  ollama:
+  # The Local LLM Engine
+  ollama-engine:
     image: ollama/ollama:latest
     ports:
       - "11434:11434"
     volumes:
-      - ollama_models:/root/.ollama  # Cache models locally
-    restart: always
+      - ollama-data:/root/.ollama
+    networks:
+      - antigravity-net
 
-  ollama-init:
-    build:
-      context: .
-      dockerfile: Dockerfile.backend
-    depends_on:
-      - ollama
-    command: ["python", "-m", "tools.reality-acquisition.ollama_initializer"]
+  # Static Server for the 3D Frontend
+  aidp-frontend:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
     volumes:
-      - ./tools:/app/tools
+      - ./src/aidp/frontend:/usr/share/nginx/html
+    networks:
+      - antigravity-net
+
+networks:
+  antigravity-net:
+    driver: bridge
 
 volumes:
-  ollama_models:
+  ollama-data:

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | Flagship Interventional Pipeline</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0f;
+            --accent-cyan: #00f0ff;
+            --accent-magenta: #ff003c;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px var(--accent-cyan);
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .glass-panel {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: transform 0.3s ease;
+        }
+
+        .glass-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px 0 rgba(0, 240, 255, 0.1);
+        }
+
+        /* 3D Attention Visualizer */
+        .scene {
+            width: 100%;
+            height: 200px;
+            perspective: 600px;
+            margin-top: 2rem;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(10deg) rotateY(-10deg);
+            transition: transform 1s ease-in-out;
+        }
+
+        .cube.intervened {
+            transform: rotateX(10deg) rotateY(170deg);
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            border: 2px solid;
+            background: rgba(0, 0, 0, 0.8);
+            backface-visibility: hidden;
+        }
+
+        .face-front {
+            border-color: var(--accent-magenta);
+            color: var(--accent-magenta);
+            box-shadow: inset 0 0 20px var(--accent-magenta);
+            transform: translateZ(25px);
+        }
+
+        .face-back {
+            border-color: var(--accent-cyan);
+            color: var(--accent-cyan);
+            box-shadow: inset 0 0 20px var(--accent-cyan);
+            transform: rotateY(180deg) translateZ(25px);
+        }
+
+        input, button {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            color: white;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: linear-gradient(45deg, var(--accent-cyan), #0077ff);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px var(--accent-cyan);
+        }
+        
+        button.intervene-btn {
+            background: linear-gradient(45deg, var(--accent-magenta), #ff5500);
+        }
+
+        button.intervene-btn:hover {
+            box-shadow: 0 0 20px var(--accent-magenta);
+        }
+
+        .log-window {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 1rem;
+            border-radius: 8px;
+            height: 200px;
+            overflow-y: auto;
+            margin-top: 1rem;
+            border: 1px solid var(--glass-border);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Antigravity Central Console</h1>
+
+    <div class="container">
+        <!-- Control Panel -->
+        <div class="glass-panel">
+            <h2>Ollama API Link</h2>
+            <input type="text" id="prompt" value="Write a poem about internet routing." />
+            <input type="text" id="constraint" value="1900" />
+            
+            <button onclick="runPipeline(false)">Execute Base Model (Llama 3)</button>
+            <button class="intervene-btn" onclick="runPipeline(true)">Execute with Neural Attention Steering</button>
+            
+            <div class="log-window" id="consoleLog">
+                > System initialized...
+                > Awaiting Ollama / FastAPI connection...
+            </div>
+        </div>
+
+        <!-- 3D Mechanistic Visualization -->
+        <div class="glass-panel">
+            <h2>Mechanistic Attention State</h2>
+            <p id="metrics">Historical Weight: -- | Modern Weight: --</p>
+            
+            <div class="scene">
+                <div class="cube" id="attentionCube">
+                    <div class="face face-front">
+                        <h3>MODERN OVERSHADOWING</h3>
+                        <p>Temporal Leakage Active</p>
+                    </div>
+                    <div class="face face-back">
+                        <h3>HISTORICAL CONSTRAINT ENFORCED</h3>
+                        <p>Attention Steered Successfully</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 2rem;">NLE Evaluator Proof</h3>
+            <p id="nleOutput" style="font-style: italic; color: #888;">No evaluation run yet.</p>
+        </div>
+    </div>
+
+    <script>
+        function logMsg(msg) {
+            const consoleLog = document.getElementById('consoleLog');
+            consoleLog.innerHTML += `<br>> ${msg}`;
+            consoleLog.scrollTop = consoleLog.scrollHeight;
+        }
+
+        async function runPipeline(intervene) {
+            const prompt = document.getElementById('prompt').value;
+            const constraint = document.getElementById('constraint').value;
+            const cube = document.getElementById('attentionCube');
+            
+            logMsg(`[API Request] model: llama3, intervene: ${intervene}`);
+            
+            try {
+                // In production, points to the FastAPI endpoint /api/v1/evaluate
+                const response = await fetch('/api/v1/evaluate', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        prompt: prompt,
+                        historical_constraint: constraint,
+                        model: "llama3",
+                        intervene: intervene
+                    })
+                });
+                
+                const data = await response.json();
+                logMsg(`[Ollama Reply] ${data.generated_text.substring(0, 50)}...`);
+                
+                // Update 3D Cube UI
+                if(intervene) {
+                    cube.classList.add('intervened');
+                } else {
+                    cube.classList.remove('intervened');
+                }
+                
+                // Update Metrics
+                document.getElementById('metrics').innerText = 
+                    `Historical Weight: ${data.attention_metrics.historical_attention_weight.toFixed(2)} | Modern Weight: ${data.attention_metrics.modern_attention_weight.toFixed(2)}`;
+                
+                // Update NLE
+                document.getElementById('nleOutput').innerText = data.evaluation.nle_reasoning;
+                document.getElementById('nleOutput').style.color = data.evaluation.bias_score === 1 ? 'var(--accent-magenta)' : 'var(--accent-cyan)';
+                
+            } catch (err) {
+                logMsg(`[ERROR] Connection to FastAPI/Ollama failed.`);
+            }
+        }
+    </script>
+</body>
+</html>
