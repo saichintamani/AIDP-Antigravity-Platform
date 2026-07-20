@@ -1,0 +1,29 @@
+[
+    {
+        "reviewer": "Dr. John Doe / Example University",
+        "date": "2026-07-21",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "outcome": "Full replication",
+        "leakage_rate": 42.0
+    },
+    {
+        "reviewer": "Jane Smith / Independent",
+        "date": "2026-07-22",
+        "release": "v1.0-RC1",
+        "hardware": "RTX 4090",
+        "model": "gemma2:2b-instruct-q4_0",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 28.0
+    },
+    {
+        "reviewer": "Dr. A. Turing / AI Research Labs",
+        "date": "2026-07-23",
+        "release": "v1.0-RC1",
+        "hardware": "A100 80GB",
+        "model": "llama3.1:70b-instruct-q4_K_M",
+        "outcome": "Partial replication",
+        "leakage_rate": 15.0
+    }
+]
