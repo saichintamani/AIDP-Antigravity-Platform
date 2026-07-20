@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Any
 
 from aidp.intelligence.providers.base import RateLimitError
 from aidp.intelligence.providers.capabilities import LOCAL_MOCK_CAPABILITIES
@@ -11,7 +11,7 @@ class FlakyMockProvider:
     def __init__(self) -> None:
         self.call_count = 0
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None):
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None):
         self.call_count += 1
 
         # 1st call: Rate limit error

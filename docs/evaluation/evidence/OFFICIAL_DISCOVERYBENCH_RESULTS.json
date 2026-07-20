@@ -1,0 +1,102 @@
+[
+  {
+    "case_id": "case-oncology-001",
+    "baseline_passed": false,
+    "aidp_passed": false
+  },
+  {
+    "case_id": "case-oncology-002",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-oncology-003",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-oncology-004",
+    "baseline_passed": false,
+    "aidp_passed": false
+  },
+  {
+    "case_id": "case-genetics-001",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-genetics-002",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-genetics-003",
+    "baseline_passed": false,
+    "aidp_passed": false
+  },
+  {
+    "case_id": "case-genetics-004",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-neuroscience-001",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-neuroscience-002",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-neuroscience-004",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-immunology-001",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-immunology-002",
+    "baseline_passed": false,
+    "aidp_passed": false
+  },
+  {
+    "case_id": "case-immunology-003",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-immunology-004",
+    "baseline_passed": false,
+    "aidp_passed": false
+  },
+  {
+    "case_id": "case-materials-001",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-materials-002",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-climate-001",
+    "baseline_passed": false,
+    "aidp_passed": true
+  },
+  {
+    "case_id": "case-climate-002",
+    "baseline_passed": false,
+    "aidp_passed": true
+  }
+]

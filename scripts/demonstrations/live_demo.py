@@ -1,5 +1,5 @@
 from aidp.evaluation.framework import ScientificReportCard
-from aidp.evaluation.gold_standard_runner import GoldStandardRunner
+
 
 def execute_production_live_demo():
     print("======================================================")

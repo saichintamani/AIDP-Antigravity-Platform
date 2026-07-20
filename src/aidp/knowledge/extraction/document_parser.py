@@ -1,8 +1,10 @@
-import fitz  # type: ignore[import-untyped]
-from typing import Iterator, Tuple
 import os
+from collections.abc import Iterator
+
+import fitz  # type: ignore[import-untyped]
 
 from aidp.knowledge.serialization import Provenance
+
 
 class DocumentParser:
     """
@@ -12,7 +14,7 @@ class DocumentParser:
     def __init__(self, file_path: str) -> None:
         self.file_path = file_path
         
-    def parse_blocks(self) -> Iterator[Tuple[str, Provenance]]:
+    def parse_blocks(self) -> Iterator[tuple[str, Provenance]]:
         """
         Yields (text_block, Provenance) for each block in the document.
         """

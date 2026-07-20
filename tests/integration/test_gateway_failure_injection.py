@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Any
 
 import pytest
 
@@ -11,7 +11,7 @@ class MalformedJSONProvider:
     model_name = "malformed-mock"
     default_params = {}
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> Any:
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> Any:
         return "This is not JSON { oops"
 
 
@@ -19,7 +19,7 @@ class InvalidSchemaProvider:
     model_name = "invalid-schema-mock"
     default_params = {}
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> Any:
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> Any:
         return '{"wrong_key": 123}'
 
 

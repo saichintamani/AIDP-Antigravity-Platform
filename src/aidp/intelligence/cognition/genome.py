@@ -1,7 +1,7 @@
 import copy
 import uuid
 from dataclasses import dataclass, field
-from typing import Optional, Any
+from typing import Any
 
 
 @dataclass
@@ -36,7 +36,7 @@ class AgentGenome:
         """Creates an exact clone of the current genome."""
         return copy.deepcopy(self)
 
-    def spawn_child_version(self, new_prompt: Optional[str] = None) -> "AgentGenome":
+    def spawn_child_version(self, new_prompt: str | None = None) -> "AgentGenome":
         """Creates a v+1 genome, e.g. for prompt A/B testing."""
         child = self.clone()
         child.version += 1

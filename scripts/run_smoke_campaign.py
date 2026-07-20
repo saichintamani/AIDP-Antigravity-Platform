@@ -1,13 +1,14 @@
-import os
 import json
 import time
 from pathlib import Path
+
 from aidp.config.settings import get_settings
 from aidp.core.observability import TelemetryManager
 
+
 def main():
     print("Initiating AIDP Smoke Campaign...")
-    settings = get_settings()
+    get_settings()
     telemetry = TelemetryManager()
     
     campaign_id = "smoke-test-001"

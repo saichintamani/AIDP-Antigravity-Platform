@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Any
 
 import pytest
 
@@ -21,7 +21,7 @@ def test_provider_simulates_rate_limit_properly() -> None:
 
     # We simulate this via a mock provider that strictly raises RateLimitError
     class StrictMock(BaseProvider):
-        def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> None:
+        def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> None:
             raise RateLimitError("429 Too Many Requests")
 
         def generate(self, prompt: str) -> None:

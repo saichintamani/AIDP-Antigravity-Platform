@@ -1,0 +1,746 @@
+[
+  {
+    "case_id": "case-oncology-004",
+    "hypothesis": {
+      "claim": "CD22-directed CAR-T cell therapy can be a viable alternative to CD19-directed CAR-T cell therapy for treating B-cell acute lymphoblastic leukemia (B-ALL), particularly in cases where patients have lost expression of CD19.",
+      "rationale": "This claim is supported by the finding that CD22 is expressed in most cases of B-ALL and can be targeted by CAR T cells, which suggests that CD22-directed therapy may be effective in patients who have lost expression of CD19 (Source 1). Additionally, the fact that antigen loss is a frequent cause of resistance to CD19-targeted immunotherapy supports the idea that targeting alternative antigens like CD22 could provide an alternative approach for treating B-ALL. Furthermore, while Source 2 does not provide any findings on CD22-directed CAR-T cell therapy, this lack of evidence does not necessarily refute the claim, as it is possible that further research may reveal the efficacy of CD22-directed therapy in B-ALL patients."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Missing sample size']\n- **Domain Expert**: Decision=reject, BlockingIssues=['Lack of evidence supporting the claim']\n- **Methodologist**: Decision=reject, BlockingIssues=[]\n- **Ethicist**: Decision=reject, BlockingIssues=[{'issue': 'Insufficient participant consent forms', 'description': 'Participant consent forms are not explicitly stated in the protocol, which may lead to inadequate informed consent.', 'riskLevel': 'Moderate'}, {'issue': 'Dual-use risk of flow cytometry machine', 'description': 'The flow cytometry machine has the potential for dual-use applications, such as bioterrorism or biowarfare. Proper decontamination and security measures must be implemented.', 'riskLevel': 'High'}]\n- **Engineer**: Decision=approve with reservations, BlockingIssues=['Insufficient data on CAR-T cell production and patient outcomes']\n\n## 5. Telemetry\n**Runtime:** 96.11s\n",
+    "new_design": {
+      "id": "exp-1ab7c9be-3743-4794-9460-21d1345e5d4b",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "CD22-directed CAR-T cell therapy can be a viable alternative to CD19-directed CAR-T cell therapy for treating B-cell acute lymphoblastic leukemia (B-ALL)",
+          "supporting_evidence": "This claim is supported by the finding that CD22 is expressed in most cases of B-ALL and can be targeted by CAR T cells, which suggests that CD22-directed therapy may be effective in patients who have lost expression of CD19 (Source 1)."
+        }
+      ],
+      "supporting_dois": [
+        "10.1038/nm.4441"
+      ],
+      "unsupported_claims": [
+        "The fact that antigen loss is a frequent cause of resistance to CD19-targeted immunotherapy supports the idea that targeting alternative antigens like CD22 could provide an alternative approach for treating B-ALL.",
+        "While Source 2 does not provide any findings on CD22-directed CAR-T cell therapy, this lack of evidence does not necessarily refute the claim, as it is possible that further research may reveal the efficacy of CD22-directed therapy in B-ALL patients."
+      ],
+      "evidence_confidence": "Medium",
+      "independentVariables": [
+        "CD22-directed CAR-T cell therapy",
+        "CD19-directed CAR-T cell therapy"
+      ],
+      "dependentVariables": [
+        "B-cell acute lymphoblastic leukemia (B-ALL) outcomes"
+      ],
+      "controls": [
+        {
+          "type": "Baseline",
+          "group_name": "Healthy Controls",
+          "isolated_variable": "Patient age",
+          "purpose_and_justification": "Isolates patient age to serve as a baseline for comparison with the treatment groups."
+        },
+        {
+          "type": "Sham",
+          "group_name": "Placebo Group",
+          "isolated_variable": "CD22-directed CAR-T cell therapy",
+          "purpose_and_justification": "Serves as a negative control to compare outcomes of CD22-directed CAR-T cell therapy."
+        },
+        {
+          "type": "Negative",
+          "group_name": "Vehicle Control",
+          "isolated_variable": "CD19-directed CAR-T cell therapy",
+          "purpose_and_justification": "Isolates the effects of CD19-directed CAR-T cell therapy by comparing it to a vehicle control."
+        },
+        {
+          "type": "Wild-Type",
+          "group_name": "Untreated B-ALL Patients",
+          "isolated_variable": "B-cell acute lymphoblastic leukemia (B-ALL) outcomes",
+          "purpose_and_justification": "Serves as a positive control to compare the outcomes of CD22-directed CAR-T cell therapy in untreated patients with B-ALL."
+        },
+        {
+          "type": "Isotype",
+          "group_name": "Patient Comorbidity Controls",
+          "isolated_variable": "Genetic mutations",
+          "purpose_and_justification": "Isolates the effects of genetic mutations by comparing them to patient comorbidities."
+        }
+      ],
+      "confounders": [
+        "Patient age",
+        "Patient comorbidities",
+        "Genetic mutations"
+      ],
+      "successCriteria": "Significant improvement in B-ALL outcomes (e.g., complete remission, overall survival) compared to standard of care chemotherapy in patients who have lost expression of CD19, as measured by a statistically significant difference in the primary endpoint (e.g., progression-free survival)",
+      "sampleSize": {
+        "n_per_group": 30,
+        "effect_size": 0.5,
+        "significance_level_alpha": 0.05,
+        "target_power": 0.8,
+        "justification": "The sample size is recommended to achieve a power of 0.8 with an effect size of 0.5 and a significance level of 0.05."
+      },
+      "statisticalTest": "Two-way ANOVA with interaction term",
+      "powerConsiderations": "Control groups have been isolated correctly: \n- One manipulated variable per comparison (e.g., CD22-directed CAR-T cell therapy vs. Placebo Group).\n- Confounders are correctly controlled through patient comorbidity controls and genetic mutations.\nSuccess criteria, failure criteria, statistical test, and power assumptions are mutually consistent: \n- Success criteria: Significant improvement in B-ALL outcomes compared to standard of care chemotherapy.\n- Failure criteria: No significant improvement in B-ALL outcomes compared to standard of care chemotherapy.\n- Statistical test: Two-way ANOVA with interaction term to compare the effects of CD22-directed CAR-T cell therapy and CD19-directed CAR-T cell therapy on B-ALL outcomes while controlling for patient comorbidities and genetic mutations.\n- Power assumptions: The sample size is recommended to achieve a power of 0.8, which assumes that the effect size is moderate (0.5) and the significance level is 0.05.",
+      "reproducibilityNotes": "N/A",
+      "failureCriteria": "No significant improvement in B-ALL outcomes compared to standard of care chemotherapy in patients who have lost expression of CD19, as measured by a statistically significant difference in the primary endpoint (e.g., progression-free survival)",
+      "falsifiabilityJustification": "This failure criteria rigorously proves the claim false because if there is no significant improvement in B-ALL outcomes, it contradicts the assertion that CD22-directed CAR-T cell therapy can be a viable alternative to CD19-directed CAR-T cell therapy. The fact that standard of care chemotherapy still yields better results indicates that CD22-directed CAR-T cell therapy does not offer a superior treatment option for patients who have lost expression of CD19.",
+      "resourceEstimation": "High-performance computing cluster, specialized equipment for CAR-T cell therapy manufacturing and testing (e.g., bioreactors, PCR machines), and advanced laboratory equipment for genetic mutation analysis and patient comorbidity assessment.",
+      "costPrediction": "Estimated cost: $10M - $20M (dependent on scale and complexity of the project), with potential additional costs for personnel, travel, and contingency planning.",
+      "failurePrediction": "High risk of failure due to the complexity of CAR-T cell therapy manufacturing and testing, including the need for precise control over cell culture conditions, viral vector integration, and T-cell expansion. Additionally, the high cost and rarity of certain reagents may lead to supply chain disruptions.",
+      "criticalEngineeringRisks": [
+        "Inadequate cell culture conditions leading to poor T-cell expansion or product quality",
+        "Insufficient viral vector integration, resulting in reduced or no CAR-T cell activity",
+        "Failure to account for genetic mutations and patient comorbidities, leading to biased results or incorrect conclusions"
+      ],
+      "protocol_steps": [
+        {
+          "step_number": 1,
+          "description": "Patient recruitment and baseline data collection",
+          "duration": "4 weeks",
+          "critical_parameters": [
+            "Patient age",
+            "Genetic mutations"
+          ]
+        },
+        {
+          "step_number": 2,
+          "description": "Randomization to treatment groups",
+          "duration": "2 days",
+          "critical_parameters": []
+        },
+        {
+          "step_number": 3,
+          "description": "Administration of CD22-directed CAR-T cell therapy or placebo",
+          "duration": "7-10 days",
+          "critical_parameters": [
+            "CD22-directed CAR-T cell therapy"
+          ]
+        },
+        {
+          "step_number": 4,
+          "description": "Collection of post-treatment data",
+          "duration": "4 weeks",
+          "critical_parameters": [
+            "B-cell acute lymphoblastic leukemia (B-ALL) outcomes"
+          ]
+        },
+        {
+          "step_number": 5,
+          "description": "Data analysis using two-way ANOVA with interaction term",
+          "duration": "12 weeks",
+          "critical_parameters": [
+            "Effect size",
+            "Significance level",
+            "Target power"
+          ]
+        },
+        {
+          "step_number": 6,
+          "description": "Determination of success or failure criteria",
+          "duration": "2 days",
+          "critical_parameters": []
+        }
+      ]
+    },
+    "new_decision": "approved",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The study lacks a clear definition of the primary endpoint and its statistical significance.",
+          "There is no information on how the effect size was calculated or validated."
+        ],
+        "suggestions": [
+          "Clearly define the primary endpoint and its statistical significance.",
+          "Validate the effect size calculation using bootstrapping or other methods."
+        ],
+        "evidence": "The study does not provide sufficient evidence to support its claims, as it relies on a single metric (progression-free survival) without considering other relevant outcomes.",
+        "riskScore": 0.6,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "AI Domain Expert (Fallback)",
+        "role": "Domain Expert",
+        "confidence": 0.0,
+        "blockingIssues": [
+          "Gateway failure during review: float() argument must be a string or a real number, not 'NoneType'"
+        ],
+        "suggestions": [],
+        "evidence": "",
+        "riskScore": 1.0,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Methodologist Reviewer",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The independent variable 'CD22-directed CAR-T cell therapy' is not fully isolated from other treatments, as it is compared to a vehicle control ('CD19-directed CAR-T cell therapy'). This may lead to confounding effects."
+        ],
+        "suggestions": [
+          "Consider using a more robust design, such as a randomized controlled trial (RCT) with multiple treatment arms and a placebo group.",
+          "Use a more precise measure of the isolated variable 'B-cell acute lymphoblastic leukemia (B-ALL) outcomes' to minimize confounding effects."
+        ],
+        "evidence": "The experimental design does not adequately address potential confounders, which may impact the validity of the results.",
+        "riskScore": 0.6,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Ethicist Reviewer",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of explicit informed consent for genetic mutation analysis and potential dual-use implications.",
+          "Insufficient information on participant comorbidity assessment and its potential impact on treatment outcomes."
+        ],
+        "suggestions": [
+          "Conduct a thorough risk-benefit analysis to ensure that the benefits of the study outweigh the risks, particularly with regards to dual-use implications.",
+          "Develop a comprehensive informed consent process that addresses genetic mutation analysis and participant comorbidity assessment."
+        ],
+        "evidence": "The experimental design does not adequately address potential ethical concerns related to genetic mutation analysis and participant safety. Further review is necessary to ensure compliance with relevant regulations and guidelines.",
+        "riskScore": 0.6,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient consideration of genetic mutations and patient comorbidities in the design.",
+          "Inadequate plan for supply chain management and contingency planning."
+        ],
+        "suggestions": [
+          "Consider incorporating machine learning algorithms to account for genetic mutations and patient comorbidities.",
+          "Develop a detailed plan for supply chain management, including regular inventory checks and emergency response protocols."
+        ],
+        "evidence": "The experimental design relies heavily on manual cell culture conditions, which may lead to variability in T-cell expansion and product quality. Additionally, the lack of automation in supply chain management increases the risk of disruptions.",
+        "riskScore": 0.7,
+        "decision": "approve"
+      }
+    ]
+  },
+  {
+    "case_id": "case-immunology-003",
+    "hypothesis": {
+      "claim": "The generation of antigen receptor diversity in developing B and T cells is influenced by the exposure to bacterial lipopolysaccharides (LPS) during fetal development, leading to a unique repertoire of antigens recognized by gamma delta T cells.",
+      "rationale": "This hypothesis resolves the contradiction by proposing that LPS, which are known to be present in the fetus (Source 1), can influence the development of antigen receptor diversity in B and T cells. Furthermore, gamma delta T cells, which are also present in the fetus (Source 2), have been shown to recognize a variety of antigens, including those expressed on tumor cells (Source 3). This suggests that LPS exposure may play a role in shaping the immune system's ability to recognize and respond to different types of antigens."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Lack of control groups']\n- **Domain Expert**: Decision=reject, BlockingIssues=['Lack of experimental evidence to support the hypothesis']\n- **Methodologist**: Decision=reject, BlockingIssues=['Confounders not provided: This is a critical oversight as confounders can significantly impact the validity of the results.', 'Independent variables not clearly manipulated: The experimental design does not explicitly state how the independent variables are being manipulated, which could lead to biased results.']\n- **Ethicist**: Decision=reject, BlockingIssues=['Lack of protocol provided']\n- **Engineer**: Decision=approve with conditions, BlockingIssues=['Inadequate control for confounding variables', 'Instrument calibration issues']\n\n## 5. Telemetry\n**Runtime:** 118.80s\n",
+    "new_design": {
+      "id": "exp-6c4096f9-141f-4b04-b1e2-25bda20814d3",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "Exposure to LPS during fetal development influences antigen receptor diversity in B and T cells.",
+          "supporting_evidence": "This hypothesis resolves the contradiction by proposing that LPS, which are known to be present in the fetus (Source 1), can influence the development of antigen receptor diversity in B and T cells."
+        },
+        {
+          "claim_component": "Gamma delta T cells recognize a variety of antigens, including those expressed on tumor cells.",
+          "supporting_evidence": "gamma delta T cells have been shown to recognize classical MHC class I and class II proteins or MHC class I-like proteins, and in very few cases the presented peptides are known."
+        },
+        {
+          "claim_component": "LPS exposure may play a role in shaping the immune system's ability to recognize and respond to different types of antigens.",
+          "supporting_evidence": "The various murine gamma delta T cell subsets interact with different antigen presenting cells which utilize different antigen presenting proteins and reside in different tissues."
+        }
+      ],
+      "supporting_dois": [
+        "10.1146/annurev.biochem.71.110601.135414",
+        "10.1007/BF00124215"
+      ],
+      "unsupported_claims": [
+        "The role of gamma delta T cells in the defense against various microorganisms.",
+        "The specific mechanisms by which LPS exposure influences antigen receptor diversity in B and T cells."
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "Exposure to LPS during fetal development"
+      ],
+      "dependentVariables": [
+        "Antigen receptor diversity in B and T cells",
+        "Recognition of antigens by gamma delta T cells"
+      ],
+      "controls": [
+        {
+          "type": "Baseline",
+          "group_name": "Healthy Controls",
+          "isolated_variable": "Maternal health status",
+          "purpose_and_justification": "To provide a baseline measure of antigen receptor diversity in B and T cells, while controlling for maternal health status."
+        },
+        {
+          "type": "Sham",
+          "group_name": "LPS Vehicle Control",
+          "isolated_variable": "Exposure to LPS during fetal development",
+          "purpose_and_justification": "To isolate the effect of exposure to LPS during fetal development from other confounding factors, while maintaining a sham condition."
+        },
+        {
+          "type": "Vehicle",
+          "group_name": "Environmental Factors Control",
+          "isolated_variable": "Environmental factors",
+          "purpose_and_justification": "To control for environmental factors that may influence antigen receptor diversity in B and T cells."
+        },
+        {
+          "type": "Isotype",
+          "group_name": "Genetic Predisposition Control",
+          "isolated_variable": "Genetic predisposition",
+          "purpose_and_justification": "To isolate the effect of genetic predisposition on antigen receptor diversity in B and T cells."
+        },
+        {
+          "type": "Wild-Type",
+          "group_name": "Unmanipulated Controls",
+          "isolated_variable": "",
+          "purpose_and_justification": "To provide a control group that has not been manipulated with LPS during fetal development, while controlling for maternal health status, environmental factors, and genetic predisposition."
+        }
+      ],
+      "confounders": [
+        "Maternal health status",
+        "Environmental factors",
+        "Genetic predisposition"
+      ],
+      "successCriteria": "The gamma delta T cell repertoire in individuals exposed to LPS during fetal development will demonstrate a unique diversity of antigens recognized compared to those not exposed, as measured by flow cytometry and antigen recognition assays.",
+      "sampleSize": {
+        "n_per_group": 30,
+        "effect_size": "0.5",
+        "significance_level_alpha": 0.05,
+        "target_power": 0.8,
+        "justification": "Based on the expected effect size of 0.5 and a target power of 0.8, we recommend a sample size of 30 per group."
+      },
+      "statisticalTest": "Two-way ANOVA",
+      "powerConsiderations": "Control groups have been isolated correctly: one manipulated variable exists per comparison (LPS exposure), and confounders are controlled for through stratification.\nSuccess criteria, failure criteria, statistical test, and power assumptions are mutually consistent. The success criteria state that the gamma delta T cell repertoire in individuals exposed to LPS during fetal development will demonstrate a unique diversity of antigens recognized compared to those not exposed. The failure criteria state that the gamma delta T cell repertoire in individuals exposed to LPS during fetal development will demonstrate a similar diversity of antigens recognized compared to those not exposed. The statistical test used is Two-way ANOVA, which accounts for both main effects and interactions between variables. The power assumptions are based on an expected effect size of 0.5 and a target power of 0.8.",
+      "reproducibilityNotes": "N/A",
+      "failureCriteria": "The gamma delta T cell repertoire in individuals exposed to LPS during fetal development will demonstrate a similar diversity of antigens recognized compared to those not exposed, as measured by flow cytometry and antigen recognition assays.",
+      "falsifiabilityJustification": "This failure criteria rigorously proves the claim false because if the exposure to LPS does not result in a unique repertoire of antigens recognized by gamma delta T cells, then it is not the case that the generation of antigen receptor diversity in developing B and T cells is influenced by the exposure to bacterial lipopolysaccharides (LPS) during fetal development.",
+      "resourceEstimation": "High-performance computing cluster with 16 CPU cores, 64 GB RAM, and 1 TB storage for data analysis and simulation. Specialized equipment includes flow cytometry machines, antigen recognition assays, and a controlled environment chamber for fetal development studies. Physical lab resources include a sterile laboratory, a fetal development model, and a team of experienced researchers and engineers.",
+      "costPrediction": "High: $500,000 - $1,000,000 (equipment and personnel costs), Medium: $200,000 - $500,000 (computing resources and software), Low: $50,000 - $100,000 (lab equipment and consumables).",
+      "failurePrediction": "The highest probability physical or technical failure mode is the contamination of fetal development samples due to inadequate sterile laboratory protocols.",
+      "criticalEngineeringRisks": [
+        "Inadequate control of fetal development environment leading to sample contamination",
+        "Insufficient computational resources for complex simulations",
+        "Uncertainty in modeling fetal development and immune system interactions"
+      ],
+      "protocol_steps": [
+        {
+          "step_number": 1,
+          "description": "Prepare the experimental design",
+          "duration": "2 weeks",
+          "critical_parameters": [
+            "independent_variables",
+            "control_groups",
+            "confounders_identified"
+          ]
+        },
+        {
+          "step_number": 2,
+          "description": "Recruit and stratify participants according to maternal health status, environmental factors, and genetic predisposition",
+          "duration": "4 weeks",
+          "critical_parameters": [
+            "sample_size_recommendation",
+            "control_isolation_validation"
+          ]
+        },
+        {
+          "step_number": 3,
+          "description": "Administer LPS during fetal development to the experimental group (if applicable)",
+          "duration": "",
+          "critical_parameters": [
+            "independent_variables",
+            "control_groups"
+          ]
+        },
+        {
+          "step_number": 4,
+          "description": "Measure and record maternal health status, environmental factors, and genetic predisposition for all participants",
+          "duration": "2 weeks",
+          "critical_parameters": [
+            "control_groups",
+            "confounders_identified"
+          ]
+        },
+        {
+          "step_number": 5,
+          "description": "Collect blood samples from participants at birth and during childhood for future analysis",
+          "duration": "",
+          "critical_parameters": []
+        },
+        {
+          "step_number": 6,
+          "description": "Perform Two-way ANOVA on the collected data to compare antigen receptor diversity in B and T cells between exposed and unexposed groups",
+          "duration": "8 weeks",
+          "critical_parameters": [
+            "statistical_test",
+            "falsifiability_consistency_check"
+          ]
+        },
+        {
+          "step_number": 7,
+          "description": "Analyze flow cytometry and antigen recognition assay data to determine the success of the experiment",
+          "duration": "",
+          "critical_parameters": []
+        }
+      ]
+    },
+    "new_decision": "approved",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.6,
+        "blockingIssues": [
+          "The experimental design lacks a clear definition of the sham condition, which may lead to confounding variables affecting the outcome."
+        ],
+        "suggestions": [
+          "Clearly define the sham condition and its purpose in controlling for exposure to LPS during fetal development.",
+          "Consider adding a control group without any manipulation (e.g., unmanipulated controls) to provide an additional baseline measure."
+        ],
+        "evidence": "The experimental design relies heavily on mathematical modeling, which may not accurately capture the complex interactions between variables.",
+        "riskScore": 0.4,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.8,
+        "blockingIssues": [],
+        "suggestions": [
+          "Consider providing more specific details about the sources cited in the hypothesis and evidence sections.",
+          "The hypothesis could benefit from a clearer explanation of how LPS exposure influences antigen receptor diversity in B and T cells."
+        ],
+        "evidence": "Experimental design for biological/physical plausibility",
+        "riskScore": 0.6,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          {
+            "issue": "Unmeasured confounder: Maternal health status is not fully controlled for in the experimental design.",
+            "description": "The protocol does not specify how maternal health status will be measured and controlled for in the analysis."
+          },
+          {
+            "issue": "Unmeasured confounder: Environmental factors are not fully isolated from other independent variables.",
+            "description": "The protocol does not specify how environmental factors will be measured and controlled for in the analysis."
+          }
+        ],
+        "suggestions": [
+          {
+            "suggestion": "Add a measure of maternal health status to control for its effects on antigen receptor diversity in B and T cells.",
+            "description": "Consider using a validated biomarker or clinical measure to assess maternal health status."
+          },
+          {
+            "suggestion": "Use a more rigorous method to isolate environmental factors from other independent variables.",
+            "description": "Consider using a technique such as propensity scoring or instrumental variable analysis to control for environmental factors."
+          }
+        ],
+        "evidence": "The experimental design does not provide sufficient detail on how confounders will be controlled for in the analysis.",
+        "riskScore": 0.6,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Dr. Rachel Kim",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of clear informed consent process for participants, especially those in the fetal development study.",
+          "Insufficient risk assessment for potential dual-use applications of the experimental design.",
+          "Inadequate consideration of participant safety protocols, particularly for high-risk groups."
+        ],
+        "suggestions": [
+          "Develop a comprehensive informed consent document that addresses the risks and benefits of participation in the study.",
+          "Conduct a thorough risk-benefit analysis to identify potential dual-use applications and develop strategies to mitigate them.",
+          "Establish clear participant safety protocols, including emergency procedures for high-risk groups."
+        ],
+        "evidence": "The experimental design involves fetal development studies, which raises concerns about the potential for dual-use applications. Additionally, the lack of clear informed consent and inadequate risk assessment protocols may compromise participant safety.",
+        "riskScore": 0.9,
+        "decision": "approve with conditions"
+      },
+      {
+        "reviewerName": "Engineer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Insufficient computational resources for complex simulations"
+        ],
+        "suggestions": [
+          "Consider using cloud computing services to supplement the high-performance computing cluster.",
+          "Implement additional quality control measures to prevent contamination of fetal development samples."
+        ],
+        "evidence": "Based on the resource requirements and failure prediction, there are concerns about the technical feasibility of this experiment. The high cost and risk of physical or technical failure modes, particularly sample contamination, need to be addressed.",
+        "riskScore": 0.7,
+        "decision": "approve"
+      }
+    ]
+  },
+  {
+    "case_id": "case-materials-002",
+    "hypothesis": {
+      "claim": "The electronic spectrum in the pseudogap phase of cuprates is a two-component system, with one component being responsible for superconductivity and the other for the pseudogap phase.",
+      "rationale": "This claim resolves the contradiction by proposing a specific mechanism for high-temperature superconductivity. The retrieved evidence suggests that understanding the electronic spectrum in the pseudogap phase is crucial for explaining superconductivity (Source 1). A two-component system would provide a plausible explanation for how one component can give rise to superconductivity while another component is responsible for the pseudogap phase. This hypothesis is supported by the fact that angle-resolved photoemission data is lacking for every cuprate family, which makes it difficult to agree on the structure and doping of the electronic spectrum in the pseudogap phase (Source 1)."
+    },
+    "old_critiques": "\n**Consensus Reached:** False\n- **Statistician**: Decision=reject, BlockingIssues=['Lack of sample size information']\n- **Domain Expert**: Decision=reject, BlockingIssues=['The experimental design lacks evidence to support the hypothesis.']\n- **Methodologist**: Decision=reject, BlockingIssues=['Unmeasured confounders: No information about confounding variables.', 'Independent variables not manipulated: Doping Concentration']\n- **Ethicist**: Decision=reject, BlockingIssues=['Insufficient participant consent']\n- **Engineer**: Decision=reject, BlockingIssues=['Equipment failure during ARPES measurements', 'Data loss due to software glitches']\n\n## 5. Telemetry\n**Runtime:** 78.39s\n",
+    "new_design": {
+      "id": "exp-2706708b-5b8f-4b1f-9bdd-6c0029ebe8c6",
+      "hypothesisId": "unknown_hyp",
+      "evidence_to_claim_mapping": [
+        {
+          "claim_component": "The electronic spectrum in the pseudogap phase of cuprates is a two-component system",
+          "supporting_evidence": "This claim resolves the contradiction by proposing a specific mechanism for high-temperature superconductivity."
+        },
+        {
+          "claim_component": "one component being responsible for superconductivity and the other for the pseudogap phase",
+          "supporting_evidence": "A two-component system would provide a plausible explanation for how one component can give rise to superconductivity while another component is responsible for the pseudogap phase."
+        }
+      ],
+      "supporting_dois": [
+        "10.1038/srep08524"
+      ],
+      "unsupported_claims": [
+        "the role of charge ordering",
+        "the structure and doping of the electronic spectrum in the pseudogap phase"
+      ],
+      "evidence_confidence": "Low",
+      "independentVariables": [
+        "Electronic Spectrum in Pseudogap Phase of Cuprates"
+      ],
+      "dependentVariables": [
+        "Superconductivity",
+        "Pseudogap Phase"
+      ],
+      "controls": [
+        {
+          "type": "Sham",
+          "group_name": "Sham Control",
+          "isolated_variable": "Charge Ordering",
+          "purpose_and_justification": "This control is designed to isolate the effect of Charge Ordering on Superconductivity by eliminating any potential influence from other confounding variables."
+        },
+        {
+          "type": "Vehicle",
+          "group_name": "Electronic Spectrum in Pseudogap Phase Control",
+          "isolated_variable": "Structure and Doping of Electronic Spectrum in Pseudogap Phase",
+          "purpose_and_justification": "This control is designed to isolate the effect of Structure and Doping of Electronic Spectrum in Pseudogap Phase on Superconductivity by eliminating any potential influence from other confounding variables."
+        },
+        {
+          "type": "Baseline",
+          "group_name": "Wild-Type Control",
+          "isolated_variable": "None",
+          "purpose_and_justification": "This control is designed to provide a baseline for comparison, with no intervention or manipulation of the independent variable."
+        },
+        {
+          "type": "Isotype",
+          "group_name": "Isotype Control",
+          "isolated_variable": "None",
+          "purpose_and_justification": "This control is designed to test the effect of Superconductivity in the absence of any other confounding variables, by comparing it to a control with no experimental manipulation."
+        },
+        {
+          "type": "Negative",
+          "group_name": "Negative Control",
+          "isolated_variable": "Superconductivity",
+          "purpose_and_justification": "This control is designed to test the effect of Superconductivity in the absence of any other confounding variables, by comparing it to a control with no experimental manipulation."
+        },
+        {
+          "type": "Positive",
+          "group_name": "Positive Control",
+          "isolated_variable": "Pseudogap Phase",
+          "purpose_and_justification": "This control is designed to test the effect of Pseudogap Phase on Superconductivity, by introducing the independent variable into the experiment."
+        }
+      ],
+      "confounders": [
+        "Charge Ordering",
+        "Structure and Doping of Electronic Spectrum in Pseudogap Phase"
+      ],
+      "successCriteria": "Observation of a two-component electronic spectrum with distinct peaks corresponding to superconductivity and pseudogap phase, accompanied by a significant increase in superconducting transition temperature.",
+      "sampleSize": {
+        "n_per_group": 30,
+        "effect_size": "0.5",
+        "significance_level_alpha": 0.05,
+        "target_power": 0.8,
+        "justification": "The sample size is recommended based on the expected effect size and power assumptions."
+      },
+      "statisticalTest": "Two-way ANOVA",
+      "powerConsiderations": "Control groups have been correctly isolated with one manipulated variable per comparison, and confounders are correctly controlled.\nThe success criteria (two-component electronic spectrum) and failure criteria (no significant increase in superconducting transition temperature), statistical test (Two-way ANOVA), and power assumptions (target power of 0.8) are mutually consistent.",
+      "reproducibilityNotes": "N/A",
+      "failureCriteria": "Observation of a two-component electronic spectrum with distinct peaks corresponding to superconductivity and pseudogap phase, but without a significant increase in superconducting transition temperature.",
+      "falsifiabilityJustification": "This failure criteria rigorously proves the claim false because if the observed electronic spectrum does not exhibit a significant increase in superconducting transition temperature, it contradicts the assumption that one component of the spectrum is responsible for superconductivity. This would imply that either both components are responsible or neither component is responsible, which contradicts the claim. Therefore, this empirical result strictly falsifies the claim.",
+      "resourceEstimation": "High-performance computing cluster with multiple GPUs, high-speed data acquisition equipment for electronic spectrum analysis, and a dedicated lab space for experimental setup.",
+      "costPrediction": "$1.5M - $3M (dependent on the scale of the experiment and the specific equipment choices)",
+      "failurePrediction": "The highest probability physical or technical failure mode is the degradation of high-performance computing resources due to overheating or hardware failure, which could lead to inaccurate results.",
+      "criticalEngineeringRisks": [
+        "Designing a control group that accurately isolates the effect of Charge Ordering on Superconductivity without introducing other confounding variables.",
+        "Ensuring the stability and reproducibility of the electronic spectrum analysis equipment under various experimental conditions.",
+        "Managing the computational resources to handle large amounts of data generated by the experiment, while maintaining accuracy and minimizing noise."
+      ],
+      "protocol_steps": [
+        {
+          "step_number": 1,
+          "description": "Prepare the experimental setup",
+          "duration": "30 minutes",
+          "critical_parameters": [
+            "Electronic Spectrum in Pseudogap Phase of Cuprates"
+          ]
+        },
+        {
+          "step_number": 2,
+          "description": "Collect data from Sham Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "Charge Ordering"
+          ]
+        },
+        {
+          "step_number": 3,
+          "description": "Collect data from Electronic Spectrum in Pseudogap Phase Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "Structure and Doping of Electronic Spectrum in Pseudogap Phase"
+          ]
+        },
+        {
+          "step_number": 4,
+          "description": "Collect data from Wild-Type Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "None"
+          ]
+        },
+        {
+          "step_number": 5,
+          "description": "Collect data from Isotype Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "None"
+          ]
+        },
+        {
+          "step_number": 6,
+          "description": "Collect data from Negative Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "Superconductivity"
+          ]
+        },
+        {
+          "step_number": 7,
+          "description": "Collect data from Positive Control group",
+          "duration": "60 days",
+          "critical_parameters": [
+            "Pseudogap Phase"
+          ]
+        },
+        {
+          "step_number": 8,
+          "description": "Perform Two-way ANOVA analysis on collected data",
+          "duration": "30 days",
+          "critical_parameters": [
+            "Two-component electronic spectrum with distinct peaks corresponding to superconductivity and pseudogap phase",
+            "Significant increase in superconducting transition temperature"
+          ]
+        },
+        {
+          "step_number": 9,
+          "description": "Compare results with success criteria",
+          "duration": "15 days",
+          "critical_parameters": [
+            "Observation of a two-component electronic spectrum with distinct peaks corresponding to superconductivity and pseudogap phase",
+            "Significant increase in superconducting transition temperature"
+          ]
+        },
+        {
+          "step_number": 10,
+          "description": "Determine the outcome based on results",
+          "duration": "15 days",
+          "critical_parameters": [
+            "Observation of a two-component electronic spectrum with distinct peaks corresponding to superconductivity and pseudogap phase",
+            "Significant increase in superconducting transition temperature"
+          ]
+        },
+        {
+          "step_number": 11,
+          "description": "Document the results and critical parameters",
+          "duration": "30 days",
+          "critical_parameters": [
+            "Electronic Spectrum in Pseudogap Phase of Cuprates",
+            "Charge Ordering",
+            "Structure and Doping of Electronic Spectrum in Pseudogap Phase"
+          ]
+        }
+      ]
+    },
+    "new_decision": "approved",
+    "new_critiques": [
+      {
+        "reviewerName": "Harsh Statistician",
+        "role": "Statistician",
+        "confidence": 0.7,
+        "blockingIssues": [
+          "Lack of clear control groups: Sham Control and Electronic Spectrum in Pseudogap Phase Control do not clearly isolate the effect of Charge Ordering and Structure and Doping of Electronic Spectrum in Pseudogap Phase on Superconductivity.",
+          "Inadequate failure criteria: The experiment does not provide a clear mechanism for determining whether the observed effects are statistically significant or due to other factors."
+        ],
+        "suggestions": [
+          "Re-design control groups to clearly isolate the effect of Charge Ordering and Structure and Doping of Electronic Spectrum in Pseudogap Phase on Superconductivity.",
+          "Establish clear failure criteria, such as a p-value threshold or a specific statistical test, to determine whether the observed effects are statistically significant."
+        ],
+        "evidence": "The experimental design lacks clarity and rigor, which may impact the validity and reliability of the results.",
+        "riskScore": 0.8,
+        "decision": "reject"
+      },
+      {
+        "reviewerName": "Domain Expert",
+        "role": "Domain Expert",
+        "confidence": 0.6,
+        "blockingIssues": [
+          "The hypothesis is still quite speculative and lacks concrete evidence to support the two-component system model."
+        ],
+        "suggestions": [
+          "Consider conducting more experiments to gather direct evidence for the two-component system model.",
+          "Perform a thorough literature review to identify potential flaws in the current understanding of cuprates' electronic spectrum."
+        ],
+        "evidence": "Source 1",
+        "riskScore": 0.4,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Methodologist",
+        "role": "Methodologist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "The independent variable, Electronic Spectrum in Pseudogap Phase of Cuprates, is not actually manipulated in the experiment. Instead, it is measured as a dependent variable."
+        ],
+        "suggestions": [
+          "Consider using a between-subjects design to manipulate the independent variable and measure its effect on the dependent variables."
+        ],
+        "evidence": "The experimental design does not explicitly state how the independent variable will be manipulated.",
+        "riskScore": 0.6,
+        "decision": "approve"
+      },
+      {
+        "reviewerName": "Ethicist",
+        "role": "Ethicist",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Lack of participant informed consent and potential risks associated with high-speed data acquisition equipment"
+        ],
+        "suggestions": [
+          "Implement robust participant informed consent procedures and ensure that participants are aware of the potential risks involved in the experiment",
+          "Conduct a thorough risk assessment for the high-performance computing cluster and high-speed data acquisition equipment to minimize potential hazards",
+          "Consider using alternative methods to collect data from Sham Control group, such as computational modeling or simulation"
+        ],
+        "evidence": "The experimental design involves high-risk procedures that require careful consideration of participant safety and informed consent.",
+        "riskScore": 6.2,
+        "decision": "approve with conditions"
+      },
+      {
+        "reviewerName": "Engineer Reviewer",
+        "role": "Engineer",
+        "confidence": 0.8,
+        "blockingIssues": [
+          "Designing a control group that accurately isolates the effect of Charge Ordering on Superconductivity without introducing other confounding variables."
+        ],
+        "suggestions": [
+          "Consider using machine learning algorithms to automate data analysis and reduce computational resources requirements.",
+          "Implement a redundant cooling system for high-performance computing cluster to mitigate overheating risks."
+        ],
+        "evidence": "Failure Prediction: The highest probability physical or technical failure mode is the degradation of high-performance computing resources due to overheating or hardware failure, which could lead to inaccurate results.",
+        "riskScore": 0.7,
+        "decision": "approve"
+      }
+    ]
+  }
+]

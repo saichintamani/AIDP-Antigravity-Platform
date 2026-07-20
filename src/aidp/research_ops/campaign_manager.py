@@ -3,7 +3,6 @@ from dataclasses import dataclass, field
 
 from aidp.research_ops.economics_engine import ScientificTaskProposal
 from aidp.research_ops.scheduler import IntelligentScheduler
-from typing import Optional
 
 
 @dataclass
@@ -36,7 +35,7 @@ class CampaignManager:
         campaign_id: str,
         task: ScientificTaskProposal,
         priority: float,
-        depends_on: Optional[list[str]] = None,
+        depends_on: list[str] | None = None,
     ) -> None:
         """Adds a task to a campaign, pushing it to the global scheduler."""
         # Find campaign

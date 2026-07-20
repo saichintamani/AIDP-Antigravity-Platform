@@ -5,20 +5,20 @@ Follows DOIs through: Retrieval -> Prompt -> Model -> Hypothesis -> Governance
 Purpose: Identify exactly where citations get lost.
 """
 import json
-import sys
 import os
+import sys
 
 # Add project root to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-from aidp.knowledge.connectors.pubmed_connector import PubMedConnector
-from aidp.intelligence.prompts.registry import PromptRegistry
+
 from aidp.discovery.hypothesis import HypothesisGenerator
-from aidp.intelligence.providers.routing import RoutingPolicy
-from aidp.intelligence.providers.middleware import IntelligenceGateway
-from aidp.intelligence.providers.llm import LLMProvider
-from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
 from aidp.governance.engine import ScientificGovernanceEngine
+from aidp.intelligence.prompts.registry import PromptRegistry
+from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
+from aidp.intelligence.providers.llm import LLMProvider
+from aidp.intelligence.providers.middleware import IntelligenceGateway
+from aidp.intelligence.providers.routing import RoutingPolicy
+from aidp.knowledge.connectors.pubmed_connector import PubMedConnector
 
 
 def main():
@@ -79,7 +79,7 @@ def main():
             if doi not in dois_in_prompt:
                 print(f"  MISSING: {doi}")
         
-        print(f"\n--- RENDERED PROMPT ---")
+        print("\n--- RENDERED PROMPT ---")
         print(rendered_prompt[:500])
         print("--- END PROMPT ---")
         
@@ -107,7 +107,7 @@ def main():
     dois_in_hypothesis = []
     if hypotheses:
         h = hypotheses[0]
-        print(f"Hypothesis generated: YES")
+        print("Hypothesis generated: YES")
         print(f"Claim: {h.get('claim', 'N/A')[:200]}")
         print(f"evidence_links: {h.get('evidence_links', 'KEY MISSING')}")
         print(f"provenance_chain: {h.get('provenance_chain', 'KEY MISSING')}")

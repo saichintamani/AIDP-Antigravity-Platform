@@ -1,5 +1,6 @@
-import yaml
 from pathlib import Path
+
+import yaml
 
 # Static cost estimates per 1M tokens
 COST_MATRIX = {
@@ -16,7 +17,7 @@ CASE_ESTIMATES = {
 }
 
 def load_config(config_path: str) -> dict:
-    with open(config_path, "r") as f:
+    with open(config_path) as f:
         return yaml.safe_load(f)
 
 def estimate_cost(config: dict, num_cases: int = 20):

@@ -1,12 +1,13 @@
 import json
-from pathlib import Path
-from dataclasses import asdict
 import sys
+from dataclasses import asdict
+from pathlib import Path
 
 # Ensure aidp can be imported
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
 
 from aidp.knowledge.connectors.pubmed_connector import PubMedConnector
+
 
 def main():
     base_dir = Path(__file__).parent.parent
@@ -15,12 +16,12 @@ def main():
     evidence_dir.mkdir(parents=True, exist_ok=True)
     cache_file = evidence_dir / "BENCHMARK_CORPUS_CACHE.json"
     
-    with open(dataset_path, "r", encoding="utf-8") as f:
+    with open(dataset_path, encoding="utf-8") as f:
         dataset = json.load(f)
         
     retrieval_cache = {}
     if cache_file.exists():
-        with open(cache_file, "r") as f:
+        with open(cache_file) as f:
             retrieval_cache = json.load(f)
             
     connector = PubMedConnector()

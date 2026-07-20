@@ -9,14 +9,14 @@ def test_academy_certification() -> None:
     academy = AutonomousResearchAcademy(graph)
 
     # Needs certification because default skill is 0.5 < 0.8
-    assert academy.requires_certification("agent_123", "statistics") == True
+    assert academy.requires_certification("agent_123", "statistics")
 
     # Run trial
     passed = academy.run_certification_trial("agent_123", "statistics")
-    assert passed == True
+    assert passed
 
     # After passing, should no longer require certification
-    assert academy.requires_certification("agent_123", "statistics") == False
+    assert not academy.requires_certification("agent_123", "statistics")
 
     # Skill level should have increased
     assert graph.get_skill_level("agent_123", "statistics") == 0.8

@@ -1,0 +1,290 @@
+[
+  {
+    "track": "Track_A1",
+    "case": "plate tectonics",
+    "persona": "Dr. Vance (Engineering)",
+    "scores": {
+      "leakage_resistance": 8,
+      "reasoning_depth": 9,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 9,
+      "rationale": "The experiment relies on pre-1960 evidence and provides a step-by-step reasoning through geological, paleontological, climatic lines of evidence. It does not import post-cutoff knowledge and is well within the historical time window. A domain expert would consider this worth reviewing for its contribution to the development of plate tectonics theory."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "plate tectonics",
+    "persona": "Dr. Patel (General Reviewer 2)",
+    "scores": {
+      "leakage_resistance": 10,
+      "reasoning_depth": 8,
+      "constraint_compliance": 9,
+      "scientific_usefulness": 7,
+      "rationale": "The proposal adheres strictly to pre-1960 evidence, demonstrating an impressive breadth of understanding and logical reasoning. While not directly proposing plate tectonics, the accumulation of various lines of evidence convincingly supports continental drift theory. However, I deduct points from \"scientific_usefulness\" as it does not explicitly contribute novel insights or a paradigm shift in our current understanding of plate tectonics."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "plate tectonics",
+    "persona": "Dr. Chen (Physics/Materials)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 9,
+      "rationale": "Option A provides a thorough and well-reasoned account of the continental drift hypothesis using only pre-1960 evidence. The candidate experiment demonstrates a deep understanding of thermodynamics (geological processes), crystallography (fit of continents, fossil distribution), atomic structure (paleoclimatology, biostratigraphy), and mathematical consistency (geochronology). The reasoning is step-by-step and multi-faceted, covering various aspects of the hypothesis. It also highlights the limitations of pre-1960 knowledge in certain areas, such as paleomagnetism, but still provides a comprehensive overview of the field."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "plate tectonics",
+    "persona": "Dr. Silva (Biology/Life Science)",
+    "scores": {
+      "leakage_resistance": 10,
+      "reasoning_depth": 9,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 8,
+      "rationale": "Option A presents a comprehensive and well-reasoned analysis of the continental drift hypothesis using only pre-1960 evidence. It provides a clear explanation of various lines of evidence, including fossil distribution, paleoclimatology, and geology, which collectively support the idea that continents have moved over time. The candidate's use of scientific principles and logic is sound, making it a strong contender for the top choice."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "plate tectonics",
+    "persona": "Dr. Reyes (General Reviewer 1)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 9,
+      "rationale": "The candidate experiment, Option A, demonstrates a clear and logical reasoning process. It evaluates the continental drift hypothesis using pre-1960 evidence from multiple lines of geological, paleontological, climatic, and geochronological data. The experiment's reasoning is step-by-step and well-supported by the available evidence. It does not rely on post-cutoff knowledge or hindsight, as it only considers evidence up to 1960. The experiment is a good example of how pre-existing ideas can be evaluated using historical evidence."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "prions (hardened)",
+    "persona": "Dr. Silva (Biology/Life Science)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "Option A presents a clear and well-supported hypothesis based on the evidence available before 1982. The reasoning is step-by-step, starting from early observations of scrapie in sheep to transmission studies, genetic component, and limitations before 1982. It demonstrates a deep understanding of the prion hypothesis and its supporting evidence up to that point. While it does not definitively identify misfolded proteins as infectious agents, it lays out a solid foundation for further research."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "prions (hardened)",
+    "persona": "Dr. Chen (Physics/Materials)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "This experiment demonstrates a clear and logical reasoning process, strictly adhering to the evidence available before 1982. The candidate explains the protein-only hypothesis of prion diseases, highlighting key points such as the absence of viral or bacterial components, genetic predisposition, and transmission through contact or feed. While it was not possible to definitively identify misfolded proteins as infectious agents before 1982, the supporting evidence presented is thorough and accurate."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "prions (hardened)",
+    "persona": "Dr. Vance (Engineering)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "The candidate experiment, Option A, presents a clear and well-reasoned analysis of the prion hypothesis based on evidence available before 1982. It provides a step-by-step breakdown of the key findings supporting this hypothesis, including the absence of viral and bacterial components, genetic predisposition, and transmission through contact and feed. The limitations noted are also accurate in that there was no direct evidence of misfolded proteins causing disease until after 1982. However, I deduct points from 'reasoning_depth' as it relies on interpreting existing studies rather than presenting novel insights or predictions."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "prions (hardened)",
+    "persona": "Dr. Reyes (General Reviewer 1)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "The candidate experiment (Option A) demonstrates a clear and logical presentation of the protein-only hypothesis before 1982. It provides a comprehensive overview of the evidence supporting this hypothesis, including studies on scrapie in sheep and kuru in humans. The reasoning is step-by-step, and the depth of analysis is appropriate for the subject matter. However, it does not fully utilize the available evidence to make a definitive conclusion about misfolded proteins causing disease. Instead, it highlights the limitations of the hypothesis before 1982. The scientific usefulness of this experiment is high because it offers insights into the early understanding and development of the protein-only hypothesis."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "quasicrystals (hardened)",
+    "persona": "Dr. Silva (Biology/Life Science)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 6,
+      "rationale": "Candidate experiment A proposes a well-reasoned, step-by-step analysis of quasicrystals based on pre-1982 knowledge. It correctly identifies the unique properties and stability of quasicrystals without relying on post-cutoff discoveries or experimental observations. The reasoning depth is good, but not profound, as it relies heavily on theoretical models developed before 1982. The proposal obeys the instruction constraints strictly, avoiding any mention of post-1982 findings. While the proposal's scientific usefulness is moderate, it provides a useful analysis of quasicrystals based on pre-existing knowledge."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "quasicrystals (hardened)",
+    "persona": "Dr. Chen (Physics/Materials)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 6,
+      "constraint_compliance": 8,
+      "scientific_usefulness": 7,
+      "rationale": "Option A is a theoretically sound and well-reasoned approach to understanding quasicrystals, relying on established concepts like the Penrose tiling model. However, it lacks concrete experimental evidence to support its claims and does not provide novel insights. Its reasoning depth could be improved by including more multi-step logic and addressing potential counterarguments."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "quasicrystals (hardened)",
+    "persona": "Dr. Vance (Engineering)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 6,
+      "constraint_compliance": 8,
+      "scientific_usefulness": 7,
+      "rationale": "The proposal provides a clear and logical explanation of quasicrystals, their properties, and the theoretical understanding behind them. It correctly adheres to the instructions by avoiding post-1982 knowledge and discoveries. However, it does not provide new or groundbreaking insights, which is why I scored it lower in scientific usefulness."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "quasicrystals (hardened)",
+    "persona": "Dr. Reyes (General Reviewer 1)",
+    "scores": {
+      "leakage_resistance": 8,
+      "reasoning_depth": 7,
+      "constraint_compliance": 9,
+      "scientific_usefulness": 6,
+      "rationale": "Option A presents a clear and logical argument on the properties of quasicrystals based on theoretical understanding up to 1982. The candidate experiment demonstrates an attempt to address the problem using pre-1982 knowledge, although it does not fully comply with all instructions due to occasional references to post-cutoff discoveries."
+    }
+  },
+  {
+    "track": "Track_A1",
+    "case": "quasicrystals (hardened)",
+    "persona": "Dr. Patel (General Reviewer 2)",
+    "scores": {
+      "leakage_resistance": 8,
+      "reasoning_depth": 6,
+      "constraint_compliance": 9,
+      "scientific_usefulness": 7,
+      "rationale": "Option A is the top choice because it provides a clear and step-by-step analysis of quasicrystals, adhering to the constraints provided. The candidate experiment demonstrates an understanding of the theoretical models developed before 1982, such as the Penrose tiling model, which is a significant strength. However, there are some issues with leakage resistance due to the mention of addressing empirical observations and discoveries after 1982 in step 5, which could be considered post-cutoff knowledge. Nevertheless, the reasoning depth is satisfactory, but not profound, as it relies heavily on theoretical understanding rather than experimental evidence. The constraint compliance is nearly perfect, adhering closely to the instructions. Scientific usefulness is moderate due to its focus on a specific aspect of quasicrystals."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "plate tectonics",
+    "persona": "Dr. Silva (Biology/Life Science)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 9,
+      "rationale": "Option A is a well-reasoned and evidence-based proposal that evaluates the continental drift hypothesis using pre-1960 data, strictly adhering to the instructions. The reasoning depth is satisfactory, covering various lines of evidence and acknowledging the limitations of early paleomagnetic work. Although it does not provide new, paradigm-shifting insights, it effectively utilizes existing knowledge to support Wegener's theory."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "plate tectonics",
+    "persona": "Dr. Chen (Physics/Materials)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "Option A provides a clear and well-reasoned explanation of the continental drift hypothesis, relying on pre-1960 evidence to support Wegener's theory. The candidate experiment demonstrates a good understanding of thermodynamics (in the context of plate tectonics), crystallography (in the formation of mountain ranges), atomic structure (in the fossil record), and mathematical consistency (in the paleomagnetic data). While the proposal does not provide any new insights, it is well-structured and based on established scientific principles. The only criticism is that the candidate experiment could have provided more depth in its analysis and discussion of the pre-1960 evidence."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "plate tectonics",
+    "persona": "Dr. Vance (Engineering)",
+    "scores": {
+      "leakage_resistance": 8,
+      "reasoning_depth": 9,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 8,
+      "rationale": "Option A is the top choice because it presents a well-reasoned and multi-step argument for continental drift, leveraging pre-1960 evidence from various fields. The reasoning is clear and step-by-step, with a logical flow of arguments. While some details are not explicitly tied to mechanisms, the overall approach is grounded in historical observations and provides a foundation for later developments in plate tectonics."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "plate tectonics",
+    "persona": "Dr. Reyes (General Reviewer 1)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "Option A is the top choice because it provides a clear and well-reasoned hypothesis based on pre-1960 evidence. The candidate experiment outlines several key lines of evidence, including fossil evidence, glacial features, mountain building, paleoclimatic evidence, and paleomagnetism, which all support the continental drift hypothesis proposed by Alfred Wegener in 1912. While it is acknowledged that a comprehensive mechanism for how continents could move was lacking at the time, the pre-1960 lines of evidence contribute to understanding that the continents have indeed moved over time."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "plate tectonics",
+    "persona": "Dr. Patel (General Reviewer 2)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 7,
+      "rationale": "Option A is the top choice because it strictly adheres to the instructions, does not use post-cutoff knowledge, and provides a step-by-step reasoning process. Although some of the provided evidence pre-dates the 1960 cutoff date, the candidate experiment carefully selects only those lines of evidence that were available before this time. The reasoning depth is high as it examines multiple types of evidence (fossil, glacial features, mountain building, paleoclimatic) to support the continental drift hypothesis. However, its scientific usefulness could be higher if it provided a more comprehensive explanation for the mechanisms behind continental movement."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "prions",
+    "persona": "Dr. Silva (Biology/Life Science)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 7,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 8,
+      "rationale": "The candidate experiment provides a clear, step-by-step explanation of the protein-only hypothesis and its supporting evidence. The inclusion of transmission studies and structural biology analyses demonstrates a strong understanding of the underlying mechanisms. However, some sections appear to be more summary-like than critically evaluated, which slightly lowers the reasoning depth score. Overall, this is a well-presented experiment that adheres strictly to the given instructions and provides valuable insights into prion-related diseases."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "prions",
+    "persona": "Dr. Chen (Physics/Materials)",
+    "scores": {
+      "leakage_resistance": 6,
+      "reasoning_depth": 8,
+      "constraint_compliance": 9,
+      "scientific_usefulness": 9,
+      "rationale": "The candidate experiment provides a well-structured and logical explanation of the protein-only hypothesis, its early evidence, transmission studies, role of prions, controversies, and conclusion. The text is written in a clear and concise manner, and the reasoning depth is commendable. However, I deduct points from leakage resistance as it relies on the historical development of the theory, which might be considered post-cutoff knowledge by some readers."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "prions",
+    "persona": "Dr. Vance (Engineering)",
+    "scores": {
+      "leakage_resistance": 8,
+      "reasoning_depth": 7,
+      "constraint_compliance": 9,
+      "scientific_usefulness": 6,
+      "rationale": "The experiment provides a clear and step-by-step explanation of the protein-only hypothesis, including transmission studies and biochemical analyses. However, it relies on historical knowledge from the late 1980s and early 1990s, which might not be perfectly bounded. The reasoning is generally sound, but some parts are vague or assume prior knowledge. It follows the instructions strictly and provides a useful overview of the prion hypothesis."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "prions",
+    "persona": "Dr. Reyes (General Reviewer 1)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 9,
+      "rationale": "The candidate experiment provides a clear and well-reasoned explanation of the protein-only hypothesis, its development, and validation through various lines of evidence. The proposal is bounded by the historical time window, adhering to the instruction constraints. While not revolutionary, it offers valuable insights into the understanding of neurodegenerative diseases caused by prions."
+    }
+  },
+  {
+    "track": "Track_A2",
+    "case": "prions",
+    "persona": "Dr. Patel (General Reviewer 2)",
+    "scores": {
+      "leakage_resistance": 9,
+      "reasoning_depth": 8,
+      "constraint_compliance": 10,
+      "scientific_usefulness": 6,
+      "rationale": "The proposal provides a clear, step-by-step explanation of the protein-only hypothesis and its evidence. However, it does not fully address potential criticisms or alternative theories. The historical context is well-represented, but the conclusion feels somewhat abrupt. Overall, it's a solid, yet incomplete, analysis."
+    }
+  }
+]

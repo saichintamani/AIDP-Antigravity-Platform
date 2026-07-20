@@ -1,5 +1,6 @@
 from aidp.evaluation.suite import ScientificEvaluationSuite
 
+
 def run_materials_case_study():
     """
     Simulates a full unmocked campaign for discovering solid-state battery electrolytes.

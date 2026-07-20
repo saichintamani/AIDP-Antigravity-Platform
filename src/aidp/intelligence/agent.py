@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 from aidp.intelligence.cognition.genome import AgentGenome, ScientistIdentity
-from aidp.intelligence.providers.base import BaseProvider
 from aidp.intelligence.cognition.memory import HierarchicalMemory
+from aidp.intelligence.providers.base import BaseProvider
 from aidp.knowledge.serialization import Provenance, serialize_to_cognitive_object
 from aidp.reasoning.subjective_logic import Opinion, consensus_fusion
 

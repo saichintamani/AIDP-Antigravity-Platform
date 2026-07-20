@@ -1,5 +1,6 @@
 import json
-from typing import Optional, Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 from aidp.discovery.consensus import ConsensusEngine, ReviewerResult
 from aidp.intelligence.providers.middleware import IntelligenceGateway
@@ -15,7 +16,7 @@ class ScientificDebateEngine:
     """
 
     def __init__(
-        self, gateway: Optional[IntelligenceGateway] = None, consensus_engine: Optional[ConsensusEngine] = None
+        self, gateway: IntelligenceGateway | None = None, consensus_engine: ConsensusEngine | None = None
     ):
         self.gateway = gateway
         self.planner = ReasoningPlanner(gateway) if gateway else None
@@ -186,7 +187,10 @@ class ScientificDebateEngine:
         context = {
             "claim": hypothesis.get("claim", ""),
             "hypothesis": json.dumps(hypothesis),
-            "evidence": hypothesis.get("evidence", "Not provided"),
+            "evidence": json.dumps({
+                "mapping": design.get("evidence_to_claim_mapping", []),
+                "dois": design.get("supporting_dois", [])
+            }),
         }
         return self._query_persona(
             "Domain Expert", CognitiveTaskType.DOMAIN_REVIEW, context, fallback
@@ -219,7 +223,12 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": design.get("protocol", "Not provided"),
+            "protocol": json.dumps({
+                "controls": design.get("controls", []),
+                "sampleSize": design.get("sampleSize", "Not provided"),
+                "statisticalTest": design.get("statisticalTest", "Not provided"),
+                "protocolSteps": design.get("protocol_steps", [])
+            }),
             "experiment_flow": json.dumps(
                 {
                     "independent": design.get("independentVariables", []),
@@ -248,7 +257,7 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": design.get("protocol", "Not provided"),
+            "protocol": json.dumps(design.get("protocol_steps", [])),
             "resources": design.get("resourceEstimation", "Not provided"),
         }
         return self._query_persona("Ethicist", CognitiveTaskType.ETHICS_REVIEW, context, fallback)
@@ -269,10 +278,13 @@ class ScientificDebateEngine:
             )
 
         context = {
-            "protocol": design.get("protocol", "Not provided"),
+            "protocol": json.dumps(design.get("protocol_steps", [])),
             "resources": design.get("resourceEstimation", "Not provided"),
             "cost_prediction": design.get("costPrediction", "Not provided"),
-            "failure_prediction": design.get("failurePrediction", "Not provided"),
+            "failure_prediction": json.dumps({
+                "prediction": design.get("failurePrediction", "Not provided"),
+                "critical_risks": design.get("criticalEngineeringRisks", [])
+            }),
         }
         return self._query_persona(
             "Engineer", CognitiveTaskType.ENGINEERING_REVIEW, context, fallback

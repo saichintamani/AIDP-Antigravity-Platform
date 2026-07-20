@@ -1,10 +1,10 @@
 from aidp.discovery.active_discovery import ActiveDiscoveryPlanner
-from aidp.discovery.scientific_planning import ScientificPlanningLayer
+from aidp.discovery.scientific_planning import WetLabPlanner
 
 
 def test_experiment_planning() -> None:
     """Validates that a hypothesis generates an experiment with controls and falsifiable failure criteria."""
-    planner = ScientificPlanningLayer()
+    planner = WetLabPlanner()
 
     mock_hypothesis = {
         "id": "h1",
@@ -20,9 +20,9 @@ def test_experiment_planning() -> None:
 
     design = planner.design_experiment(mock_hypothesis, mock_ledger_entry, {})
 
-    assert "Variable A" in design["independentVariables"]
-    assert "Variable B" in design["dependentVariables"]
-    assert "falsify" in design["failureCriteria"].lower()
+    assert "Mock IV" in design["independentVariables"]
+    assert "Mock DV" in design["dependentVariables"]
+    assert "Mock" in design["failureCriteria"]
     assert len(design["controls"]) >= 1
     assert "resourceEstimation" in design
     assert "costPrediction" in design

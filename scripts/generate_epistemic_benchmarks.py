@@ -1,9 +1,10 @@
 import time
-import os
 from pathlib import Path
+
 from aidp.reasoning.bayesian import bayesian_update
 from aidp.reasoning.dempster_shafer import dempster_combine
 from aidp.reasoning.subjective_logic import Opinion, consensus_fusion
+
 
 def run_benchmarks() -> None:
     iterations = 100_000

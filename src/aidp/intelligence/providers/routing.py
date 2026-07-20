@@ -1,8 +1,8 @@
+
 from aidp.evaluation.live_harness import LiveEvaluationHarness
 
 from .base import BaseProvider
 from .capabilities import ProviderCapabilities, ReasoningTier
-from typing import Optional
 
 
 class RoutingPolicy:
@@ -25,7 +25,7 @@ class RoutingPolicy:
         self,
         min_reasoning_tier: ReasoningTier = ReasoningTier.BASIC,
         requires_structured_output: bool = False,
-        max_cost_per_1m_tokens: Optional[float] = None,
+        max_cost_per_1m_tokens: float | None = None,
     ) -> BaseProvider:
         """
         Capability Matcher with Empirical Fallback.

@@ -1,8 +1,8 @@
 import pytest
 
 from aidp.discovery.causal import CausalDiscoveryEngine
-from aidp.discovery.scientific_planning import ScientificPlanningLayer
 from aidp.discovery.ledger import HypothesisEvidenceLedger
+from aidp.discovery.scientific_planning import WetLabPlanner
 from aidp.discovery.validation import RedundancyDetectionEngine
 
 
@@ -49,11 +49,11 @@ def test_m9_25_causal_gate() -> None:
 
 
 def test_m9_25_experiment_gate() -> None:
-    """Validates that ScientificPlanningLayer respects the ledger gate."""
+    """Validates that WetLabPlanner respects the ledger gate."""
     ledger = HypothesisEvidenceLedger()
     invalid_hyp = {"id": "h2", "claim": "God is real.", "confidence": 0.9}
     entry = ledger.commit_hypothesis(invalid_hyp)
 
-    planner = ScientificPlanningLayer()
+    planner = WetLabPlanner()
     with pytest.raises(ValueError, match="failed M9.25 governance gate"):
         planner.design_experiment(invalid_hyp, entry, {})

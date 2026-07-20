@@ -1,0 +1,28 @@
+# Build Stage
+FROM python:3.11-slim AS builder
+
+WORKDIR /app
+COPY requirements.txt .
+
+# Create a virtual environment and install dependencies
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+RUN pip install --no-cache-dir -r requirements.txt || pip install fastapi uvicorn pydantic gunicorn
+
+# Production Stage
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy virtual environment from builder
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Copy source code
+COPY src/ ./src/
+ENV PYTHONPATH=/app/src
+
+EXPOSE 8000
+
+# Production-ready entrypoint using uvicorn workers
+CMD ["uvicorn", "aidp.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]

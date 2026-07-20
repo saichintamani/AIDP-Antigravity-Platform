@@ -1,0 +1,11 @@
+{
+    "model": "llama3.1:8b",
+    "timestamp": "2026-07-20T21:48:56.988026",
+    "total_cases_evaluated": 90,
+    "simulated_metrics": {
+        "true_positives": 45,
+        "false_positives": 10,
+        "false_negatives": 10,
+        "true_negatives": 25
+    }
+}

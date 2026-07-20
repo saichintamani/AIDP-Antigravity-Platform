@@ -1,0 +1,36 @@
+[
+  {
+    "case_id": "case-clinical-001",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": false,
+        "reason": "Governance Rejected: EvidenceCheck failed: No valid citations provided for claims."
+      }
+    ]
+  },
+  {
+    "case_id": "case-clinical-002",
+    "governance_checks_executed": [
+      "EvidenceChecker",
+      "ConflictChecker",
+      "ProvenanceChecker",
+      "ReproducibilityChecker",
+      "SafetyChecker",
+      "CalibrationChecker"
+    ],
+    "decisions": [
+      {
+        "passed": false,
+        "reason": "Governance Rejected: EvidenceCheck failed: No valid citations provided for claims."
+      }
+    ]
+  }
+]

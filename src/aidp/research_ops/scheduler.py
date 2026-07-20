@@ -1,7 +1,7 @@
 import heapq
+from typing import Any
 
 from aidp.research_ops.economics_engine import ScientificTaskProposal
-from typing import Optional, Any
 
 
 class IntelligentScheduler:
@@ -17,7 +17,7 @@ class IntelligentScheduler:
         self.completed_tasks: set[str] = set()
 
     def enqueue(
-        self, task: ScientificTaskProposal, priority_score: float, depends_on: Optional[list[str]] = None
+        self, task: ScientificTaskProposal, priority_score: float, depends_on: list[str] | None = None
     ) -> None:
         """Adds a task to the queue with its calculated economics priority."""
         if depends_on:
@@ -26,7 +26,7 @@ class IntelligentScheduler:
         # heapq uses first element for sorting
         heapq.heappush(self.priority_queue, (-priority_score, task))
 
-    def get_next_runnable_task(self) -> Optional[ScientificTaskProposal]:
+    def get_next_runnable_task(self) -> ScientificTaskProposal | None:
         """Pops the highest priority task whose dependencies are satisfied."""
         temp_list = []
         next_task = None

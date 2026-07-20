@@ -1,11 +1,17 @@
-import sys
+import argparse
+import os
+from pathlib import Path
+
+# Base directory for the project (two levels up)
+base_dir = Path(__file__).parent.parent
+
 from pathlib import Path
 
 base_dir = Path(__file__).parent.parent
-sys.path.insert(0, str(base_dir / "src"))
 
-import yaml
-from run_live_discoverybench import preflight_checks, load_dataset, load_config
+
+from run_live_discoverybench import load_config, load_dataset, preflight_checks
+
 
 def main():
     base_dir = Path(__file__).parent.parent

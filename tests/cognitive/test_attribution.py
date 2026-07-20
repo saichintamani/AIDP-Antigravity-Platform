@@ -31,7 +31,7 @@ def test_counterfactual_analyzer() -> None:
     evidence = [{"text": "Sky is blue."}]
     hypothesis = "The sky is blue."
 
-    assert analyzer.check_dependency(hypothesis, evidence, hypothesis) == True
+    assert analyzer.check_dependency(hypothesis, evidence, hypothesis)
 
     # 2. Hallucination without evidence
-    assert analyzer.check_dependency(hypothesis, [], hypothesis) == False
+    assert not analyzer.check_dependency(hypothesis, [], hypothesis)

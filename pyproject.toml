@@ -15,12 +15,16 @@ dependencies = [
     "sentence-transformers>=5.6.0",
     "fastapi>=0.139.0",
     "uvicorn>=0.50.2",
-    "streamlit>=1.59.0",
     "pydantic-settings>=2.14.2",
     "structlog>=26.1.0",
     "litellm>=1.20.0",
     "openai>=1.10.0",
+    "pandas>=3.0.3",
+    "sqlalchemy>=2.0.51",
+    "z3-solver>=4.16.0.0",
+    "chromadb>=1.5.9",
 ]
+
 
 [project.optional-dependencies]
 dev = [

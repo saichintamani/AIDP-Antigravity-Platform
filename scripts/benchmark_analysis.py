@@ -1,13 +1,14 @@
 import json
 import statistics
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
+
 
 def main():
     base_dir = Path(__file__).parent.parent
     metrics_path = base_dir / "scratch" / "live_benchmark_metrics.json"
     
-    with open(metrics_path, "r", encoding="utf-8") as f:
+    with open(metrics_path, encoding="utf-8") as f:
         data = json.load(f)
         
     baselines = ["SingleLLM", "RetrievalRAG", "AIDP"]

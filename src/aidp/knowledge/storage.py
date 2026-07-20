@@ -4,8 +4,14 @@ import uuid
 from dataclasses import asdict
 from typing import Any
 
-from qdrant_client import QdrantClient
-from qdrant_client.models import Distance, PointStruct, VectorParams
+try:
+    from qdrant_client import QdrantClient
+    from qdrant_client.models import Distance, PointStruct, VectorParams
+except ImportError:
+    QdrantClient = None
+    Distance = None
+    PointStruct = None
+    VectorParams = None
 
 from aidp.knowledge.world_model import ScientificEntity, ScientificRelationship
 

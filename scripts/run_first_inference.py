@@ -1,7 +1,5 @@
 import json
 import time
-import os
-import traceback
 from pathlib import Path
 
 try:
@@ -20,7 +18,7 @@ def main():
     # We may need to pass api_base if litellm doesn't default to the right one, 
     # but litellm defaults ollama to http://localhost:11434 automatically.
     
-    print(f"Executing First Live Inference Verification (Local Provider)...")
+    print("Executing First Live Inference Verification (Local Provider)...")
     print(f"Model: {model}")
     print(f"Prompt: {prompt}")
 

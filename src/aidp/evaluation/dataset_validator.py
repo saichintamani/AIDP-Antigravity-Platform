@@ -1,7 +1,7 @@
 import json
-import re
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
 
 class DatasetValidator:
     """
@@ -10,7 +10,7 @@ class DatasetValidator:
     
     def __init__(self, data_path: str) -> None:
         self.data_path = Path(data_path)
-        with open(self.data_path, "r", encoding="utf-8") as f:
+        with open(self.data_path, encoding="utf-8") as f:
             self.data = json.load(f)
             
     def run_validation(self) -> bool:

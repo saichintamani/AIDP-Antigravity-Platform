@@ -16,6 +16,11 @@ class CognitiveTaskType(Enum):
     ETHICS_REVIEW = "ETHICS_REVIEW"
     KNOWLEDGE_EXTRACTION = "KNOWLEDGE_EXTRACTION"
     EPISTEMIC_VALIDATION = "EPISTEMIC_VALIDATION"
+    FALSIFIABILITY_GENERATION = "FALSIFIABILITY_GENERATION"
+    CONTROL_TAXONOMY_GENERATION = "CONTROL_TAXONOMY_GENERATION"
+    ENGINEER_FEASIBILITY_GENERATION = "ENGINEER_FEASIBILITY_GENERATION"
+    EXECUTION_PROTOCOL_GENERATION = "EXECUTION_PROTOCOL_GENERATION"
+    STATISTICAL_POWER_ANALYSIS = "STATISTICAL_POWER_ANALYSIS"
 
 
 @dataclass
@@ -26,7 +31,7 @@ class TaskSpecification:
 
     task_type: CognitiveTaskType
     context: dict[str, Any]
-    expected_schema: dict[str, Any] | None = None
+    expected_schema: Any = None # Can be dict or pydantic BaseModel class
     strict_falsifiability: bool = True
     context_window_hint: int = 4096
     metadata: dict[str, Any] = field(default_factory=dict)

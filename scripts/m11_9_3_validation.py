@@ -1,18 +1,18 @@
 import json
-import re
 import os
+import re
 import sys
 
 # Ensure src is in path if not already
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from aidp.intelligence.providers.middleware import IntelligenceGateway
-from aidp.intelligence.providers.llm import LLMProvider
-from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
-from aidp.intelligence.providers.routing import RoutingPolicy
-from aidp.intelligence.reasoning_planner import ReasoningPlanner
-from aidp.discovery.scientific_planning import ScientificPlanningLayer
+
 from aidp.discovery.debate import ScientificDebateEngine
+from aidp.discovery.scientific_planning import ScientificPlanningLayer
+from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
+from aidp.intelligence.providers.llm import LLMProvider
+from aidp.intelligence.providers.middleware import IntelligenceGateway
+from aidp.intelligence.providers.routing import RoutingPolicy
+
 
 def extract_hypothesis(aidp_output: str) -> dict:
     claim_match = re.search(r'\*\*Claim:\*\* (.*?)\n', aidp_output)
@@ -38,11 +38,11 @@ def main():
     
     # Load old traces
     raw_outputs_path = os.path.join("docs", "evaluation", "evidence", "LIVE_RAW_OUTPUTS.json")
-    with open(raw_outputs_path, "r", encoding="utf-8") as f:
+    with open(raw_outputs_path, encoding="utf-8") as f:
         raw_outputs = json.load(f)
         
     retrieval_path = os.path.join("docs", "evaluation", "evidence", "LIVE_RETRIEVAL_EVIDENCE.json")
-    with open(retrieval_path, "r", encoding="utf-8") as f:
+    with open(retrieval_path, encoding="utf-8") as f:
         retrieval_evidence = json.load(f)
         
     # Build maps

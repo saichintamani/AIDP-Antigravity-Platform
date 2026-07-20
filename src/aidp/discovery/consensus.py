@@ -107,9 +107,15 @@ class ConsensusEngine:
         # Majority consensus: require > 50% approval.
         # Unanimous is impractical with small local models where persona outputs are noisy.
         approved = approvals > total_reviews / 2
+        
+        # Architecture Invariant: Any blocking issues immediately invalidate the consensus.
+        if blocking_reasons:
+            approved = False
+
         conflict_detected = disagreement_percentage > 0.0
 
         summary = f"Consensus {'reached' if approved else 'failed'}. Approvals: {approvals}/{total_reviews}. Max Risk: {max_risk_score}."
+
 
         # Record into memory
         for r in reviews:

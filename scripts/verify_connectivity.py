@@ -1,8 +1,7 @@
 import os
 import time
-import json
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
 
 try:
     import litellm
@@ -27,7 +26,7 @@ def verify_provider(model: str, test_prompt: str = "Test") -> dict:
         }
         
     try:
-        response = litellm.completion(
+        litellm.completion(
             model=model,
             messages=[{"role": "user", "content": test_prompt}],
             max_tokens=5,

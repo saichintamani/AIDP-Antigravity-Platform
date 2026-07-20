@@ -1,8 +1,13 @@
-from typing import Any
 import time
+from typing import Any
 
+from aidp.evaluation.baselines import (
+    AIDPBaseline,
+    BaselineRunner,
+    RetrievalBaseline,
+    SingleLLMBaseline,
+)
 from aidp.evaluation.discovery_bench import DiscoveryBenchDataset
-from aidp.evaluation.baselines import BaselineRunner, SingleLLMBaseline, RetrievalBaseline, AIDPBaseline
 from aidp.evaluation.metrics import MetricEvaluator
 
 

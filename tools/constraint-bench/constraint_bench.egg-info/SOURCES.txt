@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+constraint_bench.egg-info/PKG-INFO
+constraint_bench.egg-info/SOURCES.txt
+constraint_bench.egg-info/dependency_links.txt
+constraint_bench.egg-info/requires.txt
+constraint_bench.egg-info/top_level.txt

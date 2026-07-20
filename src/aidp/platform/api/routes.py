@@ -1,3 +1,5 @@
+import json
+import os
 import uuid
 from typing import Any
 
@@ -21,8 +23,19 @@ class MetricsResponse(BaseModel):
 
 router = APIRouter()
 
-# Global state for Phase D mocking
-ACTIVE_CAMPAIGNS: dict[str, Any] = {}
+# Persistent State Store
+CAMPAIGNS_STORE_PATH = os.path.join(os.path.dirname(__file__), "../../../data/campaigns.json")
+
+def load_campaigns() -> dict[str, Any]:
+    if not os.path.exists(CAMPAIGNS_STORE_PATH):
+        return {}
+    with open(CAMPAIGNS_STORE_PATH) as f:
+        return json.load(f)
+
+def save_campaigns(campaigns: dict[str, Any]) -> None:
+    os.makedirs(os.path.dirname(CAMPAIGNS_STORE_PATH), exist_ok=True)
+    with open(CAMPAIGNS_STORE_PATH, "w") as f:
+        json.dump(campaigns, f, indent=2)
 MOCK_METRICS = MetricsResponse(
     total_spend_usd=420.50,
     total_tokens_consumed=1500000,
@@ -34,7 +47,8 @@ MOCK_METRICS = MetricsResponse(
 @router.post("/campaigns")
 def launch_campaign(request: CampaignRequest) -> dict[str, str]:
     camp_id = f"camp_{uuid.uuid4().hex[:8]}"
-    ACTIVE_CAMPAIGNS[camp_id] = {
+    campaigns = load_campaigns()
+    campaigns[camp_id] = {
         "id": camp_id,
         "goal": request.goal,
         "domain": request.domain,
@@ -42,12 +56,14 @@ def launch_campaign(request: CampaignRequest) -> dict[str, str]:
         "tasks_generated": 10,
         "tasks_completed": 0,
     }
+    save_campaigns(campaigns)
     return {"status": "success", "campaign_id": camp_id}
 
 
 @router.get("/campaigns/{campaign_id}")
 def get_campaign(campaign_id: str) -> dict[str, Any]:
-    camp = ACTIVE_CAMPAIGNS.get(campaign_id)
+    campaigns = load_campaigns()
+    camp = campaigns.get(campaign_id)
     if not camp:
         return {"status": "success", "campaign_id": campaign_id}
     return dict(camp)

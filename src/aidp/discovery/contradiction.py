@@ -1,6 +1,8 @@
 import uuid
 from typing import Any
 
+from aidp.knowledge.world_model import WorldModel
+
 
 class ContradictionDetectionEngine:
     """
@@ -10,32 +12,32 @@ class ContradictionDetectionEngine:
     def __init__(self) -> None:
         pass
 
-    def scan_for_contradictions(self, evidence_list: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    def scan_for_contradictions(self, world_model: WorldModel) -> list[dict[str, Any]]:
         """
-        Scans evidence pairwise to detect if Claim A logically contradicts Claim B.
+        Scans the WorldModel to detect structural contradictions (e.g. opposing edges).
         """
         contradictions = []
 
-        # MOCK IMPLEMENTATION
-        # In a real pipeline, this uses NLI (Natural Language Inference) models
-        # (e.g. DeBERTa-v3 or an LLM) to check for 'contradiction' vs 'entailment'.
+        structural_contradictions = world_model.find_contradictions()
+        
+        for r1, r2 in structural_contradictions:
+            ent_source = world_model.entities.get(r1.source_entity_id)
+            ent_target = world_model.entities.get(r1.target_entity_id)
+            
+            source_name = ent_source.name if ent_source else r1.source_entity_id
+            target_name = ent_target.name if ent_target else r1.target_entity_id
 
-        if len(evidence_list) >= 2:
-            # Force a mock contradiction for testing
-            if evidence_list[0].get("mock_inject_contradiction") or evidence_list[1].get(
-                "mock_inject_contradiction"
-            ):
-                c_id = f"contradiction-{uuid.uuid4()}"
-                contradictions.append(
-                    {
-                        "id": c_id,
-                        "claimA": evidence_list[0].get("text", "Claim A"),
-                        "sourceAId": evidence_list[0].get("source_id", "source_1"),
-                        "claimB": evidence_list[1].get("text", "Claim B"),
-                        "sourceBId": evidence_list[1].get("source_id", "source_2"),
-                        "contradictionScore": 0.95,  # 1.0 is direct logical contradiction
-                        "resolutionHypothesis": "Requires temporal or conditional context to resolve.",
-                    }
-                )
+            c_id = f"contradiction-{uuid.uuid4()}"
+            contradictions.append(
+                {
+                    "id": c_id,
+                    "claimA": f"{source_name} {r1.relation_type} {target_name}",
+                    "sourceAId": r1.provenance.source_paper_doi if r1.provenance else "unknown",
+                    "claimB": f"{source_name} {r2.relation_type} {target_name}",
+                    "sourceBId": r2.provenance.source_paper_doi if r2.provenance else "unknown",
+                    "contradictionScore": 1.0,  # 1.0 is direct logical contradiction
+                    "resolutionHypothesis": "Requires temporal, conditional, or dose-dependent context to resolve.",
+                }
+            )
 
         return contradictions

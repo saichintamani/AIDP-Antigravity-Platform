@@ -1,5 +1,6 @@
 from aidp.evaluation.framework import ScientificReportCard
 
+
 def run_oncology_demonstration():
     print("Executing Domain Demonstration: Oncology (Melanoma Drug Resistance)")
     print("------------------------------------------------------------------")

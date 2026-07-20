@@ -1,6 +1,6 @@
 import json
 import os
-from typing import Optional, Any
+from typing import Any
 
 from dotenv import load_dotenv
 
@@ -17,9 +17,9 @@ class LLMProvider(BaseProvider):
     Designed to sit behind the Intelligence Gateway middleware.
     """
 
-    def __init__(self, model_name: str = "gpt-4-turbo", api_key: Optional[str] = None) -> None:
+    def __init__(self, model_name: str = "gpt-4o-mini", api_key: str | None = None) -> None:
         self.model_name = model_name
-        self.api_key = api_key or os.environ.get("OPENAI_API_KEY")
+        self.api_key = api_key or os.environ.get("OPENAI_API_KEY") or "dummy"
 
         self.is_mock_fallback = False
         if not self.api_key:
@@ -36,7 +36,7 @@ class LLMProvider(BaseProvider):
             raw_response="Legacy",
         )
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> Any:
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> Any:
         """
         Executes a prompt against the production LLM for structured discovery (M9+).
         """
@@ -59,7 +59,7 @@ class LLMProvider(BaseProvider):
                 return self._simulate_llm_text(prompt, schema_hint)
             raise RuntimeError(f"litellm provider query failed: {e}")
 
-    def _simulate_llm_text(self, prompt: str, schema_hint: Optional[dict[str, Any]]) -> str:
+    def _simulate_llm_text(self, prompt: str, schema_hint: dict[str, Any] | None) -> str:
         """Simulates raw string output from an LLM when in mock mode and failing."""
         if schema_hint:
             payload: dict[str, Any]

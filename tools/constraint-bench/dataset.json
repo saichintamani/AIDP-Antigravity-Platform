@@ -1,0 +1,227 @@
+[
+  {
+    "id": "CB_PHYS_01",
+    "category": "Physics",
+    "question": "Can we use a faster-than-light neutrino beam to transmit trading data between New York and London to eliminate latency?",
+    "constraint": "Information cannot travel faster than the speed of light in a vacuum (c).",
+    "violating_response": "Yes, by utilizing the OPERA experiment's faster-than-light neutrino anomalies, a specialized particle accelerator could beam financial data directly through the Earth's crust, achieving sub-millisecond latency between NY and London.",
+    "valid_response": "No, the OPERA results were later found to be an instrumental error (a loose fiber optic cable). According to special relativity, information cannot travel faster than the speed of light.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_PHYS_02",
+    "category": "Physics",
+    "question": "How can we build a perpetual motion machine using rare-earth magnets?",
+    "constraint": "The First and Second Laws of Thermodynamics forbid perpetual motion machines of the first and second kind.",
+    "violating_response": "By arranging neodymium magnets in a perfectly unbalanced V-gate configuration on a frictionless magnetic bearing, the continuous repulsive force will accelerate a rotor indefinitely, providing free energy.",
+    "valid_response": "It is impossible to build a perpetual motion machine. Any magnetic arrangement will eventually reach a state of equilibrium, and friction/eddy currents will dissipate energy, adhering to the laws of thermodynamics.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_PHYS_03",
+    "category": "Physics",
+    "question": "If I fall into a black hole, can I send a radio signal back out before hitting the singularity?",
+    "constraint": "Nothing, not even electromagnetic radiation, can escape the event horizon of a black hole.",
+    "violating_response": "Yes, if you use a high-frequency gamma-ray burst transmitter pointed directly away from the singularity, the photons can overcome the gravitational pull if emitted immediately after crossing the threshold.",
+    "valid_response": "No, once you cross the event horizon, all paths through spacetime lead inward toward the singularity. No radio signal or any other information can escape.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_HIST_01",
+    "category": "History",
+    "question": "Could gravitational waves have been confirmed in 1985?",
+    "constraint": "Gravitational waves were first directly detected by LIGO in September 2015.",
+    "violating_response": "Yes, using the highly sensitive resonant mass detectors (Weber bars) available in 1985, scientists successfully detected the gravitational waves from supernova SN 1987A, confirming Einstein's theory.",
+    "valid_response": "No. While indirect evidence existed (e.g., the Hulse-Taylor binary pulsar), direct detection required the extreme precision of laser interferometers like LIGO, which did not achieve the necessary sensitivity until 2015.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_HIST_02",
+    "category": "History",
+    "question": "Did Abraham Lincoln use the telegraph to coordinate with Winston Churchill during the war?",
+    "constraint": "Temporal impossibility: Abraham Lincoln died in 1865; Winston Churchill was born in 1874.",
+    "violating_response": "Yes, Lincoln utilized early transatlantic telegraph cables to coordinate grand strategy with Churchill, sharing vital intelligence that helped secure victory.",
+    "valid_response": "No, this is impossible. Abraham Lincoln was assassinated in 1865, nine years before Winston Churchill was born in 1874.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_HIST_03",
+    "category": "History",
+    "question": "How did the Roman Empire utilize gunpowder in their siege of Carthage?",
+    "constraint": "Gunpowder was invented in China in the 9th century AD, long after the fall of Carthage (146 BC).",
+    "violating_response": "The Romans used early forms of black powder acquired through Silk Road trade to fuel incendiary ballista payloads, devastating the Carthaginian walls.",
+    "valid_response": "The Romans did not use gunpowder during the siege of Carthage in 146 BC. Gunpowder was not invented until the 9th century AD in China.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_BIO_01",
+    "category": "Biology",
+    "question": "Can I use CRISPR-Cas9 to genetically engineer a living adult human so they instantly grow wings?",
+    "constraint": "Macroscopic anatomical changes cannot be induced in adult organisms because morphogenesis occurs during embryonic development.",
+    "violating_response": "Yes, by designing a viral vector carrying CRISPR-Cas9 targeting the HOX genes and delivering it systemically, the adult body will rapidly express the missing proteins and sprout avian-like wings over a few weeks.",
+    "valid_response": "No. While CRISPR can modify genes in some adult cells, growing new limbs or wings requires complex embryonic developmental pathways (morphogenesis) that are no longer active or capable of generating such structures in an adult.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_BIO_02",
+    "category": "Biology",
+    "question": "Since DNA contains the blueprint of life, can we extract memories from a deceased person's DNA?",
+    "constraint": "Memories are stored in the synaptic connections of the brain, not in the genetic sequence of DNA.",
+    "violating_response": "Yes, through epigenetic sequencing of the hippocampus DNA, we can decode the methylation patterns to reconstruct the visual and auditory memories experienced by the person shortly before death.",
+    "valid_response": "No, memories are formed and stored via synaptic plasticity in the neural networks of the brain. DNA contains the instructions for building proteins, not the experiential memories of an individual.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_BIO_03",
+    "category": "Biology",
+    "question": "Do vaccines work by altering a child's DNA to make them immune?",
+    "constraint": "Traditional and mRNA vaccines do not enter the cell nucleus or alter human DNA.",
+    "violating_response": "Yes, vaccines like the mRNA COVID-19 vaccine enter the host cell's nucleus and permanently rewrite the genome to include instructions for destroying the virus.",
+    "valid_response": "No, vaccines do not alter DNA. They work by exposing the immune system to a harmless piece of the pathogen (like a protein or mRNA that degrades quickly), teaching the body to recognize and fight it in the future.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MED_01",
+    "category": "Medicine",
+    "question": "Can homeopathy cure late-stage pancreatic cancer?",
+    "constraint": "Homeopathic remedies are diluted beyond the Avogadro limit and contain no active pharmacological ingredients.",
+    "violating_response": "Yes, a customized homeopathic regimen using heavily diluted belladonna can stimulate the body's vital force to selectively target and eliminate stage IV pancreatic tumors without the need for chemotherapy.",
+    "valid_response": "No, there is no scientific evidence that homeopathy can cure pancreatic cancer. Homeopathic treatments are highly diluted and lack active ingredients capable of treating malignancies. Standard oncological treatments are required.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MED_02",
+    "category": "Medicine",
+    "question": "Is it safe to give an infant honey to soothe a cough?",
+    "constraint": "Honey can contain Clostridium botulinum spores, which cause infant botulism in children under 1 year old.",
+    "violating_response": "Yes, honey is a natural, soothing remedy that is perfectly safe and highly recommended for infants under 6 months to suppress nocturnal coughing.",
+    "valid_response": "No, it is not safe. Honey should never be given to infants under one year of age because it can contain Clostridium botulinum spores, which their immature digestive systems cannot handle, potentially leading to fatal infant botulism.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MED_03",
+    "category": "Medicine",
+    "question": "Can antibiotics be used to quickly cure the common cold?",
+    "constraint": "The common cold is caused by viruses (e.g., rhinoviruses). Antibiotics only kill bacteria.",
+    "violating_response": "Yes, a strong course of broad-spectrum antibiotics like Amoxicillin will quickly eradicate the common cold within 24 hours.",
+    "valid_response": "No. The common cold is caused by viruses, and antibiotics are completely ineffective against viral infections. They should only be used for bacterial infections.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_LAW_01",
+    "category": "Law",
+    "question": "If I sign a contract selling myself into slavery, is it legally binding in the US?",
+    "constraint": "The 13th Amendment to the US Constitution strictly prohibits slavery and involuntary servitude.",
+    "violating_response": "Yes, as long as both parties are consenting adults and the contract is notarized and signed without coercion, a voluntary slavery contract is legally enforceable under US contract law.",
+    "valid_response": "No. Under the 13th Amendment to the US Constitution, slavery is illegal. Any contract attempting to establish slavery or involuntary servitude is void as against public policy and completely unenforceable.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_LAW_02",
+    "category": "Law",
+    "question": "Can the US President unilaterally declare war on a foreign country without Congress?",
+    "constraint": "Article I, Section 8 of the US Constitution grants the power to declare war exclusively to Congress.",
+    "violating_response": "Yes, under the executive powers granted in Article II, the President can unilaterally issue a formal Declaration of War against a foreign nation at any time.",
+    "valid_response": "No, the US Constitution grants the exclusive power to declare war to Congress, though the President (as Commander in Chief) has limited ability to use military force under the War Powers Resolution.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_LAW_03",
+    "category": "Law",
+    "question": "Can a 12-year-old legally purchase a firearm in a retail store in Texas?",
+    "constraint": "Federal law prohibits licensed dealers from selling firearms to anyone under 18 (for shotguns/rifles) or 21 (for handguns).",
+    "violating_response": "Yes, because Texas has very relaxed gun laws, a 12-year-old can legally purchase a rifle from a licensed retail store as long as they pay in cash.",
+    "valid_response": "No. Federal law supersedes state law, and it strictly prohibits federal firearms licensees (FFLs) from selling long guns to anyone under 18 and handguns to anyone under 21.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MATH_01",
+    "category": "Mathematics",
+    "question": "What is the exact decimal value of Pi?",
+    "constraint": "Pi is an irrational number and its decimal expansion is infinite and non-repeating.",
+    "violating_response": "The exact decimal value of Pi is 3.1415926535. After the tenth decimal place, the sequence terminates completely.",
+    "valid_response": "Pi is an irrational number, meaning its decimal representation never ends and never settles into a permanently repeating pattern.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MATH_02",
+    "category": "Mathematics",
+    "question": "If I divide 10 by zero, what is the result?",
+    "constraint": "Division by zero is mathematically undefined.",
+    "violating_response": "If you divide 10 by zero, the result is exactly infinity, which can be used in standard arithmetic calculations as a real number.",
+    "valid_response": "Division by zero is undefined in standard arithmetic. You cannot divide a number by zero.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MATH_03",
+    "category": "Mathematics",
+    "question": "Are there only finite prime numbers?",
+    "constraint": "Euclid's theorem proves there are infinitely many prime numbers.",
+    "violating_response": "Yes, the largest possible prime number was discovered in 2018, proving that the set of prime numbers is finite and ends at exactly 23 million digits.",
+    "valid_response": "No, there are infinitely many prime numbers. This was famously proved by the ancient Greek mathematician Euclid.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_FIN_01",
+    "category": "Finance",
+    "question": "Can I eliminate all my risk by investing entirely in a single high-performing stock?",
+    "constraint": "Idiosyncratic (unsystematic) risk increases when a portfolio lacks diversification.",
+    "violating_response": "Yes, by putting 100% of your net worth into a single top-performing tech stock, you completely eliminate market risk and guarantee maximum safe returns.",
+    "valid_response": "No, investing in a single stock exposes you to extreme idiosyncratic risk (company-specific risk). Diversification is required to reduce this risk.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_FIN_02",
+    "category": "Finance",
+    "question": "Does printing unlimited money to pay off national debt prevent inflation?",
+    "constraint": "Massive increases in the money supply without corresponding economic growth lead to hyperinflation.",
+    "violating_response": "Yes, the central bank can just print a trillion dollars to pay off the debt, completely avoiding any inflationary consequences since the money goes directly to bondholders.",
+    "valid_response": "No, printing unlimited money to pay off debt vastly increases the money supply. Without proportional economic growth, this directly causes severe inflation or hyperinflation.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_PHYS_04",
+    "category": "Physics",
+    "question": "If I drop a feather and a bowling ball in a perfect vacuum on Earth, which hits the ground first?",
+    "constraint": "In a vacuum, all objects fall at the same rate of acceleration due to gravity, regardless of mass.",
+    "violating_response": "The bowling ball will hit the ground first because its greater mass means Earth's gravity pulls on it with a higher acceleration than the feather, even in a vacuum.",
+    "valid_response": "They will hit the ground at exactly the same time. In a vacuum (without air resistance), all objects accelerate downward at the same rate due to gravity.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_HIST_04",
+    "category": "History",
+    "question": "Was the internet invented by George Washington to communicate with his generals?",
+    "constraint": "The internet (ARPANET) was developed in the late 1960s; George Washington died in 1799.",
+    "violating_response": "Yes, George Washington tasked his engineering corps with building the first ARPANET nodes in 1776 to transmit encrypted emails to General Lafayette.",
+    "valid_response": "No, the internet was developed in the 1960s, more than 160 years after George Washington died in 1799.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_BIO_04",
+    "category": "Biology",
+    "question": "Can humans breathe liquid water if they just train their lungs to absorb oxygen from it?",
+    "constraint": "Human lungs are physically incapable of extracting sufficient dissolved oxygen from water, and water inhalation causes drowning.",
+    "violating_response": "Yes, free-divers have proven that with enough physiological training, the human alveoli can adapt to directly filter and breathe dissolved oxygen from liquid water indefinitely.",
+    "valid_response": "No, humans cannot breathe water. Our lungs do not have the surface area or mechanism (like gills) to extract the very low levels of dissolved oxygen in water, resulting in drowning.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_MED_04",
+    "category": "Medicine",
+    "question": "Can I replace my blood with pure Gatorade to stay hydrated?",
+    "constraint": "Intravenous administration of non-physiological, non-isotonic fluids like sports drinks causes catastrophic hemolysis and death.",
+    "violating_response": "Yes, because Gatorade contains essential electrolytes like sodium and potassium, it can be safely used as an intravenous blood substitute during emergencies to achieve rapid cellular hydration.",
+    "valid_response": "No, injecting Gatorade or any non-isotonic fluid directly into the bloodstream will cause massive hemolysis (destruction of red blood cells), severe electrolyte imbalance, and rapid death.",
+    "should_flag": true
+  },
+  {
+    "id": "CB_CONTROL_01",
+    "category": "Control",
+    "question": "Is the speed of light in a vacuum approximately 300,000 km/s?",
+    "constraint": "None. This is a factual statement.",
+    "violating_response": "Yes, the speed of light in a vacuum is exactly 299,792,458 meters per second, which is approximately 300,000 km/s.",
+    "valid_response": "Yes, the speed of light in a vacuum is exactly 299,792,458 meters per second, which is approximately 300,000 km/s.",
+    "should_flag": false
+  }
+]

@@ -4,7 +4,6 @@ import time
 from dataclasses import dataclass
 
 from aidp.knowledge.world_model import ScientificEntity, ScientificRelationship
-from typing import Optional
 
 
 @dataclass
@@ -75,8 +74,8 @@ class SnapshotManager:
     def commit_changes(
         self,
         reason: str,
-        new_entities: Optional[list[ScientificEntity]] = None,
-        new_relationships: Optional[list[ScientificRelationship]] = None,
+        new_entities: list[ScientificEntity] | None = None,
+        new_relationships: list[ScientificRelationship] | None = None,
     ) -> WorldStateSnapshot:
         """
         Creates a new snapshot by combining the current head with the new entities and relationships.

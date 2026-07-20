@@ -17,10 +17,9 @@ class ReasoningPipeline:
         (to be serialized into Cap'n Proto schema in actual orchestration).
         """
         # Step 1 & 2: Observation & Goal Identification
-        goal = f"Resolve intent for observation: {observation[:20]}..."
+        f"Resolve intent for observation: {observation[:20]}..."
 
         # Step 3: Context Selection (Mocked)
-        context = "Global epistemic boundary selected."
 
         # Step 4 & 5: Evidence Retrieval & Attribution
         # In practice, calls the Orchestrator to route through embedding->retrieval->explainability

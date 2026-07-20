@@ -25,17 +25,24 @@ class MockLLMProviderForWorkflow:
             self.current_fails += 1
             raise RuntimeError("Temporary Network Failure")
 
-        if "Hypothesis" in prompt or "hypothesis" in prompt.lower():
-            if "claim" in (schema_hint or {}):
-                payload = {
-                    "claim": "X causes Y",
-                    "rationale": "Because of Z",
-                    "confidence_prior": 0.8,
-                }
-                return f"```json\n{json.dumps(payload)}\n```"
+        schema_name = getattr(schema_hint, "__name__", "") if schema_hint else ""
 
-        if "Scientific Methodologist" in prompt:
+        if "HypothesisPayload" in schema_name or ("Hypothesis" in prompt and "Experimental Methodology Generator" not in prompt):
             payload = {
+                "claim": "X causes Y",
+                "rationale": "Because of Z",
+                "confidence_prior": 0.8,
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Methodology" in schema_name or "Methodolog" in prompt:
+            payload = {
+                "independent_variables": ["Variable X"],
+                "dependent_variables": ["Variable Y"],
+                "control_groups": ["Control Group 1"],
+                "blinding_strategy": "Double-blind",
+                "randomization": "Randomized",
+                "success_criteria": "If X does not change Y, it is falsified.",
                 "independentVariables": ["Variable X"],
                 "dependentVariables": ["Variable Y"],
                 "controls": ["Control Group 1"],
@@ -46,7 +53,7 @@ class MockLLMProviderForWorkflow:
             }
             return f"```json\n{json.dumps(payload)}\n```"
 
-        if any(
+        if "Reviewer" in schema_name or any(
             role in prompt
             for role in ["Statistician", "Domain Expert", "Methodologist", "Ethicist", "Engineer"]
         ):
@@ -59,6 +66,25 @@ class MockLLMProviderForWorkflow:
                 "evidence": "Tested before.",
                 "riskScore": 0.1,
                 "decision": "approve",
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Cohort" in schema_name or "cohort" in prompt.lower():
+            payload = {
+                "size": 100,
+                "inclusion_criteria": ["Healthy"],
+                "exclusion_criteria": ["Sick"],
+                "demographic_considerations": "Balanced",
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "SafetyEfficacy" in schema_name or "safety" in prompt.lower():
+            payload = {
+                "anticipated_adverse_events": ["Mild headache"],
+                "safety_monitoring_plan": "Weekly checkups",
+                "stopping_rules": "Stop if severe side effects occur",
+                "primary_efficacy_endpoint": "Reduction in symptoms",
+                "secondary_efficacy_endpoints": ["Improved sleep"],
             }
             return f"```json\n{json.dumps(payload)}\n```"
 

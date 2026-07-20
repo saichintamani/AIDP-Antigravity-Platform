@@ -49,18 +49,28 @@ class ReasoningPlanner:
             return "evidence_linkage_validator"
         elif task_type == CognitiveTaskType.METHODOLOGY_GENERATION:
             return "methodology_generator"
-        elif task_type == CognitiveTaskType.STATISTICAL_DESIGN_VALIDATION:
-            return "statistical_validator"
+        elif task_type == CognitiveTaskType.STATISTICAL_POWER_ANALYSIS:
+            return "statistical_power_analyzer"
+        elif task_type == CognitiveTaskType.FALSIFIABILITY_GENERATION:
+            return "falsifiability_validator"
+        elif task_type == CognitiveTaskType.CONTROL_TAXONOMY_GENERATION:
+            return "control_taxonomy_generator"
+        elif task_type == CognitiveTaskType.ENGINEER_FEASIBILITY_GENERATION:
+            return "engineer_feasibility_generator"
+        elif task_type == CognitiveTaskType.EXECUTION_PROTOCOL_GENERATION:
+            return "execution_protocol_generator"
         else:
             raise ValueError(f"Unsupported task type for mapping: {task_type}")
 
     def _map_task_to_tier(self, task_type: CognitiveTaskType) -> ReasoningTier:
         if task_type in [
-            CognitiveTaskType.HYPOTHESIS_GENERATION,
-            CognitiveTaskType.EXPERIMENT_PLANNING,
             CognitiveTaskType.EVIDENCE_LINKAGE_VALIDATION,
             CognitiveTaskType.METHODOLOGY_GENERATION,
-            CognitiveTaskType.STATISTICAL_DESIGN_VALIDATION,
+            CognitiveTaskType.STATISTICAL_POWER_ANALYSIS,
+            CognitiveTaskType.FALSIFIABILITY_GENERATION,
+            CognitiveTaskType.CONTROL_TAXONOMY_GENERATION,
+            CognitiveTaskType.ENGINEER_FEASIBILITY_GENERATION,
+            CognitiveTaskType.EXECUTION_PROTOCOL_GENERATION,
         ]:
             return ReasoningTier.EXPERT
         elif task_type in [

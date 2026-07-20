@@ -1,0 +1,33 @@
+name: AIDP Reproducibility Audit
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  audit-reproducibility:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: QA Linter (Dataset Integrity)
+      run: |
+        python tools/constraint-bench/validate_benchmark.py
+        
+    - name: Execute AlignEval Verification
+      run: |
+        # Run the N=10 statistical verification pipeline mock
+        python tools/constraint-bench/statistical_analysis.py --data data/human_pilot_surveys/simulated_evaluations.json

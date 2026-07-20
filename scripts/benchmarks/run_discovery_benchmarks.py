@@ -1,6 +1,6 @@
 import json
-import random
 import time
+
 
 def generate_mock_benchmarks():
     """Generates a mock statistical distribution for the 8 discovery benchmark suites."""

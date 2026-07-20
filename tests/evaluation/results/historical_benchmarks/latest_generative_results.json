@@ -1,0 +1,9 @@
+{
+    "case_id": "HRC_CRISPR",
+    "domain": "Molecular Biology & Gene Editing",
+    "elapsed_seconds": 12.31,
+    "status": "GENERATION_FAILED",
+    "generated_hypothesis": "",
+    "historical_winner": "Covalently link the 3' end of the crRNA to the 5' end of the tracrRNA using a synthetic GAAA tetraloop to bridge the 40 \u00c5 gap, creating a Single-Guide RNA (sgRNA) that programs Cas9 cleavage.",
+    "judge_verdict": null
+}

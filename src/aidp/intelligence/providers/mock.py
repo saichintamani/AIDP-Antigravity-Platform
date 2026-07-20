@@ -1,3 +1,5 @@
+from typing import Any
+
 from aidp.intelligence.providers.base import (
     BaseProvider,
     NormalizedResponse,
@@ -6,7 +8,6 @@ from aidp.intelligence.providers.base import (
 )
 from aidp.intelligence.providers.middleware import with_retry
 from aidp.reasoning.subjective_logic import Opinion
-from typing import Optional, Any
 
 
 class MockProvider(BaseProvider):
@@ -45,7 +46,7 @@ class MockProvider(BaseProvider):
             opinion=opinion, usage=usage, raw_response="Simulated structured LLM output."
         )
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> str:
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> str:
         """Simulate the M9+ query interface."""
         self.current_attempts += 1
 
@@ -58,8 +59,16 @@ class MockProvider(BaseProvider):
         import json
 
         if schema_hint:
+            from pydantic import BaseModel
+            if isinstance(schema_hint, type) and issubclass(schema_hint, BaseModel):
+                keys = schema_hint.model_fields.keys()
+            elif isinstance(schema_hint, dict):
+                keys = schema_hint.keys()
+            else:
+                keys = []
+            
             # We just return a JSON string with nulls matching the schema keys to pass validation
-            payload = dict.fromkeys(schema_hint.keys())
+            payload = dict.fromkeys(keys, "mock_string")
             # But the test harness relies on validation failing for `mock_a` so we should just return a generic JSON
             return f"```json\n{json.dumps(payload)}\n```"
 

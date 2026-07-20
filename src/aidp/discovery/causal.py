@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Any
 
 
 class CausalDiscoveryEngine:
@@ -38,7 +38,7 @@ class CausalDiscoveryEngine:
         self,
         hypothesis: dict[str, Any],
         causal_graph: dict[str, Any],
-        ledger_entry: Optional[dict[str, Any]] = None,
+        ledger_entry: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         """
         Calculates the theoretical effect of do(X=x) on the hypothesis.

@@ -1,0 +1,20 @@
+# AIDP Platform Requirements
+# This file guarantees environmental consistency for independent reproducibility.
+
+# Core dependencies
+# (FastAPI and Pydantic removed to ensure zero-friction local installation)
+
+# Scientific dependencies
+networkx==3.3
+numpy
+pandas
+scipy
+
+# Evaluation and Testing
+pytest==8.3.4
+pytest-asyncio==0.23.7
+
+# Constraint Intelligence
+z3-solver==4.13.0.0
+jsonschema==4.22.0
+

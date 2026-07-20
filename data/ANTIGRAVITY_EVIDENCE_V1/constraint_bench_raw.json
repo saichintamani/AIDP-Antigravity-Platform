@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "status": "AWAITING_DATA",
+    "directive": "008",
+    "instructions": "Store raw JSON inferences from GPT, Claude, and Gemini here. Do not calculate precision/recall metrics yet."
+  },
+  "inferences": []
+}

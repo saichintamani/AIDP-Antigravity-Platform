@@ -1,0 +1,67 @@
+{
+    "stability_index": 0.92,
+    "constraint_sensitivity": 0.88,
+    "cases_evaluated": 10,
+    "case_details": {
+        "HRC_CRISPR": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_PLATE_TECTONICS": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_H_PYLORI": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_PRIONS": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_QUASICRYSTALS": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_HT_SUPERCONDUCTORS": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_RNAI": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_MRNA_LNP": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_HELICASE": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        },
+        "HRC_GRAVITATIONAL_WAVES": {
+            "status": "PASS",
+            "title_generated": "mock_string",
+            "adversarial_survival_rate": 1.0,
+            "constraint_adherence": true
+        }
+    }
+}

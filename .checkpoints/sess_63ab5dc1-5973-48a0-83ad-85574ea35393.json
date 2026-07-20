@@ -1,0 +1,109 @@
+{
+  "id": "sess_63ab5dc1-5973-48a0-83ad-85574ea35393",
+  "question": "What is the effect of mRNA-4157 on recurrent melanoma?",
+  "historical_cutoff_date": null,
+  "state": "HYPOTHESIS",
+  "knowledge_context": {
+    "query": "What is the effect of mRNA-4157 on recurrent melanoma?",
+    "documents": [
+      {
+        "source_doi": "10.3389/fimmu.2025.1698503",
+        "text": "Melanoma vaccines: current R&D landscape, translational hurdles, and future outlook-a perspective drawn from 442 clinical trials. Melanoma, a highly malignant skin tumor with high metastatic propensity and poor survival in advanced stages, poses a major global public health challenge, as conventional treatments have notable limitations. Tumor immunotherapy, particularly cancer vaccines, has emerged as a promising approach by activating/regulating immune mechanisms to target cancer cells. This study systematically searched the Trialtrove database for interventional clinical trials of melanoma and cancer vaccines up to August 5, 2025. After screening via inclusion/exclusion criteria, 442 trials were analyzed, adhering to PRISMA guidelines with independent dual review for data reliability. Trials were geographically concentrated in developed regions (69% in the US), with minimal participation from Asia, Africa, and Latin America. A \"translational funnel effect\" was observed: Phase I/I-II trials accounted for 63.6%, while Phase III trials only 6.1%, with a 22.9% termination rate. Peptide/recombinant protein vaccines (186 trials) and cellular vaccines (151 trials) were mainstream, with nucleic acid vaccines (58 trials) as a promising emerging platform. Combination therapy (227 trials, >50%), especially with immune checkpoint inhibitors (ICIs), dominated; adjuvants (e.g., IL-2, GM-CSF agonists) enhanced efficacy. Most trials focused on Stage III/IV patients (91.1%): key trials showed mRNA-4157 + pembrolizumab reduced recurrence/death risk by 49% in resected melanoma, and herpes simplex virus RP1 + nivolumab achieved 58.3% objective response rate (ORR) in ICI-resistant patients. Primary endpoints favored safety/immunogenicity (215/142 trials), with overall survival (OS, 33 trials) rarely used; academic institutions led funding (52.3%). Melanoma vaccines, especially in combination with ICIs and via personalized platforms, have significant potential. However, challenges include tumor heterogeneity, immunosuppressive tumor microenvironment (TME), inefficient delivery, geographical R&D imbalance, and low Phase III conversion. Interdisciplinary collaboration, international multicenter trials, optimized clinical design (e.g., early-stage patient enrollment), and policy support are needed to advance their clinical translation.",
+        "title": "Melanoma vaccines: current R&D landscape, translational hurdles, and future outlook-a perspective drawn from 442 clinical trials.",
+        "normalized_entities": [],
+        "is_adversarial": false,
+        "trust_score": {
+          "score": 0.9,
+          "is_retracted": false,
+          "penalties_applied": [],
+          "bonuses_applied": [
+            "Recency bonus (+0.10): Document is highly current."
+          ]
+        }
+      },
+      {
+        "source_doi": "10.3389/fimmu.2026.1808146",
+        "text": "Neoantigen-based cancer vaccines: a mechanistic and clinical review of personalised melanoma immunotherapy. Melanoma, owing to its high tumour mutational burden (TMB) and inherent immunogenicity, has emerged as a prime target for neoantigen-based customised cancer vaccines. Such vaccines may synergise with immune checkpoint inhibitors (ICIs) by harnessing patient-specific mutations to trigger targeted T-cell responses. This review systematically summarises and evaluates the clinical evidence and molecular mechanisms underlying customised neoantigen vaccines in melanoma, based on key clinical trial data. A central finding is that vaccine platform choice strongly influences, rather than rigidly determines, the dominant immunological pathway. Messenger RNA (mRNA) platforms generally favour endogenous antigen expression and MHC class I presentation, often eliciting robust CD8",
+        "title": "Neoantigen-based cancer vaccines: a mechanistic and clinical review of personalised melanoma immunotherapy.",
+        "normalized_entities": [],
+        "is_adversarial": false,
+        "trust_score": {
+          "score": 0.9,
+          "is_retracted": false,
+          "penalties_applied": [],
+          "bonuses_applied": [
+            "Recency bonus (+0.10): Document is highly current."
+          ]
+        }
+      },
+      {
+        "source_doi": "10.1016/j.jhep.2023.04.021",
+        "text": "EASL Clinical Practice Guidelines on acute-on-chronic liver failure. Acute-on-chronic liver failure (ACLF), which was described relatively recently (2013), is a severe form of acutely decompensated cirrhosis characterised by the existence of organ system failure(s) and a high risk of short-term mortality. ACLF is caused by an excessive systemic inflammatory response triggered by precipitants that are clinically apparent (e.g., proven microbial infection with sepsis, severe alcohol-related hepatitis) or not. Since the description of ACLF, some important studies have suggested that patients with ACLF may benefit from liver transplantation and because of this, should be urgently stabilised for transplantation by receiving appropriate treatment of identified precipitants, and full general management, including support of organ systems in the intensive care unit (ICU). The objective of the present Clinical Practice Guidelines is to provide recommendations to help clinicians recognise ACLF, make triage decisions (ICU vs. no ICU), identify and manage acute precipitants, identify organ systems that require support or replacement, define potential criteria for futility of intensive care, and identify potential indications for liver transplantation. Based on an in-depth review of the relevant literature, we provide recommendations to navigate clinical dilemmas followed by supporting text. The recommendations are graded according to the Oxford Centre for Evidence-Based Medicine system and categorised as 'weak' or 'strong'. We aim to provide the best available evidence to aid the clinical decision-making process in the management of patients with ACLF.",
+        "title": "EASL Clinical Practice Guidelines on acute-on-chronic liver failure.",
+        "normalized_entities": [],
+        "is_adversarial": true,
+        "trust_score": {
+          "score": 0.9,
+          "is_retracted": false,
+          "penalties_applied": [],
+          "bonuses_applied": [
+            "Recency bonus (+0.10): Document is highly current."
+          ]
+        }
+      },
+      {
+        "source_doi": "10.1056/EVIDoa2400481",
+        "text": "Cell-Based Ciliary Neurotrophic Factor Therapy for Macular Telangiectasia Type 2. Revakinagene taroretcel (NT-501) is an encapsulated cell therapy producing ciliary neurotrophic factor that slowed retinal degeneration in patients with macular telangiectasia type 2 (MacTel) in phase 2 trials. In NTMT-03-A and NTMT-03-B - identically designed phase 3, multicenter, randomized sham-controlled trials - we evaluated efficacy and safety of NT-501 in MacTel. The primary end point was rate of change in ellipsoid zone area (EZA) (photoreceptor) loss over 24 months (mm In NTMT-03-A, adjusted rates of change of EZA loss were 0.075 mm NT-501 for MacTel resulted in statistically significantly reduced EZA loss compared with sham procedures. (Funded by Neurotech Pharmaceuticals; ClinicalTrials.gov numbers, NCT03316300 and NCT03319849.).",
+        "title": "Cell-Based Ciliary Neurotrophic Factor Therapy for Macular Telangiectasia Type 2.",
+        "normalized_entities": [],
+        "is_adversarial": true,
+        "trust_score": {
+          "score": 0.9,
+          "is_retracted": false,
+          "penalties_applied": [],
+          "bonuses_applied": [
+            "Recency bonus (+0.10): Document is highly current."
+          ]
+        }
+      }
+    ],
+    "extracted_graph": {
+      "entities": [],
+      "relationships": []
+    },
+    "domain": "WET_LAB_ASSAY"
+  },
+  "contradictions": [
+    {
+      "id": "c1",
+      "description": "No direct contradictions found. Gap: Need to investigate What is the effect of mRNA-4157 on recurrent melanoma?"
+    }
+  ],
+  "gaps": [],
+  "hypothesis": {},
+  "experiment_design": {},
+  "debate_record": {},
+  "consensus_report": {},
+  "telemetry": {
+    "start_time": 1784558963.7274308
+  },
+  "trace": [
+    {
+      "timestamp": 1784558963.7274387,
+      "event": "Entering Knowledge Retrieval",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1784558971.1140504,
+      "event": "Starting protocol synthesis",
+      "metadata": {}
+    },
+    {
+      "timestamp": 1784558971.1140678,
+      "event": "Routed query to domain: WET_LAB_ASSAY",
+      "metadata": {}
+    }
+  ],
+  "event_payload": {},
+  "paused_at_state": null
+}

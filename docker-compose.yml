@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data  # CRITICAL FIX: Persist evidence to host
+    depends_on:
+      - ollama
+    restart: always
+
+  frontend:
+    build:
+      context: ./src/aidp/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama  # Cache models locally
+    restart: always
+
+  ollama-init:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    depends_on:
+      - ollama
+    command: ["python", "-m", "tools.reality-acquisition.ollama_initializer"]
+    volumes:
+      - ./tools:/app/tools
+
+volumes:
+  ollama_models:

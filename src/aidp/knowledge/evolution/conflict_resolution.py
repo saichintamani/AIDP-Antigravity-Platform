@@ -60,6 +60,4 @@ class DebateTrigger:
         conf_b = rel_b.provenance.confidence_score
 
         # If both sides of the contradiction have strong, roughly equal evidence, trigger debate
-        if abs(conf_a - conf_b) <= self.confidence_threshold:
-            return True
-        return False
+        return abs(conf_a - conf_b) <= self.confidence_threshold

@@ -178,18 +178,87 @@ Return a JSON object with exactly the following keys:
 )
 
 PromptRegistry.register(
-    name="statistical_validator",
+    name="statistical_power_analyzer",
     template="""
-You are a Statistical Design Validator.
-Your job is to define the quantitative and statistical framework for a proposed experimental methodology.
+You are a Statistical Power Analyzer.
+Your job is to provide a mathematically rigorous power analysis, validate control group isolation, recommend a strict statistical test, and ensure the success criteria, failure criteria, and power assumptions are mutually consistent.
 
-Experimental Methodology:
+Methodology:
+{methodology}
+Controls:
+{controls}
+Falsifiability Failure Criteria:
+{failure_criteria}
+
+Return a JSON object with exactly the following keys:
+- "sample_size_recommendation": An object with "n_per_group" (integer), "effect_size" (float or string), "significance_level_alpha" (float, e.g., 0.05), "target_power" (float, e.g., 0.8), and "justification" (string).
+- "control_isolation_validation": A structured audit report string detailing whether one manipulated variable exists per comparison, and if confounders are correctly controlled, randomized, stratified, or blocked.
+- "statistical_test": A string naming the specific statistical test to use, tied explicitly to the experimental design (e.g., "Two-way ANOVA").
+- "falsifiability_consistency_check": A string verifying that the success criteria, failure criteria, statistical test, and power assumptions are all mutually consistent.
+""",
+)
+
+PromptRegistry.register(
+    name="falsifiability_validator",
+    template="""
+You are a Scientific Falsifiability Validator.
+Your job is to ensure that a proposed experimental design is strictly falsifiable.
+
+Claim: "{claim}"
+Success Criteria: "{success_criteria}"
+Variables:
+{variables}
+
+Return a JSON object with exactly the following keys:
+- "failure_criteria": A string defining exactly what empirical result would strictly falsify the claim. This MUST be mutually exclusive from the success criteria.
+- "falsifiability_justification": A string explaining why this failure criteria rigorously proves the claim false without ambiguity.
+""",
+)
+
+PromptRegistry.register(
+    name="control_taxonomy_generator",
+    template="""
+You are a Control Taxonomy Generator.
+Generate rigorous control groups for the experiment. Each control MUST be classified into a strict taxonomy type (Negative, Positive, Sham, Vehicle, Baseline, Isotype, Wild-Type) and explicitly state the single confounding or independent variable it is designed to isolate.
+
+Variables:
+{variables}
+Confounders Identified: {confounders}
+
+Return a JSON object with exactly the following keys:
+- "controls": A list of objects, each with "type" (enum from the list above), "group_name" (string), "isolated_variable" (string), and "purpose_and_justification" (string).
+""",
+)
+
+PromptRegistry.register(
+    name="engineer_feasibility_generator",
+    template="""
+You are an Engineer Feasibility Generator.
+Evaluate the proposed methodology and provide realistic, physically grounded estimates for time, specialized equipment, computing resources, and financial cost. Identify the highest probability physical or technical failure modes.
+
+Methodology:
 {methodology}
 
 Return a JSON object with exactly the following keys:
-- "sample_size_recommendation": An object with "n_per_group" (integer, provide a realistic estimate e.g., 30, 100) and "justification" (string).
-- "statistical_test": A string naming the specific statistical test to use (e.g., "Two-way ANOVA").
-- "power_considerations": A string discussing statistical power and effect size.
-- "reproducibility_notes": A string outlining how to ensure this experiment can be independently replicated.
+- "resource_estimation": A string detailing required equipment, compute, and physical lab resources.
+- "cost_prediction": A string estimating the qualitative or quantitative cost.
+- "failure_prediction": A string describing the highest probability physical or technical failure mode.
+- "critical_engineering_risks": A list of strings outlining key technical implementation risks.
+""",
+)
+
+PromptRegistry.register(
+    name="execution_protocol_generator",
+    template="""
+You are an Execution Protocol Generator.
+Synthesize the isolated variables, controls, and statistical tests into a logical, chronological step-by-step execution protocol. Ensure no physical steps (e.g., preparation, measurement, analysis) are omitted.
+
+Methodology:
+{methodology}
+Statistical Design:
+{statistical_design}
+
+Return a JSON object with exactly the following keys:
+- "protocol_steps": A list of objects, each with "step_number" (integer), "description" (string), "duration" (string), and "critical_parameters" (list of strings).
 """,
 )

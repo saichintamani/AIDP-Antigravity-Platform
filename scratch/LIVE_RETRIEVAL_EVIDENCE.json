@@ -1,0 +1,359 @@
+[
+  {
+    "case_id": "case-oncology-001",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/s41392-021-00780-4",
+        "text": "Cancer is the leading cause of death worldwide, and its treatment and outcomes have been dramatically revolutionised by targeted therapies. As the most frequently mutated oncogene, Kirsten rat sarcoma viral oncogene homologue (KRAS) has attracted substantial attention. The understanding of KRAS is constantly being updated by numerous studies on KRAS in the initiation and progression of cancer diseases. However, KRAS has been deemed a challenging therapeutic target, even \"undruggable\", after drug-targeting efforts over the past four decades. Recently, there have been surprising advances in directly targeted drugs for KRAS, especially in KRAS (G12C) inhibitors, such as AMG510 (sotorasib) and MRTX849 (adagrasib), which have obtained encouraging results in clinical trials. Excitingly, AMG510 was the first drug-targeting KRAS (G12C) to be approved for clinical use this year. This review summarises the most recent understanding of fundamental aspects of KRAS, the relationship between the KRAS mutations and tumour immune evasion, and new progress in targeting KRAS, particularly KRAS (G12C). Moreover, the possible mechanisms of resistance to KRAS (G12C) inhibitors and possible combination therapies are summarised, with a view to providing the best regimen for individualised treatment with KRAS (G12C) inhibitors and achieving truly precise treatment.",
+        "title": "KRAS mutation: from undruggable to druggable in cancer."
+      },
+      {
+        "source_doi": "10.1038/s41586-019-1694-1",
+        "text": "KRAS is the most frequently mutated oncogene in cancer and encodes a key signalling protein in tumours",
+        "title": "The clinical KRAS(G12C) inhibitor AMG 510 drives anti-tumour immunity."
+      },
+      {
+        "source_doi": "10.1056/NEJMoa2103695",
+        "text": "Sotorasib showed anticancer activity in patients with  In a single-group, phase 2 trial, we investigated the activity of sotorasib, administered orally at a dose of 960 mg once daily, in patients with  Among the 126 enrolled patients, the majority (81.0%) had previously received both platinum-based chemotherapy and inhibitors of programmed death 1 (PD-1) or programmed death ligand 1 (PD-L1). According to central review, 124 patients had measurable disease at baseline and were evaluated for response. An objective response was observed in 46 patients (37.1%; 95% confidence interval [CI], 28.6 to 46.2), including in 4 (3.2%) who had a complete response and in 42 (33.9%) who had a partial response. The median duration of response was 11.1 months (95% CI, 6.9 to could not be evaluated). Disease control occurred in 100 patients (80.6%; 95% CI, 72.6 to 87.2). The median progression-free survival was 6.8 months (95% CI, 5.1 to 8.2), and the median overall survival was 12.5 months (95% CI, 10.0 to could not be evaluated). Treatment-related adverse events occurred in 88 of 126 patients (69.8%), including grade 3 events in 25 patients (19.8%) and a grade 4 event in 1 (0.8%). Responses were observed in subgroups defined according to PD-L1 expression, tumor mutational burden, and co-occurring mutations in  In this phase 2 trial, sotorasib therapy led to a durable clinical benefit without new safety signals in patients with previously treated ",
+        "title": "Sotorasib for Lung Cancers with "
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-oncology-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1053/shem.2003.50044",
+        "text": "The tyrosine kinase inhibitor imatinib mesylate (Gleevec) (formerly STI571) has proven to be an effective and safe new therapy for patients with chronic myeloid leukemia (CML). It has induced short-term hematologic control in many patients with advanced-phase CML, with some patients achieving durable responses. In chronic-phase patients it induces significantly better cytogenetic responses and lower progression rates than interferon-alpha. However, relapse is a significant problem, especially for advanced-phase patients, and imatinib alone appears unlikely to be curative in any patient group. Real-time quantitative polymerase chain reaction (Q-PCR) provides an accurate, sensitive, and noninvasive measure of residual leukemia in patients on imatinib. Levels of BCR-ABL in the blood correlate strongly with the bone marrow cytogenetic results and early measurement can predict subsequent cytogenetic response. Complete molecular responses (no BCR-ABL detected by real-time Q-PCR) are rarely achieved. Sequential real-time Q-PCR studies should facilitate rational patient management and allow comparison of different imatinib-based treatment strategies. It may be possible to define levels of molecular response that predict long-term disease control. In addition, by defining patterns of response, an early indication of imatinib resistance may be detected.",
+        "title": "Molecular monitoring of chronic myeloid leukemia."
+      },
+      {
+        "source_doi": "10.1024/0040-5930.61.2.143",
+        "text": "Chronic myeloid leukemia (CML) is a clonal stem cells disorder and belongs to the myeloproliferative diseases. Over the past decades seminal discoveries in the field of CML research have greatly contributed to our knowledge of leukemogenesis. The hallmark of the disease is the presence of the Philadelphia chromosome, the first described acquired non-random cytogenetic abnormality in human malignancies. This chromosomal abnormality is the result of a reciprocal translocation between chromosomes 9 and 22, t(9;22). At the molecular level this involves the fusion of the ABL protooncogene on chromosome 9 with the BCR (breakpoint cluster region) gene on chromosome 22. The fusion protein has increased tyrosine kinase activity and is a key event in the malignant transformation of a given progenitor cell in the bone marrow. Diagnosis of CML is based on the peripheral blood smear, bone marrow examination, the presence of the Philadelphia chromosome and its molecular correlate, the BCR-ABL transcript. Remarkable progress has been made in the treatment options over the last years which as a result rendered the therapeutic choices more complex and challenging. The current knowledge of treatment options is reviewed with particular emphasis on the newly introduced tyrosine kinase inhibitor Imatinib which opened an as yet unexpected promising avenue in the treatment of CML.",
+        "title": "[Chronic myeloid leukemia--update]."
+      },
+      {
+        "source_doi": "10.3816/CLM.2009.n.043",
+        "text": "Cytogenetic response (CyR), especially complete CyR (CCyR), has historically and is currently associated with a significant survival advantage in patients with chronic-phase chronic myeloid leukemia (CP-CML). CCyR represents a critical level of disease reduction irrespective of treatment type, and timely achievement demonstrates treatment-sensitive disease. Guidelines from European LeukemiaNet and the National Comprehensive Cancer Network therefore state that alternative therapies should be considered for patients not achieving CCyR by 6 or 12 months. Data from clinical trials indicate that early CCyR affords the best benefit:risk ratio by minimizing the mounting risk of disease progression, and the duration of CCyR when achieved affects disease progression. Treatment options for patients who fail to achieve CCyR on standard-dose imatinib (400 mg/day) include imatinib dose escalation, dasatinib, nilotinib, stem-cell transplantation, or a clinical trial. While molecular testing gauges further risk reduction, disease stability, and often elimination of BCR-ABL transcripts below detection threshold, CCyR remains the most important surrogate for long-term survival and cytogenetic testing remains a key part of patient care in the management of CML, particularly early in response. Longerterm follow-up data will be required to confirm CCyR as a surrogate marker for survival in imatinib-resistant patients treated with the secondgeneration tyrosine kinase inhibitors, dasatinib and nilotinib.",
+        "title": "Response dynamics in chronic-phase chronic myeloid leukemia."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-oncology-003",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1016/j.kint.2016.04.008",
+        "text": "Immune checkpoint inhibitors (CPIs), monoclonal antibodies that target inhibitory receptors expressed on T cells, represent an emerging class of immunotherapy used in treating solid organ and hematologic malignancies. We describe the clinical and histologic features of 13 patients with CPI-induced acute kidney injury (AKI) who underwent kidney biopsy. Median time from initiation of a CPI to AKI was 91 (range, 21 to 245) days. Pyuria was present in 8 patients, and the median urine protein to creatinine ratio was 0.48 (range, 0.12 to 0.98) g/g. An extrarenal immune-related adverse event occurred prior to the onset of AKI in\u00a07 patients. Median peak serum creatinine was 4.5 (interquartile range, 3.6-7.3) mg/dl with 4 patients requiring hemodialysis. The prevalent pathologic lesion was acute tubulointerstitial nephritis in 12 patients, with 3\u00a0having granulomatous features, and 1 thrombotic microangiopathy. Among the 12 patients with acute tubulointerstitial nephritis, 10 received treatment with glucocorticoids, resulting in complete or partial improvement in renal function in 2 and 7 patients, respectively. However, the 2 patients with acute tubulointerstitial nephritis not given glucocorticoids had no improvement in renal function. Thus, CPI-induced AKI is\u00a0a new entity that presents with clinical and histologic features similar to other causes of drug-induced acute tubulointerstitial nephritis, though with a longer latency period. Glucocorticoids appear to be a potentially effective treatment strategy. Hence, AKI due to CPIs may be caused by a unique mechanism of action linked to reprogramming of the immune system, leading to loss of tolerance.",
+        "title": "Clinicopathological features of acute kidney injury associated with immune checkpoint inhibitors."
+      },
+      {
+        "source_doi": "10.1007/s00262-017-1967-1",
+        "text": "Talimogene laherparepvec is a first-in-class intralesional oncolytic immunotherapy. In a recent Phase III trial (OPTiM), talimogene laherparepvec significantly improved durable response rate compared with subcutaneous granulocyte-macrophage colony-stimulating factor (GM-CSF). Overall response rate was also higher in the talimogene laherparepvec arm, and the greatest efficacy was demonstrated in patients with earlier-stage (IIIB, IIIC, or IVM1a) melanoma. Talimogene laherparepvec was well tolerated, with the majority (89%) of adverse events being grade 1 or 2. Preclinical studies have shown that talimogene laherparepvec exerts antitumor activity by selectively replicating within and destroying cancer cells, and through the release of tumor-associated antigens and expression of GM-CSF, which facilitates a wider antitumor immune response. It is hypothesized that combining talimogene laherparepvec with a systemic immunotherapy may, by bringing together complementary mechanisms of action, further enhance the efficacy of both agents. Indeed, talimogene laherparepvec is currently being assessed in combination with immune checkpoint inhibitors, including ipilimumab and pembrolizumab, in trials for melanoma and other solid tumors. Early results in melanoma indicate that the combination of talimogene laherparepvec with ipilimumab or pembrolizumab has greater efficacy than either therapy alone, without additional safety concerns above those expected for each monotherapy. In this review, we discuss the latest results from trials assessing talimogene laherparepvec in combination with other immunotherapies, provide an overview of ongoing and upcoming combination trials, and suggest future directions for talimogene laherparepvec in combination therapy for solid tumors.",
+        "title": "Combining talimogene laherparepvec with immunotherapies in melanoma and other solid tumors."
+      },
+      {
+        "source_doi": "10.1016/j.bbcan.2015.09.002",
+        "text": "Tumor cells evade immune destruction, at least partially, by upregulating inhibitory signals to limit effector T cell activation. Programmed death 1 (PD-1) is one of the most critical co-inhibitory molecules limiting the T-cell antitumor response. PD-1 and its ligands, PD-L1 and PD-L2, are overexpressed by various types of tumors as well as reactive cells in the tumor microenvironment. A growing body of evidence has shown the clinical efficiency and minimal toxicity of PD-1 pathway inhibitors in patients with solid tumors, but the role of these inhibitors in lymphoid malignancies is much less well studied. In this review, we analyze the pathologic role of the PD-1 pathway in most common lymphoid malignancies and we organize the clinical data from clinical trials of PD-1 pathway inhibitors. Several anti-PD-1 regimens have shown encouraging therapeutic effects in patients with relapsed or refractory Hodgkin lymphoma, follicular lymphoma, and diffuse large B-cell lymphoma. Additional progress is needed to foster an improved understanding of the role of anti-PD-1 therapy in reconstituting antitumor immunity in patients with lymphoid malignancies. Upcoming trials will explore the clinical efficiency of combining PD-1 pathway inhibitors and various agents with diverse mechanisms of action and create more therapeutic possibilities for afflicted patients.",
+        "title": "Signaling pathway and dysregulation of PD1 and its ligands in lymphoid malignancies."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-oncology-004",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/nm.4441",
+        "text": "Chimeric antigen receptor (CAR) T cells targeting CD19 mediate potent effects in relapsed and/or refractory pre-B cell acute lymphoblastic leukemia (B-ALL), but antigen loss is a frequent cause of resistance to CD19-targeted immunotherapy. CD22 is also expressed in most cases of B-ALL and is usually retained following CD19 loss. We report results from a phase 1 trial testing a new CD22-targeted CAR (CD22-CAR) in 21 children and adults, including 17 who were previously treated with CD19-directed immunotherapy. Dose-dependent antileukemic activity was observed, with complete remission obtained in 73% (11/15) of patients receiving \u22651 \u00d7 10",
+        "title": "CD22-targeted CAR T cells induce remission in B-ALL that is naive or resistant to CD19-targeted CAR immunotherapy."
+      },
+      {
+        "source_doi": "10.18632/oncotarget.25688",
+        "text": "No Abstract",
+        "title": "CD19 directed CAR T cell therapy in diffuse large B-cell lymphoma."
+      },
+      {
+        "source_doi": "10.1089/hgtb.2016.153",
+        "text": "Lentivirus-mediated transduction of autologous T cells with a chimeric antigen receptor (CAR) to confer a desired epitope specificity as a targeted immunotherapy for cancer has been among the first human gene therapy techniques to demonstrate widespread therapeutic efficacy. Other approaches to using gene therapy to enhance antitumor immunity have been less specific and less effective. These have included amplification, marking, and cytokine transduction of tumor infiltrating lymphocytes, recombinant virus-based expression of tumor antigens as a tumor vaccine, and transduction of antigen-presenting cells with tumor antigens. Unlike any of those methods, the engineering of CAR T cells combine specific monoclonal antibody gene sequences to confer epitope specificity and other T-cell receptor and activation domains to create a self-contained single vector approach to produce a very specific antitumor response, as is seen with CD19-directed CAR T cells used to treat CD19-expressing B-cell malignancies. Recent success with these therapies is the culmination of a long step-wise iterative process of improvement in the design of CAR vectors. This review aims to summarize this long series of advances in the development of effective CAR vector since their initial development in the 1990s, and to describe emerging approaches to design that promise to enhance and widen the human gene therapy relevance of CAR T-cell therapy in the future.",
+        "title": "CAR T-Cell Therapy: Progress and Prospects."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-genetics-001",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1016/B978-0-12-801185-0.00022-2",
+        "text": "Targeted modification of plant genome is key to elucidating and manipulating gene functions in plant research and biotechnology. The clustered regularly interspaced short palindromic repeats (CRISPR)/CRISPR-associated protein (Cas) technology is emerging as a powerful genome-editing method in diverse plants that traditionally lacked facile and versatile tools for targeted genetic engineering. This technology utilizes easily reprogrammable guide RNAs (sgRNAs) to direct Streptococcus pyogenes Cas9 endonuclease to generate DNA double-stranded breaks in targeted genome sequences, which facilitates efficient mutagenesis by error-prone nonhomologous end-joining (NHEJ) or sequence replacement by homology-directed repair (HDR). In this chapter, we describe the procedure to design and evaluate dual sgRNAs for plant codon-optimized Cas9-mediated genome editing using mesophyll protoplasts as model cell systems in Arabidopsis thaliana and Nicotiana benthamiana. We also discuss future directions in sgRNA/Cas9 applications for generating targeted genome modifications and gene regulations in plants.",
+        "title": "Cas9-based genome editing in Arabidopsis and tobacco."
+      },
+      {
+        "source_doi": "10.1371/journal.pone.0108424",
+        "text": "CRISPR-Cas systems are a diverse family of RNA-protein complexes in bacteria that target foreign DNA sequences for cleavage. Derivatives of these complexes have been engineered to cleave specific target sequences depending on the sequence of a CRISPR-derived guide RNA (gRNA) and the source of the Cas9 protein. Important considerations for the design of gRNAs are to maximize aimed activity at the desired target site while minimizing off-target cleavage. Because of the rapid advances in the understanding of existing CRISPR-Cas9-derived RNA-guided nucleases and the development of novel RNA-guided nuclease systems, it is critical to have computational tools that can accommodate a wide range of different parameters for the design of target-specific RNA-guided nuclease systems. We have developed CRISPRseek, a highly flexible, open source software package to identify gRNAs that target a given input sequence while minimizing off-target cleavage at other sites within any selected genome. CRISPRseek will identify potential gRNAs that target a sequence of interest for CRISPR-Cas9 systems from different bacterial species and generate a cleavage score for potential off-target sequences utilizing published or user-supplied weight matrices with position-specific mismatch penalty scores. Identified gRNAs may be further filtered to only include those that occur in paired orientations for increased specificity and/or those that overlap restriction enzyme sites. For applications where gRNAs are desired to discriminate between two related sequences, CRISPRseek can rank gRNAs based on the difference between predicted cleavage scores in each input sequence. CRISPRseek is implemented as a Bioconductor package within the R statistical programming environment, allowing it to be incorporated into computational pipelines to automate the design of gRNAs for target sequences identified in a wide variety of genome-wide analyses. CRISPRseek is available under the GNU General Public Licence v3.0 at http://www.bioconductor.org.",
+        "title": "CRISPRseek: a bioconductor package to identify target-specific guide RNAs for CRISPR-Cas9 genome-editing systems."
+      },
+      {
+        "source_doi": "10.1534/genetics.113.155382",
+        "text": "Exploitation of custom-designed nucleases to induce DNA double-strand breaks (DSBs) at genomic locations of choice has transformed our ability to edit genomes, regardless of their complexity. DSBs can trigger either error-prone repair pathways that induce random mutations at the break sites or precise homology-directed repair pathways that generate specific insertions or deletions guided by exogenously supplied DNA. Prior editing strategies using site-specific nucleases to modify the Caenorhabditis elegans genome achieved only the heritable disruption of endogenous loci through random mutagenesis by error-prone repair. Here we report highly effective strategies using TALE nucleases and RNA-guided CRISPR/Cas9 nucleases to induce error-prone repair and homology-directed repair to create heritable, precise insertion, deletion, or substitution of specific DNA sequences at targeted endogenous loci. Our robust strategies are effective across nematode species diverged by 300 million years, including necromenic nematodes (Pristionchus pacificus), male/female species (Caenorhabditis species 9), and hermaphroditic species (C. elegans). Thus, genome-editing tools now exist to transform nonmodel nematode species into genetically tractable model organisms. We demonstrate the utility of our broadly applicable genome-editing strategies by creating reagents generally useful to the nematode community and reagents specifically designed to explore the mechanism and evolution of X chromosome dosage compensation. By developing an efficient pipeline involving germline injection of nuclease mRNAs and single-stranded DNA templates, we engineered precise, heritable nucleotide changes both close to and far from DSBs to gain or lose genetic function, to tag proteins made from endogenous genes, and to excise entire loci through targeted FLP-FRT recombination.",
+        "title": "Precise and heritable genome editing in evolutionarily diverse nematodes using TALENs and CRISPR/Cas9 to engineer insertions and deletions."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-genetics-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1111/j.1349-7006.2004.tb02195.x",
+        "text": "BRCA1 (BReast-CAncer susceptibility gene 1) and BRCA2 are tumor suppressor genes, the mutant phenotypes of which predispose to breast and ovarian cancers. Intensive research has shown that BRCA proteins are involved in a multitude of pivotal cellular processes. In particular, both genes contribute to DNA repair and transcriptional regulation in response to DNA damage. Recent studies suggest that BRCA proteins are required for maintenance of chromosomal stability, thereby protecting the genome from damage. New data also show that BRCAs transcriptionally regulate some genes involved in DNA repair, the cell cycle, and apoptosis. Many of these functions are mediated by a large number of cellular proteins that interact with BRCAs. The functions of BRCA proteins are also linked to distinct and specific phosphorylation events; however, the extent to which phosphorylation-activated molecular pathways contribute to tumor suppressor activity remains unclear. Finally, the reasons why mutations in BRCA genes lead to the development of breast and ovarian cancers are not clearly understood. Elucidation of the precise molecular functions of BRCAs is expected to improve our understanding of hereditary as well as sporadic mammary carcinogenesis.",
+        "title": "Role of BRCA1 and BRCA2 as regulators of DNA repair, transcription, and cell cycle in response to DNA damage."
+      },
+      {
+        "source_doi": "10.1385/IJGC:31:1-3:99",
+        "text": "Many factors, including a family history of cancer, have been implicated in the development of pancreatic cancer. Among these factors, germline BRCA2 mutations have been clearly associated with the development of this disease, while mutations in BRCA1 appear to have a limited role. Patients with pancreatic cancer and germline BRCA2 mutations tend to be Ashkenazi Jewish, have a younger than average age of onset, and in many cases, lack family history for breast, ovarian, or pancreatic cancers. In addition, somatic mutations of BRCA2 appear to be rare in tumors of the pancreas. The mechanism by which mutant BRCA2 contributes to development of pancreatic cancers is not well understood. However, it appears that inactivation of several independent functions of BRCA2 including regulation of gene transcription, chromatin remodeling, cell growth, DNA damage repair, and chromosomal instability may provide a pathophysiological basis for the association of BRCA2 mutations and pancreatic cancer.",
+        "title": "BRCA2 and pancreatic cancer."
+      },
+      {
+        "source_doi": "10.1017/S146239940200491X",
+        "text": "Many important advances have been made in the past decade in understanding breast cancer at the molecular level, and two important high-penetrance breast cancer genes--BRCA1 and BRCA2--have been identified. However, germline mutations in these two genes are responsible for only a minority (approximately 5%) of all breast carcinomas, and the genes responsible for the majority of breast cancer cases remain to be identified. There is evidence that there are additional high-to-moderate-penetrance breast cancer susceptibility genes but, given the high degree of molecular heterogeneity in breast carcinomas, it is likely that each of these genes is responsible for only a subset of cases. There are also many candidate low-penetrance breast cancer genes and many more are likely to be identified. In addition to germline, and somatic, sequence alterations, epigenetic changes in many genes are likely to play an important role in the pathobiology of breast cancer. Recently developed genomic technologies and the completion of the human genome sequence provide us with powerful tools to identify novel candidate breast cancer genes that could play an important role in breast tumourigenesis.",
+        "title": "Breast cancer gene discovery."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-genetics-003",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1002/wcs.1247",
+        "text": "The forkhead box P2 gene, designated FOXP2, is the first gene implicated in a speech and language disorder. Since its discovery, many studies have been carried out in an attempt to explain the mechanism by which it influences these characteristically human traits. This review presents the story of the discovery of the FOXP2 gene, including early studies of the phenotypic implications of a disruption in the gene. We then discuss recent investigations into the molecular function of the FOXP2 gene, including functional and gene expression studies. We conclude this review by presenting the fascinating results of recent studies of the FOXP2 ortholog in other species that are capable of vocal communication. WIREs Cogn Sci 2013, 4:547-560. doi: 10.1002/wcs.1247 This article is categorized under: Psychology > Language Neuroscience > Genes, Molecules, and Cells.",
+        "title": "FOXP2."
+      },
+      {
+        "source_doi": "PMID:15492844",
+        "text": "Human Forkhead-box (FOX) gene family consists of at least 43 members, including FOXA1, FOXA2, FOXA3, FOXB1, FOXC1, FOXC2, FOXD1, FOXD2, FOXD3, FOXD4, FOXD5 (FOXD4L1), FOXD6 (FOXD4L3), FOXE1, FOXE2, FOXE3, FOXF1, FOXF2, FOXG1 (FOXG1B), FOXH1, FOXI1, FOXJ1, FOXJ2, FOXJ3, FOXK1, FOXK2, FOXL1, FOXL2, FOXM1, FOXN1, FOXN2 (HTLF), FOXN3 (CHES1), FOXN4, FOXN5 (FOXR1), FOXN6 (FOXR2), FOXO1 (FOXO1A), FOXO2 (FOXO6), FOXO3 (FOXO3A), FOXO4 (MLLT7), FOXP1, FOXP2, FOXP3, FOXP4, and FOXQ1. FOXE3-FOXD2 (1p33), FOXQ1-FOXF2-FOXC1 (6p25.3), and FOXF1-FOXC2-FOXL1 (16q24.1) loci are FOX gene clusters within the human genome. Members of FOX subfamilies A-G, I-L and Q were grouped into class 1 FOX proteins, while members of FOX subfamilies H and M-P were grouped into class 2 FOX proteins. C-terminal basic region within the FOX domain was the common feature of class 1 FOX proteins. FOXH1 and FOXO1 mRNAs are expressed in human embryonic stem (ES) cells. FOXC1, FOXC2, FOXE1, FOXE3, FOXL2, FOXN1, FOXP2 and FOXP3 genes are mutated in human congenital disorders. FOXA1 gene is amplified and over-expressed in esophageal and lung cancer. FOXM1 gene is up-regulated in pancreatic cancer and basal cell carcinoma due to the transcriptional regulation by Sonic Hedgehog (SHH) pathway. FOXO1 gene is fused to PAX3 or PAX7 genes in rhabdomyosarcoma. FOXO3 and FOXO4 genes are fused to MLL gene in hematological malignancies. Deregulation of FOX family genes leads to congenital disorders, diabetes mellitus, or carcinogenesis. Expression profiles, genetic alterations and epigenetic changes of FOX family genes as well as binding proteins and target genes of FOX family transcription factors should be comprehensively investigated to develop novel therapeutics and preventives for human diseases.",
+        "title": "Human FOX gene family (Review)."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-genetics-004",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1006/dbio.1999.9523",
+        "text": "lin-4 encodes a small RNA that is complementary to sequences in the 3' untranslated region (UTR) of lin-14 mRNA and that acts to developmentally repress the accumulation of LIN-14 protein. This repression is essential for the proper timing of numerous events of Caenorhabditis elegans larval development. We have investigated the mechanism of lin-4 RNA action by examining the fate of lin-14 mRNA in vivo during the time that lin-4 RNA is expressed. Our results indicate that the rate of synthesis of lin-14 mRNA, its state of polyadenylation, its abundance in the cytoplasmic fraction, and its polysomal sedimentation profile do not change in response to the accumulation of lin-4 RNA. Our results indicate that association of lin-4 RNA with the 3' UTR of lin-14 mRNA permits normal biogenesis of lin-14 mRNA, and normal translational initiation, but inhibits step(s) thereafter, such as translational elongation and/or the release of stable LIN-14 protein.",
+        "title": "The lin-4 regulatory RNA controls developmental timing in Caenorhabditis elegans by blocking LIN-14 protein synthesis after the initiation of translation."
+      },
+      {
+        "source_doi": "10.1146/annurev.genet.31.1.611",
+        "text": "Heterochrony describes the phylogenetic variation in the relative timing of major developmental events. Such heterochronic variation has been noted across phylogeny, including closely related species, suggesting that particular genetic loci control global aspects of developmental timing, and that variation at those loci may play important roles in evolutionary change. Genetic analyses of heterochronic mutations in the nematode Caenorhabditis elegans reveal that control of temporal patterning is analogous to the dedicated genetic pathways that control the patterning of the spatial axes in Drosophila and other metazoans. These pathways generate graded or binary levels of regulatory factors that pattern particular axes of the developing animal. C. elegans heterochronic genes constitute a regulatory cascade that both generates a temporal decrease in the level of the LIN-14 and LIN-28 proteins and responds to the changes in these gene activities to coordinate the temporal sequence of many cell fates as the animal develops. The temporal regulation of lin-14 and lin-28 gene activities is posttranscriptional and mediated by the antisense RNA product of the lin-4 gene. Hormonal control of developmental timing is a common theme throughout phylogeny. Heterochronic genes that involve hormonal signaling have been identified in vertebrates as well as C. elegans.",
+        "title": "Temporal pattern formation by heterochronic genes."
+      },
+      {
+        "source_doi": "10.1016/s0092-8674(00)81906-6",
+        "text": "Mutations in the heterochronic gene lin-28 of C. elegans cause precocious development where diverse events specific to the second larval stage are skipped. lin-28 encodes a cytoplasmic protein with a cold shock domain and retroviral-type (CCHC) zinc finger motifs, consistent with a role for LIN-28 in posttranscriptional regulation. The 3'UTR of lin-28 contains a conserved element that is complementary to the 22 nt regulatory RNA product of lin-4 and that resembles seven such elements in the 3'UTR of the heterochronic gene lin-14. Both lin-4 activity and the lin-4-complementary element (LCE) are necessary for stage-specific regulation of lin-28. Deleting the LCE produces a dominant gain-of-function allele that causes a retarded phenotype, indicating that lin-28 activity is a switch that controls choices of stage-specific fates.",
+        "title": "The cold shock domain protein LIN-28 controls developmental timing in C. elegans and is regulated by the lin-4 RNA."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-neuroscience-001",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/nn1525",
+        "text": "Temporally precise, noninvasive control of activity in well-defined neuronal populations is a long-sought goal of systems neuroscience. We adapted for this purpose the naturally occurring algal protein Channelrhodopsin-2, a rapidly gated light-sensitive cation channel, by using lentiviral gene delivery in combination with high-speed optical switching to photostimulate mammalian neurons. We demonstrate reliable, millisecond-timescale control of neuronal spiking, as well as control of excitatory and inhibitory synaptic transmission. This technology allows the use of light to alter neural processing at the level of single spikes and synaptic events, yielding a widely applicable tool for neuroscientists and biomedical engineers.",
+        "title": "Millisecond-timescale, genetically targeted optical control of neural activity."
+      },
+      {
+        "source_doi": "10.1038/nature09159",
+        "text": "Neural circuits of the basal ganglia are critical for motor planning and action selection. Two parallel basal ganglia pathways have been described, and have been proposed to exert opposing influences on motor function. According to this classical model, activation of the 'direct' pathway facilitates movement and activation of the 'indirect' pathway inhibits movement. However, more recent anatomical and functional evidence has called into question the validity of this hypothesis. Because this model has never been empirically tested, the specific function of these circuits in behaving animals remains unknown. Here we report direct activation of basal ganglia circuitry in vivo, using optogenetic control of direct- and indirect-pathway medium spiny projection neurons (MSNs), achieved through Cre-dependent viral expression of channelrhodopsin-2 in the striatum of bacterial artificial chromosome transgenic mice expressing Cre recombinase under control of regulatory elements for the dopamine D1 or D2 receptor. Bilateral excitation of indirect-pathway MSNs elicited a parkinsonian state, distinguished by increased freezing, bradykinesia and decreased locomotor initiations. In contrast, activation of direct-pathway MSNs reduced freezing and increased locomotion. In a mouse model of Parkinson's disease, direct-pathway activation completely rescued deficits in freezing, bradykinesia and locomotor initiation. Taken together, our findings establish a critical role for basal ganglia circuitry in the bidirectional regulation of motor behaviour and indicate that modulation of direct-pathway circuitry may represent an effective therapeutic strategy for ameliorating parkinsonian motor deficits.",
+        "title": "Regulation of parkinsonian motor behaviours by optogenetic control of basal ganglia circuitry."
+      },
+      {
+        "source_doi": "10.1109/EMBC.2012.6346197",
+        "text": "For therapies based on human induced pluripotent stem cell (hiPSC)-derived cardiomyocytes (CM) to be effective, arrhythmias must be avoided. Towards achieving this goal, light-activated channelrhodopsin-2 (ChR2), a cation channel activated with 480 nm light, and a first generation halorhodopsin (NpHR1.0), an anion pump activated by 580 nm light, have been introduced into hiPSC. By using in vitro approaches, hiPSC-CM are able to be optogenetically activated and inhibited. ChR2 and NpHR1.0 are stably transduced into undifferentiated hiPSC via a lentiviral vector. Via directed differentiation, both wildtype hiPSC-CM (hiPSC(WT)-CM) and hiPSC(ChR2/NpHR)-CM are produced and subjected to both electrical and optical stimulation. Both hiPSC(WT)-CM and hiPSC(ChR2/NpHR)-CM respond to traditional electrical stimulation and produce similar contractility features but only hiPSC(ChR2/NpHR)-CM can be synchronized and inhibited by optical stimulation. Here it is shown that light sensitive proteins can enable in vitro optical control of hiPSC-CM. For future therapy, in vivo optical stimulation could allow precise and specific synchronization of implanted hiPSC-CM with patient cardiac rates and rhythms.",
+        "title": "Cardiac optogenetics."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-neuroscience-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1002/hbm.20668",
+        "text": "There has been a growing interest in the neuroimaging community regarding resting state data (i.e., passive mental activity) and the subsequent activation of the so-called default mode network (DMN). Although this network was originally characterized by a pattern of deactivation during active cognitive states, more recent applications of data-driven techniques such as independent component analysis (ICA) have permitted the analysis of brain activation during extended periods of truly passive mental activity. However, ICA requires the resultant components to be evaluated for \"goodness of fit\" via either human raters or more automated techniques. To our knowledge, an investigation on the reliability of either technique in determining the component that best corresponds to default-mode activity has not been performed. Moreover, it is not clear how automated techniques, which are necessarily dependent upon a template mask, are affected by the structures used to compose the mask. The current study investigated both interrater (human-human) reliability and intermethod (human-machine) reliability for determining DMN activation in 42 healthy controls. Results indicated that near perfect interrater reliability was achieved, whereas intermethod reliability was only within the moderate range. The latter was significantly improved via a weighted combination of the anterior and posterior cingulate nodes of the DMN. Implications for fully automating the component selection process are discussed.",
+        "title": "Interrater and intermethod reliability of default mode network selection."
+      },
+      {
+        "source_doi": "10.1016/j.neuroimage.2007.12.064",
+        "text": "Eyes-closed (EC) and eyes-open (EO) are essential behaviors in mammalians, including man. At resting EC-EO state, brain activity in the default mode devoid of task-demand has recently been established in fMRI. However, the corresponding comprehensive electrophysiological conditions are little known even though EEG has been recorded in humans for nearly 80 years. In this study, we examined the spatial characteristics of spectral distribution in EEG field powers, i.e., sitting quietly with an EC and EO resting state of 3 min each, measured with high-density 128-ch EEG recording and FFT signal analyses in 15 right-handed healthy college females. Region of interest was set at a threshold at 90% of the spectral effective value to delimit the dominant spatial field power of effective energy in brain activity. Low-frequency delta (0.5-3.5 Hz) EEG field power was distributed at the prefrontal area with great expansion of spatial field and enhancement of field power (t=-2.72, p<0.02) from the EC to the EO state. Theta (4-7 Hz) EEG field power was distributed over the fronto-central area and leaned forward from EC to the EO state but with drastic reduction in field power (t=4.04, p<0.01). The middle-frequency alpha-1 (7.5-9.5 Hz) and alpha-2 (10-12 Hz) EEG powers exhibited bilateral distribution over the posterior areas with an anterior field in lower alpha-1. Both showed significantly reduction of field powers (respectively, W=120, p<0.001 for alpha-1; t=4.12, p<0.001 for alpha-2) from EC to the EO state. Beta-1 (13-23 Hz) exhibited a similar spatial region over the posterior area as in alpha-2 and showed reduction of field power (t=4.42, p<0.001) from EC to the EO state. In contrast, high-frequency beta-2 and gamma band exhibited similar, mainly prefrontal distribution in field power, and exhibited no change from EC to the EO state. Corresponding correlation analyses indicated significant group association between EC and EO only in the field powers of delta (r=0.95, p<0.001) and theta (r=0.77, p<0.001) band. In addition, the great inter-individual variability (90 folds in alpha-1, 62 folds in alpha-2) in regional field power was largely observed in the EC state (10 folds) than the EO state in subjects. To summarize, our study depicts a network of spectral EEG activities simultaneously operative at well defined regional fields in the EC state, varying specifically between EC and EO states. In contrast to transient EEG spectral rhythmic dynamics, current study of long-lasting (e.g. 3 min) spectral field powers can characterize state features in EEG. The EEG default mode network (EEG-DMN) of spectral field powers at rest in the respective EC or EO state is valued to serve as the basal electrophysiological condition in human brain. In health, this EEG-DMN is deemed essential for evaluation of brain functions without task demands for gender difference, developmental change in age span, and brain response to task activation. It is expected to define brain dysfunction in disease at resting state and with consequences for sensory, affective and cognitive alteration in the human brain.",
+        "title": "EEG default mode network in the human brain: spectral regional field powers."
+      },
+      {
+        "source_doi": "10.1016/j.neuroimage.2009.10.067",
+        "text": "Resting state functional magnetic resonance imaging (fMRI) reveals a distinct network of correlated brain function representing a default mode state of the human brain. The underlying structural basis of this functional connectivity pattern is still widely unexplored. We combined fractional anisotropy measures of fiber tract integrity derived from diffusion tensor imaging (DTI) and resting state fMRI data obtained at 3 Tesla from 20 healthy elderly subjects (56 to 83 years of age) to determine white matter microstructure underlying default mode connectivity. We hypothesized that the functional connectivity between the posterior cingulate and hippocampus from resting state fMRI data would be associated with the white matter microstructure in the cingulate bundle and fiber tracts connecting posterior cingulate gyrus with lateral temporal lobes, medial temporal lobes, and precuneus. This was demonstrated at the p<0.001 level using a voxel-based multivariate analysis of covariance (MANCOVA) approach. In addition, we used a data-driven technique of joint independent component analysis (ICA) that uncovers spatial pattern that are linked across modalities. It revealed a pattern of white matter tracts including cingulate bundle and associated fiber tracts resembling the findings from the hypothesis-driven analysis and was linked to the pattern of default mode network (DMN) connectivity in the resting state fMRI data. Our findings support the notion that the functional connectivity between the posterior cingulate and hippocampus and the functional connectivity across the entire DMN is based on distinct pattern of anatomical connectivity within the cerebral white matter.",
+        "title": "White matter microstructure underlying default mode network connectivity in the human brain."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1098/rstb.2013.0370",
+        "text": "Recent interest in the neural bases of spatial navigation stems from the discovery of neuronal populations with strong, specific spatial signals. The regular firing field arrays of medial entorhinal grid cells suggest that they may provide place cells with distance information extracted from the animal's self-motion, a notion we critically review by citing new contrary evidence. Next, we question the idea that grid cells provide a rigid distance metric. We also discuss evidence that normal navigation is possible using only landmarks, without self-motion signals. We then propose a model that supposes that information flow in the navigational system changes between light and dark conditions. We assume that the true map-like representation is hippocampal and argue that grid cells have a crucial navigational role only in the dark. In this view, their activity in the light is predominantly shaped by landmarks rather than self-motion information, and so follows place cell activity; in the dark, their activity is determined by self-motion cues and controls place cell activity. A corollary is that place cell activity in the light depends on non-grid cells in ventral medial entorhinal cortex. We conclude that analysing navigational system changes between landmark and no-landmark conditions will reveal key functional properties.",
+        "title": "Independence of landmark and self-motion-guided navigation: a different role for grid cells."
+      },
+      {
+        "source_doi": "10.1098/rstb.2013.0304",
+        "text": "The theta oscillation is a neuroscience enigma. When a rat runs through an environment, large-amplitude theta oscillations (4-10 Hz) reliably appear in the hippocampus's electrical activity. The consistency of this pattern led to theta playing a central role in theories on the neural basis of mammalian spatial navigation and memory. However, in fact, hippocampal oscillations at 4-10 Hz are rare in humans and in some other species. This presents a challenge for theories proposing theta as an essential component of the mammalian brain, including models of place and grid cells. Here, I examine this issue by reviewing recent research on human hippocampal oscillations using direct brain recordings from neurosurgical patients. This work indicates that the human hippocampus does indeed exhibit rhythms that are functionally similar to theta oscillations found in rodents, but that these signals have a slower frequency of approximately 1-4 Hz. I argue that oscillatory models of navigation and memory derived from rodent data are relevant for humans, but that they should be modified to account for the slower frequency of the human theta rhythm.",
+        "title": "Hippocampal theta oscillations are slower in humans than in rodents: implications for models of spatial navigation and memory."
+      },
+      {
+        "source_doi": "10.3389/fnint.2014.00038",
+        "text": "Navigation in rodents depends on both self-motion (idiothetic) and external (allothetic) information. Idiothetic information has a predominant role when allothetic information is absent or irrelevant. The vestibular system is a major source of idiothetic information in mammals. By integrating the signals generated by angular and linear accelerations during exploration, a rat is able to generate and update a vector pointing to its starting place and to perform accurate return. This navigation strategy, called path integration, has been shown to involve a network of brain structures. Among these structures, the entorhinal cortex (EC) may play a pivotal role as suggested by lesion and electrophysiological data. In particular, it has been recently discovered that some neurons in the medial EC display multiple firing fields producing a regular grid-like pattern across the environment. Such regular activity may arise from the integration of idiothetic information. This hypothesis would be strongly strengthened if it was shown that manipulation of vestibular information interferes with grid cell activity. In the present paper we review neuroanatomical and functional evidence indicating that the vestibular system influences the activity of the brain network involved in spatial navigation. We also provide new data on the effects of reversible inactivation of the peripheral vestibular system on the EC theta rhythm. The main result is that tetrodotoxin (TTX) administration abolishes velocity-controlled theta oscillations in the EC, indicating that vestibular information is necessary for EC activity. Since recent data demonstrate that disruption of theta rhythm in the medial EC induces a disorganization of grid cell firing, our findings indicate that the integration of idiothetic information in the EC is essential to form a spatial representation of the environment.",
+        "title": "Vestibular control of entorhinal cortex activity in spatial navigation."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-neuroscience-004",
+    "papers_retrieved": [],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-immunology-001",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1146/annurev.biochem.71.110601.135414",
+        "text": "Bacterial lipopolysaccharides (LPS) typically consist of a hydrophobic domain known as lipid A (or endotoxin), a nonrepeating \"core\" oligosaccharide, and a distal polysaccharide (or O-antigen). Recent genomic data have facilitated study of LPS assembly in diverse Gram-negative bacteria, many of which are human or plant pathogens, and have established the importance of lateral gene transfer in generating structural diversity of O-antigens. Many enzymes of lipid A biosynthesis like LpxC have been validated as targets for development of new antibiotics. Key genes for lipid A biosynthesis have unexpectedly also been found in higher plants, indicating that eukaryotic lipid A-like molecules may exist. Most significant has been the identification of the plasma membrane protein TLR4 as the lipid A signaling receptor of animal cells. TLR4 belongs to a family of innate immunity receptors that possess a large extracellular domain of leucine-rich repeats, a single trans-membrane segment, and a smaller cytoplasmic signaling region that engages the adaptor protein MyD88. The expanding knowledge of TLR4 specificity and its downstream signaling pathways should provide new opportunities for blocking inflammation associated with infection.",
+        "title": "Lipopolysaccharide endotoxins."
+      },
+      {
+        "source_doi": "10.1016/j.smim.2003.10.003",
+        "text": "Toll-like receptors (TLRs) have been established to play an essential role in the activation of innate immunity by recognizing specific patterns of microbial components. TLR signaling pathways arise from intracytoplasmic TIR domains, which are conserved among all TLRs. Recent accumulating evidence has demonstrated that TIR domain-containing adaptors, such as MyD88, TIRAP, and TRIF, modulate TLR signaling pathways. MyD88 is essential for the induction of inflammatory cytokines triggered by all TLRs. TIRAP is specifically involved in the MyD88-dependent pathway via TLR2 and TLR4, whereas TRIF is implicated in the TLR3- and TLR4-mediated MyD88-independent pathway. Thus, TIR domain-containing adaptors provide specificity of TLR signaling.",
+        "title": "TLR signaling pathways."
+      },
+      {
+        "source_doi": "10.1172/JCI28898",
+        "text": "TLR4 is the receptor for LPS and plays a critical role in innate immunity. Stimulation of TLR4 activates proinflammatory pathways and induces cytokine expression in a variety of cell types. Inflammatory pathways are activated in tissues of obese animals and humans and play an important role in obesity-associated insulin resistance. Here we show that nutritional fatty acids, whose circulating levels are often increased in obesity, activate TLR4 signaling in adipocytes and macrophages and that the capacity of fatty acids to induce inflammatory signaling in adipose cells or tissue and macrophages is blunted in the absence of TLR4. Moreover, mice lacking TLR4 are substantially protected from the ability of systemic lipid infusion to (a) suppress insulin signaling in muscle and (b) reduce insulin-mediated changes in systemic glucose metabolism. Finally, female C57BL/6 mice lacking TLR4 have increased obesity but are partially protected against high fat diet-induced insulin resistance, possibly due to reduced inflammatory gene expression in liver and fat. Taken together, these data suggest that TLR4 is a molecular link among nutrition, lipids, and inflammation and that the innate immune system participates in the regulation of energy balance and insulin resistance in response to changes in the nutritional environment.",
+        "title": "TLR4 links innate immunity and fatty acid-induced insulin resistance."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-immunology-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/sj.icb.7100014",
+        "text": "Waterborne parasitic diseases plague tropical regions of the world with the development of water resources often increasing transmission. Skin-penetrating cercariae (infectious stages of schistosome parasites) mature within their mammalian host, form sexual pairs and produce several hundred eggs per day. Many eggs are swept within the circulation and in the case of Schistosoma mansoni and S. japonicum, become lodged within hepatic sinusoids, invoking a fibrotic granulomatous response. Animal studies have identified a moderate type 1 helper (Th1) response to parasite antigens; however, a robust Th2 response to egg-derived antigens dominates and propagates fibrogenesis within the liver. Elegant T helper cell polarization studies have highlighted that critical control of Th1, Th2 and interleukin (IL)-17-secreting lymphocytes is necessary to prevent severe liver pathology. Alternatively activated macrophages develop in the Th2 milieu and upregulate Fizz1, Ym-1 and Arg-1. The possible contribution of macrophages to fibrogenesis and their role in immune regulation are discussed. Within the liver, natural (CD4(+)CD25(+) Forkhead box protein 3 (Foxp3)(+)) and inducible (CD4(+)Foxp3(-)) Treg's are recruited, providing an essential regulatory arm to stabilize the immune response and limit immunopathology. This review ties together current thinking of how the granulomatous response develops, causing much of the associated immunopathology, with extensive discussions on how regulatory cells and cytokine decoy receptors serve to limit the extent of immune-mediated pathology during schistosomiasis.",
+        "title": "Immunopathology of schistosomiasis."
+      },
+      {
+        "source_doi": "10.1155/2007/89195",
+        "text": "The main function of our immune system is to protect us from invading pathogens and microorganisms by destroying infected cells, while minimizing collateral damage to tissues. In order to maintain this balance between immunity and tolerance, current understanding of the immune system attributes a major role to regulatory T cells (Tregs) in controlling both immunity and tolerance. Various subsets of Tregs have been identified based on their expression of cell surface markers, production of cytokines, and mechanisms of action. In brief, naturally occurring thymic-derived CD4+CD25+ Tregs are characterized by constitutive expression of the transcription factor FOXP3, while antigen-induced or adaptive Tregs are mainly identified by expression of immunosuppressive cytokines (interleukin-10 (IL-10) and/or transforming growth factor-beta (TGF-beta)). While Tregs in normal conditions regulate ongoing immune responses and prevent autoimmunity, imbalanced function or number of these Tregs, either enhanced or decreased, might lead, respectively, to decreased immunity (e.g., with tumor development or infections) or autoimmunity (e.g., multiple sclerosis). This review will discuss recent research towards a better understanding of the biology of Tregs, their interaction with other immune effector cells, such as dendritic cells, and possible interventions in human disease.",
+        "title": "Regulatory T cells and human disease."
+      },
+      {
+        "source_doi": "10.1007/s00018-009-0026-2",
+        "text": "Regulatory T cells (Tregs) are a critical subset of T cells that mediate peripheral tolerance. There are two types of Tregs: natural Tregs, which develop in the thymus, and induced Tregs, which are derived from naive CD4(+) T cells in the periphery. Tregs utilize a variety of mechanisms to suppress the immune response. While Tregs are critical for the peripheral maintenance of potential autoreactive T cells, they can also be detrimental by preventing effective anti-tumor responses and sterilizing immunity against pathogens. In this review, we will discuss the development of natural and induced Tregs as well as the role of Tregs in a variety of disease settings and the mechanisms they utilize for suppression.",
+        "title": "The development and function of regulatory T cells."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-immunology-003",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1146/annurev.biochem.71.110601.135414",
+        "text": "Bacterial lipopolysaccharides (LPS) typically consist of a hydrophobic domain known as lipid A (or endotoxin), a nonrepeating \"core\" oligosaccharide, and a distal polysaccharide (or O-antigen). Recent genomic data have facilitated study of LPS assembly in diverse Gram-negative bacteria, many of which are human or plant pathogens, and have established the importance of lateral gene transfer in generating structural diversity of O-antigens. Many enzymes of lipid A biosynthesis like LpxC have been validated as targets for development of new antibiotics. Key genes for lipid A biosynthesis have unexpectedly also been found in higher plants, indicating that eukaryotic lipid A-like molecules may exist. Most significant has been the identification of the plasma membrane protein TLR4 as the lipid A signaling receptor of animal cells. TLR4 belongs to a family of innate immunity receptors that possess a large extracellular domain of leucine-rich repeats, a single trans-membrane segment, and a smaller cytoplasmic signaling region that engages the adaptor protein MyD88. The expanding knowledge of TLR4 specificity and its downstream signaling pathways should provide new opportunities for blocking inflammation associated with infection.",
+        "title": "Lipopolysaccharide endotoxins."
+      },
+      {
+        "source_doi": "10.1146/annurev.iy.11.040193.003225",
+        "text": "Before TCR rearrangements, T cell progenitors are committed not only to the alpha beta and gamma delta T cell lineage but also to various subsets of both lineages. In the mouse, distinct gamma delta T cell subsets can develop in the fetal thymus, the adult thymus, or independently of a thymus, probably in intestinal epithelia. The two subsets that develop in the fetal thymus home to and are maintained throughout adult life in the skin and the mucosa of the uterus, vagina, and tongue. They are monospecific. This unusual restriction in receptor repertoires is the result of severe limitations in the generation of diversity in the fetal progenitors of these subsets and the thymic selection. After birth, one gamma delta T cell subset appears in the blood, spleen, and lymph nodes and one in the intestinal epithelia. The receptor repertoires of these subsets are characterized by the preferential usage of particular V gamma gene segments and extensive junctional diversity. Several murine and human gamma delta T cell clones have been shown to recognize classical MHC class I and class II proteins or MHC class I-like proteins, and in very few cases the presented peptides are known. We suspect that the various murine gamma delta T cell subsets interact with different antigen presenting cells which utilize different antigen presenting proteins and reside in different tissues. The function of gamma delta T cells remains unknown. Preliminary results of experiments with gene knock out mice which lack either alpha beta T cells or gamma delta T cells or both suggest that gamma delta T cells do not function as helper cells in humoral immune responses but may complement alpha beta T cells in the defense against various microorganisms.",
+        "title": "Gamma/delta cells."
+      },
+      {
+        "source_doi": "10.1007/BF00124215",
+        "text": "Tumor cells express a great variety of antigens including tumor specific transplantation antigens, tumor-associated antigens, differentiation antigens, histocompatibility antigens, lectin-binding sites and receptors for natural killer cells and natural antibodies. These antigens are distributed unevenly on tumor subpopulations and each subpopulation may induce different immune responses to the same determinant. Intratumor immunologic heterogeneity arises early in cancer, possibly during preneoplasia, and exists throughout the course of progression. Metastatic subpopulations are not generally less antigenic than subpopulations within primary tumors. Different arrays of antigenic determinants are displayed by subpopulations but variability in cell surface expression of a single determinant is also a fundamental type of immunologic heterogeneity. Antigenic specificity patterns commonly reveal one-way cross-reactions between tumor subpopulations. One-way cross-reactions might occur due to quantitative differences, cell-cycle variations, modulation, masking, H-2 expression and restriction phenomena, or alteration in the carbohydrate side-chains of glycoproteins. Interactions which occur when subpopulations co-exist may alter immune responses so that the response to the mixture is not the sum of the responses to the individual subpopulations. It is suggested that the exploitation of the mechanisms involved in immunologic heterogeneity may lead to new therapeutic approaches and that the great diversity of determinants expressed by tumor cells could lead to development of multivalent panel of monoclonal antisera which, acting synergistically, could preferentially lyse tumor cells.",
+        "title": "Intratumor immunologic heterogeneity."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-immunology-004",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/nature11729",
+        "text": "Alzheimer's disease is the world's most common dementing illness. Deposition of amyloid-\u03b2 peptide drives cerebral neuroinflammation by activating microglia. Indeed, amyloid-\u03b2 activation of the NLRP3 inflammasome in microglia is fundamental for interleukin-1\u03b2 maturation and subsequent inflammatory events. However, it remains unknown whether NLRP3 activation contributes to Alzheimer's disease in vivo. Here we demonstrate strongly enhanced active caspase-1 expression in human mild cognitive impairment and brains with Alzheimer's disease, suggesting a role for the inflammasome in this neurodegenerative disease. Nlrp3(-/-) or Casp1(-/-) mice carrying mutations associated with familial Alzheimer's disease were largely protected from loss of spatial memory and other sequelae associated with Alzheimer's disease, and demonstrated reduced brain caspase-1 and interleukin-1\u03b2 activation as well as enhanced amyloid-\u03b2 clearance. Furthermore, NLRP3 inflammasome deficiency skewed microglial cells to an M2 phenotype and resulted in the decreased deposition of amyloid-\u03b2 in the APP/PS1 model of Alzheimer's disease. These results show an important role for the NLRP3/caspase-1 axis in the pathogenesis of Alzheimer's disease, and suggest that NLRP3 inflammasome inhibition represents a new therapeutic intervention for the disease.",
+        "title": "NLRP3 is activated in Alzheimer's disease and contributes to pathology in APP/PS1 mice."
+      },
+      {
+        "source_doi": "10.1038/cr.2015.139",
+        "text": "Inflammasome is an intracellular signaling complex of the innate immune system. Activation of inflammasomes promotes the secretion of interleukin 1\u03b2 (IL-1\u03b2) and IL-18 and triggers pyroptosis. Caspase-1 and -11 (or -4/5 in human) in the canonical and non-canonical inflammasome pathways, respectively, are crucial for inflammasome-mediated inflammatory responses. Here we report that gasdermin D (GSDMD) is another crucial component of inflammasomes. We discovered the presence of GSDMD protein in nigericin-induced NLRP3 inflammasomes by a quantitative mass spectrometry-based analysis. Gene deletion of GSDMD demonstrated that GSDMD is required for pyroptosis and for the secretion but not proteolytic maturation of IL-1\u03b2 in both canonical and non-canonical inflammasome responses. It was known that GSDMD is a substrate of caspase-1 and we showed its cleavage at the predicted site during inflammasome activation and that this cleavage was required for pyroptosis and IL-1\u03b2 secretion. Expression of the N-terminal proteolytic fragment of GSDMD can trigger cell death and N-terminal modification such as tagging with Flag sequence disrupted the function of GSDMD. We also found that pro-caspase-1 is capable of processing GSDMD and ASC is not essential for GSDMD to function. Further analyses of LPS plus nigericin- or Salmonella typhimurium-treated macrophage cell lines and primary cells showed that apoptosis became apparent in Gsdmd(-/-) cells, indicating a suppression of apoptosis by pyroptosis. The induction of apoptosis required NLRP3 or other inflammasome receptors and ASC, and caspase-1 may partially contribute to the activation of apoptotic caspases in Gsdmd(-/-) cells. These data provide new insights into the molecular mechanisms of pyroptosis and reveal an unexpected interplay between apoptosis and pyroptosis.",
+        "title": "Gasdermin D is an executor of pyroptosis and required for interleukin-1\u03b2 secretion."
+      },
+      {
+        "source_doi": "10.1038/ni.1980",
+        "text": "Autophagy, a cellular process for organelle and protein turnover, regulates innate immune responses. Here we demonstrate that depletion of the autophagic proteins LC3B and beclin 1 enhanced the activation of caspase-1 and secretion of interleukin 1\u03b2 (IL-1\u03b2) and IL-18. Depletion of autophagic proteins promoted the accumulation of dysfunctional mitochondria and cytosolic translocation of mitochondrial DNA (mtDNA) in response to lipopolysaccharide (LPS) and ATP in macrophages. Release of mtDNA into the cytosol depended on the NALP3 inflammasome and mitochondrial reactive oxygen species (ROS). Cytosolic mtDNA contributed to the secretion of IL-1\u03b2 and IL-18 in response to LPS and ATP. LC3B-deficient mice produced more caspase-1-dependent cytokines in two sepsis models and were susceptible to LPS-induced mortality. Our study suggests that autophagic proteins regulate NALP3-dependent inflammation by preserving mitochondrial integrity.",
+        "title": "Autophagy proteins regulate innate immune responses by inhibiting the release of mitochondrial DNA mediated by the NALP3 inflammasome."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-materials-001",
+    "papers_retrieved": [],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-materials-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1038/srep08524",
+        "text": "In the search for mechanisms of high-temperature superconductivity it is critical to know the electronic spectrum in the pseudogap phase from which superconductivity evolves. The lack of angle-resolved photoemission data for every cuprate family precludes an agreement as to its structure, doping and temperature dependence and the role of charge ordering. Here we show that, in the entire Fermi-liquid-like regime that is ubiquitous in underdoped cuprates, the spectrum consists of holes on the Fermi arcs and an electronic pocket. We argue that experiments on the Hall coefficient identify the latter as a permanent feature at doped hole concentration x > 0.08-0.10, in contrast to the idea of the Fermi surface reconstruction via charge ordering. The longstanding issue of the origin of the negative Hall coefficient in YBCO and Hg1201 at low temperature is resolved: the electronic contribution prevails as mobility of the latter (evaluated by the Dingle temperature) becomes temperature independent, while the mobility of holes scattered by the short-wavelength charge density waves decreases.",
+        "title": "Two-component energy spectrum of cuprates in the pseudogap phase and its evolution with temperature and at charge ordering."
+      }
+    ],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-climate-001",
+    "papers_retrieved": [],
+    "evidence_quality_scores": []
+  },
+  {
+    "case_id": "case-climate-002",
+    "papers_retrieved": [
+      {
+        "source_doi": "10.1080/21548331.1994.11443041",
+        "text": "No Abstract",
+        "title": "Krill."
+      },
+      {
+        "source_doi": "10.1111/j.0954-6820.1983.tb08578.x",
+        "text": "No Abstract",
+        "title": "Circumpolar health."
+      },
+      {
+        "source_doi": "PMID:5168575",
+        "text": "No Abstract",
+        "title": "'Skua'd'."
+      }
+    ],
+    "evidence_quality_scores": []
+  }
+]

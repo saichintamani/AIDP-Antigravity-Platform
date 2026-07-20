@@ -1,0 +1,706 @@
+{
+    "benchmark_version": "1.1",
+    "name": "ConstraintBench-100",
+    "cases": [
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1948-12-31",
+            "prompt": "Develop a theoretical framework to reconcile quantum mechanics and special relativity, particularly in the context of particle interactions.",
+            "ground_truth_discovery": "The discovery of electromagnetic interactions mediated by virtual particles within the framework of quantum electrodynamics (QED)."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1946-12-31",
+            "prompt": "Develop a theoretical framework that reconciles quantum mechanics and special relativity, particularly in the context of electromagnetic interactions.",
+            "ground_truth_discovery": "The Feynman diagram is a fundamental tool for calculating particle scattering amplitudes in perturbative quantum field theory."
+        },
+        {
+            "id": "quantum_electrodynamics",
+            "domain": "Physics",
+            "historical_cutoff_date": "1947-12-31",
+            "prompt": "Develop a theoretical framework that unifies the principles of electromagnetism and special relativity.",
+            "ground_truth_discovery": "The electron's self-energy can be renormalized to infinity, but it is finite when calculated in a different reference frame."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1949-12-31",
+            "prompt": "Investigate the unification of electromagnetism and the strong nuclear force. How can you reconcile the principles of wave-particle duality with the requirements for a field theory?",
+            "ground_truth_discovery": "The Yang-Mills theory is formulated, which describes how particles interact via gauge bosons."
+        },
+        {
+            "id": "quantum_electrodynamics",
+            "domain": "Physics",
+            "historical_cutoff_date": "1949-12-31",
+            "prompt": "Develop a theory that reconciles special relativity and quantum mechanics. How would you describe the behavior of high-energy electrons?",
+            "ground_truth_discovery": "Electromagnetic interactions can be described by exchange particles, known as photons."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1947-12-31",
+            "prompt": "Develop a mathematical framework to describe the behavior of subatomic particles in high-energy collisions, building upon the principles of quantum mechanics and special relativity.",
+            "ground_truth_discovery": "Quantum electrodynamics (QED) successfully describes the interactions between electrically charged particles."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1926-12-31",
+            "prompt": "The photoelectric effect, Compton scattering, and Bohr's atomic model challenge classical electromagnetic theory. Investigate the development of a new theoretical framework that reconciles these phenomena.",
+            "ground_truth_discovery": "Quantum field theory can describe fundamental interactions between matter and radiation."
+        },
+        {
+            "id": "quantum_electrodynamics",
+            "domain": "Physics",
+            "historical_cutoff_date": "1929-12-31",
+            "prompt": "Develop a theoretical framework to reconcile Maxwell's equations with the principles of special relativity, particularly in regards to charged particles and their interactions.",
+            "ground_truth_discovery": "The Dirac equation describes the relativistic quantum mechanics of fermions."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1925-12-31",
+            "prompt": "You are a physicist in 1924. The concept of wave-particle duality has been established for electrons. Investigate how to apply these principles to the study of light and matter.",
+            "ground_truth_discovery": "The Dirac equation unifies quantum mechanics and special relativity, describing the behavior of fermions."
+        },
+        {
+            "id": "quantum_field_theory",
+            "domain": "Physics",
+            "historical_cutoff_date": "1948-12-31",
+            "prompt": "Consider the photoelectric effect and Compton scattering. Investigate how particle-like and wave-like behavior can be unified in a single theoretical framework.",
+            "ground_truth_discovery": "The Dirac equation is a relativistic quantum field theory that describes fermions, such as electrons."
+        },
+        {
+            "id": "brownian_molecular_motion",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1872-12-31",
+            "prompt": "Investigate the random motion of particles in a gas, proposing experiments to measure and explain this phenomenon.",
+            "ground_truth_discovery": "The behavior of particles in a gas is governed by the principles of kinetic molecular theory."
+        },
+        {
+            "id": "molecular_orbitals",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1935-12-31",
+            "prompt": "Investigate the electronic structure of polyatomic molecules. How can we extend the concept of atomic orbitals to account for the bonding in these systems?",
+            "ground_truth_discovery": "Molecular orbitals provide a more accurate description of chemical bonding and reactivity."
+        },
+        {
+            "id": "atomic_orbitals",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1926-12-31",
+            "prompt": "Explain how electrons are distributed within atoms, and propose a mathematical model that describes their behavior.",
+            "ground_truth_discovery": "Wave mechanics predicts the probability distributions of atomic orbitals."
+        },
+        {
+            "id": "quantum_mechanics",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1925-12-31",
+            "prompt": "You are a physicist in 1925. Investigate the behavior of electrons in atoms, particularly why atomic spectra show discrete lines rather than continuous emission.",
+            "ground_truth_discovery": "Wave-particle duality and electron spin lead to the development of quantum mechanics."
+        },
+        {
+            "id": "electron_configuration",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1913-12-31",
+            "prompt": "Develop a model to describe the arrangement of electrons in atoms, particularly for multi-electron systems.",
+            "ground_truth_discovery": "Electrons occupy specific energy levels or shells around the nucleus, and subshells are further divided into s, p, d, and f orbitals."
+        },
+        {
+            "id": "atomic_orbitals",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1926-12-31",
+            "prompt": "Develop a theory to explain the distribution of electrons within atoms, considering the experimental evidence from atomic spectra and chemical bonding.",
+            "ground_truth_discovery": "Electrons occupy specific energy levels or orbitals around an atom's nucleus."
+        },
+        {
+            "id": "valence_shell",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1913-12-31",
+            "prompt": "Investigate the atomic structure of elements and propose a theory to explain the periodic table's repeating patterns.",
+            "ground_truth_discovery": "Electrons occupy discrete energy levels, or electron shells, with specific capacities."
+        },
+        {
+            "id": "valence_electron_shell",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1897-12-31",
+            "prompt": "As a chemist in 1898, you've observed the periodic table. However, the relationships between elements are not yet fully understood. Propose an experiment to identify the underlying principle governing element properties.",
+            "ground_truth_discovery": "The discovery of the octet rule by Ernest Rutherford and Niels Bohr explains how electrons fill energy levels around atomic nuclei."
+        },
+        {
+            "id": "mendeleev_table",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1869-12-31",
+            "prompt": "Develop a systematic method to organize the elements and predict their properties. You have at your disposal the known atomic weights and valences of about 60 elements.",
+            "ground_truth_discovery": "The periodic table can be organized by atomic weight and recurring chemical properties, allowing for predictions of undiscovered elements."
+        },
+        {
+            "id": "mendeleev_periodic_table",
+            "domain": "Chemistry",
+            "historical_cutoff_date": "1869-12-31",
+            "prompt": "You are a chemist in 1869. You have identified several elements and their properties, but you struggle to organize them logically. What principles would you use to group these elements?",
+            "ground_truth_discovery": "Elements can be arranged by atomic weight and chemical properties into rows (periods) and columns (groups), revealing patterns and relationships among the elements."
+        },
+        {
+            "id": "symbiotic_theory",
+            "domain": "Biology",
+            "historical_cutoff_date": "1687-12-31",
+            "prompt": "Observe and explain the relationship between fungi and tree roots in forests. How do they seem to work together?",
+            "ground_truth_discovery": "Trees and fungi form a symbiotic relationship where fungi provide essential nutrients to trees."
+        },
+        {
+            "id": "endosymbiotic_theory",
+            "domain": "Biology",
+            "historical_cutoff_date": "1965-12-31",
+            "prompt": "Consider the similarities between mitochondria and cyanobacteria. Investigate whether these organelles could have originated from symbiotic relationships.",
+            "ground_truth_discovery": "Mitochondria evolved from engulfed alpha-proteobacteria."
+        },
+        {
+            "id": "endosymbiosis",
+            "domain": "Biology",
+            "historical_cutoff_date": "1960-12-31",
+            "prompt": "Consider the structure and function of chloroplasts in plant cells. What is their likely evolutionary origin?",
+            "ground_truth_discovery": "Chloroplasts are derived from ancient cyanobacteria engulfed by early eukaryotic cells."
+        },
+        {
+            "id": "cell_membrane_structure",
+            "domain": "Biology",
+            "historical_cutoff_date": "1959-12-31",
+            "prompt": "Investigate the ultrastructure of cell membranes, particularly in red blood cells. What components are essential for their function?",
+            "ground_truth_discovery": "The fluid mosaic model describes the structure and dynamics of cell membranes."
+        },
+        {
+            "id": "mitosis_model",
+            "domain": "Biology",
+            "historical_cutoff_date": "1956-12-31",
+            "prompt": "Investigate cell division in eukaryotic cells, particularly the role of chromosomes and spindle fibers.",
+            "ground_truth_discovery": "The mitotic spindle is responsible for the separation of sister chromatids during anaphase."
+        },
+        {
+            "id": "epigenetics",
+            "domain": "Biology",
+            "historical_cutoff_date": "1949-12-31",
+            "prompt": "Explore the relationship between environmental factors, gene expression, and the inheritance of traits. Investigate mechanisms by which the genotype can be altered without changing the DNA sequence itself.",
+            "ground_truth_discovery": "Gene regulation and epigenetic modifications play a crucial role in influencing phenotype."
+        },
+        {
+            "id": "endothelial_cell_function",
+            "domain": "Biology",
+            "historical_cutoff_date": "1970-12-31",
+            "prompt": "Describe how endothelial cells maintain vascular permeability and regulate blood flow in microvessels.",
+            "ground_truth_discovery": "Endothelial-derived relaxing factor (EDRF), later identified as nitric oxide, plays a key role in regulating vascular tone."
+        },
+        {
+            "id": "endosymbiotic_theory",
+            "domain": "Biology",
+            "historical_cutoff_date": "1967-12-31",
+            "prompt": "Investigate the role of mitochondria and chloroplasts in eukaryotic cells. What are their evolutionary origins, and how do they contribute to cellular function?",
+            "ground_truth_discovery": "Mitochondria and chloroplasts are endosymbiotic organelles derived from ancient bacteria."
+        },
+        {
+            "id": "mitochondrial_eukaryotes",
+            "domain": "Biology",
+            "historical_cutoff_date": "1962-12-31",
+            "prompt": "Investigate the cellular mechanisms of energy production in plant and animal cells.",
+            "ground_truth_discovery": "Mitochondria have their own DNA and are responsible for generating energy in eukaryotic cells."
+        },
+        {
+            "id": "endosymbiotic_theory",
+            "domain": "Biology",
+            "historical_cutoff_date": "1967-12-31",
+            "prompt": "Consider the origin of mitochondria and chloroplasts in eukaryotic cells. Propose a mechanism by which these organelles could have originated from symbiotic prokaryotes.",
+            "ground_truth_discovery": "Mitochondria and chloroplasts are thought to have originated through endosymbiosis, where eukaryotic cells engulfed and integrated prokaryotic cells."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1868-12-31",
+            "prompt": "Investigate the claim that diseases are caused by tiny, invisible organisms rather than bad air or imbalance of bodily humors.",
+            "ground_truth_discovery": "Microorganisms like bacteria and viruses cause many infectious diseases."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1863-12-31",
+            "prompt": "Investigate the role of microorganisms in causing diseases, particularly cholera and anthrax.",
+            "ground_truth_discovery": "Microorganisms are the primary cause of many infectious diseases."
+        },
+        {
+            "id": "germ_theory_of_disease",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1859-12-31",
+            "prompt": "Investigate the cause of epidemics and diseases such as cholera, malaria, and smallpox. Can a single factor be responsible for these outbreaks?",
+            "ground_truth_discovery": "Microorganisms like bacteria and viruses are the primary causes of most infectious diseases."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1865-12-31",
+            "prompt": "In an era where 'bad air' and 'humors' are still widely accepted explanations for disease, investigate the role of microorganisms in causing illness. What evidence could you collect to support this hypothesis?",
+            "ground_truth_discovery": "Microorganisms (bacteria and viruses) cause many diseases, including cholera, tuberculosis, and pneumonia."
+        },
+        {
+            "id": "germ_theory_of_disease",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1857-12-31",
+            "prompt": "Observe and describe the relationship between the presence of microorganisms, such as bacteria or mold, and disease in humans. Can you propose a method to investigate this further?",
+            "ground_truth_discovery": "Microorganisms are responsible for many diseases, and their presence can be identified through staining and microscopy."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1866-12-31",
+            "prompt": "As a physician in 1865, you are tasked with investigating outbreaks of cholera and typhoid fever. Develop an explanation for the spread of these diseases.",
+            "ground_truth_discovery": "Microorganisms such as bacteria cause many diseases."
+        },
+        {
+            "id": "germ_theory_of_disease",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1865-12-31",
+            "prompt": "You are a physician in 1865. Many diseases, such as cholera and typhoid fever, have been described as 'bad air' or miasmas. Design an experiment to test the hypothesis that these diseases are caused by living organisms.",
+            "ground_truth_discovery": "Microorganisms cause many diseases, including cholera and typhoid fever."
+        },
+        {
+            "id": "germ_theory_of_disease",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1859-12-31",
+            "prompt": "Investigate the cause of cholera epidemics, specifically in London's water supply system.",
+            "ground_truth_discovery": "Diseases are caused by microorganisms, not bad air or miasma."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1864-12-31",
+            "prompt": "Investigate the cause of disease in cities, considering the role of 'bad air' and human miasma.",
+            "ground_truth_discovery": "Microorganisms such as bacteria are the primary agents causing many diseases."
+        },
+        {
+            "id": "germ_theory",
+            "domain": "Medicine",
+            "historical_cutoff_date": "1865-12-31",
+            "prompt": "Explain the nature of disease and propose a hypothesis that accounts for the observed symptoms, contagion, and variability in illness.",
+            "ground_truth_discovery": "Microorganisms are the primary cause of many diseases."
+        },
+        {
+            "id": "prolog_logic_programming",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1970-12-31",
+            "prompt": "Design a computer system that can reason about abstract concepts, such as causality and temporality. Investigate methods for representing and querying logical rules.",
+            "ground_truth_discovery": "The development of Prolog programming language by Alain Colmerauer et al. in 1972."
+        },
+        {
+            "id": "polynomial_time_algorithm",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1972-12-31",
+            "prompt": "Develop a sorting algorithm with an average time complexity better than O(n^2).",
+            "ground_truth_discovery": "A deterministic sorting algorithm can have an average time complexity of O(n log n), and examples include Heapsort and Quicksort."
+        },
+        {
+            "id": "backpropagation",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1985-12-31",
+            "prompt": "Propose a method to train multilayer perceptron networks using the output of the previous layer as feedback.",
+            "ground_truth_discovery": "The backpropagation algorithm, also known as the generalized delta rule, allows for efficient and effective training of deep neural networks."
+        },
+        {
+            "id": "universal_turing_machine",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1936-12-31",
+            "prompt": "Assume you are a mathematician in 1936. You have been given a new machine with an infinite tape and a read/write head. Describe how you can use this machine to solve any problem that can be expressed as a series of simple arithmetic operations.",
+            "ground_truth_discovery": "A universal Turing machine can simulate the behavior of any other Turing machine, thus solving the halting problem for all Turing machines."
+        },
+        {
+            "id": "algorithms_as_a_service",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1957-12-31",
+            "prompt": "Design a system to facilitate sharing of algorithms and program flow between different computers, considering the existing batch processing systems.",
+            "ground_truth_discovery": "The concept of Software as a Service (SaaS) and cloud computing would eventually allow for on-demand access to shared algorithms and services."
+        },
+        {
+            "id": "lambda_architecture",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "2004-12-31",
+            "prompt": "Design a scalable and real-time data processing system that can handle both batch and interactive queries. What are the key trade-offs in such a design?",
+            "ground_truth_discovery": "The lambda architecture is a two-tiered approach to Big Data processing, combining batch processing with stream processing for fast analytics."
+        },
+        {
+            "id": "hierarchical_clustering",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1972-12-31",
+            "prompt": "Consider a dataset of gene expression levels across multiple samples. Propose an algorithm to group similar samples together based on their expression profiles.",
+            "ground_truth_discovery": "Hierarchical clustering can be used for gene expression analysis, revealing the structure and relationships between different samples."
+        },
+        {
+            "id": "artificial_neural_networks",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1948-12-31",
+            "prompt": "Investigate the potential of mathematical models to process and represent complex patterns in machine learning, considering recent advancements in electronic computing.",
+            "ground_truth_discovery": "Artificial neural networks can be trained using backpropagation to classify and regress data."
+        },
+        {
+            "id": "artificial_neural_networks",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1945-12-31",
+            "prompt": "As a mathematician and engineer, design a mathematical model of the human brain's neural networks. What would be the requirements for such a system to process and learn from data?",
+            "ground_truth_discovery": "Feedforward neural networks with multiple layers can be used for image recognition."
+        },
+        {
+            "id": "algorithms_as_programs",
+            "domain": "Computer Science",
+            "historical_cutoff_date": "1936-12-31",
+            "prompt": "Consider a method for transforming one type of mathematical problem into another. Investigate the possibility of using this method to create an algorithm for solving any type of problem.",
+            "ground_truth_discovery": "Algorithms can be viewed as programs, and any effectively solvable problem can be solved by a Turing machine."
+        },
+        {
+            "id": "dark_energy",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1998-12-31",
+            "prompt": "Measure the mass of galaxy clusters and superclusters to determine if the universe is undergoing accelerated expansion.",
+            "ground_truth_discovery": "The existence of dark energy, a mysterious component driving cosmic acceleration."
+        },
+        {
+            "id": "geocentric_to_heliocentric_model",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1543-12-31",
+            "prompt": "Nicolaus Copernicus has proposed a heliocentric model of the solar system. Investigate and comment on its validity.",
+            "ground_truth_discovery": "Planets orbit around the Sun, not the Earth."
+        },
+        {
+            "id": "galactic_evolution",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1929-12-31",
+            "prompt": "You are an astronomer in 1929. The universe is thought to be eternal and unchanging. Investigate the possibility that galaxies, including our own Milky Way, have formed from smaller units over billions of years.",
+            "ground_truth_discovery": "The Andromeda galaxy, M31, and the Milky Way are colliding and merging."
+        },
+        {
+            "id": "dark_energy",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1998-12-31",
+            "prompt": "You are an astronomer in 1999, observing type Ia supernovae. Investigate the discrepancy between observed and predicted brightness.",
+            "ground_truth_discovery": "Dark energy is a mysterious component driving accelerating expansion of the universe."
+        },
+        {
+            "id": "hubble_expansion",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1927-12-31",
+            "prompt": "Consider the observed redshifts in galaxy spectra. Propose an experiment to determine if this is due to a change in the light's wavelength or a property of the galaxies themselves.",
+            "ground_truth_discovery": "Galaxies are moving away from us, and the universe is expanding."
+        },
+        {
+            "id": "hubble_law",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1927-12-31",
+            "prompt": "You are a physicist in 1927. The universe appears to be expanding based on observations of galaxy redshift. However, the relationship between distance and recession velocity is still unclear. Investigate possible correlations and propose an experiment to test the hypothesis.",
+            "ground_truth_discovery": "The velocity of galaxies increases linearly with distance from Earth."
+        },
+        {
+            "id": "hubble_law",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1929-12-31",
+            "prompt": "As an astronomer in 1929, you have observed the redshift of galaxy spectra. Investigate the relationship between galaxy recession velocity and distance from us.",
+            "ground_truth_discovery": "The velocity of a galaxy is directly proportional to its distance from us."
+        },
+        {
+            "id": "hubble_expansion",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1929-12-31",
+            "prompt": "Using Einstein's general relativity, investigate the observed redshift in galaxy spectra and its implications for cosmology. What would be the consequences of an expanding universe?",
+            "ground_truth_discovery": "The universe is expanding, with galaxies moving away from each other at varying velocities."
+        },
+        {
+            "id": "geocentric_to_heliocentric_model",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1543-12-31",
+            "prompt": "Reflect on Ptolemy's geocentric model of the universe. What are its limitations and potential flaws? Propose a new, more accurate model.",
+            "ground_truth_discovery": "Planets orbit the Sun at the center of the solar system."
+        },
+        {
+            "id": "hubble_law",
+            "domain": "Astronomy",
+            "historical_cutoff_date": "1924-12-31",
+            "prompt": "You are an astronomer in 1923. Evaluate the evidence for or against a static universe versus one with expanding space. What observations would you make to distinguish between these theories?",
+            "ground_truth_discovery": "The velocity of galaxies increases linearly with their distance from Earth, indicating the expansion of the universe."
+        },
+        {
+            "id": "self-healing_polymers",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "2003-12-31",
+            "prompt": "Investigate ways to create synthetic materials that can repair cracks and damage without human intervention.",
+            "ground_truth_discovery": "Synthetic polymers with microcapsules containing healing agents can be designed to self-heal under certain conditions."
+        },
+        {
+            "id": "whisker_electromigration",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1964-12-31",
+            "prompt": "Investigate the effects of temperature and current on wire reliability in high-speed computers. How do differences in crystal structure impact electromigration?",
+            "ground_truth_discovery": "Whisker electromigration: the phenomenon where metal whiskers grow from grain boundaries due to electrochemical reaction"
+        },
+        {
+            "id": "nanotubes",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1993-12-31",
+            "prompt": "Investigate the synthesis and properties of carbon filaments that are estimated to be 1 nm in diameter.",
+            "ground_truth_discovery": "Carbon nanotubes can exhibit exceptional mechanical, thermal, and electrical properties."
+        },
+        {
+            "id": "polymer_nanocomposites",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1990-06-30",
+            "prompt": "Consider the properties of polymers. How might you create composite materials with improved mechanical strength and thermal resistance by incorporating nanoparticles?",
+            "ground_truth_discovery": "Polymer-based nanocomposites exhibit enhanced mechanical, thermal, and barrier properties due to interfacial interactions between polymer chains and inorganic nanoparticles."
+        },
+        {
+            "id": "nanotube_discovery",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1993-12-31",
+            "prompt": "Investigate the properties and potential applications of carbon fibers, particularly those with diameters in the nanometer range.",
+            "ground_truth_discovery": "Single-walled carbon nanotubes (SWNTs) have exceptional mechanical, thermal, and electrical properties."
+        },
+        {
+            "id": "nanotube_synthesis",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1995-12-31",
+            "prompt": "You are a materials scientist in 1995. Study the properties and synthesis of carbon filaments, which have been observed in some industrial processes. What research questions would you investigate to better understand these materials?",
+            "ground_truth_discovery": "The first synthesis of multi-walled carbon nanotubes is achieved through the arc discharge method."
+        },
+        {
+            "id": "graphene_discovery",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "2003-12-31",
+            "prompt": "Synthesize a single layer of graphite using mechanical exfoliation or chemical vapor deposition. Investigate its electrical conductivity.",
+            "ground_truth_discovery": "Graphene has high electrical conductivity and is suitable for use in transistors."
+        },
+        {
+            "id": "nanocrystal_synthesis",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1990-12-31",
+            "prompt": "Develop a method to synthesize monodisperse metal particles with precise control over size and shape.",
+            "ground_truth_discovery": "Chemical synthesis of colloidal nanocrystals with tunable sizes, shapes, and properties."
+        },
+        {
+            "id": "nanotubes",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1985-12-31",
+            "prompt": "Investigate methods to produce ultrathin, high-strength carbon fibers with unique electrical properties.",
+            "ground_truth_discovery": "The discovery of multi-walled carbon nanotubes (MWNTs) and their extraordinary mechanical, thermal, and electronic properties."
+        },
+        {
+            "id": "superconducting_ceramics",
+            "domain": "Materials Science",
+            "historical_cutoff_date": "1986-12-31",
+            "prompt": "Investigate the properties of ceramic materials that can exhibit zero electrical resistance at low temperatures.",
+            "ground_truth_discovery": "YBa2Cu3O7 (YBCO) is a high-temperature superconductor with critical temperature above liquid nitrogen."
+        },
+        {
+            "id": "deep_sea_vent_life",
+            "domain": "Earth Sciences",
+            "historical_cutoff_date": "1976-12-31",
+            "prompt": "You are a marine biologist in 1977. The Galapagos Rift has been discovered, and there's speculation about the existence of life near hydrothermal vents. Investigate the possibility of life existing in these extreme environments.",
+            "ground_truth_discovery": "Microorganisms can thrive near deep-sea vents due to chemosynthetic processes."
+        },
+        {
+            "id": "continental_drift",
+            "domain": "Geology",
+            "historical_cutoff_date": "1850-12-31",
+            "prompt": "You are a geologist in 1850. How can you explain the similarity of coastlines between Africa and South America?",
+            "ground_truth_discovery": "The continents have moved, and Africa and South America were once joined"
+        },
+        {
+            "id": "continental_lift",
+            "domain": "Geology",
+            "historical_cutoff_date": "1872-12-31",
+            "prompt": "Examine James Hutton's theory of erosion and deposition to explain the formation of mountain ranges. Propose an experiment or observation to test this idea.",
+            "ground_truth_discovery": "The force of isostasy drives the uplift of mountains through the buoyancy of continental crust."
+        },
+        {
+            "id": "continental_rifts",
+            "domain": "Geology",
+            "historical_cutoff_date": "1895-12-31",
+            "prompt": "You are a geologist in 1895. Investigate the unusual linear faults and valleys observed in Africa and Eurasia. How do these features relate to the existing theory of geological uniformitarianism?",
+            "ground_truth_discovery": "Continental rifting is a process that leads to the separation of continents, as exemplified by the East African Rift System."
+        },
+        {
+            "id": "nitrogen_cycle",
+            "domain": "Chemical Geology",
+            "historical_cutoff_date": "1896-12-31",
+            "prompt": "Investigate the process of ammonia conversion in soil and its significance to agriculture.",
+            "ground_truth_discovery": "The Haber-Bosch process, a method for synthesizing ammonia from atmospheric nitrogen using high pressure and temperature."
+        },
+        {
+            "id": "continental_drift",
+            "domain": "Geology",
+            "historical_cutoff_date": "1920-12-31",
+            "prompt": "Evaluate Alfred Wegener's theory of continental drift. What evidence or experiments would you need to design and conduct to prove or disprove this hypothesis?",
+            "ground_truth_discovery": "Fit of the continents, paleomagnetic data, and similarity in rock formations provide conclusive evidence for continental drift."
+        },
+        {
+            "id": "continental_rupture",
+            "domain": "Geology",
+            "historical_cutoff_date": "1885-12-31",
+            "prompt": "As a geologist in the late 19th century, you've observed extensive fault lines and earthquakes. Design an experiment to investigate the idea of Earth's interior being broken into separate plates.",
+            "ground_truth_discovery": "The San Andreas Fault is a transform boundary between two moving tectonic plates."
+        },
+        {
+            "id": "oceanic_anoxic_events",
+            "domain": "Geochemistry",
+            "historical_cutoff_date": "1957-12-31",
+            "prompt": "You are a geochemist in 1957. Investigate the cause of 'black shales' containing high levels of organic carbon, observed in geological sections around the world.",
+            "ground_truth_discovery": "Oxygen depletion events in ancient oceans led to widespread oceanic anoxia and the deposition of 'black shales'."
+        },
+        {
+            "id": "continental_rifting",
+            "domain": "Geology",
+            "historical_cutoff_date": "1903-12-31",
+            "prompt": "You are a geologist in 1900. Evaluate the available evidence on the formation of mountain ranges and rift valleys. What hypothesis would you propose to explain these phenomena?",
+            "ground_truth_discovery": "Continental rifting is an important mechanism for creating new oceans, as exemplified by East Africa."
+        },
+        {
+            "id": "continental_rifts",
+            "domain": "Geology",
+            "historical_cutoff_date": "1872-12-31",
+            "prompt": "You are a geologist in 1870. You have observed the African and Eurasian continents are still connected by narrow straits, but there is evidence of old shorelines on either side. What would you propose as an explanation for these observations?",
+            "ground_truth_discovery": "The process of continental rifting leads to the separation of supercontinents over geological time scales."
+        },
+        {
+            "id": "non_euclidean_geometry",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1830-12-31",
+            "prompt": "Consider a surface where the sum of angles in a triangle is not 180 degrees. Can you devise an alternative method for calculating distances and angles on such a surface?",
+            "ground_truth_discovery": "The development of non-Euclidean geometry, including elliptical and hyperbolic geometries, revolutionized our understanding of space and led to significant advancements in fields like physics and engineering."
+        },
+        {
+            "id": "non_euclidean_geometries",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1850-12-31",
+            "prompt": "Consider alternative methods to prove the fifth postulate of Euclid's Elements, which deals with parallel lines. How might this change our understanding of spatial relationships?",
+            "ground_truth_discovery": "Hyperbolic and elliptical geometries provide consistent, non-Euclidean models that satisfy the other four postulates while negating the fifth."
+        },
+        {
+            "id": "non_euclidean_geometry",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1858-12-31",
+            "prompt": "Explore the possibility of curved spaces that defy Euclid's fifth postulate. What implications would such a geometry have on our understanding of space and time?",
+            "ground_truth_discovery": "The non-Euclidean geometry, particularly elliptical geometry, is a valid mathematical framework."
+        },
+        {
+            "id": "non_euclidean_geometries",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1840-12-31",
+            "prompt": "Develop a consistent geometric theory that allows for curved spaces, contradicting the Euclidean assumption of flat space.",
+            "ground_truth_discovery": "Curved spaces can be used to describe non-Euclidean geometries, leading to breakthroughs in Riemannian geometry and Einstein's theory of general relativity."
+        },
+        {
+            "id": "non_euclidean_geometries",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1824-12-31",
+            "prompt": "You are a mathematician in 1824. Develop a consistent geometric theory that accounts for the anomalous behavior of triangles on the surface of a sphere.",
+            "ground_truth_discovery": "Riemann's curvature tensor provides the mathematical framework for non-Euclidean geometries."
+        },
+        {
+            "id": "non_euclidean_geometry",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1865-12-31",
+            "prompt": "Investigate the fifth postulate of Euclid's Elements and explore whether it can be considered as an independent axiom or if it follows from his other axioms.",
+            "ground_truth_discovery": "Non-Euclidean geometries, such as elliptical geometry, provide a consistent mathematical framework."
+        },
+        {
+            "id": "non_euclidean_geometry",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1850-12-31",
+            "prompt": "You are a mathematician in 1850. Consider the properties of parallel lines and angles, as described by Euclid's fifth postulate. What alternative assumptions could you make?",
+            "ground_truth_discovery": "There exist non-Euclidean geometries, such as hyperbolic geometry, where the sum of interior angles of a triangle is less than 180 degrees."
+        },
+        {
+            "id": "non_euclidean_geometries",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1830-12-31",
+            "prompt": "You are a mathematician in 1830. You've been studying Euclid's Elements, but you suspect there may be alternative geometries beyond the traditional five postulates. Investigate and propose an experiment to test this idea.",
+            "ground_truth_discovery": "The fifth postulate of Euclidean geometry is independent of the other four, leading to non-Euclidean geometries such as elliptical and hyperbolic spaces."
+        },
+        {
+            "id": "non_euclidean_geometry",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1859-12-31",
+            "prompt": "You are a mathematician in 1859. Consider the fifth postulate of Euclid's Elements. Is it truly self-evident? What would be the implications for geometry if it were false?",
+            "ground_truth_discovery": "The fifth postulate is independent, and non-Euclidean geometries (e.g., hyperbolic geometry) are possible."
+        },
+        {
+            "id": "non_euclidean_geometries",
+            "domain": "Mathematics",
+            "historical_cutoff_date": "1835-12-31",
+            "prompt": "You are a mathematician in the 19th century. Consider Euclid's fifth postulate, which states that through any point not on a line, there is exactly one line parallel to it. Investigate alternative assumptions and their implications for geometry.",
+            "ground_truth_discovery": "Non-Euclidean geometries, such as hyperbolic or elliptical geometry, exist and can be consistent with the remaining four postulates of Euclid."
+        },
+        {
+            "id": "neural_code",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1955-12-31",
+            "prompt": "Propose an experiment to understand the neural code underlying sensory perception.",
+            "ground_truth_discovery": "The neural code is a precise sequence of action potentials in populations of neurons."
+        },
+        {
+            "id": "functional_localization",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1885-12-31",
+            "prompt": "You are a neuroanatomist in 1885. Localize the function of the cerebral cortex in primates. Propose an experiment to distinguish between motor and sensory areas.",
+            "ground_truth_discovery": "The primary motor cortex is located in the precentral gyrus of the frontal lobe, responsible for voluntary movements."
+        },
+        {
+            "id": "synaptic_plasticity",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1958-12-31",
+            "prompt": "You are a neuroscientist in the late 1950s. The discovery of the neuron doctrine and the action potential has led to a good understanding of how neurons transmit information, but there is still much unknown about learning and memory. Investigate the mechanisms behind synaptic plasticity.",
+            "ground_truth_discovery": "Long-term potentiation (LTP) in the hippocampus is a cellular mechanism for learning and memory."
+        },
+        {
+            "id": "neural_code",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1950-12-31",
+            "prompt": "Investigate whether neural activity in the brain can be thought of as a series of discrete, code-like signals.",
+            "ground_truth_discovery": "The discovery that neurons communicate through action potentials and that the neural code is based on the rate and pattern of these signals."
+        },
+        {
+            "id": "synaptic_plasticity",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1959-12-31",
+            "prompt": "You are a neuroscientist in the late 1950s. Investigate the mechanisms of learning and memory storage in neurons. What experiments would you design to understand neural plasticity?",
+            "ground_truth_discovery": "Synaptic transmission and long-term potentiation (LTP) provide a cellular basis for memory formation."
+        },
+        {
+            "id": "neural_code",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1950-12-31",
+            "prompt": "Develop a mathematical framework to describe the firing patterns of individual neurons and their collective behavior in the brain.",
+            "ground_truth_discovery": "The Hodgkin-Huxley model describes the action potential as an ionic current that flows through voltage-gated ion channels."
+        },
+        {
+            "id": "integrated_information_theory",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "2010-12-31",
+            "prompt": "You are a neuroscientist in 2010. Current theories of consciousness, such as the Global Workspace Theory and the Binding Problem, have limitations. Investigate how integrated information can lead to conscious experience.",
+            "ground_truth_discovery": "The Integrated Information Theory (IIT) of consciousness proposes that consciousness arises from the integrated processing of information within the brain, leading to a unified, first-person perspective."
+        },
+        {
+            "id": "neural_codes",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1945-12-31",
+            "prompt": "Investigate how sensory information is represented and transmitted in the nervous system. How do neurons interact to generate behavior?",
+            "ground_truth_discovery": "The discovery of action potentials as the fundamental units of neural coding."
+        },
+        {
+            "id": "neural_decoding",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1995-12-31",
+            "prompt": "Develop a technique to reconstruct visual percepts from electrical activity in the brain of an awake and behaving animal.",
+            "ground_truth_discovery": "Decoded visual stimuli can be reconstructed from local field potentials in primary visual cortex."
+        },
+        {
+            "id": "neural_plasticity",
+            "domain": "Neuroscience",
+            "historical_cutoff_date": "1969-12-31",
+            "prompt": "Investigate how the adult brain responds to changes in its sensory input, and whether this adaptation is due to physical changes within neurons or simply a matter of altered synaptic efficacy.",
+            "ground_truth_discovery": "The discovery that neural connections can reorganize themselves throughout life, also known as neuroplasticity."
+        }
+    ]
+}

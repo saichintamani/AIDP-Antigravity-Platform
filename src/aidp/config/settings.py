@@ -1,6 +1,5 @@
-import os
-from typing import Optional
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
 
 class EnvironmentSettings(BaseSettings):
     """
@@ -13,12 +12,12 @@ class EnvironmentSettings(BaseSettings):
     )
 
     # Provider Keys
-    OPENAI_API_KEY: Optional[str] = None
-    ANTHROPIC_API_KEY: Optional[str] = None
-    PUBMED_API_KEY: Optional[str] = None
-    SEMANTIC_SCHOLAR_API_KEY: Optional[str] = None
-    OPENALEX_API_KEY: Optional[str] = None
-    ARXIV_API_KEY: Optional[str] = None
+    OPENAI_API_KEY: str | None = None
+    ANTHROPIC_API_KEY: str | None = None
+    PUBMED_API_KEY: str | None = None
+    SEMANTIC_SCHOLAR_API_KEY: str | None = None
+    OPENALEX_API_KEY: str | None = None
+    ARXIV_API_KEY: str | None = None
 
     # Global Settings
     ENVIRONMENT: str = "production"

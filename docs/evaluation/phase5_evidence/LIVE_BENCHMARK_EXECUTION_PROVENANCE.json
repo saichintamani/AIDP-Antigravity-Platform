@@ -1,0 +1,28 @@
+[
+  {
+    "case_id": "case-clinical-001",
+    "timestamp": "2026-07-13T13:57:44.232008",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 292.12196040153503,
+    "token_usage": {
+      "input": 3912,
+      "output": 1420
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-clinical-001_1783951030"
+  },
+  {
+    "case_id": "case-clinical-002",
+    "timestamp": "2026-07-13T14:02:22.300749",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 242.46317958831787,
+    "token_usage": {
+      "input": 8361,
+      "output": 2985
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-clinical-002_1783951306"
+  }
+]

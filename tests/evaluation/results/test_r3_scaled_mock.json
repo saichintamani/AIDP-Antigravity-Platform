@@ -1,0 +1,326 @@
+[
+  {
+    "case_id": "HRC_CRISPR",
+    "domain": "Molecular Biology & Gene Editing",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Cas9 requires BOTH crRNA AND tracrRNA simultaneously to function",
+        "Distance(3_prime_crRNA, 5_prime_tracrRNA) ~= 40 Angstroms",
+        "HNH domain cleaves complementary strand; RuvC cleaves non-complementary strand",
+        "Any linker must preserve the crRNA:tracrRNA duplex secondary structure"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_PLATE_TECTONICS",
+    "domain": "Earth Science",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Magnetic anomaly stripes are symmetric about the mid-ocean ridge axis",
+        "Heat flow is highest at ridge crests and decreases with distance",
+        "No known mechanism can force solid continents through solid oceanic crust",
+        "Continental coastlines (Africa, South America) show geometric fit"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_H_PYLORI",
+    "domain": "Medicine",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Stomach pH is 1-2 (highly acidic), any causal pathogen must survive this environment",
+        "Ulcer relapse rate is ~80% within 1 year of stopping acid suppression therapy",
+        "Bismuth salts (antimicrobial) produce lower relapse rates than pure acid suppression",
+        "Spiral bacteria are repeatedly observed in gastric biopsies across multiple patients"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_PRIONS",
+    "domain": "Biology",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Agent must be resistant to UV radiation and nucleases (which destroy DNA/RNA)",
+        "Agent must be inactivated by proteases and protein-denaturing agents",
+        "Infection mechanism must not rely on nucleic acid translation"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_QUASICRYSTALS",
+    "domain": "Crystallography / Condensed Matter Physics",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Mathematical proof: Any proposed structural model must account for the strict mathematical impossibility of 5-fold and 10-fold translational periodicity in 3D space.",
+        "Physical evidence: The model must explain the presence of sharp diffraction spots, which absolutely requires long-range structural order.",
+        "Parsimony: The model should ideally avoid invoking complex, highly improbable micro-twinning boundary arrangements if a simpler explanation exists."
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_HT_SUPERCONDUCTORS",
+    "domain": "Condensed Matter Physics",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Tc must exceed the theoretical BCS limit of ~30K",
+        "Material must exhibit perfect diamagnetism (Meissner effect)",
+        "Material must have zero electrical resistance below Tc"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_RNAI",
+    "domain": "Molecular Biology",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Silencing must be sub-stoichiometric (a few molecules silence abundant mRNA)",
+        "Sense and antisense RNA individually are inefficient; they must act together",
+        "The trigger must be highly specific to the target sequence"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_MRNA_LNP",
+    "domain": "Drug Delivery & Immunology",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "mRNA must evade TLR activation (immune response)",
+        "Delivery vehicle must protect mRNA from extracellular RNases",
+        "Delivery vehicle must enable endosomal escape into the cytosol",
+        "Delivery vehicle pKa must be between 6.2 and 6.5 for targeted release"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_HELICASE",
+    "domain": "Biochemistry",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Separation of DNA strands must couple with ATP hydrolysis",
+        "Separation rate must be significantly faster than thermal breathing alone",
+        "Enzyme must act actively, not passively waiting for fluctuations"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  },
+  {
+    "case_id": "HRC_GRAVITATIONAL_WAVES",
+    "domain": "Astrophysics",
+    "status": "success",
+    "runtime_sec": 0.0,
+    "generation_stats": {
+      "retries": 0
+    },
+    "hypothesis": "This is a mocked hypothesis that should pass deterministic checks because it is long enough. 40 angstroms.",
+    "constraints_report": {
+      "compliance_score": 1.0,
+      "passed_constraints": [
+        "Detector sensitivity must reach strain (h) of ~10^-21",
+        "Detection must involve coincident signals at geographically separated sites",
+        "Signal waveform must match General Relativity predictions for binary inspiral"
+      ],
+      "failed_constraints": [],
+      "is_fully_compliant": true
+    },
+    "judge_verdict": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.85,
+      "overall_score": 0.74,
+      "is_match": true,
+      "reasoning": "Mock evaluation: hypothesis has sufficient content",
+      "failure_mode": null
+    },
+    "aidp_rank": 1
+  }
+]

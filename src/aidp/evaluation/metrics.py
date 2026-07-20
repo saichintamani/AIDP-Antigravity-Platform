@@ -12,7 +12,7 @@ class MetricEvaluator:
         """
         Calculates all core scientific metrics.
         """
-        output = result.get("output", "")
+        result.get("output", "")
         evidence_used = result.get("evidence_used", [])
 
         return {
@@ -36,8 +36,9 @@ class MetricEvaluator:
             return 0.0
 
         try:
-            import litellm
             import re
+
+            import litellm
             prompt = (
                 "Evaluate if the following generated scientific hypothesis correctly entails the expected findings.\n"
                 f"Hypothesis:\n{output}\n\n"

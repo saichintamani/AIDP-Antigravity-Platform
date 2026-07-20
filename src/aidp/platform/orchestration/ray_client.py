@@ -35,10 +35,7 @@ class RayOrchestrator:
             import ray
 
             # Wrap function in ray remote if it's not already
-            if not hasattr(func, "remote"):
-                remote_func = ray.remote(func)
-            else:
-                remote_func = func
+            remote_func = ray.remote(func) if not hasattr(func, "remote") else func
             return remote_func.remote(*args, **kwargs)
         else:
             # Fallback to synchronous local execution

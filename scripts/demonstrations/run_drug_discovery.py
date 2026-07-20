@@ -1,5 +1,6 @@
 from aidp.evaluation.framework import ScientificReportCard
 
+
 def run_drug_discovery_demonstration():
     print("Executing Domain Demonstration: Drug Discovery (Novel Enzyme Target)")
     print("------------------------------------------------------------------")

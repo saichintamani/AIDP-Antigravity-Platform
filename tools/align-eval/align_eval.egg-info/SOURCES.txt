@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+align_eval.egg-info/PKG-INFO
+align_eval.egg-info/SOURCES.txt
+align_eval.egg-info/dependency_links.txt
+align_eval.egg-info/requires.txt
+align_eval.egg-info/top_level.txt

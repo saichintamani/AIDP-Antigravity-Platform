@@ -1,0 +1,29 @@
+[
+    {
+        "case": "Prions",
+        "status": "FAILED",
+        "runtime_seconds": 13.02,
+        "memory_delta_mb": 0.14,
+        "prompt_size_chars": 162,
+        "output_size_chars": 187,
+        "raw_output": "litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x000001F386478710> [The remote computer refused the network connection]"
+    },
+    {
+        "case": "Plate Tectonics",
+        "status": "FAILED",
+        "runtime_seconds": 13.5,
+        "memory_delta_mb": 0.06,
+        "prompt_size_chars": 116,
+        "output_size_chars": 187,
+        "raw_output": "litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x000001F386478710> [The remote computer refused the network connection]"
+    },
+    {
+        "case": "Quasicrystals",
+        "status": "FAILED",
+        "runtime_seconds": 12.8,
+        "memory_delta_mb": 0.07,
+        "prompt_size_chars": 207,
+        "output_size_chars": 187,
+        "raw_output": "litellm.APIConnectionError: OllamaException - Cannot connect to host localhost:11434 ssl:<ssl.SSLContext object at 0x000001F386478710> [The remote computer refused the network connection]"
+    }
+]

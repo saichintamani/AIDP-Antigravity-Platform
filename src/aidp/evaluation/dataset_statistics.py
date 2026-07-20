@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+
 class DatasetStatistics:
     """
     Computes summary statistics for a DiscoveryBench dataset.
@@ -8,7 +9,7 @@ class DatasetStatistics:
     
     def __init__(self, data_path: str) -> None:
         self.data_path = Path(data_path)
-        with open(self.data_path, "r", encoding="utf-8") as f:
+        with open(self.data_path, encoding="utf-8") as f:
             self.data = json.load(f)
 
     def generate_report(self) -> str:
@@ -27,7 +28,7 @@ class DatasetStatistics:
             
             total_evidence_sources += len(case.get("required_evidence_sources", []))
             
-        md = f"# DiscoveryBench v1 Dataset Statistics\n\n"
+        md = "# DiscoveryBench v1 Dataset Statistics\n\n"
         md += f"**Total Benchmark Cases**: {total_cases}\n"
         md += f"**Total Curated Evidence Sources**: {total_evidence_sources}\n"
         md += f"**Average Sources per Case**: {total_evidence_sources / max(1, total_cases):.1f}\n\n"

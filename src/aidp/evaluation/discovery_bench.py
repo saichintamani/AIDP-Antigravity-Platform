@@ -1,8 +1,9 @@
-from dataclasses import dataclass, field
-from typing import Optional, Any
 import datetime
 import json
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
+
 
 @dataclass
 class BenchmarkCase:
@@ -22,7 +23,7 @@ class DiscoveryBenchDataset:
     """
     Dataset for DiscoveryBench, loading from a curated JSON file of historical cases.
     """
-    def __init__(self, data_path: Optional[str] = None) -> None:
+    def __init__(self, data_path: str | None = None) -> None:
         if not data_path:
             # Default path assuming script is run from project root or inside aidp
             base_dir = Path(__file__).parent
@@ -32,7 +33,7 @@ class DiscoveryBenchDataset:
         self._load_dataset(data_path)
 
     def _load_dataset(self, path: str) -> None:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             raw_data = json.load(f)
             
         for item in raw_data:
@@ -52,7 +53,7 @@ class DiscoveryBenchDataset:
     def get_cases(self) -> list[BenchmarkCase]:
         return self.cases
 
-    def get_case_by_id(self, case_id: str) -> Optional[BenchmarkCase]:
+    def get_case_by_id(self, case_id: str) -> BenchmarkCase | None:
         for case in self.cases:
             if case.id == case_id:
                 return case

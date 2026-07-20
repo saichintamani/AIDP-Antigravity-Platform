@@ -1,5 +1,6 @@
 import time
-from typing import Any, Optional
+from typing import Any
+
 import structlog
 
 # Configure structured logging
@@ -24,13 +25,13 @@ class TelemetryManager:
             "total_api_calls": 0,
             "traces": []
         }
-        self.campaign_start_time: Optional[float] = None
+        self.campaign_start_time: float | None = None
 
     def start_campaign(self, campaign_id: str) -> None:
         self.campaign_start_time = time.time()
         logger.info("campaign_started", campaign_id=campaign_id)
 
-    def log_api_call(self, provider: str, cost: float, latency_sec: float, success: bool, error: Optional[str] = None) -> None:
+    def log_api_call(self, provider: str, cost: float, latency_sec: float, success: bool, error: str | None = None) -> None:
         self.metrics["total_cost_usd"] += cost
         self.metrics["total_api_calls"] += 1
         

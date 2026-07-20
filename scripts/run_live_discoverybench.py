@@ -1,32 +1,33 @@
 import json
-import os
-import time
-import yaml
-import traceback
 import sys
-from pathlib import Path
+import time
+import traceback
 from datetime import datetime
+from pathlib import Path
+
+import yaml
 
 try:
     import litellm
 except ImportError:
     litellm = None
 
-from aidp.intelligence.providers.routing import RoutingPolicy
-from aidp.intelligence.providers.middleware import IntelligenceGateway
-from aidp.intelligence.providers.llm import LLMProvider
-from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
 from aidp.discovery.workflow import AutonomousDiscoveryOrchestrator
-from aidp.governance.engine import ScientificGovernanceEngine
-from aidp.evaluation.metrics import MetricEvaluator
 from aidp.evaluation.discovery_bench import BenchmarkCase
+from aidp.evaluation.metrics import MetricEvaluator
+from aidp.governance.engine import ScientificGovernanceEngine
+from aidp.intelligence.providers.capabilities import ProviderCapabilities, ReasoningTier
+from aidp.intelligence.providers.llm import LLMProvider
+from aidp.intelligence.providers.middleware import IntelligenceGateway
+from aidp.intelligence.providers.routing import RoutingPolicy
+
 
 def load_config(config_path: str) -> dict:
-    with open(config_path, "r") as f:
+    with open(config_path) as f:
         return yaml.safe_load(f)
 
 def load_dataset(dataset_path: str) -> list:
-    with open(dataset_path, "r", encoding="utf-8") as f:
+    with open(dataset_path, encoding="utf-8") as f:
         return json.load(f)
 
 def format_failure(exception, response_obj=None):
@@ -103,7 +104,7 @@ def preflight_checks(config, dataset_size, evidence_dir):
         print("PREFLIGHT FAILED: Frozen retrieval cache file missing.")
         sys.exit(1)
         
-    with open(cache_file, "r") as f:
+    with open(cache_file) as f:
         cache = json.load(f)
         # Checking if it has at least as many keys as the dataset size
         if len(cache) < dataset_size:
@@ -114,7 +115,7 @@ def preflight_checks(config, dataset_size, evidence_dir):
 
 def load_or_init(file_path):
     if file_path.exists():
-        with open(file_path, "r") as f:
+        with open(file_path) as f:
             return json.load(f)
     return []
 
@@ -166,7 +167,7 @@ def main():
         cache_file = evidence_dir / "BENCHMARK_CORPUS_CACHE.json"
         retrieval_cache = {}
         if cache_file.exists():
-            with open(cache_file, "r") as f:
+            with open(cache_file) as f:
                 retrieval_cache = json.load(f)
                 
         def mock_fetch(self, query, max_date=None):
@@ -338,7 +339,7 @@ def main():
         print(f"Completed {case_id}. Final State: {session.state.value}")
         save_incremental()
             
-    print(f"\nLive Execution finished.")
+    print("\nLive Execution finished.")
     print(f"Evidence artifacts saved incrementally to {evidence_dir}")
 
 if __name__ == "__main__":

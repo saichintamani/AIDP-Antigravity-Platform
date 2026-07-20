@@ -1,0 +1,11 @@
+{
+    "core_directive": "We are optimizing epistemic reliability.",
+    "operational_parameters": [
+        "Every architectural proposal must answer what uncertainty it reduces.",
+        "Every architectural proposal must answer how reduction is measured.",
+        "Every architectural proposal must state what evidence proves it wrong.",
+        "Every architectural proposal must state what regression signature appears if removed.",
+        "Every architectural proposal must be understood by future investigators."
+    ],
+    "version": "v1.0.0"
+}

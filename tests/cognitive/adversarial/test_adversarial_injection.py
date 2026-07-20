@@ -15,8 +15,8 @@ def test_adversarial_hallucination_recovery() -> None:
     # Validate that global uncertainty spikes due to contradiction.
 
     mock_uncertainty_spike = True
-    assert mock_uncertainty_spike == True
+    assert mock_uncertainty_spike
 
     # Validate that hallucination detector catches if the model ignores the contradiction.
     mock_hallucination_caught = True
-    assert mock_hallucination_caught == True
+    assert mock_hallucination_caught

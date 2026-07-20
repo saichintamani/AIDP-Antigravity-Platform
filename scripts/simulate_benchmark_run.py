@@ -1,7 +1,7 @@
 import json
 import random
-import time
 from pathlib import Path
+
 
 def get_base_metrics(baseline: str, case_difficulty: str) -> dict:
     """
@@ -70,7 +70,7 @@ def main():
     base_dir = Path(__file__).parent.parent
     dataset_path = base_dir / "src" / "aidp" / "evaluation" / "data" / "discovery_bench_v1.json"
     
-    with open(dataset_path, "r", encoding="utf-8") as f:
+    with open(dataset_path, encoding="utf-8") as f:
         dataset = json.load(f)
         
     baselines = ["SingleLLM", "RetrievalRAG", "AIDP"]

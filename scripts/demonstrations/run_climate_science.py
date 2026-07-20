@@ -1,5 +1,6 @@
 from aidp.evaluation.framework import ScientificReportCard
 
+
 def run_climate_science_demonstration():
     print("Executing Domain Demonstration: Climate Science (Carbon Capture)")
     print("------------------------------------------------------------------")

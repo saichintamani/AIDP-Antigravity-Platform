@@ -1,9 +1,12 @@
-import pytest
 from unittest.mock import MagicMock
+
+import pytest
+import requests
+
+from aidp.intelligence.providers.capabilities import LOCAL_MOCK_CAPABILITIES
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 from aidp.intelligence.providers.routing import RoutingPolicy
-from aidp.intelligence.providers.capabilities import LOCAL_MOCK_CAPABILITIES
-import requests
+
 
 def test_gateway_timeout_degradation():
     """

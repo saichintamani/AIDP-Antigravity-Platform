@@ -15,12 +15,12 @@ else:
     ActorPool = None
 
 
-from aidp.intelligence.agent import BaseAgent  # noqa: E402
-
-
-from unittest.mock import MagicMock
 from typing import cast
+from unittest.mock import MagicMock
+
+from aidp.intelligence.agent import BaseAgent  # noqa: E402
 from aidp.intelligence.providers.base import BaseProvider
+
 
 class DummyRayAgent(BaseAgent):
     """

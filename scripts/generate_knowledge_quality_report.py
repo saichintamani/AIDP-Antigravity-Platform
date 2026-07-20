@@ -1,6 +1,5 @@
-import sys
-import json
 from aidp.knowledge.embedding import has_sentence_transformers
+
 
 def generate_report() -> None:
     print("# M7A Knowledge Quality Benchmark")

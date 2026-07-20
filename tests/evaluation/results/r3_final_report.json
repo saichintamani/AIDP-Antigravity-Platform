@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "phase": "R3 Scaled Generative Discovery",
+    "total_cases_evaluated": 10
+  },
+  "aggregate_metrics": {
+    "top1_accuracy": 0.0,
+    "average_rubric_scores": {
+      "scientific_grounding": 0.75,
+      "mechanistic_accuracy": 0.7,
+      "testability": 0.8,
+      "novelty": 0.6,
+      "constraint_compliance": 0.025,
+      "overall_score": 0.74
+    }
+  },
+  "failure_genomics": {
+    "total_failures": 10,
+    "taxonomy_counts": {
+      "CONSTRAINT_VIOLATION": 10,
+      "TEMPORAL_LEAK": 0,
+      "MECHANISM_MISS": 0,
+      "HALLUCINATION": 0,
+      "ADVERSARY_REJECTION": 0,
+      "JSON_PARSE_FAILURE": 0,
+      "TIMEOUT": 0,
+      "UNKNOWN": 0
+    },
+    "distribution_pct": {
+      "CONSTRAINT_VIOLATION": 100.0,
+      "TEMPORAL_LEAK": 0.0,
+      "MECHANISM_MISS": 0.0,
+      "HALLUCINATION": 0.0,
+      "ADVERSARY_REJECTION": 0.0,
+      "JSON_PARSE_FAILURE": 0.0,
+      "TIMEOUT": 0.0,
+      "UNKNOWN": 0.0
+    },
+    "most_common_failure": "CONSTRAINT_VIOLATION",
+    "failed_cases": [
+      "HRC_CRISPR",
+      "HRC_PLATE_TECTONICS",
+      "HRC_H_PYLORI",
+      "HRC_PRIONS",
+      "HRC_QUASICRYSTALS",
+      "HRC_HT_SUPERCONDUCTORS",
+      "HRC_RNAI",
+      "HRC_MRNA_LNP",
+      "HRC_HELICASE",
+      "HRC_GRAVITATIONAL_WAVES"
+    ]
+  },
+  "confidence_calibration": {
+    "expected_calibration_error": 0.74,
+    "is_well_calibrated": false,
+    "bin_statistics": {
+      "0.6-0.8": {
+        "accuracy": 0.0,
+        "avg_confidence": 0.7400000000000001,
+        "samples": 10
+      }
+    }
+  },
+  "cross_domain_transfer": {
+    "total_cases_analyzed": 10,
+    "cross_domain_retrievals_detected": 3,
+    "successful_transfers": 1,
+    "transfer_efficiency": 0.3333333333333333,
+    "note": "Awaiting full memory tracing integration in live mode. Showing heuristic data based on run volume."
+  },
+  "raw_results_path": "D:\\My projects\\AIDP (Artificial Intelligence Discovery Platform)\\src\\aidp\\evaluation\\../../../tests/evaluation/results/test_r3_scaled_mock.json"
+}

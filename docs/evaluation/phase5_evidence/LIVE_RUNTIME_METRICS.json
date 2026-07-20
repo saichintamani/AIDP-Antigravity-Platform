@@ -1,0 +1,56 @@
+[
+  {
+    "case_id": "case-clinical-001",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 1.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 1.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 292.12196040153503,
+    "baseline_runtime": 20.661644220352173,
+    "aidp_token_usage": 5332,
+    "baseline_token_usage": 972
+  },
+  {
+    "case_id": "case-clinical-002",
+    "aidp_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 1.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 1.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 242.46317958831787,
+    "baseline_runtime": 19.1588351726532,
+    "aidp_token_usage": 11346,
+    "baseline_token_usage": 1087
+  }
+]

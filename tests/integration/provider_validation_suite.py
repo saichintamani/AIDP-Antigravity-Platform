@@ -1,8 +1,8 @@
-import os
 import json
-import pytest
 from pathlib import Path
+
 from aidp.config.settings import get_settings
+
 
 def test_provider_configuration_validation():
     """

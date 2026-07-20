@@ -1,5 +1,4 @@
 import uuid
-from typing import Optional
 from dataclasses import dataclass, field
 
 from aidp.knowledge.provenance import ProvenanceEntry
@@ -68,7 +67,7 @@ class ExperimentalResult:
     methodology: str
     p_value: float | None = None
     effect_size: float | None = None
-    provenance: Optional[ProvenanceEntry] = None
+    provenance: ProvenanceEntry | None = None
     id: str = field(default_factory=lambda: f"exp_{uuid.uuid4()}")
 
     def validate(self) -> None:
@@ -103,3 +102,55 @@ class WorldModel:
 
     def add_relationship(self, relationship: ScientificRelationship) -> None:
         self.relationships[relationship.id] = relationship
+
+    def get_entity_by_name(self, name: str) -> ScientificEntity | None:
+        name_lower = name.lower()
+        for ent in self.entities.values():
+            if ent.name.lower() == name_lower or name_lower in [a.lower() for a in ent.aliases]:
+                return ent
+        return None
+
+    def get_relationships_between(self, source_id: str, target_id: str) -> list[ScientificRelationship]:
+        return [
+            r for r in self.relationships.values()
+            if r.source_entity_id == source_id and r.target_entity_id == target_id
+        ]
+
+    def find_contradictions(self) -> list[tuple[ScientificRelationship, ScientificRelationship]]:
+        """
+        Finds pairs of relationships that assert contradictory claims about the same entity pair.
+        """
+        contradictions = []
+        
+        # Simple heuristic: Opposing relationship types
+        opposing_pairs = {
+            "upregulates": "downregulates",
+            "downregulates": "upregulates",
+            "activates": "inhibits",
+            "inhibits": "activates",
+            "increases": "decreases",
+            "decreases": "increases"
+        }
+
+        # Group relationships by (source, target)
+        grouped: dict[tuple[str, str], list[ScientificRelationship]] = {}
+        for r in self.relationships.values():
+            key = (r.source_entity_id, r.target_entity_id)
+            if key not in grouped:
+                grouped[key] = []
+            grouped[key].append(r)
+            
+        for key, rels in grouped.items():
+            if len(rels) > 1:
+                # Check all pairs in this group
+                for i in range(len(rels)):
+                    for j in range(i + 1, len(rels)):
+                        r1 = rels[i]
+                        r2 = rels[j]
+                        t1 = r1.relation_type.lower()
+                        t2 = r2.relation_type.lower()
+                        
+                        if opposing_pairs.get(t1) == t2 or (t1 != t2 and t1 not in ["associatedwith", "interacts"] and t2 not in ["associatedwith", "interacts"]):
+                            contradictions.append((r1, r2))
+                            
+        return contradictions

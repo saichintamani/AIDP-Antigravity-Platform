@@ -1,0 +1,23 @@
+{
+  "case_id": "DEMO_CASE_01",
+  "domain": "Astrophysics",
+  "time_window": "Up to January 1, 2015",
+  "difficulty_rating": "High",
+  "known_evidence": [
+    {
+      "source_id": "EV_01",
+      "source_type": "Observation",
+      "extracted_text": "Interferometers detect minute variations in laser phase shifts, but are highly susceptible to seismic noise.",
+      "tags": ["Interferometry", "Noise"]
+    }
+  ],
+  "constraints": [
+    "Must account for seismic noise floor below 10Hz.",
+    "Must be technologically feasible within the 2015 timeframe."
+  ],
+  "candidate_experiments": [
+    "Upgrade interferometers with active seismic isolation and higher-power lasers to detect binary mergers.",
+    "Abandon ground-based interferometry and immediately lobby for a space-based constellation (e.g. LISA).",
+    "Focus entirely on resonant mass detectors (Weber bars) at ultra-low cryogenic temperatures."
+  ]
+}

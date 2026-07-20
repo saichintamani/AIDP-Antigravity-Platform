@@ -1,6 +1,7 @@
 from aidp.intelligence.laboratory import LaboratoryOrchestrator
 from aidp.intelligence.providers.mock import MockProvider
 
+
 def test_laboratory_orchestrator() -> None:
     lab = LaboratoryOrchestrator(default_provider=MockProvider())
 

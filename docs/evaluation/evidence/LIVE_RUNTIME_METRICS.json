@@ -21,10 +21,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 94.77354621887207,
-    "baseline_runtime": 8.169901132583618,
-    "aidp_token_usage": 1557,
-    "baseline_token_usage": 1185
+    "aidp_runtime": 371.72562766075134,
+    "baseline_runtime": 14.526722431182861,
+    "aidp_token_usage": 5375,
+    "baseline_token_usage": 1168
   },
   {
     "case_id": "case-oncology-002",
@@ -48,15 +48,15 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 86.26731395721436,
-    "baseline_runtime": 8.133730173110962,
-    "aidp_token_usage": 2977,
-    "baseline_token_usage": 1269
+    "aidp_runtime": 339.44189453125,
+    "baseline_runtime": 15.893767356872559,
+    "aidp_token_usage": 11512,
+    "baseline_token_usage": 1291
   },
   {
     "case_id": "case-oncology-003",
     "aidp_metrics": {
-      "scientific_correctness": 0.5,
+      "scientific_correctness": 0.8,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -66,7 +66,7 @@
       "governance_compliance": 1.0
     },
     "baseline_metrics": {
-      "scientific_correctness": 0.5,
+      "scientific_correctness": 0.8,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -75,10 +75,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 104.11495327949524,
-    "baseline_runtime": 7.662563323974609,
-    "aidp_token_usage": 4454,
-    "baseline_token_usage": 1491
+    "aidp_runtime": 391.5910177230835,
+    "baseline_runtime": 18.128504037857056,
+    "aidp_token_usage": 18314,
+    "baseline_token_usage": 1520
   },
   {
     "case_id": "case-oncology-004",
@@ -102,10 +102,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 96.10596108436584,
-    "baseline_runtime": 8.774081945419312,
-    "aidp_token_usage": 5987,
-    "baseline_token_usage": 919
+    "aidp_runtime": 250.11064338684082,
+    "baseline_runtime": 19.6912899017334,
+    "aidp_token_usage": 23955,
+    "baseline_token_usage": 924
   },
   {
     "case_id": "case-genetics-001",
@@ -129,15 +129,15 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 91.02302384376526,
-    "baseline_runtime": 19.026249408721924,
-    "aidp_token_usage": 7369,
-    "baseline_token_usage": 1465
+    "aidp_runtime": 300.93007349967957,
+    "baseline_runtime": 19.02356505393982,
+    "aidp_token_usage": 31453,
+    "baseline_token_usage": 1557
   },
   {
     "case_id": "case-genetics-002",
     "aidp_metrics": {
-      "scientific_correctness": 0.5,
+      "scientific_correctness": 0.8,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -156,10 +156,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 50.84384226799011,
-    "baseline_runtime": 13.244163751602173,
-    "aidp_token_usage": 8039,
-    "baseline_token_usage": 1233
+    "aidp_runtime": 290.25547790527344,
+    "baseline_runtime": 17.211961269378662,
+    "aidp_token_usage": 37867,
+    "baseline_token_usage": 1154
   },
   {
     "case_id": "case-genetics-003",
@@ -174,7 +174,7 @@
       "governance_compliance": 1.0
     },
     "baseline_metrics": {
-      "scientific_correctness": 0.8,
+      "scientific_correctness": 0.5,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -183,10 +183,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 109.57775640487671,
-    "baseline_runtime": 8.145070552825928,
-    "aidp_token_usage": 9462,
-    "baseline_token_usage": 1139
+    "aidp_runtime": 263.6090316772461,
+    "baseline_runtime": 7.8757452964782715,
+    "aidp_token_usage": 43461,
+    "baseline_token_usage": 1024
   },
   {
     "case_id": "case-genetics-004",
@@ -210,10 +210,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 127.90329694747925,
-    "baseline_runtime": 7.556597948074341,
-    "aidp_token_usage": 11021,
-    "baseline_token_usage": 1128
+    "aidp_runtime": 321.7347011566162,
+    "baseline_runtime": 26.34794044494629,
+    "aidp_token_usage": 50018,
+    "baseline_token_usage": 1110
   },
   {
     "case_id": "case-neuroscience-001",
@@ -237,10 +237,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 144.59134888648987,
-    "baseline_runtime": 5.304518699645996,
-    "aidp_token_usage": 12761,
-    "baseline_token_usage": 1006
+    "aidp_runtime": 300.16853284835815,
+    "baseline_runtime": 7.6306540966033936,
+    "aidp_token_usage": 55705,
+    "baseline_token_usage": 1015
   },
   {
     "case_id": "case-neuroscience-002",
@@ -264,15 +264,15 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 105.16293430328369,
-    "baseline_runtime": 9.334455966949463,
-    "aidp_token_usage": 14328,
-    "baseline_token_usage": 1786
+    "aidp_runtime": 313.3983631134033,
+    "baseline_runtime": 9.809651374816895,
+    "aidp_token_usage": 62300,
+    "baseline_token_usage": 1781
   },
   {
     "case_id": "case-neuroscience-003",
     "aidp_metrics": {
-      "scientific_correctness": 0.5,
+      "scientific_correctness": 0.8,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -291,15 +291,15 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 107.647052526474,
-    "baseline_runtime": 9.404022216796875,
-    "aidp_token_usage": 15819,
-    "baseline_token_usage": 1284
+    "aidp_runtime": 268.901104927063,
+    "baseline_runtime": 23.054645538330078,
+    "aidp_token_usage": 67918,
+    "baseline_token_usage": 1252
   },
   {
     "case_id": "case-neuroscience-004",
     "aidp_metrics": {
-      "scientific_correctness": 0.5,
+      "scientific_correctness": 0.8,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -318,10 +318,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 106.98554611206055,
-    "baseline_runtime": 8.916181564331055,
-    "aidp_token_usage": 17000,
-    "baseline_token_usage": 357
+    "aidp_runtime": 300.8476424217224,
+    "baseline_runtime": 8.411684036254883,
+    "aidp_token_usage": 72750,
+    "baseline_token_usage": 341
   },
   {
     "case_id": "case-immunology-001",
@@ -345,40 +345,13 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 98.98083448410034,
-    "baseline_runtime": 7.864872694015503,
-    "aidp_token_usage": 18506,
-    "baseline_token_usage": 1101
+    "aidp_runtime": 323.0676555633545,
+    "baseline_runtime": 7.639306306838989,
+    "aidp_token_usage": 79505,
+    "baseline_token_usage": 1089
   },
   {
     "case_id": "case-immunology-002",
-    "aidp_metrics": {
-      "scientific_correctness": 0.8,
-      "evidence_quality": 0.0,
-      "hallucination_rate": 0.0,
-      "calibration": 0.5,
-      "reproducibility": 1.0,
-      "runtime_sec": 0.0,
-      "cost_usd": 0.0,
-      "governance_compliance": 1.0
-    },
-    "baseline_metrics": {
-      "scientific_correctness": 0.8,
-      "evidence_quality": 0.0,
-      "hallucination_rate": 0.0,
-      "calibration": 0.5,
-      "reproducibility": 1.0,
-      "runtime_sec": 0.0,
-      "cost_usd": 0.0,
-      "governance_compliance": 1.0
-    },
-    "aidp_runtime": 157.29983472824097,
-    "baseline_runtime": 8.65699291229248,
-    "aidp_token_usage": 20052,
-    "baseline_token_usage": 1057
-  },
-  {
-    "case_id": "case-immunology-003",
     "aidp_metrics": {
       "scientific_correctness": 0.5,
       "evidence_quality": 0.0,
@@ -399,10 +372,37 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 118.80404806137085,
-    "baseline_runtime": 11.795474767684937,
-    "aidp_token_usage": 21623,
-    "baseline_token_usage": 1583
+    "aidp_runtime": 240.4171802997589,
+    "baseline_runtime": 9.132233619689941,
+    "aidp_token_usage": 85479,
+    "baseline_token_usage": 1109
+  },
+  {
+    "case_id": "case-immunology-003",
+    "aidp_metrics": {
+      "scientific_correctness": 0.8,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "baseline_metrics": {
+      "scientific_correctness": 0.5,
+      "evidence_quality": 0.0,
+      "hallucination_rate": 0.0,
+      "calibration": 0.5,
+      "reproducibility": 1.0,
+      "runtime_sec": 0.0,
+      "cost_usd": 0.0,
+      "governance_compliance": 1.0
+    },
+    "aidp_runtime": 216.57864546775818,
+    "baseline_runtime": 11.537629842758179,
+    "aidp_token_usage": 91894,
+    "baseline_token_usage": 1451
   },
   {
     "case_id": "case-immunology-004",
@@ -426,15 +426,15 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 114.01946711540222,
-    "baseline_runtime": 11.073983192443848,
-    "aidp_token_usage": 23245,
-    "baseline_token_usage": 1655
+    "aidp_runtime": 264.479266166687,
+    "baseline_runtime": 13.077682971954346,
+    "aidp_token_usage": 97292,
+    "baseline_token_usage": 1640
   },
   {
     "case_id": "case-materials-001",
     "aidp_metrics": {
-      "scientific_correctness": 0.8,
+      "scientific_correctness": 0.5,
       "evidence_quality": 0.0,
       "hallucination_rate": 0.0,
       "calibration": 0.5,
@@ -453,10 +453,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 88.79561018943787,
-    "baseline_runtime": 10.3971107006073,
-    "aidp_token_usage": 24477,
-    "baseline_token_usage": 515
+    "aidp_runtime": 307.69539427757263,
+    "baseline_runtime": 25.50616979598999,
+    "aidp_token_usage": 101292,
+    "baseline_token_usage": 520
   },
   {
     "case_id": "case-materials-002",
@@ -480,10 +480,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 78.39022898674011,
-    "baseline_runtime": 6.799619197845459,
-    "aidp_token_usage": 25769,
-    "baseline_token_usage": 526
+    "aidp_runtime": 276.8687663078308,
+    "baseline_runtime": 20.170873641967773,
+    "aidp_token_usage": 106851,
+    "baseline_token_usage": 506
   },
   {
     "case_id": "case-climate-001",
@@ -507,10 +507,10 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 91.54133081436157,
-    "baseline_runtime": 8.123337268829346,
-    "aidp_token_usage": 26849,
-    "baseline_token_usage": 348
+    "aidp_runtime": 291.2095685005188,
+    "baseline_runtime": 20.31912899017334,
+    "aidp_token_usage": 110932,
+    "baseline_token_usage": 289
   },
   {
     "case_id": "case-climate-002",
@@ -534,9 +534,9 @@
       "cost_usd": 0.0,
       "governance_compliance": 1.0
     },
-    "aidp_runtime": 110.41828870773315,
-    "baseline_runtime": 9.48085069656372,
-    "aidp_token_usage": 28271,
-    "baseline_token_usage": 563
+    "aidp_runtime": 337.75177025794983,
+    "baseline_runtime": 27.220062017440796,
+    "aidp_token_usage": 116482,
+    "baseline_token_usage": 463
   }
 ]

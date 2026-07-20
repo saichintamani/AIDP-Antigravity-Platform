@@ -18,4 +18,4 @@ def test_gold_standard_runner() -> None:
 
     assert result["case_id"] == "crispr_cas9"
     assert "predicted_discovery" in result
-    assert result["historical_leakage_detected"] == False
+    assert not result["historical_leakage_detected"]

@@ -1,8 +1,8 @@
 import json
-from typing import Optional, Any
+from typing import Any
 
 from aidp.discovery.debate import ScientificDebateEngine
-from aidp.discovery.scientific_planning import ScientificPlanningLayer
+from aidp.discovery.scientific_planning import WetLabPlanner
 from aidp.intelligence.providers.capabilities import GEMINI_1_5_PRO_CAPABILITIES
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 from aidp.intelligence.providers.routing import RoutingPolicy
@@ -11,7 +11,7 @@ from aidp.intelligence.providers.routing import RoutingPolicy
 class MockLLMProviderForPipeline:
     """Mocks the raw string output of an LLM responding to pipeline prompts."""
 
-    def query(self, prompt: str, schema_hint: Optional[dict[str, Any]] = None) -> Any:
+    def query(self, prompt: str, schema_hint: dict[str, Any] | None = None) -> Any:
         print(f"MOCK RECEIVED PROMPT:\n{prompt}")
         if "Evidence Linkage Validator" in prompt:
             payload = {
@@ -38,6 +38,28 @@ class MockLLMProviderForPipeline:
                 "statistical_test": "ANOVA",
                 "power_considerations": "High power",
                 "reproducibility_notes": "Replicate 3 times",
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Control Taxonomy Generator" in prompt:
+            payload = {
+                "controls": [
+                    {
+                        "type": "Negative",
+                        "group_name": "Vehicle Control",
+                        "isolated_variable": "Buffer",
+                        "purpose_and_justification": "To ensure buffer has no effect"
+                    }
+                ]
+            }
+            return f"```json\n{json.dumps(payload)}\n```"
+
+        if "Engineer Feasibility Generator" in prompt:
+            payload = {
+                "resource_estimation": "Standard compute",
+                "cost_prediction": "Low",
+                "failure_prediction": "Convergence failure",
+                "critical_engineering_risks": ["Risk 1"]
             }
             return f"```json\n{json.dumps(payload)}\n```"
 
@@ -74,7 +96,7 @@ def test_m10_2_end_to_end_pipeline() -> None:
     routing.register_provider("mock", provider, GEMINI_1_5_PRO_CAPABILITIES)
     gateway = IntelligenceGateway(routing_policy=routing)
 
-    planner = ScientificPlanningLayer(gateway=gateway)
+    planner = WetLabPlanner(gateway=gateway)
     debate_engine = ScientificDebateEngine(gateway=gateway)
 
     hypothesis = {"id": "h_1", "claim": "X causes Y"}

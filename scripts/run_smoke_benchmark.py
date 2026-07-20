@@ -1,10 +1,10 @@
 import json
-import os
 import time
-import yaml
 import traceback
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
+import yaml
 
 try:
     import litellm
@@ -12,11 +12,11 @@ except ImportError:
     litellm = None
 
 def load_config(config_path: str) -> dict:
-    with open(config_path, "r") as f:
+    with open(config_path) as f:
         return yaml.safe_load(f)
 
 def load_dataset(dataset_path: str) -> list:
-    with open(dataset_path, "r", encoding="utf-8") as f:
+    with open(dataset_path, encoding="utf-8") as f:
         return json.load(f)
 
 class ExecutionSafetyController:

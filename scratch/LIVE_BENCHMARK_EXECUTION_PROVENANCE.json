@@ -1,0 +1,262 @@
+[
+  {
+    "case_id": "case-oncology-001",
+    "timestamp": "2026-07-12T19:53:23.235297",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 94.77354621887207,
+    "token_usage": {
+      "input": 975,
+      "output": 582
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-oncology-001_1783885988"
+  },
+  {
+    "case_id": "case-oncology-002",
+    "timestamp": "2026-07-12T19:55:00.198267",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 86.26731395721436,
+    "token_usage": {
+      "input": 1918,
+      "output": 1059
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-oncology-002_1783886089"
+  },
+  {
+    "case_id": "case-oncology-003",
+    "timestamp": "2026-07-12T19:56:54.881133",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 104.11495327949524,
+    "token_usage": {
+      "input": 2892,
+      "output": 1562
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-oncology-003_1783886204"
+  },
+  {
+    "case_id": "case-oncology-004",
+    "timestamp": "2026-07-12T19:58:44.975142",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 96.10596108436584,
+    "token_usage": {
+      "input": 3846,
+      "output": 2141
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-oncology-004_1783886310"
+  },
+  {
+    "case_id": "case-genetics-001",
+    "timestamp": "2026-07-12T20:00:45.478223",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 91.02302384376526,
+    "token_usage": {
+      "input": 4753,
+      "output": 2616
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-genetics-001_1783886416"
+  },
+  {
+    "case_id": "case-genetics-002",
+    "timestamp": "2026-07-12T20:02:04.091289",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 50.84384226799011,
+    "token_usage": {
+      "input": 5179,
+      "output": 2860
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-genetics-002_1783886496"
+  },
+  {
+    "case_id": "case-genetics-003",
+    "timestamp": "2026-07-12T20:04:05.154103",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 109.57775640487671,
+    "token_usage": {
+      "input": 6063,
+      "output": 3399
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-genetics-003_1783886633"
+  },
+  {
+    "case_id": "case-genetics-004",
+    "timestamp": "2026-07-12T20:06:23.563076",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 127.90329694747925,
+    "token_usage": {
+      "input": 7049,
+      "output": 3972
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-genetics-004_1783886773"
+  },
+  {
+    "case_id": "case-neuroscience-001",
+    "timestamp": "2026-07-12T20:08:56.534628",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 144.59134888648987,
+    "token_usage": {
+      "input": 8084,
+      "output": 4677
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-neuroscience-001_1783886928"
+  },
+  {
+    "case_id": "case-neuroscience-002",
+    "timestamp": "2026-07-12T20:10:57.052075",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 105.16293430328369,
+    "token_usage": {
+      "input": 9070,
+      "output": 5258
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-neuroscience-002_1783887041"
+  },
+  {
+    "case_id": "case-neuroscience-003",
+    "timestamp": "2026-07-12T20:12:59.322741",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 107.647052526474,
+    "token_usage": {
+      "input": 10035,
+      "output": 5784
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-neuroscience-003_1783887164"
+  },
+  {
+    "case_id": "case-neuroscience-004",
+    "timestamp": "2026-07-12T20:14:58.586965",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 106.98554611206055,
+    "token_usage": {
+      "input": 10759,
+      "output": 6241
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-neuroscience-004_1783887286"
+  },
+  {
+    "case_id": "case-immunology-001",
+    "timestamp": "2026-07-12T20:16:48.726984",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 98.98083448410034,
+    "token_usage": {
+      "input": 11725,
+      "output": 6781
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-immunology-001_1783887397"
+  },
+  {
+    "case_id": "case-immunology-002",
+    "timestamp": "2026-07-12T20:19:39.768929",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 157.29983472824097,
+    "token_usage": {
+      "input": 12715,
+      "output": 7337
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-immunology-002_1783887566"
+  },
+  {
+    "case_id": "case-immunology-003",
+    "timestamp": "2026-07-12T20:21:58.121291",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 118.80404806137085,
+    "token_usage": {
+      "input": 13708,
+      "output": 7915
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-immunology-003_1783887698"
+  },
+  {
+    "case_id": "case-immunology-004",
+    "timestamp": "2026-07-12T20:24:13.458514",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 114.01946711540222,
+    "token_usage": {
+      "input": 14733,
+      "output": 8512
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-immunology-004_1783887832"
+  },
+  {
+    "case_id": "case-materials-001",
+    "timestamp": "2026-07-12T20:26:00.498151",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 88.79561018943787,
+    "token_usage": {
+      "input": 15493,
+      "output": 8984
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-materials-001_1783887942"
+  },
+  {
+    "case_id": "case-materials-002",
+    "timestamp": "2026-07-12T20:27:29.049138",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 78.39022898674011,
+    "token_usage": {
+      "input": 16316,
+      "output": 9453
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-materials-002_1783888038"
+  },
+  {
+    "case_id": "case-climate-001",
+    "timestamp": "2026-07-12T20:29:11.672507",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 91.54133081436157,
+    "token_usage": {
+      "input": 17025,
+      "output": 9824
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-climate-001_1783888140"
+  },
+  {
+    "case_id": "case-climate-002",
+    "timestamp": "2026-07-12T20:31:19.506535",
+    "provider": "ollama",
+    "model": "ollama/llama3.2:3b",
+    "runtime": 110.41828870773315,
+    "token_usage": {
+      "input": 17894,
+      "output": 10377
+    },
+    "cost": 0.0,
+    "run_identifier": "run_case-climate-002_1783888262"
+  }
+]

@@ -4,11 +4,10 @@ from aidp.discovery.debate import ScientificDebateEngine
 from aidp.intelligence.providers.capabilities import GEMINI_1_5_PRO_CAPABILITIES
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 from aidp.intelligence.providers.routing import RoutingPolicy
-from typing import Optional
 
 
 class SmartMockProvider:
-    def query(self, prompt: str, schema_hint: Optional[dict] = None) -> str:
+    def query(self, prompt: str, schema_hint: dict | None = None) -> str:
         role = "Reviewer"
         if "Statistician" in prompt:
             role = "Statistician"

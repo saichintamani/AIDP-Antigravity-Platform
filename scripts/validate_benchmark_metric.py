@@ -1,7 +1,9 @@
-import sys
 import datetime
-from aidp.evaluation.metrics import MetricEvaluator
+import sys
+
 from aidp.evaluation.discovery_bench import BenchmarkCase
+from aidp.evaluation.metrics import MetricEvaluator
+
 
 def main():
     evaluator = MetricEvaluator()

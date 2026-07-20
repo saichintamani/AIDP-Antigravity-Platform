@@ -1,0 +1,48 @@
+{
+  "stability": {
+    "HRC_CRISPR": {
+      "mean_rank": 1.2,
+      "mean_score": 0.8733318245915122,
+      "score_variance": 0.0,
+      "min_rank": 1,
+      "max_rank": 2
+    },
+    "HRC_PRIONS": {
+      "mean_rank": 3.6,
+      "mean_score": 0.006594955651104068,
+      "score_variance": 3.22904245152548e-05,
+      "min_rank": 3,
+      "max_rank": 4
+    },
+    "HRC_QUASICRYSTALS": {
+      "mean_rank": 3.8,
+      "mean_score": 0.011416472594287571,
+      "score_variance": 0.0002235583618270001,
+      "min_rank": 3,
+      "max_rank": 4
+    }
+  },
+  "sensitivity": {
+    "HRC_CRISPR": {
+      "base_rank": 1,
+      "inverted_rank": 4,
+      "rank_delta": 3,
+      "base_score": 0.8733318245915123,
+      "inverted_score": 0.0024450689368106238
+    },
+    "HRC_PRIONS": {
+      "base_rank": 4,
+      "inverted_rank": 4,
+      "rank_delta": 0,
+      "base_score": 0.0024450689368106238,
+      "inverted_score": 0.0024450689368106238
+    },
+    "HRC_QUASICRYSTALS": {
+      "base_rank": 4,
+      "inverted_rank": 4,
+      "rank_delta": 0,
+      "base_score": 0.0024450689368106238,
+      "inverted_score": 0.03692737043846175
+    }
+  }
+}

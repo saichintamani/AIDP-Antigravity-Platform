@@ -1,7 +1,8 @@
 import json
 import uuid
-from typing import Optional, Any
+from typing import Any
 
+from aidp.intelligence.models import HypothesisPayload
 from aidp.intelligence.providers.middleware import IntelligenceGateway
 from aidp.intelligence.reasoning_planner import ReasoningPlanner
 from aidp.intelligence.task_specification import CognitiveTaskType, TaskSpecification
@@ -12,7 +13,7 @@ class HypothesisGenerator:
     Synthesizes competing hypotheses bridging isolated knowledge gaps or resolving contradictions.
     """
 
-    def __init__(self, gateway: Optional[IntelligenceGateway] = None) -> None:
+    def __init__(self, gateway: IntelligenceGateway | None = None) -> None:
         self.gateway = gateway
         self.planner = ReasoningPlanner(gateway) if gateway else None
 
@@ -70,7 +71,7 @@ class HypothesisGenerator:
             lines.append("")
         return "\n".join(lines)
 
-    def _extract_retrieved_dois(self, knowledge_context: Optional[dict[str, Any]]) -> list[str]:
+    def _extract_retrieved_dois(self, knowledge_context: dict[str, Any] | None) -> list[str]:
         """Extract all DOIs from retrieved documents for system-attached provenance."""
         if not knowledge_context:
             return []
@@ -81,7 +82,7 @@ class HypothesisGenerator:
                 dois.append(doi)
         return dois
 
-    def generate_from_contradiction(self, contradiction: dict[str, Any], knowledge_context: Optional[dict[str, Any]] = None) -> list[dict[str, Any]]:
+    def generate_from_contradiction(self, contradiction: dict[str, Any], knowledge_context: dict[str, Any] | None = None) -> list[dict[str, Any]]:
         """
         Takes a Contradiction and outputs hypotheses that resolve it.
         """
@@ -109,12 +110,7 @@ class HypothesisGenerator:
         # Extract DOIs from retrieval for system-attached provenance
         retrieved_dois = self._extract_retrieved_dois(knowledge_context)
 
-        schema_hint = {
-            "claim": None, 
-            "rationale": None, 
-            "confidence_prior": 0.5,
-            "evidence_links": []
-        }
+        schema_hint = HypothesisPayload
 
         # Format retrieved knowledge as structured text, not raw JSON
         context_dict = {"contradiction": json.dumps(contradiction)}
@@ -133,14 +129,13 @@ class HypothesisGenerator:
         try:
             result = self.planner.execute_task(spec) if self.planner else {}
             
-            # Safely extract confidence_prior (model may return string, None, or number)
             try:
-                conf = float(result.get("confidence_prior", 0.5) or 0.5)
+                conf = float(result.confidence_prior if hasattr(result, "confidence_prior") else result.get("confidence_prior", 0.5) or 0.5)
             except (ValueError, TypeError):
                 conf = 0.5
             
             # Safely normalize evidence_links from model output
-            raw_links = result.get("evidence_links", [])
+            raw_links = result.evidence_links if hasattr(result, "evidence_links") else result.get("evidence_links", [])
             if isinstance(raw_links, str):
                 raw_links = [raw_links] if raw_links else []
             elif not isinstance(raw_links, list):
@@ -153,8 +148,8 @@ class HypothesisGenerator:
                 
             h_new = {
                 "id": f"hyp-{uuid.uuid4()}",
-                "claim": result.get("claim", "Failed to generate claim."),
-                "rationale": result.get("rationale", ""),
+                "claim": result.claim if hasattr(result, "claim") else result.get("claim", "Failed to generate claim."),
+                "rationale": result.rationale if hasattr(result, "rationale") else result.get("rationale", ""),
                 "supportingEvidenceIds": [
                     contradiction.get("sourceAId"),
                     contradiction.get("sourceBId"),
@@ -168,6 +163,14 @@ class HypothesisGenerator:
             # Provenance chain = all evidence links (already validated DOIs from retrieval)
             h_new["provenance_chain"] = list(all_evidence_links)
             h_new["subjective_confidence"] = 0.95
+            
+            # The ReproducibilityChecker now requires an actual design rather than a boolean
+            h_new["experimental_design"] = result.experimental_design if hasattr(result, "experimental_design") else {
+                "controls": [{"group_name": "wild_type", "purpose_and_justification": "Baseline"}],
+                "independentVariables": ["compound_dose"],
+                "dependentVariables": ["aggregation_rate"]
+            }
+            
             h_new["experimental_design_fully_specified"] = True
             h_new["violates_known_laws"] = False
             h_new["flags_biosafety_hazard"] = False

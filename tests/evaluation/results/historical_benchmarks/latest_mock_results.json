@@ -1,0 +1,16 @@
+[
+    {
+        "case_id": "HRC_CRISPR",
+        "domain": "Molecular Biology & Gene Editing",
+        "status": "PASS",
+        "time_window": "2010-2012",
+        "generated_hypothesis": "Title: mock_string\nRationale: mock_string\nDesign: mock_string\nExpected: mock_string"
+    },
+    {
+        "case_id": "HRC_PLATE_TECTONICS",
+        "domain": "Earth Science",
+        "status": "PASS",
+        "time_window": "1950-1963",
+        "generated_hypothesis": "Title: mock_string\nRationale: mock_string\nDesign: mock_string\nExpected: mock_string"
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "status": "AWAITING_DATA",
+    "directive": "008",
+    "instructions": "Store raw JSON responses from human evaluators here. Do not clean or average the data."
+  },
+  "evaluators": []
+}

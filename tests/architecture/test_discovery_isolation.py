@@ -2,13 +2,13 @@ import pytest
 
 from aidp.discovery.causal import CausalDiscoveryEngine
 from aidp.discovery.debate import ScientificDebateEngine
-from aidp.discovery.scientific_planning import ScientificPlanningLayer
+from aidp.discovery.scientific_planning import WetLabPlanner
 
 
 def test_architecture_no_hypothesis_without_provenance() -> None:
     """Architecture Invariant: No hypothesis can enter causal or experiment phases without a ledger provenance hash."""
     causal_engine = CausalDiscoveryEngine()
-    planner = ScientificPlanningLayer()
+    planner = WetLabPlanner()
 
     mock_hyp = {"id": "h_rogue", "claim": "Rogue claim."}
 

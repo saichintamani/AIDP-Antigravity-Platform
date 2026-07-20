@@ -1,3 +1,4 @@
+import contextlib
 import json
 from dataclasses import dataclass
 from typing import Any
@@ -113,10 +114,8 @@ class EvaluationHarness:
             self.gateway.traces = []
 
             for spec in test_cases:
-                try:
+                with contextlib.suppress(Exception):
                     planner.execute_task(spec)
-                except Exception:
-                    pass
 
             self.routing_policy._providers = original_providers
 

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "case-clinical-001",
+    "domain": "clinical",
+    "query": "Design a Phase II clinical trial protocol to evaluate the efficacy of a novel mRNA-based therapeutic vaccine (mRNA-4157) in combination with pembrolizumab for high-risk melanoma patients after complete resection.",
+    "historical_cutoff_date": "2023-01-01",
+    "expected_findings": ["efficacy endpoints", "safety monitoring", "dosing schedule", "inclusion criteria", "exclusion criteria"]
+  },
+  {
+    "id": "case-clinical-002",
+    "domain": "clinical",
+    "query": "Develop a clinical trial protocol to test the safety and preliminary efficacy of a new CAR-T cell therapy targeting CD19 in adult patients with relapsed or refractory B-cell acute lymphoblastic leukemia (B-ALL).",
+    "historical_cutoff_date": "2022-01-01",
+    "expected_findings": ["dose escalation", "cytokine release syndrome management", "neurotoxicity monitoring", "long-term follow-up"]
+  },
+  {
+    "id": "case-clinical-003",
+    "domain": "clinical",
+    "query": "Propose a randomized, double-blind, placebo-controlled trial to evaluate the use of a novel GLP-1 receptor agonist for weight management in non-diabetic obese patients over a 52-week period.",
+    "historical_cutoff_date": "2022-06-01",
+    "expected_findings": ["randomization strategy", "primary endpoint (percent weight loss)", "secondary endpoints (cardiometabolic markers)", "dietary intervention standardization"]
+  },
+  {
+    "id": "case-clinical-004",
+    "domain": "clinical",
+    "query": "Design a clinical study to assess the efficacy of psilocybin-assisted psychotherapy compared to an active placebo (niacin) for the treatment of severe treatment-resistant depression.",
+    "historical_cutoff_date": "2023-01-01",
+    "expected_findings": ["psychological support protocol", "blinding challenges", "primary outcome measure (e.g., MADRS)", "safety follow-up"]
+  },
+  {
+    "id": "case-clinical-005",
+    "domain": "clinical",
+    "query": "Create an adaptive clinical trial design to evaluate multiple targeted therapies simultaneously in patients with advanced non-small cell lung cancer (NSCLC) based on specific biomarker profiles (e.g., EGFR, ALK, ROS1, KRAS).",
+    "historical_cutoff_date": "2021-01-01",
+    "expected_components": ["umbrella or basket design", "biomarker screening protocol", "adaptive randomization", "stopping rules for futility or efficacy"]
+  }
+]

@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Any
 
 
 class ReflectionEngine:
@@ -23,7 +23,7 @@ class ReflectionEngine:
         }
         self.ledger.append(entry)
 
-    def query_lessons(self, category: Optional[str] = None) -> list[dict[str, Any]]:
+    def query_lessons(self, category: str | None = None) -> list[dict[str, Any]]:
         """
         Retrieves past lessons for the planner to consult before executing a new strategy.
         """

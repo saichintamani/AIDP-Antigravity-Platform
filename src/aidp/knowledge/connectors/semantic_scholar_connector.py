@@ -1,7 +1,7 @@
 import json
 import urllib.parse
 import urllib.request
-from typing import Optional, Any
+from typing import Any
 
 from aidp.knowledge.provenance import ProvenanceEntry
 
@@ -14,7 +14,7 @@ class SemanticScholarConnector:
 
     BASE_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 
-    def __init__(self, max_results: int = 5, api_key: Optional[str] = None) -> None:
+    def __init__(self, max_results: int = 5, api_key: str | None = None) -> None:
         self.max_results = max_results
         self.api_key = api_key
 

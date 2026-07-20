@@ -3,9 +3,12 @@ import json
 import re
 import time
 import uuid
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Optional, Any, Callable
+from typing import Any
+
+from pydantic import BaseModel
 
 from aidp.intelligence.providers.base import RateLimitError
 from aidp.intelligence.providers.capabilities import ReasoningTier
@@ -27,7 +30,7 @@ class GatewayTrace:
     safety_violations: list[str]
     success: bool
     model_identifier: str = ""
-    decoding_parameters: Optional[dict[str, Any]] = field(default_factory=dict)
+    decoding_parameters: dict[str, Any] | None = field(default_factory=dict)
     routing_decision: str = ""
 
 
@@ -53,23 +56,48 @@ def with_retry(max_retries: int = 3, base_delay: float = 1.0) -> Callable[[Calla
     return decorator
 
 
+class InputSafetyLayer:
+    """Sanitizes inputs to prevent prompt injection and malicious payloads."""
+    
+    @staticmethod
+    def sanitize(prompt: str) -> None:
+        # Heuristic check for prompt injection keywords
+        blacklist = [
+            "ignore previous instructions",
+            "system prompt",
+            "disregard all",
+            "you are now a",
+            "bypass safety",
+            "override instructions"
+        ]
+        prompt_lower = prompt.lower()
+        for term in blacklist:
+            if term in prompt_lower:
+                raise SecurityException(f"Prompt injection detected: banned term '{term}'")
+
+class SecurityException(Exception):
+    pass
+
 class OutputSafetyLayer:
     """Validates epistemic invariants on the LLM output."""
 
     @staticmethod
-    def validate(parsed_json: dict[str, Any]) -> list[str]:
+    def validate(parsed_json: dict[str, Any] | BaseModel) -> list[str]:
         violations = []
 
+        # If it's a pydantic model, convert to dict for these basic heuristic checks
+        data = parsed_json.model_dump() if isinstance(parsed_json, BaseModel) else parsed_json
+
         # 1. Missing citations
-        if "claims" in parsed_json:
-            for claim in parsed_json["claims"]:
+        if "claims" in data:
+            for claim in data["claims"]:
                 if "citations" not in claim or not claim["citations"]:
                     violations.append(f"Claim missing citations: {claim.get('text', 'unknown')}")
 
         # 2. Confidence inconsistencies
-        if "confidence" in parsed_json and "uncertainty" in parsed_json:
-            conf = float(parsed_json["confidence"])
-            unc = float(parsed_json["uncertainty"])
+        if "confidence" in data and "uncertainty" in data:
+            conf = float(data["confidence"])
+            unc = float(data["uncertainty"])
             if conf + unc > 1.01:
                 violations.append(f"Confidence ({conf}) + Uncertainty ({unc}) exceeds 1.0")
 
@@ -82,7 +110,7 @@ class IntelligenceGateway:
     Enforces caching, token telemetry, output safety, and capability-based routing.
     """
 
-    def __init__(self, routing_policy: RoutingPolicy, cache: Optional[dict[str, Any]] = None) -> None:
+    def __init__(self, routing_policy: RoutingPolicy, cache: dict[str, Any] | None = None) -> None:
         self.routing_policy = routing_policy
         self.cache = cache if cache is not None else {}
         self.traces: list[GatewayTrace] = []
@@ -91,16 +119,19 @@ class IntelligenceGateway:
     def query(
         self,
         prompt: str,
-        schema_hint: Optional[dict[str, Any]] = None,
+        schema_hint: Any | None = None,
         prompt_version: str = "v1.0",
         min_tier: ReasoningTier = ReasoningTier.BASIC,
-    ) -> dict[str, Any]:
+    ) -> Any:
         """
         Executes an LLM query wrapped in the gateway protections.
         Dynamically routes to the best provider.
         """
         start_time = time.time()
         request_id = str(uuid.uuid4())
+
+        # 0. Input Safety Layer (Prompt Injection Defense)
+        InputSafetyLayer.sanitize(prompt)
 
         provider = self.routing_policy.get_best_provider(
             min_reasoning_tier=min_tier, requires_structured_output=bool(schema_hint)
@@ -126,7 +157,11 @@ class IntelligenceGateway:
                 f"Cached ({min_tier.name})",
             )
             self.traces.append(trace)
-            return dict(self.cache[cache_key])
+            # If a BaseModel is expected and cache gives dict, we convert it
+            if isinstance(schema_hint, type) and issubclass(schema_hint, BaseModel):
+                if isinstance(self.cache[cache_key], dict):
+                    return schema_hint(**self.cache[cache_key])
+            return self.cache[cache_key]
 
         # 2. Provider Execution with Structured Output & Safety Enforcement
         max_validation_retries = 2
@@ -198,8 +233,11 @@ class IntelligenceGateway:
         # This should never be reached, but satisfies mypy
         raise RuntimeError("Unexpected: validation loop exited without return or raise")
 
-    def _extract_and_validate_json(self, response: Any, schema_hint: Optional[dict[str, Any]] = None) -> dict[str, Any]:
+    def _extract_and_validate_json(self, response: Any, schema_hint: Any | None = None) -> Any:
         """Intercepts raw LLM strings, strips markdown, parses JSON, and validates schema keys."""
+        if isinstance(response, BaseModel):
+            return response
+            
         if isinstance(response, dict):
             parsed = response
         else:
@@ -213,11 +251,17 @@ class IntelligenceGateway:
             except json.JSONDecodeError as e:
                 raise ValueError(f"Failed to parse JSON: {str(e)}\nRaw output: {response}")
 
-        if schema_hint:
+        # If schema_hint is a Pydantic class, validate into the model!
+        if isinstance(schema_hint, type) and issubclass(schema_hint, BaseModel):
+            try:
+                # Convert the raw dict into the strongly typed Pydantic model
+                return schema_hint(**parsed)
+            except Exception as e:
+                raise ValueError(f"Pydantic Validation Error: {str(e)}")
+
+        if isinstance(schema_hint, dict):
             missing_keys = [k for k in schema_hint if k not in parsed]
             if missing_keys:
-                # Fill missing keys with defaults from schema_hint instead of failing.
-                # Small local models often omit keys; downstream code uses .get() with fallbacks.
                 for k in missing_keys:
                     parsed[k] = schema_hint[k]
 
@@ -237,7 +281,7 @@ class IntelligenceGateway:
         violations: list[str],
         success: bool,
         model_id: str = "",
-        decoding: Optional[dict[str, Any]] = None,
+        decoding: dict[str, Any] | None = None,
         routing: str = "",
     ) -> GatewayTrace:
         return GatewayTrace(

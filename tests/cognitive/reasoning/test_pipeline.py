@@ -58,6 +58,6 @@ def test_learning_loop() -> None:
     trace = {}  # Mock
 
     extracted = loop.process_trace(trace, failing_scorecard)
-    assert extracted == True
+    assert extracted
     assert len(memory.rules) == 1
     assert "ALWAYS verify" in memory.rules[0]
