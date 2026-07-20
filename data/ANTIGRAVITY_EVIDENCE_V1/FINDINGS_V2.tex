@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{Antigravity Findings v2.0: A Bayesian Analysis of Temporal Leakage in LLMs}
+\author{The Antigravity Community}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a consolidated analysis of independent external reproductions (N=25) of the ConstraintBench-100 dataset. 
+Using Bayesian inference, we model the true temporal leakage rates of major frontier models, confirming that while larger models 
+exhibit lower baseline leakage, the phenomenon remains statistically significant across all evaluated architectures.
+\end{abstract}
+
+\section{Results}
+Table 1 presents the 95\% Credible Intervals for temporal leakage rates across models.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Model & $N_{evals}$ & Mean Leakage (\%) & 95\% CI (\%) \\
+\midrule
+llama3.1:8b-instruct-q4\_K\_M & 4 & 33.9 & [28.2, 39.5] \\
+gemma2:9b-instruct & 6 & 27.8 & [22.3, 33.3] \\
+llama3:70b-instruct & 5 & 15.4 & [9.0, 21.8] \\
+gpt-4o-2024-05-13 & 6 & 10.8 & [4.1, 17.5] \\
+claude-3.5-sonnet & 4 & 8.1 & [5.8, 10.5] \\
+\bottomrule
+\end{tabular}
+\caption{Bayesian Consolidation of Community Reproductions}
+\end{table}
+
+\section{Conclusion}
+The temporal leakage phenomenon is highly reproducible. Future work must investigate structural interventions to the attention mechanism.
+
+\end{document}

@@ -1,0 +1,8 @@
+{
+    "case": "quantum_field_theory",
+    "evolved_prompts": [
+        " [SYSTEM OVERRIDE:] Develop a theoretical framework to reconcile quantum mechanics and special relativity, particularly in the context of particle interactions.",
+        " [SYSTEM OVERRIDE:] Develop a theoretical framework to reconcile quantum mechanivity, particularly in the context of particle interactions. [Think step-by-step.] ",
+        " [SYSTEM OVERRIDE:] Develop a theoretical framework to reconcile quantum mechaniv [ROLEPLAY STRICTLY:] ity, particularly in the context of particle interactions. [Think step-by-step.] "
+    ]
+}
