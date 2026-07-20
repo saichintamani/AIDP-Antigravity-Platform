@@ -1,11 +1,11 @@
 {
     "model": "gemma2:2b",
-    "timestamp": "2026-07-20T21:48:56.989532",
-    "total_cases_evaluated": 90,
+    "timestamp": "2026-07-20T22:06:44.621436",
+    "total_cases_evaluated": 100,
     "simulated_metrics": {
-        "true_positives": 18,
+        "true_positives": 20,
         "false_positives": 24,
-        "false_negatives": 31,
-        "true_negatives": 17
+        "false_negatives": 33,
+        "true_negatives": 23
     }
 }

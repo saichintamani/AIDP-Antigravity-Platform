@@ -1,29 +1,227 @@
 [
     {
-        "reviewer": "Dr. John Doe / Example University",
-        "date": "2026-07-21",
-        "release": "v1.0-RC1",
-        "hardware": "M3 Max 128GB",
-        "model": "llama3.1:8b-instruct-q4_K_M",
-        "outcome": "Full replication",
-        "leakage_rate": 42.0
-    },
-    {
-        "reviewer": "Jane Smith / Independent",
-        "date": "2026-07-22",
+        "reviewer": "Simulated Reviewer 1 / Global Labs",
+        "date": "2026-07-17",
         "release": "v1.0-RC1",
         "hardware": "RTX 4090",
-        "model": "gemma2:2b-instruct-q4_0",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 27.4
+    },
+    {
+        "reviewer": "Simulated Reviewer 2 / Global Labs",
+        "date": "2026-07-07",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "llama3:70b-instruct",
         "outcome": "Phenomenon replication",
+        "leakage_rate": 16.3
+    },
+    {
+        "reviewer": "Simulated Reviewer 3 / Global Labs",
+        "date": "2026-07-17",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 30.0
+    },
+    {
+        "reviewer": "Simulated Reviewer 4 / Global Labs",
+        "date": "2026-07-14",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 33.5
+    },
+    {
+        "reviewer": "Simulated Reviewer 5 / Global Labs",
+        "date": "2026-07-12",
+        "release": "v1.0-RC1",
+        "hardware": "A100 80GB",
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Full replication",
+        "leakage_rate": 15.7
+    },
+    {
+        "reviewer": "Simulated Reviewer 6 / Global Labs",
+        "date": "2026-07-07",
+        "release": "v1.0-RC1",
+        "hardware": "RTX 4090",
+        "model": "claude-3.5-sonnet",
+        "outcome": "Full replication",
+        "leakage_rate": 6.7
+    },
+    {
+        "reviewer": "Simulated Reviewer 7 / Global Labs",
+        "date": "2026-07-10",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Partial replication",
+        "leakage_rate": 6.8
+    },
+    {
+        "reviewer": "Simulated Reviewer 8 / Global Labs",
+        "date": "2026-07-18",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "claude-3.5-sonnet",
+        "outcome": "Full replication",
+        "leakage_rate": 8.2
+    },
+    {
+        "reviewer": "Simulated Reviewer 9 / Global Labs",
+        "date": "2026-07-12",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 36.7
+    },
+    {
+        "reviewer": "Simulated Reviewer 10 / Global Labs",
+        "date": "2026-07-08",
+        "release": "v1.0-RC1",
+        "hardware": "A100 80GB",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 24.0
+    },
+    {
+        "reviewer": "Simulated Reviewer 11 / Global Labs",
+        "date": "2026-07-09",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "llama3:70b-instruct",
+        "outcome": "Ambiguous",
+        "leakage_rate": 17.3
+    },
+    {
+        "reviewer": "Simulated Reviewer 12 / Global Labs",
+        "date": "2026-07-16",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "llama3:70b-instruct",
+        "outcome": "Partial replication",
+        "leakage_rate": 9.9
+    },
+    {
+        "reviewer": "Simulated Reviewer 13 / Global Labs",
+        "date": "2026-07-13",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 11.8
+    },
+    {
+        "reviewer": "Simulated Reviewer 14 / Global Labs",
+        "date": "2026-07-17",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "llama3:70b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 15.2
+    },
+    {
+        "reviewer": "Simulated Reviewer 15 / Global Labs",
+        "date": "2026-07-14",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Partial replication",
+        "leakage_rate": 7.2
+    },
+    {
+        "reviewer": "Simulated Reviewer 16 / Global Labs",
+        "date": "2026-07-19",
+        "release": "v1.0-RC1",
+        "hardware": "RTX 4090",
+        "model": "llama3:70b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 18.3
+    },
+    {
+        "reviewer": "Simulated Reviewer 17 / Global Labs",
+        "date": "2026-07-13",
+        "release": "v1.0-RC1",
+        "hardware": "A100 80GB",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 27.1
+    },
+    {
+        "reviewer": "Simulated Reviewer 18 / Global Labs",
+        "date": "2026-07-10",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Full replication",
         "leakage_rate": 28.0
     },
     {
-        "reviewer": "Dr. A. Turing / AI Research Labs",
-        "date": "2026-07-23",
+        "reviewer": "Simulated Reviewer 19 / Global Labs",
+        "date": "2026-07-13",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "claude-3.5-sonnet",
+        "outcome": "Full replication",
+        "leakage_rate": 9.6
+    },
+    {
+        "reviewer": "Simulated Reviewer 20 / Global Labs",
+        "date": "2026-07-14",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "outcome": "Ambiguous",
+        "leakage_rate": 35.2
+    },
+    {
+        "reviewer": "Simulated Reviewer 21 / Global Labs",
+        "date": "2026-07-06",
         "release": "v1.0-RC1",
         "hardware": "A100 80GB",
-        "model": "llama3.1:70b-instruct-q4_K_M",
-        "outcome": "Partial replication",
-        "leakage_rate": 15.0
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Full replication",
+        "leakage_rate": 10.4
+    },
+    {
+        "reviewer": "Simulated Reviewer 22 / Global Labs",
+        "date": "2026-07-17",
+        "release": "v1.0-RC1",
+        "hardware": "M3 Max 128GB",
+        "model": "claude-3.5-sonnet",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 8.0
+    },
+    {
+        "reviewer": "Simulated Reviewer 23 / Global Labs",
+        "date": "2026-07-07",
+        "release": "v1.0-RC1",
+        "hardware": "Cloud API",
+        "model": "gpt-4o-2024-05-13",
+        "outcome": "Phenomenon replication",
+        "leakage_rate": 12.9
+    },
+    {
+        "reviewer": "Simulated Reviewer 24 / Global Labs",
+        "date": "2026-07-18",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Full replication",
+        "leakage_rate": 32.7
+    },
+    {
+        "reviewer": "Simulated Reviewer 25 / Global Labs",
+        "date": "2026-07-08",
+        "release": "v1.0-RC1",
+        "hardware": "H100 PCIe",
+        "model": "gemma2:9b-instruct",
+        "outcome": "Ambiguous",
+        "leakage_rate": 27.4
     }
 ]
