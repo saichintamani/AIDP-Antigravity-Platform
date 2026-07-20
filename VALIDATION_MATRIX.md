@@ -33,15 +33,15 @@ Every major claim made by the Antigravity project must pass through four scienti
 
 ## Live Validation Matrix
 
-*This matrix is the ultimate source of truth for the project's scientific credibility. Claims will strictly remain at 0% proven externally until verified reality dictates otherwise.*
+*This matrix is the ultimate source of truth for the project's scientific credibility. Claims will strictly remain Pending externally until verified reality dictates otherwise.*
 
 | Claim | Internal (Gate 1) | Independent (Gate 2) | Hostile (Gate 3) | Community (Gate 4) |
-| :--- | :---: | :---: | :---: | :---: |
-| **Leakage Exists** | ✅ | ❌ | ❌ | ❌ |
-| **Leakage Reproducible** | ✅ | ❌ | ❌ | ❌ |
-| **Prompt Hardening Works** | ✅ | ❌ | ❌ | ❌ |
-| **Benchmark Generalizes** | ❌ | ❌ | ❌ | ❌ |
-| **Human Detection Fails** | ❌ | ❌ | ❌ | ❌ |
+| :--- | :--- | :--- | :--- | :--- |
+| **Leakage Exists** | Complete | Pending | Pending | Pending |
+| **Leakage Reproducible** | Complete | Pending | Pending | Pending |
+| **Prompt Hardening Works** | Complete | Pending | Pending | Pending |
+| **Benchmark Generalizes** | Pending | Pending | Pending | Pending |
+| **Human Detection Fails** | Pending | Pending | Pending | Pending |
 
 ---
 *Note: A claim cannot progress to the right without documented, raw, reproducible evidence permanently stored in this repository.*

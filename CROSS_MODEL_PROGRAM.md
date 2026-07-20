@@ -9,13 +9,13 @@ To answer this, we must systematically measure the phenomenon across the major d
 ## Target Model Families
 
 | Architecture Family | Primary Target | Status |
-| :--- | :--- | :---: |
-| **Meta Llama** | `llama-3.1-70b-instruct` | 0% Proven |
-| **Google Gemma** | `gemma-2-27b-it` | 0% Proven |
-| **Alibaba Qwen** | `qwen2-72b-instruct` | 0% Proven |
-| **DeepSeek** | `deepseek-coder-v2` | 0% Proven |
-| **OpenAI GPT** | `gpt-4o` | 0% Proven |
-| **Anthropic Claude** | `claude-3.5-sonnet` | 0% Proven |
+| :--- | :--- | :--- |
+| **Meta Llama** | `llama-3.1-70b-instruct` | Pending |
+| **Google Gemma** | `gemma-2-27b-it` | Pending |
+| **Alibaba Qwen** | `qwen2-72b-instruct` | Pending |
+| **DeepSeek** | `deepseek-coder-v2` | Pending |
+| **OpenAI GPT** | `gpt-4o` | Pending |
+| **Anthropic Claude** | `claude-3.5-sonnet` | Pending |
 
 ## Required Metrics per Model
 

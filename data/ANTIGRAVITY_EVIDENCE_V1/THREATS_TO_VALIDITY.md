@@ -16,6 +16,7 @@ If an independent researcher or hostile reviewer identifies a flaw in our method
 *   **Open**: Criticism received, pending investigation.
 *   **Under Investigation**: Team is actively analyzing the claim or attempting to reproduce the falsification.
 *   **Partially Addressed**: A mitigation has been deployed (e.g., benchmark update), but the core philosophical/methodological issue remains partially unresolved.
+*   **Alternative Explanation Plausible**: The criticism is not definitively proven nor disproven, representing a valid alternative interpretation of the data.
 *   **Resolved**: The criticism led to a structural fix that completely addresses the vulnerability.
 *   **Confirmed Weakness**: The criticism is valid, cannot be fixed without fundamentally altering the project, and must be accepted as a permanent limitation of the findings.
 
@@ -27,7 +28,7 @@ If an independent researcher or hostile reviewer identifies a flaw in our method
 ### [Criticism Title / Topic]
 - **Date Submitted**: YYYY-MM-DD
 - **Reviewer**: [Name or Anonymous]
-- **Status**: [Open | Under Investigation | Partially Addressed | Resolved | Confirmed Weakness]
+- **Status**: [Open | Under Investigation | Partially Addressed | Alternative Explanation Plausible | Resolved | Confirmed Weakness]
 - **The Criticism**: 
   > (Quote or summary of the reviewer's argument)
 - **The Evidence**:

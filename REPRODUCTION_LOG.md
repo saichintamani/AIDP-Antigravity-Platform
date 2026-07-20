@@ -2,7 +2,7 @@
 
 This log is the permanent archive for independent, third-party reproductions of the Antigravity temporal leakage phenomenon. 
 
-*As of the v1.0-RC1 release, independent external validation is **0% proven**.*
+*As of the v1.0-RC1 release, independent external validation is **Pending**.*
 
 ## Verified Reproductions
 

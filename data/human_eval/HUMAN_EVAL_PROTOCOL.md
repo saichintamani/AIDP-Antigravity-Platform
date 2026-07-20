@@ -32,4 +32,4 @@ For every human evaluation, the following must be logged:
 3. **Evaluator Confidence** (Likert 1-5 - How confident is the rater in their assessment?)
 4. **Qualitative Explanation** (Free text - *Why* did the rater assign this score? Crucial for identifying subtle hallucinations.)
 
-*Current Status: Phase A (0% Complete).*
+*Current Status: Phase A (Pending).*
