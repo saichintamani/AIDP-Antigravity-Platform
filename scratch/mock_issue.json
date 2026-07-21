@@ -1,0 +1,6 @@
+{
+  "issue": {
+    "labels": [{"name": "evidence:reproduction"}],
+    "body": "### Operating System\nUbuntu 22.04\n\n### Hardware\n2x RTX 3090\n\n### Exact Model Tag\nqwen2-72b-instruct\n\n### Runtime Environment\nvLLM 0.5.0\n\n### Leakage Rate (%)\n31.4\n\n### Reproduction Outcome\nSuccessful Reproduction (Phenomenon Exists)\n\n### Reviewer Interpretation\nThe model clearly hallucinates modern terminology like 'exoplanets' when asked to write from 1900."
+  }
+}

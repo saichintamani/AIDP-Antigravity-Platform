@@ -1,0 +1,10 @@
+[
+    {
+        "model": "llama3",
+        "prompt": "Write a poem about internet routing.",
+        "intervened": true,
+        "leakage_score": 0,
+        "nle": "The text maintains strict coherence with the '1900' constraint. No anachronistic terminology was detected.",
+        "timestamp": "2026-07-20T19:40:57.821570Z"
+    }
+]

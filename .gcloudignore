@@ -1,0 +1,23 @@
+# Ignore everything not needed for the API backend
+node_modules/
+.git/
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+*.md
+*.txt
+!requirements.txt
+.gemini/
+.agents/
+*.log
+*.png
+*.jpg
+*.webp
+*.mp4
