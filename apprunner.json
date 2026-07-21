@@ -1,0 +1,20 @@
+{
+  "ServiceName": "aidp-backend",
+  "SourceConfiguration": {
+    "ImageRepository": {
+      "ImageIdentifier": "660249531916.dkr.ecr.us-east-1.amazonaws.com/aidp-backend:latest",
+      "ImageRepositoryType": "ECR",
+      "ImageConfiguration": {
+        "Port": "8000"
+      }
+    },
+    "AutoDeploymentsEnabled": true,
+    "AuthenticationConfiguration": {
+      "AccessRoleArn": "arn:aws:iam::660249531916:role/AppRunnerServiceRoleForECRAccess"
+    }
+  },
+  "InstanceConfiguration": {
+    "Cpu": "1024",
+    "Memory": "2048"
+  }
+}
