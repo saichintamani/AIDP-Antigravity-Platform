@@ -70,7 +70,7 @@ def wilcoxon_signed_rank(x: np.ndarray, y: np.ndarray) -> Dict[str, float]:
         "statistic": float(W),
         "z_score": float(z),
         "p_value": float(p_value),
-        "significant": p_value < 0.05,
+        "significant": bool(p_value < 0.05),
         "W_plus": float(W_plus),
         "W_minus": float(W_minus),
         "n_nonzero": int(n)

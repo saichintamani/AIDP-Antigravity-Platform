@@ -625,5 +625,3 @@ class OllamaHookBridge:
             "modern_tokens_found": len(modern_positions),
             "summary": self.steerer.get_intervention_summary()
         }
-""", 
-<parameter name="Description">Production-grade transformer hook integration with Activation Addition steering, KL divergence tracking, multi-head attention interception, and Ollama bridge

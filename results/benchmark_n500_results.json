@@ -1,0 +1,112 @@
+{
+  "n_samples": 500,
+  "n_bootstrap": 1000,
+  "baseline_leakage_mean": 0.152,
+  "baseline_leakage_ci_lower": 0.122,
+  "baseline_leakage_ci_upper": 0.182,
+  "intervened_leakage_mean": 0.026,
+  "intervened_leakage_ci_lower": 0.014,
+  "intervened_leakage_ci_upper": 0.04,
+  "cohens_d": 0.4537484908032619,
+  "wilcoxon": {
+    "statistic": 1079.0,
+    "z_score": -3.778328786377538,
+    "p_value": 0.00010256440597977701,
+    "significant": true,
+    "W_plus": 2926.0,
+    "W_minus": 1079.0,
+    "n_nonzero": 89
+  },
+  "era_breakdown": [
+    {
+      "era": "Ancient Greece",
+      "year": -500,
+      "n_samples": 63,
+      "baseline_mean": 0.20634920634920634,
+      "baseline_std": 0.4046840883803797,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.7211102550927979,
+      "reduction_pct": 100.0
+    },
+    {
+      "era": "Medieval Europe",
+      "year": 1200,
+      "n_samples": 63,
+      "baseline_mean": 0.0,
+      "baseline_std": 0.0,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.0,
+      "reduction_pct": 0.0
+    },
+    {
+      "era": "Renaissance",
+      "year": 1500,
+      "n_samples": 63,
+      "baseline_mean": 0.0,
+      "baseline_std": 0.0,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.0,
+      "reduction_pct": 0.0
+    },
+    {
+      "era": "Early Industrial",
+      "year": 1800,
+      "n_samples": 63,
+      "baseline_mean": 0.19047619047619047,
+      "baseline_std": 0.39267672624930106,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.6859943405700352,
+      "reduction_pct": 100.0
+    },
+    {
+      "era": "Victorian",
+      "year": 1880,
+      "n_samples": 62,
+      "baseline_mean": 0.20967741935483872,
+      "baseline_std": 0.4070783698104504,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.7284313590846836,
+      "reduction_pct": 100.0
+    },
+    {
+      "era": "Early 20th Century",
+      "year": 1920,
+      "n_samples": 62,
+      "baseline_mean": 0.1935483870967742,
+      "baseline_std": 0.3950789907714804,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 0.6928203230275508,
+      "reduction_pct": 100.0
+    },
+    {
+      "era": "Mid 20th Century",
+      "year": 1960,
+      "n_samples": 62,
+      "baseline_mean": 0.41935483870967744,
+      "baseline_std": 0.49345350131543075,
+      "intervened_mean": 0.0,
+      "intervened_std": 0.0,
+      "effect_size": 1.2018504251546631,
+      "reduction_pct": 100.0
+    },
+    {
+      "era": "Late 20th Century",
+      "year": 1990,
+      "n_samples": 62,
+      "baseline_mean": 0.0,
+      "baseline_std": 0.0,
+      "intervened_mean": 0.20967741935483872,
+      "intervened_std": 0.4070783698104504,
+      "effect_size": -0.7284313590846836,
+      "reduction_pct": -209677419354.8387
+    }
+  ],
+  "total_time_seconds": 0.53482985496521,
+  "samples_per_second": 934.8767563331415
+}
