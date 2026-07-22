@@ -1,6 +1,11 @@
 # Build Stage
 FROM python:3.11-slim AS builder
 
+# Set build-time metadata
+LABEL maintainer="AIDP Team"
+LABEL version="1.0.0"
+LABEL description="AIDP Backend - Optimized for AWS AppRunner"
+
 WORKDIR /app
 COPY requirements.txt .
 
@@ -12,17 +17,35 @@ RUN pip install --no-cache-dir -r requirements.txt || pip install fastapi uvicor
 # Production Stage
 FROM python:3.11-slim
 
+# Set runtime metadata
+LABEL maintainer="AIDP Team"
+LABEL version="1.0.0"
+LABEL description="AIDP Backend Production Image"
+
 WORKDIR /app
+
+# Install system dependencies for healthcheck
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Create a non-root user for security
+RUN groupadd -r aidpuser && useradd -r -g aidpuser aidpuser
 
 # Copy virtual environment from builder
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
-# Copy source code
-COPY src/ ./src/
+# Copy source code and assign ownership to the non-root user
+COPY --chown=aidpuser:aidpuser src/ ./src/
 ENV PYTHONPATH=/app/src
 
+# Set the active user
+USER aidpuser
+
 EXPOSE 8000
+
+# Container healthcheck for AWS AppRunner/ECS
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+    CMD curl -f http://localhost:8000/ || exit 1
 
 # Production-ready entrypoint using uvicorn workers
 CMD ["uvicorn", "aidp.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
