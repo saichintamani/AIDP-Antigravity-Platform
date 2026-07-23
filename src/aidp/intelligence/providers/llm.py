@@ -50,7 +50,29 @@ class LLMProvider(BaseProvider):
                 "num_ctx": 4096,
             }
             if schema_hint:
-                kwargs["response_format"] = {"type": "json_object"}
+                model_lower = self.model_name.lower()
+                if "gemini" in model_lower:
+                    # Gemini (and OpenAI) Strict Structured Outputs
+                    kwargs["response_format"] = {
+                        "type": "json_schema",
+                        "json_schema": {
+                            "name": "aidp_schema",
+                            "schema": schema_hint,
+                            "strict": True
+                        }
+                    }
+                elif "gemma" in model_lower:
+                    # Gemma lacks strict JSON decoding natively on some endpoints. Force via prompt engineering.
+                    constraint = (
+                        "\n\n[CRITICAL: You MUST output ONLY raw JSON exactly matching this schema. "
+                        f"NO markdown formatting (no ```json), NO text outside the JSON.]\n{json.dumps(schema_hint)}"
+                    )
+                    kwargs["messages"][0]["content"] += constraint
+                    # Still try to enable JSON mode if the runtime supports it
+                    kwargs["response_format"] = {"type": "json_object"}
+                else:
+                    # Standard JSON mode fallback
+                    kwargs["response_format"] = {"type": "json_object"}
                 
             response = litellm.completion(**kwargs)
             return response.choices[0].message.content
